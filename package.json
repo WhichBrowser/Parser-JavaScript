@@ -9,6 +9,10 @@
   "engines": {
     "node": "6.x.x"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariotsi/WhichBrowser-js.git"
+  },
   "keywords": [
     "browser",
     "sniffing",
