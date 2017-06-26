@@ -1,0 +1,21 @@
+{
+  "name": "which-browser-js",
+  "version": "0.0.1",
+  "description": "Browser sniffing tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "engines": {
+    "node": "6.x.x"
+  },
+  "keywords": [
+    "browser",
+    "sniffing",
+    "user-agent",
+    "useragent",
+    "node"
+  ],
+  "author": "Simone Mariotti",
+  "license": "MIT"
+}

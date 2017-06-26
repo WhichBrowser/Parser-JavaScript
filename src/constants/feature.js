@@ -1,0 +1,9 @@
+module.exports = {
+  SANDBOX: 1,
+  WEBSOCKET: 2,
+  WORKER: 4,
+  APPCACHE: 8,
+  HISTORY: 16,
+  FULLSCREEN: 32,
+  FILEREADER: 64
+};
