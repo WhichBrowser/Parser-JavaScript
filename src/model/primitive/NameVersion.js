@@ -1,11 +1,10 @@
 const Base = require('./Base');
+const Version = require('../Version');
 /**
  * Class representing a NameVersion.
  * @extends Base
  */
-
 class NameVersion extends Base {
-
   /**
    * Set the properties to the default values
    *
@@ -13,7 +12,6 @@ class NameVersion extends Base {
    *
    * @internal
    */
-
   reset(properties = null) {
     this.name = null;
     this.alias = null;
@@ -25,17 +23,16 @@ class NameVersion extends Base {
   /**
    * Identify the version based on a pattern
    *
-   * @param   {string}      pattern   The regular expression that defines the group that matches the version string
+   * @param   {RegExp}      pattern   The regular expression that defines the group that matches the version string
    * @param   {string}      subject   The string the regular expression is matched with
    * @param   {Object|null}  defaults  An optional array of properties to set together with the value
    *
    * @return string
    */
-
   identifyVersion(pattern, subject, defaults = {}) {
     let match;
     let version;
-    if ((match = new RegExp(pattern).exec(subject) ) !== null) {
+    if ((match = pattern.exec(subject) ) !== null) {
       version = match[1];
 
       if (defaults.type) {
@@ -49,7 +46,7 @@ class NameVersion extends Base {
         }
       }
 
-      this.version = new Version(Object.assign({}, defaults, {value:version}));
+      this.version = new Version(Object.assign({}, defaults, {value: version}));
     }
   }
 
@@ -93,3 +90,5 @@ class NameVersion extends Base {
     return `${this.getName()} ${this.version && !this.version.hidden ? this.getVersion() : ''}`.trim();
   }
 }
+
+module.exports = NameVersion;
