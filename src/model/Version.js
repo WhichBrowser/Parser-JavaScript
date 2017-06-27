@@ -1,8 +1,24 @@
 const Base = require('./primitive/Base');
+/**
+ * Class representing a Version.
+ * @extends Base
+ */
 class Version extends Base {
-  constructor({value = null, hidden = false, nickname, alias, details, builds} = {}) {
-    if(value){
-      value = ''+value;
+  /**
+   * constructor
+   *
+   * @param {string|number} [value] The version value
+   * @param {boolean} [hidden=false] define if the version is hidden
+   * @param {string} [nickname] define the version nickname
+   * @param {string} [alias] define the version alias
+   * @param {number} [details] define the details value
+   * @param {boolean} [builds] define the details value
+   *
+   * @internal
+   */
+  constructor({value, hidden = false, nickname, alias, details, builds} = {}) {
+    if (value) {
+      value = '' + value;
     }
     super({value, hidden, nickname, alias, details, builds});
   }
@@ -10,21 +26,21 @@ class Version extends Base {
   /**
    * Determine if the version is lower, equal or higher than the specified value
    *
-   * @param  operator string   The operator, must be <, <=, =, >= or >
-   * @param  compare mixed    The value, can be an integer, float or string with a version number
+   * @param {string}        operator   The operator, must be <, <=, =, >= or >
+   * @param {number|string} [compare]    The value, can be an integer, float or string with a version number
    *
-   * @return boolean
+   * @return {boolean}
    */
-  is(operator = null, compare = null) {
+  is(operator, compare) {
     let valid = false;
-    if (operator !== null) {
-      if (compare === null) {
+    if (operator) {
+      if (!compare) {
         compare = operator;
         operator = '=';
       }
-      compare = ''+compare;
+      compare = '' + compare;
       const regExp = /\./;
-      const min = Math.min((regExp.exec(this.value) || []).length, (regExp.exec(compare)|| []).length) + 1;
+      const min = Math.min((regExp.exec(this.value) || []).length, (regExp.exec(compare) || []).length) + 1;
       const v1 = this.toValue(this.value, min);
       const v2 = this.toValue(compare, min);
       switch (operator) {
@@ -51,7 +67,7 @@ class Version extends Base {
   /**
    * Return an object with each part of the version number
    *
-   * @return Object
+   * @return {object}
    */
   getParts() {
     const parts = this.value.split('.');
@@ -65,9 +81,8 @@ class Version extends Base {
   /**
    * Return the major version as an integer
    *
-   * @return integer
+   * @return {number}
    */
-
   getMajor() {
     return this.getParts().major;
   }
@@ -75,7 +90,7 @@ class Version extends Base {
   /**
    * Return the minor version as an integer
    *
-   * @return integer
+   * @return {number}
    */
   getMinor() {
     return this.getParts().minor;
@@ -84,7 +99,7 @@ class Version extends Base {
   /**
    * Return the patch number as an integer
    *
-   * @return integer
+   * @return {number}
    */
   getPatch() {
     return this.getParts().patch;
@@ -95,17 +110,17 @@ class Version extends Base {
    *
    * @internal
    *
-   * @param  value string   Version string, with elements seperated by a dot
-   * @param  count int      The maximum precision
+   * @param {string} value   Version string, with elements seperated by a dot
+   * @param {number} count   The maximum precision
    *
-   * @return Number
+   * @return {number}
    */
-  toValue(value = null, count = null) {
-    if (value === null) {
+  toValue(value = '', count = NaN) {
+    if (!value) {
       value = this.value;
     }
     let parts = value.split('.');
-    if (count !== null) {
+    if (!isNaN(count)) {
       parts = parts.slice(0, count);
     }
     let result = parts[0];
@@ -123,7 +138,7 @@ class Version extends Base {
   /**
    * Return the version as a float
    *
-   * @return Number
+   * @return {number}
    */
   toFloat() {
     return parseFloat(this.value);
@@ -132,7 +147,7 @@ class Version extends Base {
   /**
    * Return the version as an integer
    *
-   * @return Number
+   * @return {int}
    */
   toNumber() {
     return parseInt(this.value, 10);
@@ -141,7 +156,7 @@ class Version extends Base {
   /**
    * Return the version as a human readable string
    *
-   * @return string
+   * @return {string}
    */
   toString() {
     if (this.alias) {
@@ -190,11 +205,11 @@ class Version extends Base {
   }
 
   /**
-   * Get an array of all defined properties
+   * Get an object with all defined properties
    *
    * @internal
    *
-   * @return Object
+   * @return {object}
    */
   toObject() {
     const result = {};
