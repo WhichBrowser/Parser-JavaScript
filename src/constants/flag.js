@@ -7,5 +7,5 @@ module.exports = {
   FIREOS: 32,
   UIQ: 64,
   S60: 128,
-  MOAPS: 256
+  MOAPS: 256,
 };

@@ -1,8 +1,29 @@
 const NameVersion = require('primitive/NameVersion');
-
+/**
+ * Represents a Browser
+ *
+ * @param   {Object|null}  properties  An optional Object of properties to set after setting it to the default values
+ *
+ * @internal
+ */
 class Browser extends NameVersion {
-  constructor({using, family, channel, stock = true, hidden = false, mode = '', type = ''}) {
-    super({using, family, channel, stock, hidden, mode, type});
+  /**
+   * constructor
+   *
+   * @param {object} [properties]
+   * @param {Using} [properties.using] Information about web views the browser is using
+   * @param {Family} [properties.family] To which browser family does this browser belong
+   * @param {string} [properties.channel]
+   * @param {boolean} [properties.stock=true]
+   * @param {boolean} [properties.hidden]
+   * @param {string} [properties.mode]
+   * @param {string} [properties.type]
+   *
+   * @internal
+   */
+  constructor(properties = {}) {
+    properties.stock = typeof properties.stock !== 'undefined' ? properties.stock : true;
+    super(properties);
   }
 
   /**
@@ -12,7 +33,6 @@ class Browser extends NameVersion {
    *
    * @internal
    */
-
   reset(properties = null) {
     super.reset();
 
@@ -32,9 +52,8 @@ class Browser extends NameVersion {
   /**
    * Get the name in a human readable format
    *
-   * @return string
+   * @return {string}
    */
-
   getName() {
     const name = super.getName();
     return name ? `${name}${this.channel ? ` ${this.channel}` : ''}` : '';
@@ -46,9 +65,8 @@ class Browser extends NameVersion {
    *
    * @param  {string}   name   The name of the family
    *
-   * @return boolean
+   * @return {boolean}
    */
-
   isFamily(name) {
     return this.getName() === name || (!!this.family && this.family.getName() === name);
   }
@@ -59,9 +77,8 @@ class Browser extends NameVersion {
    *
    * @param  {string}   name   The name of the webview
    *
-   * @return boolean
+   * @return {boolean}
    */
-
   isUsing(name) {
     return !!this.using && this.using.getName() === name;
   }
@@ -70,9 +87,8 @@ class Browser extends NameVersion {
   /**
    * Get a combined name and version number in a human readable format
    *
-   * @return string
+   * @return {string}
    */
-
   toString() {
     if (this.hidden) {
       return '';
@@ -92,9 +108,8 @@ class Browser extends NameVersion {
    *
    * @internal
    *
-   * @return Object
+   * @return {object}
    */
-
   toObject() {
     const result = {};
 
@@ -126,3 +141,5 @@ class Browser extends NameVersion {
     return result;
   }
 }
+
+module.exports = Browser;

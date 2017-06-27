@@ -5,5 +5,5 @@ module.exports = {
   engineType: require('./engineType'),
   feature: require('./feature'),
   flag: require('./flag'),
-  id: require('./id')
+  id: require('./id'),
 };

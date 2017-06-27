@@ -4,5 +4,5 @@ module.exports = {
   CHROMIUM: 4,
   GECKO: 8,
   WEBKIT: 16,
-  V8: 32
+  V8: 32,
 };

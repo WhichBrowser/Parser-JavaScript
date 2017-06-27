@@ -22,5 +22,5 @@ module.exports = {
   GPS: 'gps',
   CAR: 'car',
   POS: 'pos',
-  BOT: 'bot'
+  BOT: 'bot',
 };

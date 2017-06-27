@@ -16,5 +16,5 @@ module.exports = {
   APP_NEWS: 'app:news',
   APP_ANTIVIRUS: 'app:antivirus',
   APP_SHOPPING: 'app:shopping',
-  APP_CHAT: 'app:chat'
+  APP_CHAT: 'app:chat',
 };

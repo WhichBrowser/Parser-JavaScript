@@ -3,5 +3,5 @@ module.exports = {
   SMART: 'smart',
   DESKTOP: 'desktop',
   CONSOLE: 'console',
-  PORTABLE: 'portable'
+  PORTABLE: 'portable',
 };

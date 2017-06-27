@@ -5,5 +5,5 @@ module.exports = {
   APPCACHE: 8,
   HISTORY: 16,
   FULLSCREEN: 32,
-  FILEREADER: 64
+  FILEREADER: 64,
 };
