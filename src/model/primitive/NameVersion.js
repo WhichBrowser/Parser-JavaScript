@@ -37,7 +37,7 @@ class NameVersion extends Base {
       if (defaults.type) {
         switch (defaults.type) {
           case 'underscore':
-            version = version.replace('_', '.');
+            version = version.replace(/_/g, '.');
             break;
           case 'legacy':
             version = version.replace(/([0-9])([0-9])/, '$1.$2');
