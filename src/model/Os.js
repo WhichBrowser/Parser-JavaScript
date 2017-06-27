@@ -11,14 +11,12 @@ class Os extends NameVersion {
    * @param {object}  [properties] An optional object to set after setting it to the default values
    * @param {Family}  [properties.family]
    * @param {string}  [properties.edition]
-   * @param {boolean} [properties.hidden]
-   *
+   * @param {boolean} [properties.hidden=false]
    *
    * @internal
    */
   constructor(properties = {}) {
-    properties.hidden = properties.hidden || false;
-    super(properties);
+    super(Object.assign({}, {hidden: false}, properties));
   }
 
   /**

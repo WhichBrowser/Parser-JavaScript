@@ -7,20 +7,21 @@ class Version extends Base {
   /**
    * constructor
    *
-   * @param {string|number} [value] The version value
-   * @param {boolean} [hidden=false] define if the version is hidden
-   * @param {string} [nickname] define the version nickname
-   * @param {string} [alias] define the version alias
-   * @param {number} [details] define the details value
-   * @param {boolean} [builds] define the details value
+   * @param {object} [properties] The version value
+   * @param {string|number} [properties.value] The version value
+   * @param {boolean} [properties.hidden=false] define if the version is hidden
+   * @param {string} [properties.nickname] define the version nickname
+   * @param {string} [properties.alias] define the version alias
+   * @param {number} [properties.details] define the details value
+   * @param {boolean} [properties.builds] define the details value
    *
    * @internal
    */
-  constructor({value, hidden = false, nickname, alias, details, builds} = {}) {
-    if (value) {
-      value = '' + value;
+  constructor(properties = {}) {
+    if (properties.value) {
+      properties.value = '' + properties.value;
     }
-    super({value, hidden, nickname, alias, details, builds});
+    super(Object.assign({}, {hidden: false}, properties));
   }
 
   /**
