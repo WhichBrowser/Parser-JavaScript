@@ -4,7 +4,7 @@
   "description": "Browser sniffing tool",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "lab -a code -v"
   },
   "engines": {
     "node": "6.x.x"
@@ -21,5 +21,12 @@
     "node"
   ],
   "author": "Simone Mariotti",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "code": "^4.1.0",
+    "eslint": "^4.1.1",
+    "eslint-config-google": "^0.8.0",
+    "lab": "^14.1.0",
+    "sinon": "^2.3.5"
+  }
 }
