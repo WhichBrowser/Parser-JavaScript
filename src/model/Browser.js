@@ -1,4 +1,4 @@
-const NameVersion = require('primitive/NameVersion');
+const NameVersion = require('./primitive/NameVersion');
 /**
  * Represents a Browser
  *
@@ -15,15 +15,14 @@ class Browser extends NameVersion {
    * @param {Family} [properties.family] To which browser family does this browser belong
    * @param {string} [properties.channel]
    * @param {boolean} [properties.stock=true]
-   * @param {boolean} [properties.hidden]
-   * @param {string} [properties.mode]
-   * @param {string} [properties.type]
+   * @param {boolean} [properties.hidden=false]
+   * @param {string} [properties.mode='']
+   * @param {string} [properties.type='']
    *
    * @internal
    */
   constructor(properties = {}) {
-    properties.stock = typeof properties.stock !== 'undefined' ? properties.stock : true;
-    super(properties);
+    super(Object.assign({}, {stock: true, hidden: false, mode: '', type: ''}, properties));
   }
 
   /**
