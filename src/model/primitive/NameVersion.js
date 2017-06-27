@@ -27,7 +27,6 @@ class NameVersion extends Base {
    * @param   {string}      subject   The string the regular expression is matched with
    * @param   {Object|null}  defaults  An optional array of properties to set together with the value
    *
-   * @return string
    */
   identifyVersion(pattern, subject, defaults = {}) {
     let match;
@@ -54,7 +53,7 @@ class NameVersion extends Base {
   /**
    * Get the name in a human readable format
    *
-   * @return string
+   * @return {string}
    */
   getName() {
     return this.alias || this.name || '';
@@ -64,7 +63,7 @@ class NameVersion extends Base {
   /**
    * Get the version in a human readable format
    *
-   * @return string
+   * @return {string}
    */
   getVersion() {
     return this.version ? this.version.toString() : '';
@@ -74,7 +73,7 @@ class NameVersion extends Base {
   /**
    * Is a name detected?
    *
-   * @return boolean
+   * @return {boolean}
    */
   isDetected() {
     return !!this.name;
@@ -84,7 +83,7 @@ class NameVersion extends Base {
   /**
    * Get the name and version in a human readable format
    *
-   * @return string
+   * @return {string}
    */
   toString() {
     return `${this.getName()} ${this.version && !this.version.hidden ? this.getVersion() : ''}`.trim();
