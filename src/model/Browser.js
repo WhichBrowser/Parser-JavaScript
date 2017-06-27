@@ -26,7 +26,6 @@ class Browser extends NameVersion {
     this.type = '';
 
     properties && this.set(properties);
-
   }
 
 
