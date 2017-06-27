@@ -75,6 +75,25 @@ describe('Using Class', () => {
 
         using.reset({
           name: 'Crosswalk WebView',
+          version: new Version({value: '17.12'}),
+        });
+
+        expect(using.toObject()).to.equal({
+          name: 'Crosswalk WebView',
+          version: '17.12',
+        });
+
+        done();
+      });
+    });
+
+    describe('with name and complex version defined', () => {
+      it('should return an object with both properties exploded', (done) => {
+        const using = new Using();
+        expect(using.toObject()).to.be.empty();
+
+        using.reset({
+          name: 'Crosswalk WebView',
           version: new Version({value: '17.12', details: 1, alias: 'Codename'}),
         });
 
