@@ -4,7 +4,6 @@ exports.ANDROID_BUILDS = {
   'ECLAIR': '2.0',
   'FROYO': '2.2',
   'GINGERBREAD': '2.3',
-
   'DRC83': '1.6',
   'DRC92': '1.6',
   'DRD08': '1.6',
@@ -51,7 +50,6 @@ exports.ANDROID_BUILDS = {
   'HLK75D': '3.2.2',
   'HLK75F': '3.2.4',
   'HLK75H': '3.2.6',
-
   'ITL41D': '4.0.1',
   'ITL41E': '4.0.1',
   'ITL41F': '4.0.1',
@@ -73,7 +71,7 @@ exports.ANDROID_BUILDS = {
   'JRO03S': '4.1.1',
   'JZO54K': '4.1.2',
   'JZO54M': '4.1.2',
-  'JVP15S': '4.2',           // Interim build used by the Nexus 7
+  'JVP15S': '4.2', // Interim build used by the Nexus 7
   'JOP40C': '4.2',
   'JOP40D': '4.2.1',
   'JOP40F': '4.2.1',
@@ -83,12 +81,12 @@ exports.ANDROID_BUILDS = {
   'JDQ39E': '4.2.2',
   'JWR66L': '4.3',
   'JWR66N': '4.3',
-  'JWR66N.S005': '4.3',           // Google Play Edition - Samsung Galaxy S4
+  'JWR66N.S005': '4.3', // Google Play Edition - Samsung Galaxy S4
   'JWR66V': '4.3',
-  'JWR66V.H10': '4.3',           // Google Play Edition - HTC One
-  'JWR66V.S014': '4.3',           // Google Play Edition - Samsung Galaxy S4
+  'JWR66V.H10': '4.3', // Google Play Edition - HTC One
+  'JWR66V.S014': '4.3', // Google Play Edition - Samsung Galaxy S4
   'JWR66Y': '4.3',
-  'JWR66Y.S003': '4.3',           // Google Play Edition - Samsung Galaxy S4
+  'JWR66Y.S003': '4.3', // Google Play Edition - Samsung Galaxy S4
   'JSR78D': '4.3',
   'JSS15J': '4.3',
   'JSS15Q': '4.3',
@@ -100,11 +98,9 @@ exports.ANDROID_BUILDS = {
   'KTU84L': '4.4.3',
   'KTU84M': '4.4.3',
   'KTU84P': '4.4.4',
-
   'LPV79': {'value': '5.0', 'alias': 'L'},
   'LPV81C': {'value': '5.0', 'alias': 'L'},
   'LPX13D': {'value': '5.0', 'alias': 'L'},
-
   'LRX21L': '5.0',
   'LRX21M': '5.0',
   'LRX21O': '5.0',
@@ -116,21 +112,21 @@ exports.ANDROID_BUILDS = {
   'LRX22C': '5.0.1',
   'LRX22G': '5.0.2',
   'LRX22L': '5.0.2',
-  'LGZ23.S3': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S15': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S37': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S49': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S55': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S59': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S61': '5.0.2',         // Sony Bravia Android TV
-  'LGZ23.S73': '5.0.2',         // Sony Bravia Android TV
-  'LGY70.S1': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S91': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S105': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S109': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S131': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S143': '5.0.2',         // Sony Bravia Android TV
-  'LGY75.S147': '5.0.2',         // Sony Bravia Android TV
+  'LGZ23.S3': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S15': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S37': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S49': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S55': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S59': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S61': '5.0.2', // Sony Bravia Android TV
+  'LGZ23.S73': '5.0.2', // Sony Bravia Android TV
+  'LGY70.S1': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S91': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S105': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S109': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S131': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S143': '5.0.2', // Sony Bravia Android TV
+  'LGY75.S147': '5.0.2', // Sony Bravia Android TV
   'LMY47D': '5.1',
   'LMY47E': '5.1',
   'LMY47I': '5.1',
@@ -140,24 +136,23 @@ exports.ANDROID_BUILDS = {
   'LMY47X': '5.1.1',
   'LMY47Z': '5.1.1',
   'LMY48B': '5.1.1',
-  'LMY48E.S1': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S39': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S63': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S81': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S89': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S91': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S117': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S127': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S143': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S153': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S155': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S167': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S185': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S191': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S195': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S197': '5.1.1',         // Sony Bravia Android TV
-  'LMY48E.S223': '5.1.1',         // Sony Bravia Android TV
-  'LMY48B': '5.1.1',
+  'LMY48E.S1': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S39': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S63': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S81': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S89': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S91': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S117': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S127': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S143': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S153': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S155': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S167': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S185': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S191': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S195': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S197': '5.1.1', // Sony Bravia Android TV
+  'LMY48E.S223': '5.1.1', // Sony Bravia Android TV
   'LMY48G': '5.1.1',
   'LMY48I': '5.1.1',
   'LMY48J': '5.1.1',
@@ -184,10 +179,8 @@ exports.ANDROID_BUILDS = {
   'LYZ28K': '5.1.1',
   'LYZ28M': '5.1.1',
   'LYZ28N': '5.1.1',
-
   'MPZ44Q': {'value': '6.0', 'alias': 'M'},
   'MPZ79M': {'value': '6.0', 'alias': 'M'},
-
   'MRA58K': '6.0',
   'MRA58N': '6.0',
   'MRA58U': '6.0',
@@ -227,14 +220,13 @@ exports.ANDROID_BUILDS = {
   'MXC14G': '6.0.1',
   'MXC89F': '6.0.1',
   'M5C14J': '6.0.1',
-
   'NPC56P': {'value': '7.0', 'alias': 'N'},
   'NPC56W': {'value': '7.0', 'alias': 'N'},
   'NPC56X': {'value': '7.0', 'alias': 'N'},
   'NPC91K': {'value': '7.0', 'alias': 'N'},
   'NPD35K': {'value': '7.0', 'alias': 'N'},
-
   'NRD21D': {'value': '7.0', 'alias': 'N'},
-  'NRD28C': {'value': '7.0', 'alias': 'N'}
+  'NRD28C': {'value': '7.0', 'alias': 'N'},
 };
+
 // Source: http://source.android.com/source/build-numbers.html
