@@ -7,8 +7,8 @@ console.log('Updating chrome versions...');
 const filepath = path.join(__dirname, '../data/browsers-chrome.js');
 const fileStream = fs.createWriteStream(filepath);
 const stable = {
-  desktop: new Set(),
-  mobile: new Set(),
+  desktop: [],
+  mobile: [],
 };
 request('http://omahaproxy.appspot.com/history', (err, response = {}) => {
   if (err) {
@@ -18,15 +18,12 @@ request('http://omahaproxy.appspot.com/history', (err, response = {}) => {
   omaha.forEach((line) => {
     const [os, stability, version] = line.split(',');
     if (os === 'mac' && stability === 'stable') {
-      stable.desktop.add(version.split('.').slice(0, 3).join('.'));
+      stable.desktop.push(version.split('.').slice(0, 3).join('.'));
     }
     if (os === 'android' && stability === 'stable') {
-      stable.mobile.add(version.split('.').slice(0, 3).join('.'));
+      stable.mobile.push(version.split('.').slice(0, 3).join('.'));
     }
   });
-
-  stable.desktop = Array.from(stable.desktop);
-  stable.mobile = Array.from(stable.mobile);
 
   let countNewDesktop = 0;
   stable.desktop.forEach((version) => {
