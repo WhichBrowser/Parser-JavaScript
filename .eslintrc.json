@@ -2,10 +2,18 @@
   "parserOptions": {
     "ecmaVersion": 6
   },
-  "env": { "node": true },
-  "extends": ["eslint:recommended", "google"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
   "rules": {
-    "max-len": [1, 120]
+    "max-len": [
+      1,
+      120
+    ]
   }
-
 }

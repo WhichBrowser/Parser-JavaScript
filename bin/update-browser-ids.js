@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const request = require('request');
 const fs = require('fs');
 const path = require('path');
@@ -7,6 +8,9 @@ const fileStream = fs.createWriteStream(filepath);
 
 fileStream.once('open', () => {
   request('https://api.whichbrowser.net/resources/browser-ids.json', (err, response = {}) => {
+    if (err) {
+      return;
+    }
     const result = JSON.parse(response.body);
     fileStream.write('exports.ANDROID_BROWSERS = {\n');
     result.reduce((acc, val) => fileStream.write(`    '${val.browserId}': ${deviceString(val.browserName)},\n`), null);
