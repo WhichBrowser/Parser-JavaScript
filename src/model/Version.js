@@ -7,7 +7,7 @@ class Version extends Base {
   /**
    * constructor
    *
-   * @param {object} [properties] The version value
+   * @param {object} [properties]
    * @param {string|number} [properties.value] The version value
    * @param {boolean} [properties.hidden=false] define if the version is hidden
    * @param {string} [properties.nickname] define the version nickname
