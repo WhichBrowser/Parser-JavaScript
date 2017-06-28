@@ -169,6 +169,21 @@ describe('Engine Class', () => {
         expect(engine.toObject()).to.be.empty();
 
         engine.set({
+          name: 'Test',
+        });
+
+        expect(engine.toObject()).to.equal({name: 'Test'});
+
+        done();
+      });
+    });
+
+    describe('with name but not version defined', () => {
+      it('should return the name as string', (done) => {
+        const engine = new Engine();
+        expect(engine.toObject()).to.be.empty();
+
+        engine.set({
           name: null,
         });
 

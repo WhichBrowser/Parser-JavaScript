@@ -12,10 +12,7 @@ class Engine extends NameVersion {
    */
   toObject() {
     const result = {};
-    if (this.name && !this.version) {
-      return this.name;
-    }
-
+    
     if (this.name) {
       result.name = this.name;
     }
