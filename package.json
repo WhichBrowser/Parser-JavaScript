@@ -4,7 +4,8 @@
   "description": "Browser sniffing tool",
   "main": "index.js",
   "scripts": {
-    "test": "lab -a code -v"
+    "test": "lab -a code -v",
+    "update-browser-ids": "node ./bin/update-browser-ids"
   },
   "engines": {
     "node": "6.x.x"
@@ -27,6 +28,7 @@
     "eslint": "^4.1.1",
     "eslint-config-google": "^0.8.0",
     "lab": "^14.1.0",
+    "request": "^2.81.0",
     "sinon": "^2.3.5"
   }
 }
