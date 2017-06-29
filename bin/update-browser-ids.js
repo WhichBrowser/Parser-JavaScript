@@ -20,7 +20,6 @@ request('https://api.whichbrowser.net/resources/browser-ids.json', (err, respons
   console.log(`Browser ids update complete with ${result.length} entries...`);
 });
 
-
 /**
  * Escapes \ and ' inside string
  *

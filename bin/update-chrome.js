@@ -10,6 +10,7 @@ const stable = {
   desktop: [],
   mobile: [],
 };
+
 request('http://omahaproxy.appspot.com/history', (err, response = {}) => {
   if (err) {
     return;
@@ -41,15 +42,16 @@ request('http://omahaproxy.appspot.com/history', (err, response = {}) => {
     }
   });
 
-
   fileStream.write('module.exports = {\n');
   fileStream.write('  DESKTOP: {\n');
-  Object.keys(Chrome.DESKTOP)
-    .forEach((version) => fileStream.write(`    '${version}': '${Chrome.DESKTOP[version]}',\n`));
+  Object.keys(Chrome.DESKTOP).forEach((version) =>
+    fileStream.write(`    '${version}': '${Chrome.DESKTOP[version]}',\n`)
+  );
   fileStream.write('  },\n');
   fileStream.write('  MOBILE: {\n');
-  Object.keys(Chrome.MOBILE)
-    .forEach((version) => fileStream.write(`    '${version}': '${Chrome.MOBILE[version]}',\n`));
+  Object.keys(Chrome.MOBILE).forEach((version) =>
+    fileStream.write(`    '${version}': '${Chrome.MOBILE[version]}',\n`)
+  );
   fileStream.write('  },\n');
   fileStream.write('};\n');
 
