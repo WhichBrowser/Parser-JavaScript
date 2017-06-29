@@ -6,7 +6,8 @@
   "scripts": {
     "test": "lab -a code -v",
     "update-browser-ids": "node ./bin/update-browser-ids",
-    "update-chrome": "node ./bin/update-chrome"
+    "update-chrome": "node ./bin/update-chrome",
+    "update-profiles": "node ./bin/update-profiles"
   },
   "engines": {
     "node": "6.x.x"
