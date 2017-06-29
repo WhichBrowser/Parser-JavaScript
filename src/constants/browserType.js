@@ -1,5 +1,5 @@
 module.exports = {
-  UNKNOWN: '',
+  UNKNOWN: 'unknown',
   BROWSER: 'browser',
   BROWSER_TEXT: 'browser:text',
   APP: 'app',
