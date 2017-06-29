@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -a code -v",
+    "build": "babel src --presets babel-preset-es2015 --out-dir dist/src && babel data --presets babel-preset-es2015 --out-dir dist/data",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
     "update-profiles": "node ./bin/update-profiles",
@@ -27,9 +28,13 @@
   "author": "Simone Mariotti",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "6",
+    "babel-preset-es2015": "6",
     "code": "^4.1.0",
+    "codecov": "^2.2.0",
     "eslint": "^4.1.1",
     "eslint-config-google": "^0.8.0",
+    "istanbul": "^0.4.5",
     "lab": "^14.1.0",
     "request": "^2.81.0",
     "sinon": "^2.3.5"
