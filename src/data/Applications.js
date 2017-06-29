@@ -107,13 +107,13 @@ class Applications {
   }
 }
 
-Applications.BOTS = require('../../data/applications-bots');
-Applications.BOTS_REGEX = require('../../data/regexes/applications-bots');
+Applications.BOTS = require('../../data/applications-bots').BOTS;
+Applications.BOTS_REGEX = require('../../data/regexes/applications-bots').BOTS_REGEX;
 
-Applications.BROWSERS = require('../../data/applications-browsers');
-Applications.BROWSERS_REGEX = require('../../data/regexes/applications-browsers');
+Applications.BROWSERS = require('../../data/applications-browsers').BROWSERS;
+Applications.BROWSERS_REGEX = require('../../data/regexes/applications-browsers').BROWSERS_REGEX;
 
-Applications.OTHERS = require('../../data/applications-others');
-Applications.OTHERS_REGEX = require('../../data/regexes/applications-others');
+Applications.OTHERS = require('../../data/applications-others').OTHERS;
+Applications.OTHERS_REGEX = require('../../data/regexes/applications-others').OTHERS_REGEX;
 
 module.exports = Applications;
