@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('Lab').script());
+const {describe, it} = (exports.lab = require('lab').script());
 const expect = require('code').expect;
 const Device = require('../../src/model/Device');
 const Constants = require('../../src/constants');
