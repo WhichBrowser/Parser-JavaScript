@@ -11,7 +11,7 @@ class DeviceModels {
    * @param {string} type
    * @param {string} model
    *
-   * @return {BrowserAndOtherReturn}
+   * @return {Device}
    */
   static identify(type, model) {
     const modelsName = `${type.toUpperCase()}_MODELS`;
