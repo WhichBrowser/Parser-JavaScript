@@ -17,15 +17,9 @@ class Chrome {
 
     switch (platform) {
       case 'desktop':
-        if (Chrome.DESKTOP[version]) {
-          return Chrome.DESKTOP[version];
-        }
-        break;
+        return Chrome.DESKTOP[version];
       case 'mobile':
-        if (Chrome.MOBILE[version]) {
-          return Chrome.MOBILE[version];
-        }
-        break;
+        return Chrome.MOBILE[version];
     }
 
     return 'canary';

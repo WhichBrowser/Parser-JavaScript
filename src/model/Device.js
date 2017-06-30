@@ -1,5 +1,6 @@
 const Base = require('./primitive/Base');
 const Constants = require('../constants');
+const DeviceModels = require('../data/DeviceModels');
 /**
  * Represents a Device
  *
@@ -25,13 +26,19 @@ class Device extends Base {
    * @internal
    */
   constructor(properties = {}) {
-    super(Object.assign({}, {
-      type: '',
-      subtype: '',
-      identified: Constants.id.NONE,
-      generic: true,
-      hidden: false,
-    }, properties));
+    super(
+      Object.assign(
+        {},
+        {
+          type: '',
+          subtype: '',
+          identified: Constants.id.NONE,
+          generic: true,
+          hidden: false,
+        },
+        properties
+      )
+    );
   }
 
   /**
@@ -67,9 +74,12 @@ class Device extends Base {
     let match = null;
     if ((match = subject.match(pattern))) {
       this.manufacturer = defaults['manufacturer'] || null;
-      // TODO this.model = Data\DeviceModels::cleanup(match[1]);
-      this.identifier = match[0].replace(/ (Mozilla|Opera|Obigo|AU.Browser|UP.Browser|Build|Java|PPC|AU-MIC.*)$/iug, '');
-      this.identifier = match[0].replace(/_(TD|GPRS|LTE|BLEU|CMCC|CUCC)$/iug, '');
+      this.model = DeviceModels.cleanup(match[1]);
+      this.identifier = match[0].replace(
+        / (Mozilla|Opera|Obigo|AU.Browser|UP.Browser|Build|Java|PPC|AU-MIC.*)$/giu,
+        ''
+      );
+      this.identifier = match[0].replace(/_(TD|GPRS|LTE|BLEU|CMCC|CUCC)$/giu, '');
       if (defaults.model) {
         if (typeof defaults.model === 'function') {
           this.model = defaults.model(this.model);
