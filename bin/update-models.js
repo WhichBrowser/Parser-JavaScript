@@ -7,6 +7,43 @@ const models = [
     needsFlagsConstants: true,
     hasCarrier: true,
   },
+  {name: 'ASHA'},
+  {name: 'BADA'},
+  {name: 'BLACKBERRY'},
+  {name: 'BREW'},
+  {
+    name: 'FEATURE',
+    needsDeviceConstants: true,
+  },
+  {name: 'FIREFOXOS'},
+  {
+    name: 'IOS',
+    needsDeviceConstants: true,
+  },
+  {name: 'KDDI'},
+  {
+    name: 'PALMOS',
+    needsDeviceConstants: true,
+    needsDeviceSubTypeConstants: true,
+  },
+  {name: 'S30PLUS'},
+  {name: 'S40'},
+  {
+    name: 'SYMBIAN',
+    needsFlagsConstants: true,
+    hasCarrier: true,
+    hasFlagObject: true,
+  },
+  {
+    name: 'TIZEN',
+    needsDeviceConstants: true,
+  },
+  {name: 'TOUCHWIZ'},
+  {
+    name: 'WM',
+    hasCarrier: true,
+    needsDeviceConstants: true,
+  },
   {name: 'WP'},
 ];
 
@@ -53,6 +90,9 @@ models.forEach((type) => {
       }
       if (type.hasCarrier) {
         result = result.replace(/('carrier.*:.*')/g, '{$1}');
+      }
+      if (type.hasFlagObject) {
+        result = result.replace(/('flag.*?:.*?\.[A-Z0-9]+)/g, '{$1}');
       }
 
       // Write down file

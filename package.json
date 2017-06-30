@@ -9,7 +9,8 @@
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
     "update-profiles": "node ./bin/update-profiles",
-    "update-applications": "node ./bin/update-applications"
+    "update-applications": "node ./bin/update-applications",
+    "update-models": "node ./bin/update-models"
   },
   "engines": {
     "node": "6.x.x"
