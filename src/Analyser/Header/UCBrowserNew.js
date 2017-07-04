@@ -76,7 +76,7 @@ class UCBrowserNew {
       if (!this.data.isOs('iOS')) {
         this.data.os.name = 'iOS';
         this.data.os.version = new Version({
-          value: match[1].replace('_', '.'),
+          value: match[1].replace(/_/g, '.'),
         });
       }
     }

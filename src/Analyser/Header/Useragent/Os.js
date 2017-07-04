@@ -62,11 +62,11 @@ class Os {
       }
 
       if ((match = /OS (.*) like Mac OS X/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace('_', '.')});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
       }
 
       if ((match = /iPhone OS ([0-9._]*);/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace('_', '.')});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
       }
 
       if (/iPhone Simulator;/u.test(ua)) {
@@ -94,11 +94,11 @@ class Os {
       this.data.os.name = 'OS X';
 
       if ((match = /Mac OS X (10[0-9\._]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace('_', '.'), details: 2});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.'), details: 2});
       }
 
       if ((match = /;os=Mac (10[0-9[\.,]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace('_', '.'), details: 2});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.'), details: 2});
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -1475,7 +1475,7 @@ class Os {
         }
 
         if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+);/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace('_', '.')});
+          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
         }
       }
 
@@ -2079,7 +2079,7 @@ class Os {
       if (/CentOS/u.test(ua)) {
         this.data.os.name = 'CentOS';
         if ((match = /CentOS\/[0-9\.\-]+el([0-9_]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace('_', '.')});
+          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
         }
 
         if ((match = /CentOS Linux release ([0-9\.]+)/u.exec(ua))) {
@@ -2114,7 +2114,7 @@ class Os {
       if (/Fedora/u.test(ua)) {
         this.data.os.name = 'Fedora';
         if ((match = /Fedora\/[0-9.\-]+fc([0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace('_', '.')});
+          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
         }
 
         if ((match = /Fedora release ([0-9.]+)/u.exec(ua))) {
@@ -2203,7 +2203,7 @@ class Os {
       if (/Red Hat/u.test(ua)) {
         this.data.os.name = 'Red Hat';
         if ((match = /Red Hat[^\/]*\/[0-9\.\-]+el([0-9_]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace('_', '.')});
+          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2261,7 +2261,7 @@ class Os {
 
       if ((match = /Fedora\/[0-9\.\-]+rs([0-9\.]+)/u.exec(ua))) {
         this.data.os.name = 'Red Star';
-        this.data.os.version = new Version({value: match[1].replace('_', '.')});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
 
         this.data.device.type = Constants.deviceType.DESKTOP;
       }

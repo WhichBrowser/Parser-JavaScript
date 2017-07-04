@@ -985,7 +985,7 @@ class Browser {
 
       if ((match = /^IUC ?\(U; ?iOS ([0-9._]+);/u.exec(ua))) {
         this.data.os.name = 'iOS';
-        this.data.os.version = new Version({value: match[1].replace('_', '.')});
+        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
       }
 
       if (
@@ -1033,7 +1033,7 @@ class Browser {
         this.data.os.version = new Version({value: '1.0'});
 
         if ((match = /OS[_ ]([0-9_]*);/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace('_', '.')});
+          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
         }
 
         if ((match = /; ([^;]+)\)/u.exec(ua))) {
@@ -1731,7 +1731,7 @@ class Browser {
             this.data.device = device;
 
             if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+);/u.exec(ua))) {
-              this.data.os.version = new Version({value: match[1].replace('_', '.')});
+              this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
             }
           }
         }

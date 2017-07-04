@@ -72,7 +72,7 @@ class Header {
   }
 
   static analyseUserAgent(header) {
-    new Useragent(header, this.data);
+    new Useragent(header, this.data, this.options);
   }
 
   static analyseBaiduHeader(header) {
@@ -118,8 +118,8 @@ class Header {
   }
 
   static getHeader(h) {
-    for (let header of this.headers) {
-      if (h.toLowerCase() == this.headers[header].toLowerCase()) {
+    for (let header of Object.keys(this.headers)) {
+      if (h.toLowerCase() === header.toLowerCase()) {
         return this.headers[header];
       }
     }

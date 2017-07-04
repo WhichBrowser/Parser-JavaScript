@@ -277,7 +277,7 @@ class Application {
         this.data.os.reset({
           name: 'Android',
           version: new Version({
-            value: match[3].replace('_', '.'),
+            value: match[3].replace(/_/g, '.'),
           }),
         });
         device = DeviceModels.identify('android', match[5]);

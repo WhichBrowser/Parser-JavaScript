@@ -78,7 +78,7 @@ class Mobile {
             this.data.os.name = 'Nokia Asha Platform';
             this.data.os.version = new Version({value: '1.0'});
             if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+)[;)]/u.exec(ua))) {
-              this.data.os.version = new Version({value: match[1].replace('_', '.')});
+              this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
             }
           }
         }

@@ -3,8 +3,9 @@
 const {Application, Bot, Browser, Device, Engine, Os, Using} = require('./Useragent/');
 
 class Useragent {
-  constructor(header, data) {
+  constructor(header, data, options) {
     this.data = data;
+    this.options = options;
     /* Make sure we do not have a duplicate concatenated useragent string */
 
     header = header.replace(/^(Mozilla\/[0-9]\.[0-9].{20,})\s+Mozilla\/[0-9]\.[0-9].*$/iu, '$1');

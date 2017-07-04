@@ -3,11 +3,12 @@
 const Constants = require('../constants');
 const DeviceModels = require('../data/DeviceModels');
 const Version = require('../model/Version');
+const Header = require('../Analyser/Header');
 
 class Camouflage {
   static detectCamouflage() {
     let ua;
-    if ((ua = this.getHeader('User-Agent'))) {
+    if ((ua = Header.getHeader.call(this, 'User-Agent'))) {
       Camouflage.detectCamouflagedAndroidBrowser.call(this, ua);
       Camouflage.detectCamouflagedAndroidAsusBrowser.call(this, ua);
       Camouflage.detectCamouflagedAsSafari.call(this, ua);
