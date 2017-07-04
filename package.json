@@ -4,7 +4,7 @@
   "description": "Browser sniffing tool",
   "main": "index.js",
   "scripts": {
-    "test": "lab -a code -v --timeout 10000",
+    "test": "lab -a code -v -m 10000",
     "precommit": "lint-staged",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
