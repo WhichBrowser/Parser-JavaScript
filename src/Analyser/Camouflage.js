@@ -5,10 +5,6 @@ const DeviceModels = require('../data/DeviceModels');
 const Version = require('../model/Version');
 
 class Camouflage {
-  constructor() {
-    this.data = {};
-    this.options = {};
-  }
   static detectCamouflage() {
     let ua;
     if ((ua = this.getHeader('User-Agent'))) {
