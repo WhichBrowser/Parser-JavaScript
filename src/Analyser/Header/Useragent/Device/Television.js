@@ -1065,19 +1065,19 @@ class Television {
       if (this.data.device.manufacturer === 'Loewe') {
         this.data.device.series = 'Smart TV';
 
-        if (/((?:ID|SL)[0-9]+)/u.exec(this.data.device.model)) {
+        if ((match = /((?:ID|SL)[0-9]+)/u.exec(this.data.device.model))) {
           this.data.device.model = `Connect ${match[1]}`;
           this.data.device.generic = false;
         }
       }
 
       if (this.data.device.manufacturer === 'Philips') {
-        if (/[0-9][0-9]([A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9])/u.exec(this.data.device.model)) {
+        if ((match = /[0-9][0-9]([A-Z][A-Z][A-Z][0-9][0-9][0-9][0-9])/u.exec(this.data.device.model))) {
           this.data.device.model = match[1];
           this.data.device.generic = false;
         }
 
-        if (/(MT[0-9]+)/u.exec(this.data.device.model)) {
+        if ((match = /(MT[0-9]+)/u.exec(this.data.device.model))) {
           this.data.device.model = match[1];
           this.data.device.series = 'Digital Receiver';
           this.data.device.generic = false;

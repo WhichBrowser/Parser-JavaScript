@@ -126,14 +126,14 @@ class Mobile {
       this.data.device.identified |= Constants.id.PATTERN;
       this.data.device.generic = false;
       this.data.device.type = Constants.deviceType.MOBILE;
-      if (this.data.isOS('Bada')) {
+      if (this.data.isOs('Bada')) {
         device = DeviceModels.identify('bada', this.data.device.model);
         if (device.identified) {
           device.identified |= this.data.device.identified;
           this.data.device = device;
         }
       }
-      if (this.data.isOS('Series60')) {
+      if (this.data.isOs('Series60')) {
         device = DeviceModels.identify('symbian', this.data.device.model);
         if (device.identified) {
           device.identified |= this.data.device.identified;
@@ -251,7 +251,7 @@ class Mobile {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'BenQ',
       model: function(model) {
-        return 'Maui '.strtoupper(model);
+        return `Maui ${model.toUpperCase()}`;
       },
     });
     this.data.device.identifyModel(/ALCATEL[_-]([^\/]*)/iu, ua, {
@@ -507,7 +507,7 @@ class Mobile {
           model = match[1].match[2];
         }
         if (/^[a-z][0-9]+/u.test(model)) {
-          model[0] = model[0].toUpperCase();
+          model = `${model[0].toUpperCase()}${model.slice(1)}`;
         }
         return model;
       },

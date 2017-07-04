@@ -12,7 +12,7 @@ class BuildIds {
    * @return {Version|undefined}
    */
   static identify(id) {
-    const build = BuildIds.ANDROID_BROWSERS[id];
+    const build = BuildIds.ANDROID_BUILDS[id];
     if (build) {
       if (Array.isArray(build)) {
         return new Version(build);

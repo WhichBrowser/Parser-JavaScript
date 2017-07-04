@@ -35,10 +35,12 @@ class Applications {
                 stock: false,
                 channel: '',
                 type: type,
-                version: match[1] ? new Version({
-                  value: match[1],
-                  details: item.details || null,
-                }) : null,
+                version: match[1]
+                  ? new Version({
+                      value: match[1],
+                      details: item.details || null,
+                    })
+                  : null,
               },
               device: typeof item.type !== 'undefined' ? {type: item.type} : null,
             };
@@ -67,10 +69,12 @@ class Applications {
                 stock: false,
                 channel: '',
                 type: type,
-                version: match[1] ? new Version({
-                  value: match[1],
-                  details: item.details || null,
-                }) : null,
+                version: match[1]
+                  ? new Version({
+                      value: match[1],
+                      details: item.details || null,
+                    })
+                  : null,
               },
               device: typeof item.type !== 'undefined' ? {type: item.type} : null,
             };
@@ -88,19 +92,19 @@ class Applications {
    */
   static identifyBot(ua = '') {
     if (ua.match(Applications.BOTS_REGEX)) {
-      for (let type of Object.keys(Applications.BOTS)) {
-        for (let item of Applications.BOTS[type]) {
-          let match;
-          if ((match = ua.match(item.regexp))) {
-            return new Browser({
-              name: item.name,
-              stock: false,
-              version: match[1] ? new Version({
-                value: match[1],
-                details: item.details || null,
-              }) : null,
-            });
-          }
+      for (let item of Applications.BOTS) {
+        let match;
+        if ((match = ua.match(item.regexp))) {
+          return new Browser({
+            name: item.name,
+            stock: false,
+            version: match[1]
+              ? new Version({
+                  value: match[1],
+                  details: item.details || null,
+                })
+              : null,
+          });
         }
       }
     }

@@ -6,7 +6,6 @@ const Version = require('../../../model/Version');
 const Constants = require('../../../constants');
 const Darwin = require('../../../data/Darwin');
 const CFNetwork = require('../../../data/CFNetwork');
-const Useragent = require('../../Header/Useragent.js');
 const DeviceModels = require('../../../data/DeviceModels');
 const BuildIds = require('../../../data/BuildIds');
 const Manufacturers = require('../../../data/Manufacturers');
@@ -250,22 +249,22 @@ class Os {
           }
         } else if (/Release\//iu.test(ua)) {
           /* WAP style useragent strings */
-
+          const Useragent = require('../../Header/Useragent.js');
           // removed this regex  /^(?U)([^\/]+)(?U)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*)? Linux\/[0-9.+]+ Android\/[0-9.]+/u
           if (
-            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Linux\/[0-9.+]+? Android\/[0-9.]+?/u.test(
+            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Linux\/[0-9.+]+? Android\/[0-9.]+?/u.exec(
               Useragent.removeKnownPrefixes(ua)
             ))
           ) {
             candidates.push(match[1]);
           } else if (
-            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Android(_OS)?\/[0-9.]+?/u.test(
+            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Android(_OS)?\/[0-9.]+?/u.exec(
               Useragent.removeKnownPrefixes(ua)
             ))
           ) {
             candidates.push(match[1]);
           } else if (
-            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Release\/[0-9.]+?/u.test(
+            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Release\/[0-9.]+?/u.exec(
               Useragent.removeKnownPrefixes(ua)
             ))
           ) {

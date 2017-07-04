@@ -26,7 +26,7 @@ class Useragent {
   }
 
   static removeKnownPrefixes(ua) {
-    ua = ua.replace.replace(/^OneBrowser\/[0-9.]+\//, '');
+    ua = ua.replace(/^OneBrowser\/[0-9.]+\//, '');
     ua = ua.replace(/^MQQBrowser\/[0-9.]+\//, '');
     return ua;
   }

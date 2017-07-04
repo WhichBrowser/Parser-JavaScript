@@ -119,13 +119,13 @@ class Browser {
   /* Chrome */
 
   static detectChrome(ua) {
+    let match;
     if (/(?:Chrome|CrMo|CriOS)\/[0-9]/u.test(ua) || /Browser\/Chrome[0-9]/u.test(ua)) {
       this.data.browser.name = 'Chrome';
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
 
       let version = '';
-      let match;
       if ((match = /(?:Chrome|CrMo|CriOS)\/([0-9.]*)/u.exec(ua))) {
         version = match[1];
       }
@@ -337,7 +337,6 @@ class Browser {
 
     /* Chromium WebView by Crosswalk */
 
-    let match;
     if ((match = /Crosswalk\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.using = new Using({
         name: 'Crosswalk WebView',

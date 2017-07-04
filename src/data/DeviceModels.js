@@ -80,8 +80,8 @@ class DeviceModels {
   static identifyIOS(model) {
     const original = model;
     model = model.replace('Unknown ', '');
-    model = model.replace(/iPh([0-9],[0-9])/, 'iPhone\\1');
-    model = model.replace(/iPd([0-9],[0-9])/, 'iPod\\1');
+    model = model.replace(/iPh([0-9],[0-9])/, 'iPhone$1');
+    model = model.replace(/iPd([0-9],[0-9])/, 'iPod$1');
     const device = new Device({
       type: Constants.deviceType.MOBILE,
       identified: Constants.id.NONE,
@@ -146,7 +146,7 @@ class DeviceModels {
     if (!result.identified) {
       model = DeviceModels.cleanup(model);
       if (
-        '/AndroVM/iu'.test(model) ||
+        /AndroVM/iu.test(model) ||
         model === 'Emulator' ||
         model === 'x86 Emulator' ||
         model === 'x86 VirtualBox' ||

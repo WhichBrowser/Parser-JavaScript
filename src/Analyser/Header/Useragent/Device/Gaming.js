@@ -69,7 +69,7 @@ class Gaming {
 
     if (/Nintendo 3DS/u.test(ua)) {
       this.data.os.reset();
-      this.data.os.identifyVersion('/Version/([0-9.]*[0-9])/u', ua);
+      this.data.os.identifyVersion(/Version\/([0-9.]*[0-9])/u, ua);
 
       this.data.engine.set({
         name: 'WebKit',
@@ -87,7 +87,7 @@ class Gaming {
 
     if (/New Nintendo 3DS/u.test(ua)) {
       this.data.os.reset();
-      this.data.os.identifyVersion('/Version/([0-9.]*[0-9])/u', ua);
+      this.data.os.identifyVersion(/Version\/([0-9.]*[0-9])/u, ua);
 
       this.data.device.setIdentification({
         manufacturer: 'Nintendo',
@@ -122,7 +122,7 @@ class Gaming {
 
     if (/PlayStation Vita/iu.test(ua)) {
       this.data.os.reset();
-      this.data.os.identifyVersion('/PlayStation Vita ([0-9.]*)/u', ua);
+      this.data.os.identifyVersion(/PlayStation Vita ([0-9.]*)/u, ua);
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
@@ -154,7 +154,7 @@ class Gaming {
 
     if (/PlayStation 3/iu.test(ua) || /\(PS3/u.test(ua)) {
       this.data.os.reset();
-      this.data.os.identifyVersion('/PLAYSTATION 3;? ([0-9.]*)/u', ua);
+      this.data.os.identifyVersion(/PLAYSTATION 3;? ([0-9.]*)/u, ua);
 
       if (/PLAYSTATION 3; [123]/.test(ua)) {
         this.data.engine.set({
@@ -174,7 +174,7 @@ class Gaming {
 
     if (/PlayStation 4/iu.test(ua)) {
       this.data.os.reset();
-      this.data.os.identifyVersion('/PlayStation 4 ([0-9.]*)/u', ua);
+      this.data.os.identifyVersion(/PlayStation 4 ([0-9.]*)/u, ua);
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',

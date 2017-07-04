@@ -1,6 +1,7 @@
 /* eslint-disable require-jsdoc */
 
 const Version = require('../../../model/Version');
+const UsingClass = require('../../../model/Using');
 
 class Using {
   static detectUsing(ua) {
@@ -41,7 +42,7 @@ class Using {
     for (let i = 0; i < count; i++) {
       let match;
       if ((match = items[i]['regexp'].exec(ua))) {
-        this.data.browser.using = new Using({
+        this.data.browser.using = new UsingClass({
           name: items[i]['name'],
         });
         if (match[1]) {
