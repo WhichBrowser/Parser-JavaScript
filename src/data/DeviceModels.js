@@ -17,7 +17,7 @@ class DeviceModels {
     const modelsName = `${type.toUpperCase()}_MODELS`;
     DeviceModels[modelsName] = require(`../../data/models-${type}`)[modelsName];
     if (type !== 'blackberry' && type !== 'ios') {
-      const indicesName = `${type.toUpperCase()}_MODELS`;
+      const indicesName = `${type.toUpperCase()}_INDEX`;
       DeviceModels[indicesName] = require(`../../data/indices/models-${type}`)[indicesName];
     }
     switch (type) {
@@ -186,7 +186,7 @@ class DeviceModels {
       identifier: original,
       generic: false,
     });
-    const keys = [`@${model.substring(0, 2).toUpperCase()}'`, '@'];
+    const keys = [`@${model.substring(0, 2).toUpperCase()}`, '@'];
     let pattern = null;
     let match = null;
     for (let key of keys) {
@@ -267,11 +267,11 @@ class DeviceModels {
    * @return {boolean}
    */
   static hasMatch(pattern, model) {
-    const regex1 = new RegExp(`^${pattern.substring(0, pattern.length - 1)}`, 'iu');
-    const regex2 = new RegExp(`^${pattern.substring(0, pattern.length - 2)}`, 'iu');
     if (pattern.endsWith('!!')) {
+      const regex2 = new RegExp(`^${pattern.substring(0, pattern.length - 2)}`, 'iu');
       return regex2.test(model);
     } else if (pattern.endsWith('!')) {
+      const regex1 = new RegExp(`^${pattern.substring(0, pattern.length - 1)}`, 'iu');
       return regex1.test(model);
     } else {
       return pattern.toLowerCase() === model.toLowerCase();

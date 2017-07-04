@@ -473,7 +473,7 @@ class Browser {
       if ((match = /MMEF[0-9]+; ([^;]+); ([^)/]+)/u.exec(ua))) {
         const device = DeviceModels.identify(
           'feature',
-          match[1] === 'CellPhone' ? match[2] : `${match[1]}.${match[2]}`
+          match[1] === 'CellPhone' ? match[2] : `${match[1]} ${match[2]}`
         );
         if (device.identified) {
           device.identified |= this.data.device.identified;
