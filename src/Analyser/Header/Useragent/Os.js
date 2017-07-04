@@ -92,12 +92,12 @@ class Os {
 
       this.data.os.name = 'OS X';
 
-      if ((match = /Mac OS X (10[0-9\._]*)/u.exec(ua))) {
+      if ((match = /Mac OS X (10[0-9._]*)/u.exec(ua))) {
         this.data.os.version = new Version({value: match[1].replace(/_/g, '.'), details: 2});
       }
 
-      if ((match = /;os=Mac (10[0-9[\.,]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace(/_/g, '.'), details: 2});
+      if ((match = /;os=Mac (10[0-9[.,]*)/u.exec(ua))) {
+        this.data.os.version = new Version({value: match[1].replace(/,/g, '.'), details: 2});
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;

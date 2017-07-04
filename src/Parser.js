@@ -52,7 +52,7 @@ module.exports = Parser;
 
 /* console.log(
   new Parser(
-    'User-Agent: Mozilla/5.0 (Unknown; Linux armv7l) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/0.9.0 Chrome/33.0.1750.149 Safari/537.36'
+    'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)'
   ).toString()
 );
 */

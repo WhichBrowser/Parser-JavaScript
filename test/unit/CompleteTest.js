@@ -12,7 +12,7 @@ function getDirContent(category = '') {
 }
 
 describe('Testing Parser with YAML files', () => {
-  getDirContent().slice(0, 1).forEach((category) => {
+  getDirContent().slice(0, 5).forEach((category) => {
     getDirContent(category).forEach((file) => {
       const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
       yamlContent.forEach(makeTest);
@@ -20,15 +20,44 @@ describe('Testing Parser with YAML files', () => {
   });
 });
 
-function makeTest({headers, result, readable}) {
-  it(`With header: ${headers}`, (done) => {
-    if (typeof headers === 'string' && headers.startsWith('User-Agent: ')) {
-      headers = headers.replace('User-Agent: ', '');
+function makeTest(options) {
+  it(`With header: ${options.headers}`, (done) => {
+    if (options.headers && typeof options.headers === 'string') {
+      options.headers = parseHeaders(options.headers);
     }
-    // typeof headers !== 'string' && console.log('typetype', JSON.stringify(headers));
-    const parserObj = new Parser(headers);
+    const parserObj = new Parser(options);
 
-    expect(parserObj.toString()).to.be.equal(readable);
+    expect(parserObj.toString()).to.be.equal(options.readable);
     done();
   });
+}
+
+function parseHeaders(rawHeaders) {
+  const headers = {};
+  let key = '';
+
+  for (let header of rawHeaders.split('\n')) {
+    let [headerName, ...headerValue] = header.split(':');
+    headerValue = headerValue.join(':');
+    if (headerValue) {
+      if (!headers[headerName]) {
+        headers[headerName] = headerValue.trim();
+      } else if (Array.isArray(headers[headerName])) {
+        headers[headerName] = [...headers[headerName], headerValue.trim()];
+      } else {
+        headers[headerName] = [headers[headerName], headerValue.trim()];
+      }
+
+      key = headerName;
+    } else {
+      if (/^\t/.test(headerName)) {
+        headers[key] += `\r\n\t${headerName.trim()}`;
+      } else if (!key) {
+        headers[0] = headerName.trim();
+      }
+      headerName.trim();
+    }
+  }
+
+  return headers;
 }
