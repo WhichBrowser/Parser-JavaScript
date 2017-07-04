@@ -12,9 +12,9 @@ class Appliance {
     if (/I-Opener [0-9.]+; Netpliance/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Netpliance',
-        'model': 'i-Opener',
-        'type': Constants.deviceType.DESKTOP,
+        manufacturer: 'Netpliance',
+        model: 'i-Opener',
+        type: Constants.deviceType.DESKTOP,
       });
     }
   }

@@ -2,10 +2,9 @@
 
 const Constants = require('../../../../constants');
 
-
 class Ereader {
   static detectEreader(ua) {
-    if (!/(Kindle|Nook|Bookeen|Kobo|EBRD|PocketBook|Iriver)/ui.test(ua)) {
+    if (!/(Kindle|Nook|Bookeen|Kobo|EBRD|PocketBook|Iriver)/iu.test(ua)) {
       return;
     }
 
@@ -18,16 +17,15 @@ class Ereader {
     Ereader.detectIriver.call(this, ua);
   }
 
-
   /* Amazon Kindle */
 
   static detectKindle(ua) {
     if (/Kindle/u.test(ua) && !/Fire/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Amazon',
-        'series': 'Kindle',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'Amazon',
+        series: 'Kindle',
+        type: Constants.deviceType.EREADER,
       });
 
       if (/Kindle SkipStone/u.test(ua)) {
@@ -51,20 +49,18 @@ class Ereader {
     }
   }
 
-
   /* Barnes & Noble Nook */
 
   static detectNook(ua) {
     if (/nook browser/u.test(ua)) {
-      this.data.os.reset({'name': 'Android'});
+      this.data.os.reset({name: 'Android'});
       this.data.device.setIdentification({
-        'manufacturer': 'Barnes & Noble',
-        'series': 'NOOK',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'Barnes & Noble',
+        series: 'NOOK',
+        type: Constants.deviceType.EREADER,
       });
     }
   }
-
 
   /* Bookeen */
 
@@ -72,13 +68,12 @@ class Ereader {
     if (/bookeen\/cybook/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Bookeen',
-        'series': 'Cybook',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'Bookeen',
+        series: 'Cybook',
+        type: Constants.deviceType.EREADER,
       });
     }
   }
-
 
   /* Kobo */
 
@@ -86,19 +81,18 @@ class Ereader {
     if (/Kobo (eReader|Touch)/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Kobo',
-        'series': 'eReader',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'Kobo',
+        series: 'eReader',
+        type: Constants.deviceType.EREADER,
       });
     }
   }
-
 
   /* Sony Reader */
 
   static detectSonyreader(ua) {
     let match;
-    if (match = /EBRD([0-9]+)/u.exec(ua)) {
+    if ((match = /EBRD([0-9]+)/u.exec(ua))) {
       let model = null;
 
       switch (match[1]) {
@@ -118,21 +112,19 @@ class Ereader {
 
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Sony',
-        'model': model,
-        'series': 'Reader',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'Sony',
+        model: model,
+        series: 'Reader',
+        type: Constants.deviceType.EREADER,
       });
-
     }
   }
-
 
   /* PocketBook */
 
   static detectPocketbook(ua) {
     let match;
-    if (match = /PocketBook\/([0-9]+)/u.exec(ua)) {
+    if ((match = /PocketBook\/([0-9]+)/u.exec(ua))) {
       let model = null;
 
       switch (match[1]) {
@@ -173,13 +165,12 @@ class Ereader {
 
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'PocketBook',
-        'model': model,
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'PocketBook',
+        model: model,
+        type: Constants.deviceType.EREADER,
       });
     }
   }
-
 
   /* iRiver */
 
@@ -187,9 +178,9 @@ class Ereader {
     if (/Iriver ;/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'iRiver',
-        'series': 'Story',
-        'type': Constants.deviceType.EREADER
+        manufacturer: 'iRiver',
+        series: 'Story',
+        type: Constants.deviceType.EREADER,
       });
 
       if (/EB07/u.test(ua)) {

@@ -4,7 +4,7 @@ const Constants = require('../../../../constants');
 
 class Cars {
   static detectCars(ua) {
-    if (!/Car/ui.test(ua)) {
+    if (!/Car/iu.test(ua)) {
       return;
     }
     Cars.detectTesla.call(this, ua);
@@ -15,9 +15,9 @@ class Cars {
     if (/QtCarBrowser/u.test(ua)) {
       this.data.os.reset();
       this.data.device.setIdentification({
-        'manufacturer': 'Tesla',
-        'model': 'Model S',
-        'type': Constants.deviceType.CAR,
+        manufacturer: 'Tesla',
+        model: 'Model S',
+        type: Constants.deviceType.CAR,
       });
     }
   }
