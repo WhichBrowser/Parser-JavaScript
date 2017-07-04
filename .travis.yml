@@ -6,4 +6,4 @@ node_js:
   - "6"
 
 script:
-  - istanbul cover ./node_modules/lab/bin/lab -a code -v --timeout 10000 --report lcovonly  -- -l  && codecov
+  - istanbul cover ./node_modules/lab/bin/lab --report lcovonly  -- -a code -v --timeout 10000 -l  && codecov
