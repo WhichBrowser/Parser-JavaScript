@@ -671,7 +671,7 @@ class Os {
             break;
         }
 
-        this.detectWindowsOemManufacturer(ua);
+        Os.detectWindowsOemManufacturer.call(this, ua);
       }
 
       /* Windows */

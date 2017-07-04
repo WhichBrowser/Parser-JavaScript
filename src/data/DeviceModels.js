@@ -23,14 +23,48 @@ class DeviceModels {
     switch (type) {
       case 'android':
         return DeviceModels.identifyAndroid(model);
+      case 'asha':
+        return DeviceModels.identifyList(DeviceModels.ASHA_INDEX, DeviceModels.ASHA_MODELS, model);
+      case 'bada':
+        return DeviceModels.identifyList(DeviceModels.BADA_INDEX, DeviceModels.BADA_MODELS, model);
+      case 'blackberry':
+        return DeviceModels.identifyBlackBerry(model);
+      case 'brew':
+        return DeviceModels.identifyList(DeviceModels.BREW_INDEX, DeviceModels.BREW_MODELS, model);
+      case 'firefoxos':
+        return DeviceModels.identifyList(DeviceModels.FIREFOXOS_INDEX, DeviceModels.FIREFOXOS_MODELS, model, false);
+      case 'ios':
+        return DeviceModels.identifyIOS(model);
+      case 'tizen':
+        return DeviceModels.identifyList(DeviceModels.TIZEN_INDEX, DeviceModels.TIZEN_MODELS, model);
+      case 'touchwiz':
+        return DeviceModels.identifyList(DeviceModels.TOUCHWIZ_INDEX, DeviceModels.TOUCHWIZ_MODELS, model);
+      case 'wm':
+        return DeviceModels.identifyWindowsMobile(model);
+      case 'wp':
+        return DeviceModels.identifyList(DeviceModels.WP_INDEX, DeviceModels.WP_MODELS, model);
+      case 's30plus':
+        return DeviceModels.identifyList(DeviceModels.S30PLUS_INDEX, DeviceModels.S30PLUS_MODELS, model);
+      case 's40':
+        return DeviceModels.identifyList(DeviceModels.S40_INDEX, DeviceModels.S40_MODELS, model);
+      case 'symbian':
+        return DeviceModels.identifyList(DeviceModels.SYMBIAN_INDEX, DeviceModels.SYMBIAN_MODELS, model);
+      case 'palmos':
+        return DeviceModels.identifyList(DeviceModels.PALMOS_INDEX, DeviceModels.PALMOS_MODELS, model);
+      case 'kddi':
+        return DeviceModels.identifyList(DeviceModels.KDDI_INDEX, DeviceModels.KDDI_MODELS, model);
     }
+
+    DeviceModels.FEATURE_MODELS = require('../../data/models-feature').FEATURE_MODELS;
+    DeviceModels.FEATURE_INDEX = require('../../data/indices/models-feature').FEATURE_INDEX;
+    return DeviceModels.identifyList(DeviceModels.FEATURE_INDEX, DeviceModels.FEATURE_MODELS, model);
   }
 
   /**
    *
    * @param {string} model
    *
-   * @return {object}
+   * @return {Device}
    */
   static identifyWindowsMobile(model) {
     model = model.replace(/^(HTC|SAMSUNG|SHARP|Toshiba)\//u, '');

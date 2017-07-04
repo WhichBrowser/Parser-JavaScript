@@ -1,6 +1,6 @@
 const Base = require('./primitive/Base');
 const Constants = require('../constants');
-const DeviceModels = require('../data/DeviceModels');
+
 /**
  * Represents a Device
  *
@@ -217,3 +217,4 @@ class Device extends Base {
 }
 
 module.exports = Device;
+const DeviceModels = require('../data/DeviceModels');
