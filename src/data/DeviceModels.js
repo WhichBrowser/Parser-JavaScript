@@ -267,6 +267,7 @@ class DeviceModels {
    * @return {boolean}
    */
   static hasMatch(pattern, model) {
+    pattern = DeviceModels.cleanUpPattern(pattern);
     if (pattern.endsWith('!!')) {
       const regex2 = new RegExp(`^${pattern.substring(0, pattern.length - 2)}`, 'iu');
       return regex2.test(model);
@@ -276,6 +277,17 @@ class DeviceModels {
     } else {
       return pattern.toLowerCase() === model.toLowerCase();
     }
+  }
+
+  /**
+   * Make the pattern compatible with JavaScript
+   *
+   * @param {string} pattern
+   *
+   * @return {string}
+   */
+  static cleanUpPattern(pattern) {
+    return pattern.replace('(?i)', '').replace('\\-', '-');
   }
 
   /**
