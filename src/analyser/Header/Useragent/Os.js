@@ -12,10 +12,6 @@ const BuildIds = require('../../../data/BuildIds');
 const Manufacturers = require('../../../data/Manufacturers');
 
 class Os {
-  constructor() {
-    this.data = {};
-  }
-
   static detectOperatingSystem(ua) {
     this.detectUnix(ua);
     this.detectLinux(ua);
