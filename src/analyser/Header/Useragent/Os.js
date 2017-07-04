@@ -13,30 +13,30 @@ const Manufacturers = require('../../../data/Manufacturers');
 
 class Os {
   static detectOperatingSystem(ua) {
-    this.detectUnix(ua);
-    this.detectLinux(ua);
-    this.detectBsd(ua);
-    this.detectDarwin(ua);
-    this.detectWindows(ua);
-    this.detectAndroid(ua);
-    this.detectChromeos(ua);
-    this.detectBlackberry(ua);
-    this.detectWebos(ua);
-    this.detectSymbian(ua);
-    this.detectNokiaOs(ua);
-    this.detectTizen(ua);
-    this.detectSailfish(ua);
-    this.detectBada(ua);
-    this.detectBrew(ua);
-    this.detectQtopia(ua);
-    this.detectOpenTV(ua);
-    this.detectRemainingOperatingSystems(ua);
+    Os.detectUnix.call(this, ua);
+    Os.detectLinux.call(this, ua);
+    Os.detectBsd.call(this, ua);
+    Os.detectDarwin.call(this, ua);
+    Os.detectWindows.call(this, ua);
+    Os.detectAndroid.call(this, ua);
+    Os.detectChromeos.call(this, ua);
+    Os.detectBlackberry.call(this, ua);
+    Os.detectWebos.call(this, ua);
+    Os.detectSymbian.call(this, ua);
+    Os.detectNokiaOs.call(this, ua);
+    Os.detectTizen.call(this, ua);
+    Os.detectSailfish.call(this, ua);
+    Os.detectBada.call(this, ua);
+    Os.detectBrew.call(this, ua);
+    Os.detectQtopia.call(this, ua);
+    Os.detectOpenTV.call(this, ua);
+    Os.detectRemainingOperatingSystems.call(this, ua);
 
     return this;
   }
 
   static refineOperatingSystem(ua) {
-    this.determineAndroidVersionBasedOnBuild(ua);
+    Os.determineAndroidVersionBasedOnBuild.call(this, ua);
 
     return this;
   }

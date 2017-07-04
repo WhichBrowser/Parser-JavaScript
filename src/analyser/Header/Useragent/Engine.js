@@ -4,14 +4,14 @@ const Version = require('../../../model/Version');
 
 class Engine {
   static detectEngine(ua) {
-    this.detectWebkit(ua);
-    this.detectKHTML(ua);
-    this.detectGecko(ua);
-    this.detectServo(ua);
-    this.detectGoanna(ua);
-    this.detectPresto(ua);
-    this.detectTrident(ua);
-    this.detectEdgeHTMLUseragent(ua);
+    Engine.detectWebkit.call(this, ua);
+    Engine.detectKHTML.call(this, ua);
+    Engine.detectGecko.call(this, ua);
+    Engine.detectServo.call(this, ua);
+    Engine.detectGoanna.call(this, ua);
+    Engine.detectPresto.call(this, ua);
+    Engine.detectTrident.call(this, ua);
+    Engine.detectEdgeHTMLUseragent.call(this, ua);
     return this;
   }
 

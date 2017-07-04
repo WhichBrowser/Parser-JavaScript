@@ -11,54 +11,54 @@ const Applications = require('../../../data/Applications');
 class Browser {
   static detectBrowser(ua) {
     /* Detect major browsers */
-    this.detectSafari(ua);
-    this.detectExplorer(ua);
-    this.detectFirefox(ua);
-    this.detectChrome(ua);
-    this.detectEdge(ua);
-    this.detectOpera(ua);
+    Browser.detectSafari.call(this, ua);
+    Browser.detectExplorer.call(this, ua);
+    Browser.detectFirefox.call(this, ua);
+    Browser.detectChrome.call(this, ua);
+    Browser.detectEdge.call(this, ua);
+    Browser.detectOpera.call(this, ua);
 
     /* Detect WAP browsers */
-    this.detectWapBrowsers(ua);
+    Browser.detectWapBrowsers.call(this, ua);
 
     /* Detect other various mobile browsers */
-    this.detectNokiaBrowser(ua);
-    this.detectSilk(ua);
-    this.detectSailfishBrowser(ua);
-    this.detectWebOSBrowser(ua);
-    this.detectDolfin(ua);
-    this.detectIris(ua);
+    Browser.detectNokiaBrowser.call(this, ua);
+    Browser.detectSilk.call(this, ua);
+    Browser.detectSailfishBrowser.call(this, ua);
+    Browser.detectWebOSBrowser.call(this, ua);
+    Browser.detectDolfin.call(this, ua);
+    Browser.detectIris.call(this, ua);
 
     /* Detect other browsers */
-    this.detectUC(ua);
-    this.detectObigo(ua);
-    this.detectNetfront(ua);
+    Browser.detectUC.call(this, ua);
+    Browser.detectObigo.call(this, ua);
+    Browser.detectNetfront.call(this, ua);
 
     /* Detect other specific desktop browsers */
-    this.detectSeamonkey(ua);
-    this.detectModernNetscape(ua);
-    this.detectMosaic(ua);
-    this.detectKonqueror(ua);
-    this.detectOmniWeb(ua);
+    Browser.detectSeamonkey.call(this, ua);
+    Browser.detectModernNetscape.call(this, ua);
+    Browser.detectMosaic.call(this, ua);
+    Browser.detectKonqueror.call(this, ua);
+    Browser.detectOmniWeb.call(this, ua);
 
     /* Detect other various television browsers */
-    this.detectEspial(ua);
-    this.detectMachBlue(ua);
-    this.detectAnt(ua);
-    this.detectSraf(ua);
+    Browser.detectEspial.call(this, ua);
+    Browser.detectMachBlue.call(this, ua);
+    Browser.detectAnt.call(this, ua);
+    Browser.detectSraf.call(this, ua);
 
     /* Detect other browsers */
-    this.detectDesktopBrowsers(ua);
-    this.detectMobileBrowsers(ua);
-    this.detectTelevisionBrowsers(ua);
-    this.detectRemainingBrowsers(ua);
+    Browser.detectDesktopBrowsers.call(this, ua);
+    Browser.detectMobileBrowsers.call(this, ua);
+    Browser.detectTelevisionBrowsers.call(this, ua);
+    Browser.detectRemainingBrowsers.call(this, ua);
 
     return this;
   }
 
   static refineBrowser(ua) {
-    this.detectUCEngine(ua);
-    this.detectLegacyNetscape(ua);
+    Browser.detectUCEngine.call(this, ua);
+    Browser.detectLegacyNetscape.call(this, ua);
 
     return this;
   }

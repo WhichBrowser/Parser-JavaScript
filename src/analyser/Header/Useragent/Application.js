@@ -11,8 +11,8 @@ const Applications = require('../../../data/Applications');
 class Application {
   static detectApplication(ua) {
     /* Detect applications */
-    this.detectSpecificApplications(ua);
-    this.detectRemainingApplications(ua);
+    Application.detectSpecificApplications.call(this, ua);
+    Application.detectRemainingApplications.call(this, ua);
     return this;
   }
 
