@@ -59,6 +59,7 @@ typings/
 
 #IDE
 .idea
+.history
 
 #dist ES5 folder
 dist
