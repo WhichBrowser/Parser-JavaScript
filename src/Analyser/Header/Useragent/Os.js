@@ -188,14 +188,14 @@ class Os {
         this.data.os.version = new Version();
 
         if (
-          (match = /Andr[0o]id(?: )?(?:AllPhone_|CyanogenMod_|OUYA )?(?:\/)?v?([0-9.]+)/iu.test(
+          (match = /Andr[0o]id(?: )?(?:AllPhone_|CyanogenMod_|OUYA )?(?:\/)?v?([0-9.]+)/iu.exec(
             ua.replace('-update', ',')
           ))
         ) {
           this.data.os.version = new Version({value: match[1], details: 3});
         }
 
-        if ((match = /Android [0-9][0-9].[0-9][0-9].[0-9][0-9]\(([^)]+)\);/u.test(ua.replace('-update', ',')))) {
+        if ((match = /Android [0-9][0-9].[0-9][0-9].[0-9][0-9]\(([^)]+)\);/u.exec(ua.replace('-update', ',')))) {
           this.data.os.version = new Version({value: match[1], details: 3});
         }
 
