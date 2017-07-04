@@ -1,6 +1,6 @@
 const Main = require('./model/Main');
-const Constants = require('./constants');
-const Header = require('./analyser/Header');
+const {Camouflage, Corrections, Derive, Header} = require('./Analyser/');
+
 /**
  * Class that parse the user-agent
  */
@@ -11,7 +11,7 @@ class Analyser {
    * @param  {object}   headers   An object with all of the headers or a string with just the User-Agent header
    * @param  {object}         options   Optional, an object with configuration options
    */
-  constructor(headers, options = {}) {
+  constructor(headers = {}, options = {}) {
     this.headers = headers;
     this.options = options;
   }
@@ -40,10 +40,14 @@ class Analyser {
    */
   analyse() {
     if (!this.data) {
-      // TODO should not work
       this.data = new Main();
     }
-    Headers.analyseHeaders.call(this);
-    // return this.data;
+    Header.analyseHeaders.call(this);
+    Derive.deriveInformation.call(this);
+    Corrections.applyCorrections.call(this);
+    Camouflage.detectCamouflage.call(this);
+    Derive.deriveDeviceSubType.call(this);
   }
 }
+
+module.exports = Analyser;
