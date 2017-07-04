@@ -666,7 +666,7 @@ class Os {
             this.data.os.version = new Version({value: match[1], alias: '2000'});
             break;
           default:
-            this.data.os.version = new Version({value: match[1], alias: 'NT '.match[1]});
+            this.data.os.version = new Version({value: match[1], alias: `NT ${match[1]}`});
             break;
         }
 
@@ -1891,7 +1891,7 @@ class Os {
       }
 
       if ((match = /SunOS 5\.([123456](?:\.[0-9.]*)?) /u.exec(ua))) {
-        this.data.os.version = new Version({value: '2.'.match[1]});
+        this.data.os.version = new Version({value: `2.${match[1]}`});
       } else if ((match = /SunOS 5\.([0-9.]*)/u.exec(ua))) {
         this.data.os.version = new Version({value: match[1]});
       }

@@ -824,13 +824,13 @@ class Browser {
       if (!/compatible;/u.test(ua)) {
         if ((match = /Mozilla\/([123].[0-9]+)/u.exec(ua))) {
           this.data.browser.name = 'Netscape Navigator';
-          this.data.browser.version = new Version({value: match[1].replace('/([0-9])([0-9])/', '$1.$2')});
+          this.data.browser.version = new Version({value: match[1].replace(/([0-9])([0-9])/, '$1.$2')});
           this.data.browser.type = Constants.browserType.BROWSER;
         }
 
         if ((match = /Mozilla\/(4.[0-9]+)/u.exec(ua))) {
           this.data.browser.name = 'Netscape Communicator';
-          this.data.browser.version = new Version({value: match[1].replace('/([0-9])([0-9])/', '$1.$2')});
+          this.data.browser.version = new Version({value: match[1].replace(/([0-9])([0-9])/, '$1.$2')});
           this.data.browser.type = Constants.browserType.BROWSER;
 
           if (/Nav\)/u.test(ua)) {
