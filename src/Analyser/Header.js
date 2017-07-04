@@ -1,7 +1,6 @@
 /* eslint-disable require-jsdoc */
 
 const Constants = require('../constants');
-const Parser = require('../Parser');
 const {Baidu, BrowserId, OperaMini, Puffin, UCBrowserNew, UCBrowserOld, Useragent, Wap} = require('./Header/');
 
 class Header {
@@ -104,6 +103,7 @@ class Header {
   }
 
   static additionalUserAgent(ua) {
+    const Parser = require('../Parser');
     const extra = new Parser(ua);
 
     if (extra.device.type !== Constants.deviceType.DESKTOP) {

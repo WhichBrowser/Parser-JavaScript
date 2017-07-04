@@ -71,8 +71,9 @@ class Device extends Base {
    *
    */
   identifyModel(pattern, subject, defaults = {}) {
-    let match = null;
+    let match;
     if ((match = subject.match(pattern))) {
+      const DeviceModels = require('../data/DeviceModels');
       this.manufacturer = defaults['manufacturer'] || null;
       this.model = DeviceModels.cleanup(match[1]);
       this.identifier = match[0].replace(
@@ -217,4 +218,3 @@ class Device extends Base {
 }
 
 module.exports = Device;
-const DeviceModels = require('../data/DeviceModels');

@@ -1,10 +1,10 @@
 /* eslint-disable require-jsdoc */
 
 const Constants = require('../../constants');
-const Parser = require('../../Parser');
 
 class UCBrowserOld {
   constructor(header, data) {
+    const Parser = require('../../Parser');
     this.data = data;
 
     if (this.data.device.type === Constants.deviceType.DESKTOP) {
