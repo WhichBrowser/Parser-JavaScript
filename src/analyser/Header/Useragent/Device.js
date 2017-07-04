@@ -14,7 +14,7 @@ const {
   Signage,
   Tablet,
   Television,
-} = require('./Device');
+} = require('./Device/');
 
 class Device {
   static detectDevice(ua) {
