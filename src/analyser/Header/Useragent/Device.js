@@ -1,25 +1,36 @@
-DeviceMet
+/* eslint-disable require-jsdoc */
 
-class Device
-{
-  use Device\Appliance, Device\Cars, Device\Gps, Device\Gaming, Device\Ereader,
-  Device\Mobile, Device\Media, Device\Television, Device\Signage,
-  Device\Printer, Device\Tablet, Device\Phone, Device\Pda;
-  static detectDevice(ua)
-  {
-    this.detectAppliance(ua);
-    this.detectCars(ua);
-    this.detectGps(ua);
-    this.detectEreader(ua);
-    this.detectGaming(ua);
-    this.detectTelevision(ua);
-    this.detectSignage(ua);
-    this.detectMedia(ua);
-    this.detectPda(ua);
-    this.detectPrinter(ua);
-    this.detectTablet(ua);
-    this.detectPhone(ua);
-    this.detectMobile(ua);
+const {
+  Appliance,
+  Cars,
+  Ereader,
+  Gaming,
+  Gps,
+  Media,
+  Mobile,
+  Pda,
+  Phone,
+  Printer,
+  Signage,
+  Tablet,
+  Television,
+} = require('./Device');
+
+class Device {
+  static detectDevice(ua) {
+    Appliance.detectAppliance.call(this, ua);
+    Cars.detectCars.call(this, ua);
+    Gps.detectGps.call(this, ua);
+    Ereader.detectEreader.call(this, ua);
+    Gaming.detectGaming.call(this, ua);
+    Television.detectTelevision.call(this, ua);
+    Signage.detectSignage.call(this, ua);
+    Media.detectMedia.call(this, ua);
+    Pda.detectPda.call(this, ua);
+    Printer.detectPrinter.call(this, ua);
+    Tablet.detectTablet.call(this, ua);
+    Phone.detectPhone.call(this, ua);
+    Mobile.detectMobile.call(this, ua);
     return this;
   }
 }
