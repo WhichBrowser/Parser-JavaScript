@@ -192,10 +192,10 @@ class DeviceModels {
     for (let key of keys) {
       if (index[key]) {
         for (let v of index[key]) {
+          v = DeviceModels.cleanUpPattern(v);
           if (DeviceModels.hasMatch(v, model)) {
             if (v) {
               if (v.endsWith('!!')) {
-                v = DeviceModels.cleanUpPattern(v);
                 for (let m2 of Object.keys(list[v])) {
                   const v2 = list[v][m2];
                   if (DeviceModels.hasMatch(m2, model)) {
