@@ -297,7 +297,6 @@ class DeviceModels {
    * @return {boolean}
    */
   static cleanup(s = '') {
-    // var_dump(s);
     s = s.replace(/^phone\//, '');
     s = s.replace(/^(\/|; |;)/u, '');
     s = s.replace(/\/[^/]+$/u, '');
@@ -307,9 +306,9 @@ class DeviceModels {
     s = s.replace(/(-BREW| MIDP).+$/u, '');
     s = s.replace(/ AU-MIC.+$/u, '');
     s = s.replace(/ (AU|UP)\.Browser$/u, '');
-    s = s.replace(/_/u, ' ');
-    s = s.replace(/^\*+/u, '');
-    s = s.replace(/^\s+|\s+$/u, '');
+    s = s.replace(/_/gu, ' ');
+    s = s.replace(/^\*+/gu, '');
+    s = s.replace(/^\s+|\s+$/gu, '');
     s = s.replace(/^De-Sensed /u, '');
     s = s.replace(/^Full JellyBean( on )?/u, '');
     s = s.replace(/^(Android|Generic Android|Baidu Yi|Buildroid|Gingerbread|ICS AOSP|AOSPA?|tita) (on |for )/u, '');
@@ -352,8 +351,8 @@ class DeviceModels {
     s = s.replace(/ ?Build$/iu, '');
     s = s.replace(/ \(compatible$/iu, '');
     s = s.replace(/http:\/\/.+$/iu, '');
-    s = s.replace(/^\s+|\s+$/u, '');
-    s = s.replace(/\s+/u, ' ');
+    s = s.replace(/^\s+|\s+$/gu, '');
+    s = s.replace(/\s+/gu, ' ');
     return s;
   }
 }
