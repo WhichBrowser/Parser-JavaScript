@@ -335,7 +335,7 @@ class Application {
         ua
       ))
     ) {
-      this.data.browser.name = 'Yahoo '.match[1];
+      this.data.browser.name = `Yahoo ${match[1]}`;
       this.data.browser.version = new Version({
         value: match[2],
         details: 3,
