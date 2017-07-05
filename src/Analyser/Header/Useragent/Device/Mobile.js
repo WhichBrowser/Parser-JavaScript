@@ -636,7 +636,7 @@ class Mobile {
       T: 'Toshiba',
       Z: 'ZTE',
     };
-    const joinedIdsKeys = Object.keys(ids).join('|');
+    let joinedIdsKeys = Object.keys(ids).join('|');
     if ((match = new RegExp(`(?:^|[\\s\\/\\-\\(;])((${joinedIdsKeys})[0-9]{3,3}[a-z]+[A-Z]*)`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
@@ -750,6 +750,7 @@ class Mobile {
       S: 'Sony Ericsson',
       T: 'Toshiba',
     };
+    joinedIdsKeys = Object.keys(ids).join('|');
     if ((match = new RegExp(`(?:^|KDDI-)(W[0-9]{2,2}(${joinedIdsKeys}))[;\\)\\s\\/]`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
@@ -782,6 +783,7 @@ class Mobile {
       SN: 'Sony Ericsson',
       TS: 'Toshiba',
     };
+    joinedIdsKeys = Object.keys(ids).join('|');
     if (
       (match = new RegExp(
         `(?:^|KDDI-|UP\\. ?Browser\\/[0-9\\.]+-|; )((${joinedIdsKeys})(?:[0-9][0-9]|[A-Z][0-9]|[0-9][A-Z]))($|[;\\)\\s])`,
