@@ -147,7 +147,7 @@ class Browser {
 
         /* Webview for Android 4.4 and higher */
 
-        if (version.split('.').slice(1, 2).join('.') === '0.0' && (/Version\//u.test(ua) || /Release\//u.test(ua))) {
+        if (version.split('.').slice(1, 3).join('.') === '0.0' && (/Version\//u.test(ua) || /Release\//u.test(ua))) {
           this.data.browser.using = new Using({
             name: 'Chromium WebView',
             version: new Version({value: version.split('.')[0]}),
