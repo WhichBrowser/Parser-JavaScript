@@ -766,7 +766,7 @@ class Os {
 
         if (
           !model &&
-          (match = /IEMobile [0-9.]+\) {2}?(?:PPC; |SP; |Smartphone; )?(?:[0-9]+[Xx][0-9]+;? )?(?:VZW; )?([^;\(]+)/u.exec(
+          (match = /IEMobile [0-9.]+\)\s{1,2}(?:PPC; |SP; |Smartphone; )?(?:[0-9]+[Xx][0-9]+;? )?(?:VZW; )?([^;\(]+)/u.exec(
             ua
           ))
         ) {
