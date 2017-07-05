@@ -594,7 +594,7 @@ class Mobile {
       ua = ua.replace(
         /\\x([0-9A-Fa-f]{2})/g,
         function(m) {
-          return String.fromCharCode(parseInt(m[1], 16));
+          return String.fromCharCode(parseInt(m.substring(2), 16));
         },
         ua
       );
