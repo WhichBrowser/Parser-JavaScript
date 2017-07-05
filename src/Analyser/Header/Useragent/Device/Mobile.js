@@ -592,12 +592,14 @@ class Mobile {
     /* Sometimes DoCoMo UA strings are (partially) encoded */
     if (/^DoCoMo/u.test(ua)) {
       ua = ua.replace(
-        /#([0-9A-Fa-f]{2})#/,
+        /\\x([0-9A-Fa-f]{2})/g,
         function(m) {
-          return parseInt(m[1], 16).toString();
+          return String.fromCharCode(parseInt(m[1], 16));
         },
         ua
       );
+      /* Replace non ascii charancter series with a ' ' */
+      ua = ua.replace(/[^\u0000-\u007F]+/g, ' ');
     }
     /* First identify it based on id */
     let model = null;
