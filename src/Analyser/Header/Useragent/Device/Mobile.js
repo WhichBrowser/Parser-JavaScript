@@ -259,11 +259,11 @@ class Mobile {
       manufacturer: 'Alcatel',
       model: function(model) {
         if ((match = /^TRIBE ([^\s]+)/iu.exec(model))) {
-          model = 'One Touch Tribe '.match[1];
+          model = `One Touch Tribe ${match[1]}`;
         } else if ((match = /^ONE TOUCH ([^\s]*)/iu.exec(model))) {
-          model = 'One Touch '.match[1];
+          model = `One Touch ${match[1]}`;
         } else if ((match = /^OT[-\s]*([^\s]*)/iu.exec(model))) {
-          model = 'One Touch '.match[1];
+          model = `One Touch ${match[1]}`;
         }
         return model;
       },
@@ -446,10 +446,10 @@ class Mobile {
       manufacturer: 'Philips',
       model: function(model) {
         if ((match = /Az@lis([0-9]{3,3})/iu.exec(model))) {
-          return 'Az@lis '.match[1];
+          return `Az@lis ${match[1]}`;
         }
         if ((match = /Fisio ?([0-9]{3,3})/iu.exec(model))) {
-          return 'Fisio '.match[1];
+          return `Fisio ${match[1]}`;
         }
         return model;
       },
@@ -504,7 +504,7 @@ class Mobile {
       manufacturer: 'Sony Ericsson',
       model: function(model) {
         if ((match = /^([A-Z]) ([0-9]+)$/u.exec(model))) {
-          model = match[1].match[2];
+          model = `${match[1]}${match[2]}`;
         }
         if (/^[a-z][0-9]+/u.test(model)) {
           model = `${model[0].toUpperCase()}${model.slice(1)}`;

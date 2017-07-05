@@ -1522,7 +1522,7 @@ class Browser {
 
       if (/;(L6200|L7200)/u.test(ua)) {
         this.data.device.manufacturer = 'Toshiba';
-        this.data.device.model = 'Regza '.match[1];
+        this.data.device.model = `Regza ${match[1]}`;
         this.data.device.series = 'Smart TV';
         this.data.device.identified |= Constants.id.MATCH_UA;
         this.data.device.generic = false;

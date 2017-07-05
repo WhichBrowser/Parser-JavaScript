@@ -561,7 +561,7 @@ class Television {
       this.data.os.reset();
 
       this.data.device.manufacturer = 'Sony';
-      this.data.device.model = 'LocationFreeTV '.match[1];
+      this.data.device.model = `LocationFreeTV ${match[1]}`;
       this.data.device.type = Constants.deviceType.TELEVISION;
       this.data.device.identified |= Constants.id.MATCH_UA;
       this.data.device.generic = false;
