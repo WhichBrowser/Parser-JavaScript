@@ -636,25 +636,26 @@ class Mobile {
       T: 'Toshiba',
       Z: 'ZTE',
     };
-    if ((match = /(?:^|[\s\/\-\(;])((' . implode('|', array_keys(ids)) . ')[0-9]{3,3}[a-z]+[A-Z]*)/u.exec(ua))) {
+    const joinedIdsKeys = Object.keys(ids).join('|');
+    if ((match = new RegExp(`(?:^|[\\s\\/\\-\\(;])((${joinedIdsKeys})[0-9]{3,3}[a-z]+[A-Z]*)`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'DoCoMo';
     }
-    if ((match = /(?:; |\()((' . implode('|', array_keys(ids)) . ')[0-9]{2,2}[A-Z][0-9]?)[\);]/u.exec(ua))) {
+    if ((match = new RegExp(`(?:; |\\()((${joinedIdsKeys})[0-9]{2,2}[A-Z][0-9]?)[\\);]`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'DoCoMo';
     }
     if (
-      (match = /DoCoMo\/[0-9].0 ((' . implode('|', array_keys(ids)) . ')[0-9]{2,2}[A-Z][0-9]?)(?:\s?\(|$)/u.exec(ua))
+      (match = new RegExp(`DoCoMo\\/[0-9].0 ((${joinedIdsKeys})[0-9]{2,2}[A-Z][0-9]?)(?:\\s?\\(|$)`, 'u').exec(ua))
     ) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'DoCoMo';
     }
     if (
-      (match = /DoCoMo\/[0-9].0[\/\s](?:MST_v_)?((' . implode('|', array_keys(ids)) . ')[1-9][0-9]{3,3}[A-Z]?)/u.exec(
+      (match = new RegExp(`DoCoMo\\/[0-9].0[\\/\\s](?:MST_v_)?((${joinedIdsKeys})[1-9][0-9]{3,3}[A-Z]?)`, 'u').exec(
         ua
       ))
     ) {
@@ -662,32 +663,33 @@ class Mobile {
       manufacturer = match[2];
       carrier = 'DoCoMo';
     }
-    if ((match = /[\/\(]([SHW][0-9]{2,2}(' . implode('|', array_keys(ids)) . '))[\/;]/u.exec(ua))) {
+    if ((match = new RegExp(`[\\/\\(]([SHW][0-9]{2,2}(${joinedIdsKeys}))[\\/;]`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'EMOBILE';
     }
-    if ((match = /\) ([SHW][0-9]{2,2}(' . implode('|', array_keys(ids)) . '))$/u.exec(ua))) {
+
+    if ((match = new RegExp(`\\) ([SHW][0-9]{2,2}(${joinedIdsKeys}))$`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'EMOBILE';
     }
-    if ((match = /[\s\/\-\(;](J-(' . implode('|', array_keys(ids)) . ')[0-9]{2,2})/u.exec(ua))) {
+    if ((match = new RegExp(`[\\s\\/\\-\\(;](J-(${joinedIdsKeys})[0-9]{2,2})`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'Softbank';
     }
-    if ((match = /(?:^|; |\/)([0-9]{3,3}(' . implode('|', array_keys(ids)) . '))[eps]?[\/\)]/u.exec(ua))) {
+    if ((match = new RegExp(`(?:^|; |\\/)([0-9]{3,3}(${joinedIdsKeys}))[eps]?[\\/\\)]`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'Softbank';
     }
-    if ((match = /\(([0-9]{3,3}(' . implode('|', array_keys(ids)) . ')[eps]?);SoftBank/u.exec(ua))) {
+    if ((match = new RegExp(`\\(([0-9]{3,3}(${joinedIdsKeys})[eps]?);SoftBank`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'Softbank';
     }
-    if ((match = /(?:^|[\s\/\(;])((V|DM|W|WS|WX)[0-9]{2,3}(' . implode('|', array_keys(ids)) . '))/u.exec(ua))) {
+    if ((match = new RegExp(`(?:^|[\\s\\/\\(;])((V|DM|W|WS|WX)[0-9]{2,3}(${joinedIdsKeys}))`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[3];
       switch (match[2]) {
@@ -704,7 +706,7 @@ class Mobile {
           break;
       }
     }
-    if ((match = /(AH-(' . implode('|', array_keys(ids)) . ')[1-9][0-9]{3,3}[A-Z]?)/u.exec(ua))) {
+    if ((match = new RegExp(`(AH-(${joinedIdsKeys})[1-9][0-9]{3,3}[A-Z]?)`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       carrier = 'Willcom';
@@ -748,7 +750,7 @@ class Mobile {
       S: 'Sony Ericsson',
       T: 'Toshiba',
     };
-    if ((match = /(?:^|KDDI-)(W[0-9]{2,2}(' . implode('|', array_keys(ids)) . '))[;\)\s\/]/u.exec(ua))) {
+    if ((match = new RegExp(`(?:^|KDDI-)(W[0-9]{2,2}(${joinedIdsKeys}))[;\\)\\s\\/]`, 'u').exec(ua))) {
       model = match[1];
       manufacturer = match[2];
       this.data.device.reset({
@@ -781,9 +783,10 @@ class Mobile {
       TS: 'Toshiba',
     };
     if (
-      (match = /(?:^|KDDI-|UP\. ?Browser\/[0-9\.]+-|; )((' . implode('|', array_keys(ids)) . ')(?:[0-9][0-9]|[A-Z][0-9]|[0-9][A-Z]))($|[;\)\s])/iu.exec(
-        ua
-      ))
+      (match = new RegExp(
+        `(?:^|KDDI-|UP\\. ?Browser\\/[0-9\\.]+-|; )((${joinedIdsKeys})(?:[0-9][0-9]|[A-Z][0-9]|[0-9][A-Z]))($|[;\\)\\s])`,
+        'iu'
+      ).exec(ua))
     ) {
       model = match[1].toUpperCase();
       manufacturer = match[2].toUpperCase();
