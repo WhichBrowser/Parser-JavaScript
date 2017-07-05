@@ -44,7 +44,7 @@ class UCBrowserNew {
         });
       }
     }
-    if (/pf\(Windows\)/u.test(header) && (match = /ov\(wds ([0-9]+\.[0-9]+)/u.exec(header))) {
+    if (/pf\(Windows\)/u.test(header) && (match = /ov\(wds ([0-9]+\.[0-9])/u.exec(header))) {
       if (!this.data.isOs('Windows Phone')) {
         this.data.os.name = 'Windows Phone';
 
@@ -92,7 +92,7 @@ class UCBrowserNew {
 
     /* Find device */
     if (this.data.isOs('Android')) {
-      if ((match = /dv\((.*)\)/u.exec(header))) {
+      if ((match = /dv\((.*?)\)/u.exec(header))) {
         match[1] = match[1].replace(/\s+Build/u, '');
         device = DeviceModels.identify('android', match[1]);
 
