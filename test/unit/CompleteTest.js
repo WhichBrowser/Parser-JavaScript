@@ -12,7 +12,7 @@ function getDirContent(category = '') {
 }
 
 describe('Testing Parser with YAML files', () => {
-  getDirContent().slice(0, 5).forEach((category) => {
+  getDirContent().slice(0, 10).forEach((category) => {
     getDirContent(category).forEach((file) => {
       const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
       yamlContent.forEach(makeTest);
