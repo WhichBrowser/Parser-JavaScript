@@ -280,14 +280,14 @@ class DeviceModels {
   }
 
   /**
-   * Make the pattern compatible with JavaScript
+   * Make the pattern compatible with JavaScript and transform it to string
    *
    * @param {string} pattern
    *
    * @return {string}
    */
   static cleanUpPattern(pattern) {
-    return pattern.replace('(?i)', '').replace('\\-', '-');
+    return `${pattern}`.replace('(?i)', '').replace('\\-', '-');
   }
 
   /**
