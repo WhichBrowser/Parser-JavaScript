@@ -114,7 +114,7 @@ class UCBrowserNew {
 
     if (this.data.isOs('Windows Phone')) {
       if ((match = /dv\(([^)]*)\)/u.exec(header))) {
-        device = DeviceModels.identify('wp', match[1].substr(0, match[1].indexOf(' ')).substr(1));
+        device = DeviceModels.identify('wp', match[1].substr(match[1].indexOf(' ')).substr(1));
 
         if (device) {
           this.data.device = device;
