@@ -210,6 +210,14 @@ class DeviceModels {
               }
             }
             if (match) {
+              match = match.reduce((acc, item, index) => {
+                if (!!item && typeof item === 'object') {
+                  Object.keys(item).forEach((key) => (acc[key] = item[key]));
+                } else {
+                  acc[index] = item;
+                }
+                return acc;
+              }, {});
               device.manufacturer = match[0];
               device.model = DeviceModels.applyMatches(match[1], model, pattern);
               device.identified = Constants.id.MATCH_UA;
@@ -249,8 +257,8 @@ class DeviceModels {
    * @return {string}
    */
   static applyMatches(model, original, pattern) {
-    if (model.includes('$') && pattern.endsWith('!')) {
-      const matches = new RegExp(`^${pattern.substring(0, pattern.length - 1)}`, 'iu').test(original);
+    if (model && model.includes('$') && pattern.endsWith('!')) {
+      const matches = new RegExp(`^${pattern.substring(0, pattern.length - 1)}`, 'iu').exec(original);
       if (matches) {
         matches.forEach((v, k) => {
           model = model.replace(`$${k}`, v);
