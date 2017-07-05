@@ -211,7 +211,7 @@ class DeviceModels {
             }
             if (match) {
               match = match.reduce((acc, item, index) => {
-                if (!!item && typeof item === 'object') {
+                if (!!item && typeof item === 'object' && !Array.isArray(item)) {
                   Object.keys(item).forEach((key) => (acc[key] = item[key]));
                 } else {
                   acc[index] = item;
