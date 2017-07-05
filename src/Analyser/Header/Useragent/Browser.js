@@ -599,7 +599,7 @@ class Browser {
         this.data.browser.name = 'Opera Mini';
         this.data.browser.version = new Version({
           value: match[1],
-          details: parseInt(match[1].substr(match[1].lastIndexOf('.'), 1), 10) > 99 ? -1 : null,
+          details: parseInt(match[1].substr(match[1].lastIndexOf('.')).substr(1), 10) > 99 ? -1 : null,
         });
         this.data.browser.mode = 'proxy';
         this.data.device.type = Constants.deviceType.MOBILE;
@@ -2130,7 +2130,7 @@ class Browser {
       this.data.browser.name = 'Puffin';
       this.data.browser.version = new Version({
         value: match[1],
-        details: parseInt(match[1].substr(match[1].lastIndexOf('.'), 1), 10) > 99 ? -1 : null,
+        details: parseInt(match[1].substr(match[1].lastIndexOf('.')).substr(1), 10) > 99 ? -1 : null,
       });
       this.data.browser.mode = 'proxy';
       this.data.browser.channel = '';
