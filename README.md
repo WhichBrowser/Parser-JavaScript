@@ -7,9 +7,10 @@ This is an extremely complicated and almost completely useless browser sniffing 
 
 [![Build Status](https://travis-ci.org/mariotsi/WhichBrowser-js.svg?branch=master)](https://travis-ci.org/mariotsi/WhichBrowser-js)
 [![Coverage Status](https://codecov.io/gh/mariotsi/WhichBrowser-js/branch/master/graph/badge.svg)](https://codecov.io/gh/mariotsi/WhichBrowser-js)
+<!---
 [![License](https://poser.pugx.org/whichbrowser/parser/license)](https://packagist.org/packages/whichbrowser/parser)
 [![Latest Stable Version](https://poser.pugx.org/whichbrowser/parser/v/stable)](https://packagist.org/packages/whichbrowser/parser)
-
+-->
 [![Twitter Follow](https://img.shields.io/twitter/follow/whichbrowserlib.svg?style=social)](https://twitter.com/whichbrowserlib)
 
 If you are looking for the JavaScript API for original PHP  WhichBrowser version, please go to the [WhichBrowser/Server](https://github.com/WhichBrowser/Server) project.
@@ -193,6 +194,7 @@ In some cases you may want to disable the detection of bots. This allows the bot
 ```js
 result = new WhichBrowser(request.headers, { detectBots: false });
 ```
+<!---
 
 Enable result caching
 ---------------------
@@ -231,6 +233,7 @@ result.analyse(getallheaders());
 
 You can also specify after how many seconds a cached result should be discarded. The default value is 900 seconds or 15 minutes. If you think WhichBrowser uses too much memory for caching, you should lower this value. You can do this by setting the `cacheExpires` option or passing it as a second parameter to the `setCache()` function.
 
+-->
 
 API reference
 -------------
