@@ -221,11 +221,11 @@ class Os {
 
         this.data.device.type = Constants.deviceType.MOBILE;
 
-        if (parseFloat(this.data.os.version) >= 3) {
+        if (this.data.os.version.toFloat() >= 3) {
           this.data.device.type = Constants.deviceType.TABLET;
         }
 
-        if (parseFloat(this.data.os.version) >= 4 && /Mobile/u.test(ua)) {
+        if (this.data.os.version.toFloat() >= 4 && /Mobile/u.test(ua)) {
           this.data.device.type = Constants.deviceType.MOBILE;
         }
 
@@ -585,13 +585,13 @@ class Os {
             !this.data.os.version ||
             this.data.os.version === null ||
             this.data.os.version.value === null ||
-            parseFloat(version) < parseFloat(this.data.os.version)
+            version.toFloat() < this.data.os.version.toFloat()
           ) {
             this.data.os.version = version;
           }
 
           /* Special case for Android L */
-          if (parseFloat(version) === 5) {
+          if (version.toFloat() === 5) {
             this.data.os.version = version;
           }
         }
@@ -1146,7 +1146,7 @@ class Os {
 
     const keys = Object.keys(manufacturers);
     let match;
-    if ((match = new RegExp(`; (${keys.join('|')})(?:JS)?[\);]`, 'u').test(ua))) {
+    if ((match = new RegExp(`; (${keys.join('|')})(?:JS)?[\);]`, 'u').exec(ua))) {
       this.data.device.manufacturer = manufacturers[match[1]];
       this.data.device.hidden = true;
       this.data.device.identified |= Constants.id.INFER;
@@ -1655,7 +1655,7 @@ class Os {
           this.data.os.version = new Version({value: match[1], details: 2});
         }
 
-        if (this.data.os.version && parseFloat(this.data.os.version) >= 10) {
+        if (this.data.os.version && this.data.os.version.toFloat() >= 10) {
           this.data.os.name = 'BlackBerry';
         }
 

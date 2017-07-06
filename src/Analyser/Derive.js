@@ -68,7 +68,7 @@ class Derive {
 
   static deriveOmniWebRenderingEngine() {
     if (this.data.isBrowser('OmniWeb')) {
-      const version = this.data.browser.getVersion();
+      const version = parseFloat(this.data.browser.getVersion() || 0);
       if (version < 5) {
         this.data.engine.reset();
       }

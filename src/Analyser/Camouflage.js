@@ -179,7 +179,7 @@ class Camouflage {
           this.data.browser.name &&
           this.data.browser.name === 'Mobile Internet Explorer' &&
           this.data.browser.version &&
-          parseFloat(this.data.browser.version) >= 11 &&
+          this.data.browser.version.toFloat() >= 11 &&
           this.data.os.name &&
           this.data.os.name === 'Windows Phone'
         ) {
@@ -190,7 +190,7 @@ class Camouflage {
           this.data.browser.name &&
           this.data.browser.name === 'Internet Explorer' &&
           this.data.browser.version &&
-          parseFloat(this.data.browser.version) >= 11 &&
+          this.data.browser.version.toFloat() >= 11 &&
           this.data.os.name &&
           this.data.os.name === 'Windows'
         ) {
@@ -249,19 +249,19 @@ class Camouflage {
         }
       }
       if (this.data.os.name !== 'iOS' && this.data.browser.name === 'Safari' && this.data.browser.version) {
-        if (parseFloat(this.data.browser.version) < 4.0 && this.options.features & Constants.feature.APPCACHE) {
+        if (this.data.browser.version.toFloat() < 4.0 && this.options.features & Constants.feature.APPCACHE) {
           this.data.features.push('foundAppCache');
           this.data.camouflage = true;
         }
-        if (parseFloat(this.data.browser.version) < 4.1 && this.options.features & Constants.feature.HISTORY) {
+        if (this.data.browser.version.toFloat() < 4.1 && this.options.features & Constants.feature.HISTORY) {
           this.data.features.push('foundHistory');
           this.data.camouflage = true;
         }
-        if (parseFloat(this.data.browser.version) < 5.1 && this.options.features & Constants.feature.FULLSCREEN) {
+        if (this.data.browser.version.toFloat() < 5.1 && this.options.features & Constants.feature.FULLSCREEN) {
           this.data.features.push('foundFullscreen');
           this.data.camouflage = true;
         }
-        if (parseFloat(this.data.browser.version) < 5.2 && this.options.features & Constants.feature.FILEREADER) {
+        if (this.data.browser.version.toFloat() < 5.2 && this.options.features & Constants.feature.FILEREADER) {
           this.data.features.push('foundFileReader');
           this.data.camouflage = true;
         }

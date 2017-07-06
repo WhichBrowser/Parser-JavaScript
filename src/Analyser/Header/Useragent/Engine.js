@@ -31,7 +31,7 @@ class Engine {
       this.data.engine.name = 'Webkit';
       this.data.engine.version = new Version({value: match[1]});
     }
-    if ((match = /AppleWebkit\(like Gecko\)/iu.exec(ua))) {
+    if (/AppleWebkit\(like Gecko\)/iu.test(ua)) {
       this.data.engine.name = 'Webkit';
     }
   }
@@ -95,19 +95,19 @@ class Engine {
       this.data.engine.name = 'Trident';
       this.data.engine.version = new Version({value: match[1]});
       if (this.data.browser.version && this.data.browser.name && this.data.browser.name === 'Internet Explorer') {
-        if (parseInt(this.data.engine.version, 10) >= 7 && parseFloat(this.data.browser.version) < 11) {
+        if (this.data.engine.version.toNumber() >= 7 && this.data.browser.version.toFloat() < 11) {
           this.data.browser.version = new Version({value: '11.0'});
           this.data.browser.mode = 'compat';
         }
-        if (parseInt(this.data.engine.version, 10) === 6 && parseFloat(this.data.browser.version) < 10) {
+        if (this.data.engine.version.toNumber() === 6 && this.data.browser.version.toFloat() < 10) {
           this.data.browser.version = new Version({value: '10.0'});
           this.data.browser.mode = 'compat';
         }
-        if (parseInt(this.data.engine.version, 10) === 5 && parseFloat(this.data.browser.version) < 9) {
+        if (this.data.engine.version.toNumber() === 5 && this.data.browser.version.toFloat() < 9) {
           this.data.browser.version = new Version({value: '9.0'});
           this.data.browser.mode = 'compat';
         }
-        if (parseInt(this.data.engine.version, 10) === 4 && parseFloat(this.data.browser.version) < 8) {
+        if (this.data.engine.version.toNumber() === 4 && this.data.browser.version.toFloat() < 8) {
           this.data.browser.version = new Version({value: '8.0'});
           this.data.browser.mode = 'compat';
         }
@@ -119,10 +119,10 @@ class Engine {
         this.data.browser.name &&
         this.data.browser.name === 'Mobile Internet Explorer'
       ) {
-        if (parseInt(this.data.engine.version, 10) === 7 && parseFloat(this.data.os.version) < 8.1) {
+        if (this.data.engine.version.toNumber() === 7 && this.data.os.version.toFloat() < 8.1) {
           this.data.os.version = new Version({value: '8.1', details: 2});
         }
-        if (parseInt(this.data.engine.version, 10) === 5 && parseFloat(this.data.os.version) < 7.5) {
+        if (this.data.engine.version.toNumber() === 5 && this.data.os.version.toFloat() < 7.5) {
           this.data.os.version = new Version({value: '7.5', details: 2});
         }
       }

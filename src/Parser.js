@@ -49,10 +49,3 @@ class Parser extends Main {
 }
 
 module.exports = Parser;
-
-/* console.log(
-  new Parser(
-    'QuickTime/7.6 (qtver=7.6;cpu=IA32;os=Mac 10,5,7)'
-  ).toString()
-);
-*/

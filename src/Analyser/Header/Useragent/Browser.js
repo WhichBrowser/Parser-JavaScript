@@ -1165,7 +1165,7 @@ class Browser {
 
       /* UC Browser running on Windows 8 is identifing itself as U2, but instead its a Trident Webview */
       if (this.data.os.name && typeof this.data.os.version !== 'undefined') {
-        if (this.data.os.name === 'Windows Phone' && parseFloat(this.data.os.version) >= 8) {
+        if (this.data.os.name === 'Windows Phone' && this.data.os.version.toFloat() >= 8) {
           this.data.engine.name = 'Trident';
           this.data.browser.mode = '';
         }
@@ -1285,7 +1285,7 @@ class Browser {
         this.data.device.type = Constants.deviceType.EREADER;
       }
 
-      if (typeof this.data.device.type === 'undefined' || this.data.device.type === null) {
+      if (!this.data.device.type) {
         this.data.device.type = Constants.deviceType.MOBILE;
       }
 
@@ -1907,7 +1907,7 @@ class Browser {
         this.data.os.name &&
         this.data.browser.version &&
         this.data.os.name === 'Windows' &&
-        parseFloat(this.data.browser.version) < 4
+        this.data.browser.version.toFloat() < 4
       ) {
         this.data.browser.version.details = 1;
       }

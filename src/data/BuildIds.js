@@ -14,7 +14,7 @@ class BuildIds {
   static identify(id) {
     const build = BuildIds.ANDROID_BUILDS[id];
     if (build) {
-      if (Array.isArray(build)) {
+      if (typeof build === 'object') {
         return new Version(build);
       } else {
         return new Version({value: build});

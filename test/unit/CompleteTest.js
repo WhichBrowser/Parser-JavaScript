@@ -12,7 +12,7 @@ function getDirContent(category = '') {
 }
 
 describe('Testing Parser with YAML files', () => {
-  getDirContent().slice(0, 10).forEach((category) => {
+  getDirContent().forEach((category) => {
     getDirContent(category).forEach((file) => {
       const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
       yamlContent.forEach(makeTest);
@@ -28,6 +28,7 @@ function makeTest(options) {
     const parserObj = new Parser(options);
 
     expect(parserObj.toString()).to.be.equal(options.readable);
+    expect(parserObj.toObject()).to.be.equal(options.result);
     done();
   });
 }

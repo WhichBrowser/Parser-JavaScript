@@ -73,9 +73,9 @@ class Version extends Base {
   getParts() {
     const parts = this.value.split('.');
     return {
-      'major': Number(parts[0] || 0),
-      'minor': Number(parts[1] || 0),
-      'patch': Number(parts[2] || 0),
+      major: Number(parts[0] || 0),
+      minor: Number(parts[1] || 0),
+      patch: Number(parts[2] || 0),
     };
   }
 
@@ -216,7 +216,15 @@ class Version extends Base {
     const result = {};
     if (this.value) {
       if (this.details) {
-        const parts = this.value.split('.').splice(0, this.details);
+        const parts = this.value.split('.');
+        if (this.details) {
+          if (this.details < 0) {
+            parts.splice(this.details, 0 - this.details);
+          }
+          if (this.details > 0) {
+            parts.splice(this.details, parts.length - this.details);
+          }
+        }
         result.value = parts.join('.');
       } else {
         result.value = this.value;

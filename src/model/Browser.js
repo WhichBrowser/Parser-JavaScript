@@ -1,4 +1,5 @@
 const NameVersion = require('./primitive/NameVersion');
+const Constants = require('../constants');
 /**
  * Represents a Browser
  *
@@ -47,7 +48,6 @@ class Browser extends NameVersion {
     properties && this.set(properties);
   }
 
-
   /**
    * Get the name in a human readable format
    *
@@ -57,7 +57,6 @@ class Browser extends NameVersion {
     const name = super.getName();
     return name ? `${name}${this.channel ? ` ${this.channel}` : ''}` : '';
   }
-
 
   /**
    * Is the browser from the specified family
@@ -70,7 +69,6 @@ class Browser extends NameVersion {
     return this.getName() === name || (!!this.family && this.family.getName() === name);
   }
 
-
   /**
    * Is the browser using the specified webview
    *
@@ -81,7 +79,6 @@ class Browser extends NameVersion {
   isUsing(name) {
     return !!this.using && this.using.getName() === name;
   }
-
 
   /**
    * Get a combined name and version number in a human readable format
@@ -100,7 +97,6 @@ class Browser extends NameVersion {
 
     return result;
   }
-
 
   /**
    * Get object with all defined properties
@@ -129,11 +125,11 @@ class Browser extends NameVersion {
     }
 
     let versionObj;
-    if (this.version && Object.keys(( versionObj = this.version.toObject())).length) {
+    if (this.version && Object.keys((versionObj = this.version.toObject())).length) {
       result.version = versionObj;
     }
 
-    if (this.type) {
+    if (this.type && this.type !== Constants.browserType.UNKNOWN) {
       result.type = this.type;
     }
 

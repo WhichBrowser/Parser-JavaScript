@@ -22,6 +22,9 @@ class Family extends NameVersion {
 
     if (this.version) {
       result.version = this.version.toObject();
+      if (typeof result.version === 'string' && !result.version.includes('.')) {
+        result.version = Number(result.version);
+      }
     }
 
     return result;

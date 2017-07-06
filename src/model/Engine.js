@@ -12,13 +12,14 @@ class Engine extends NameVersion {
    */
   toObject() {
     const result = {};
-    
+
     if (this.name) {
       result.name = this.name;
     }
 
-    if (this.version) {
-      result.version = this.version.toObject();
+    let versionObj;
+    if (this.version && Object.keys((versionObj = this.version.toObject())).length) {
+      result.version = versionObj;
     }
 
     return result;
