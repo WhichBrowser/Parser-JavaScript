@@ -477,7 +477,7 @@ class Television {
       this.data.os.reset();
 
       this.data.device.manufacturer = 'ADB';
-      this.data.device.model = `${match[1] !== 'Unknown' ? `${match[1].replace('ADB', '')} ` : ''} IPTV receiver`;
+      this.data.device.model = `${match[1] !== 'Unknown' ? `${match[1].replace('ADB', '')} ` : ''}IPTV receiver`;
       this.data.device.type = Constants.deviceType.TELEVISION;
       this.data.device.identified |= Constants.id.MATCH_UA;
       this.data.device.generic = false;
@@ -840,7 +840,8 @@ class Television {
       }
 
       if ((match = /(?:HbbTV|OHTV)\/[0-9.]+ \(([^;]*);\s*([^;]*)\s*;\s*([^;]*)\s*;/u.exec(ua))) {
-        if (match[1].trim() === '' || ['PVR', 'DL'].includes(match[1].split(' ')[0]) || match[1].includes('+')) {
+        match[1] = match[1].trim();
+        if (match[1] === '' || ['PVR', 'DL'].includes(match[1].split(' ')[0]) || match[1].includes('+')) {
           vendorName = Manufacturers.identify(Constants.deviceType.TELEVISION, match[2]);
           modelName = match[3].trim();
         } else {
@@ -953,7 +954,7 @@ class Television {
               this.data.device.manufacturer = vendorName;
             }
 
-            if (modelName !== '' && ['dvb', 'modelName', 'undefined-model-name', 'N/A'].includes(modelName)) {
+            if (modelName !== '' && !['dvb', 'modelName', 'undefined-model-name', 'N/A'].includes(modelName)) {
               this.data.device.model = modelName;
             }
 
@@ -1032,7 +1033,7 @@ class Television {
       }
 
       if (this.data.device.manufacturer === 'Inverto') {
-        if ((match = /IDL[ -]?([0-9]+.*)/u.test(this.data.device.model))) {
+        if ((match = /IDL[ -]?([0-9]+.*)/u.exec(this.data.device.model))) {
           this.data.device.model = `IDL ${match[1]}`;
         }
 
@@ -1046,12 +1047,12 @@ class Television {
       }
 
       if (this.data.device.manufacturer === 'LG') {
-        if ((match = /(?:ATSC|DVB)-(.*)/u.test(this.data.device.model))) {
+        if ((match = /(?:ATSC|DVB)-(.*)/u.exec(this.data.device.model))) {
           this.data.device.model = match[1];
           this.data.device.generic = false;
         }
 
-        if ((match = /[0-9][0-9]([A-Z][A-Z][0-9][0-9][0-9][0-9A-Z])/u.test(this.data.device.model))) {
+        if ((match = /[0-9][0-9]([A-Z][A-Z][0-9][0-9][0-9][0-9A-Z])/u.exec(this.data.device.model))) {
           this.data.device.model = match[1];
           this.data.device.generic = false;
         }
@@ -1114,7 +1115,7 @@ class Television {
       }
 
       if (this.data.device.manufacturer === 'Selevision') {
-        this.data.device.model = this.data.device.model('Selevision ', '');
+        this.data.device.model = this.data.device.model.replace('Selevision ', '');
       }
 
       if (this.data.device.manufacturer === 'Sharp') {

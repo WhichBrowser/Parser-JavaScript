@@ -555,7 +555,7 @@ class Browser {
       }
     }
 
-    if (/Opera[/\-\s]/iu.test(ua) || (/Browser\/Opera/iu.test(ua) && !/Opera Software/iu.test(ua))) {
+    if ((/Opera[/\-\s]/iu.test(ua) || /Browser\/Opera/iu.test(ua)) && !/Opera Software/iu.test(ua)) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Opera';
       this.data.browser.type = Constants.browserType.BROWSER;
@@ -1520,7 +1520,7 @@ class Browser {
         this.data.browser.version = new Version({value: match[1]});
       }
 
-      if (/;(L6200|L7200)/u.test(ua)) {
+      if ((match = /;(L6200|L7200)/u.exec(ua))) {
         this.data.device.manufacturer = 'Toshiba';
         this.data.device.model = `Regza ${match[1]}`;
         this.data.device.series = 'Smart TV';
