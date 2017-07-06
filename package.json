@@ -1,8 +1,8 @@
 {
-  "name": "which-browser-js",
+  "name": "which-browser",
   "version": "0.0.1",
-  "description": "Browser sniffing tool",
-  "main": "index.js",
+  "description": "Browser sniffing tool and UA parser. This library is a porting of WhichBrowser/Parser",
+  "main": "src/Parser.js",
   "scripts": {
     "test": "lab -a code -v",
     "test-and-coverage": "istanbul cover lab --report lcovonly  -- -a code -v --timeout 10000 -l  && codecov",
@@ -26,7 +26,10 @@
     "sniffing",
     "user-agent",
     "useragent",
-    "node"
+    "node",
+    "ua",
+    "parser",
+    "whichbrowser"
   ],
   "author": "Simone Mariotti",
   "license": "MIT",
