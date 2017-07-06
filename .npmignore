@@ -36,8 +36,6 @@ build/Release
 node_modules/
 jspm_packages/
 
-package
-
 # Typescript v1 declaration files
 typings/
 
@@ -53,8 +51,10 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
-# Yarn Integrity file
+# Yarn stuffs
 .yarn-integrity
+yarn.lock
+
 
 # dotenv environment variables file
 .env
@@ -63,5 +63,6 @@ typings/
 .idea
 .history
 
-#dist ES5 folder
-dist
+test
+bin
+package
