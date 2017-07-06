@@ -280,7 +280,7 @@ Is there actually some browser detected, for did we fail to detect anything?
 Get a human readable representation of the detected browser, including operating system and device information.
 
 
-### The browser object
+### The Browser object
 
 An object of the `Browser` class is used for the `browser` property of the main `WhichBrowser` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -323,7 +323,7 @@ Get the version of the browser
 Get a human readable representation of the detected browser
 
 
-### The engine object
+### The Engine object
 
 An object of the `Engine` class is used for the `engine` property of the main `WhichBrowser` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -346,7 +346,7 @@ Get the version of the rendering engine
 Get a human readable representation of the detected rendering engine
 
 
-### The os object
+### The Os object
 
 An object of the `Os` class is used for the `os` property of the main `WhichBrowser` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -374,7 +374,7 @@ Get the version of the operating system
 Get a human readable representation of the detected operating system
 
 
-### The device object
+### The Device object
 
 An object of the `Device` class is used for the `device` property of the main `Parser` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -432,7 +432,7 @@ Get the name of the model
 Get a human readable representation of the detected device
 
 
-### The family object
+### The Family object
 
 An object of the `Family` class is used for the `family` property of the `Browser` and `Os` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -455,7 +455,7 @@ Get the version of the family
 Get a human readable representation of the family
 
 
-### The using object
+### The Using object
 
 An object of the `Using` class is used for the `using` property of the `Browser` object and contains a number of properties. If a property is not applicable in this situation it will be null or undefined.
 
@@ -478,7 +478,7 @@ Get the version of the webview
 Get a human readable representation of the webview
 
 
-### The version object
+### The Version object
 
 An object of the `Version` class is used for the `version` property of the `Browser`, `Engine` and `Os` object and contains a number of properties and functions. If a property is not applicable in this situation it will be null or undefined.
 
