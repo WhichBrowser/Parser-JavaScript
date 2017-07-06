@@ -355,10 +355,7 @@ class Browser {
     if (this.data.isBrowser('Chrome') || this.data.isBrowser('Chromium')) {
       this.data.browser.family = new Family({
         name: 'Chrome',
-        version:
-          typeof this.data.browser.version !== 'undefined'
-            ? new Version({value: this.data.browser.version.getMajor()})
-            : null,
+        version: this.data.browser.version ? new Version({value: this.data.browser.version.getMajor()}) : null,
       });
     }
   }
