@@ -7,7 +7,6 @@ This is an extremely complicated and almost completely useless browser sniffing 
 
 [![Build Status](https://travis-ci.org/mariotsi/WhichBrowser-js.svg?branch=master)](https://travis-ci.org/mariotsi/WhichBrowser-js)
 [![Coverage Status](https://codecov.io/gh/mariotsi/WhichBrowser-js/branch/master/graph/badge.svg)](https://codecov.io/gh/mariotsi/WhichBrowser-js)
-
 [![npm](https://img.shields.io/npm/l/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
 [![npm](https://img.shields.io/npm/v/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
 [![Twitter Follow](https://img.shields.io/twitter/follow/simariot.svg?style=social)](https://twitter.com/simariot)
