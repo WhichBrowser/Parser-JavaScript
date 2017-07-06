@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -a code -v",
+    "test-and-coverage": "istanbul cover lab --report lcovonly  -- -a code -v --timeout 10000 -l  && codecov",
     "precommit": "lint-staged",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",

@@ -122,3 +122,7 @@
     headers: 'User-Agent: Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1'
     result: { engine: { name: Webkit, version: '533.1' }, os: { name: FireOS, family: Android, version: '1' }, device: { type: tablet, manufacturer: Amazon, model: 'Kindle Fire' } }
     readable: 'an Amazon Kindle Fire running FireOS 1'
+-
+    headers: 'User-Agent: Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; Kindle Fire Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Safari/533.1'
+    result: { engine: { name: Webkit, version: '533.1' }, os: { name: FireOS, family: Android, version: '1' }, device: { type: tablet, manufacturer: Amazon, model: 'Kindle Fire' } }
+    readable: 'an Amazon Kindle Fire running FireOS 1'
