@@ -1,5 +1,5 @@
 
-### This is a porting to JavaScript of the original [WhichBrowser/Parser](https://github.com/WhichBrowser/Parser) written in PHP
+### This is a porting to JavaScript for Node.js of the original [WhichBrowser/Parser](https://github.com/WhichBrowser/Parser) written in PHP
 
 ---
 
