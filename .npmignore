@@ -68,3 +68,4 @@ bin
 package
 .travis.yml
 .eslintrc.json
+.gitignore
