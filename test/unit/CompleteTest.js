@@ -29,6 +29,7 @@ function makeTest(options) {
 
     expect(parserObj.toString()).to.be.equal(options.readable);
     expect(parserObj.toObject()).to.be.equal(options.result);
+    expect(parserObj.cached).to.not.exists();
     done();
   });
 }

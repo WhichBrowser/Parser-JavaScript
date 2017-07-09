@@ -1,5 +1,7 @@
 const Main = require('./model/Main');
 const Analyser = require('./Analyser');
+const Cache = require('./Cache');
+
 /**
  * Class that parse the user-agent
  */
@@ -37,15 +39,19 @@ class Parser extends Main {
     } else {
       h = headers;
     }
-
-    /* if (this.analyseWithCache(h, o)) {
-     return;
-     }*/
+    let data;
+    if ((data = Cache.analyseWithCache(h, o, this))) {
+      if (typeof data === 'object') {
+        Object.assign(this, data);
+        this.cached = true;
+      }
+      return;
+    }
 
     const analyser = new Analyser(h, o);
     analyser.setData(this);
     analyser.analyse();
   }
 }
-
+Parser.SIMPLE_CACHE = 'simple';
 module.exports = Parser;
