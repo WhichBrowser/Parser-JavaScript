@@ -225,8 +225,7 @@ const result = new WhichBrowser(request.header, {
   }
 );
 ```
-A value for `cacheExpires` less or equal to `0` disable the expiry for that result and it will last until you restart node or you parse another UA with a `cacheExpires` greater than `0`.
-This will restart the cache validity check and all the records parsed with `cacheExpires <= 0` will be removed at the next cache validity check.
+A value for `cacheExpires` less or equal to `0` disable the expiry for that result and it will last until you restart node or you parse the same set of headers with a `cacheExpires` greater than `0`.
 
 Cache validity is checked at a rate of `cacheExpires / 5` so, with a `cacheExpires` of `500`, you can rest assured that your result has been reaped from the cache after `500 + 500 / 5 + 1` seconds.
 
@@ -235,13 +234,14 @@ If you want to speed up the process of validity check you can set the `cacheChec
 ```js
 const result = new WhichBrowser(request.header, {
   cache: WhichBrowser.SIMPLE_CACHE,
+  cacheExpires: 300,
   cacheCheckInterval: 1
   }
 );
 ```
-In this way the cache lasts for `900` seconds but is checked every `1` second.
+In this way the cache lasts for `300` seconds but is checked every `1` second.
 
-> Be aware that changing the `cacheExpiries` *doesn't* impact the expiry date of others records in the cache. However it *will change* the rate at which the cache validity is checked  as it does `cacheCheckInterval`. For example setting `cacheExpiries` to `0` will prevent **ALL** results to expire because it will disable the cache validity check.
+> Be aware that changing `cacheExpiries` or `cacheCheckInterval` impact the cache validity check rate for **ALL** records in the cache. For example setting `cacheExpiries` to `0` will prevent **ALL** results to expire because it will disable the cache validity check (for the sake of truth it will be done every `57085` years, `5` months, `10` days, `7` hours, `35` minutes and `48` seconds).
 
 API reference
 -------------
