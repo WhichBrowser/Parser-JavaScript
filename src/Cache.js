@@ -2,6 +2,7 @@ const Analyser = require('./Analyser');
 const Crypto = require('crypto');
 const simpleCache = new Map();
 let cacheCleanerInterval;
+let actualCacheCheckInterval;
 
 /**
  * Class that enable caching of results
@@ -19,23 +20,34 @@ class Cache {
   static analyseWithCache(headers, options, that) {
     if (options.cache) {
       const Parser = require('./Parser');
-      options.cacheExpires = options.cacheExpires || 900;
-      options.cacheCheckInterval = options.cacheCheckInterval || parseInt(options.cacheExpires / 5, 10);
+      options.cacheExpires = options.cacheExpires <= 0 ? 0 : options.cacheExpires || 900;
+      options.cacheCheckInterval = Math.max(options.cacheCheckInterval || parseInt(options.cacheExpires / 5, 10), 1);
       switch (options.cache) {
         case Parser.SIMPLE_CACHE: {
-          if (!cacheCleanerInterval && options.cacheExpires) {
+          /* Should set the clearCache interval only if cacheExpires is > 0 and it hasn't yet initializated
+           or the cacheCheckInterval has changed */
+          if (
+            (!cacheCleanerInterval || actualCacheCheckInterval !== options.cacheCheckInterval) &&
+            options.cacheExpires
+          ) {
+            clearInterval(cacheCleanerInterval);
             cacheCleanerInterval = setInterval(Cache.clearCache, options.cacheCheckInterval * 1000);
           }
-          const chiper = Crypto.createHash('sha256').update(JSON.stringify(headers)).digest('hex');
-          if (simpleCache.has(chiper)) {
-            const hit = simpleCache.get(chiper);
-            hit.expires = Cache.getExpirationValue(options);
+          // Disable cache expiry loop if it set to 0s
+          if (!options.cacheExpires) {
+            clearInterval(cacheCleanerInterval);
+          }
+          actualCacheCheckInterval = options.cacheCheckInterval;
+          const cacheKey = Crypto.createHash('sha256').update(JSON.stringify(headers)).digest('hex');
+          if (simpleCache.has(cacheKey)) {
+            const hit = simpleCache.get(cacheKey);
+            hit.expires = Cache.getExpirationTime(options);
             return hit.data;
           } else {
             const analyser = new Analyser(headers, options);
             analyser.setData(that);
             analyser.analyse();
-            simpleCache.set(chiper, {
+            simpleCache.set(cacheKey, {
               data: {
                 browser: that.browser,
                 engine: that.engine,
@@ -44,7 +56,7 @@ class Cache {
                 camouflage: that.camouflage,
                 features: that.features,
               },
-              expires: Cache.getExpirationValue(options),
+              expires: Cache.getExpirationTime(options),
             });
           }
         }
@@ -70,17 +82,20 @@ class Cache {
    *
    * @param  {object}          options   An object with configuration options
    *
-   * @return {int}                       The expiration time
+   * @return {int}                       The expiration time timestamp
    */
-  static getExpirationValue(options) {
+  static getExpirationTime(options) {
     return +new Date() + options.cacheExpires * 1000;
   }
 
   /**
-   * Clear the cached. Used only for test purpose
+   * Reset the class state. Used only for test purpose
    */
-  static purgeCache() {
+  static resetClassState() {
     simpleCache.clear();
+    clearInterval(cacheCleanerInterval);
+    cacheCleanerInterval = null;
+    actualCacheCheckInterval = null;
   }
 }
 
