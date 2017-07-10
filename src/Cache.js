@@ -20,7 +20,7 @@ class Cache {
   static analyseWithCache(headers, options, that) {
     if (options.cache) {
       const Parser = require('./Parser');
-      options.cacheExpires = options.cacheExpires <= 0 ? 0 : options.cacheExpires || 900;
+      options.cacheExpires = options.cacheExpires <= 0 ? Number.MAX_SAFE_INTEGER : options.cacheExpires || 900;
       options.cacheCheckInterval = Math.max(options.cacheCheckInterval || parseInt(options.cacheExpires / 5, 10), 1);
       switch (options.cache) {
         case Parser.SIMPLE_CACHE: {
@@ -32,10 +32,6 @@ class Cache {
           ) {
             clearInterval(cacheCleanerInterval);
             cacheCleanerInterval = setInterval(Cache.clearCache, options.cacheCheckInterval * 1000);
-          }
-          // Disable cache expiry loop if it set to 0s
-          if (!options.cacheExpires) {
-            clearInterval(cacheCleanerInterval);
           }
           actualCacheCheckInterval = options.cacheCheckInterval;
           const cacheKey = Crypto.createHash('sha256').update(JSON.stringify(headers)).digest('hex');
@@ -85,7 +81,9 @@ class Cache {
    * @return {int}                       The expiration time timestamp
    */
   static getExpirationTime(options) {
-    return +new Date() + options.cacheExpires * 1000;
+    return options.cacheExpires === Number.MAX_SAFE_INTEGER
+      ? Number.MAX_SAFE_INTEGER
+      : +new Date() + options.cacheExpires * 1000;
   }
 
   /**

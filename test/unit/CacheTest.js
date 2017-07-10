@@ -322,7 +322,7 @@ describe('Cache Class', () => {
   });
 
   describe('Enable cache expiry when cache has already some item inside with no expiry time,', () => {
-    it('old item are cleared at the first cache check interval ', (done) => {
+    it('Old items are still there when the new expiry time come', (done) => {
       // First call to Parser, still not cached, expiry time default to 900s
       let result = new Parser(header1, {cache: Parser.SIMPLE_CACHE, cacheExpires: 0});
       expect(result.toObject()).to.be.equal(comparision1);
@@ -340,16 +340,16 @@ describe('Cache Class', () => {
       expect(result2.toObject()).to.be.equal(comparision2);
       expect(result2.cached).to.not.exist();
 
-      // let 1/5 of the expiry time so the cache check is triggered
-      clock.tick((900 / 5 + 1) * 1000);
+      // expiry the second record
+      clock.tick((900 + 900 / 5 + 1) * 1000);
 
       result = new Parser(header1, {cache: Parser.SIMPLE_CACHE});
       expect(result.toObject()).to.be.equal(comparision1);
-      expect(result.cached).to.not.exist();
+      expect(result.cached).to.be.true();
 
       result2 = new Parser(header2, {cache: Parser.SIMPLE_CACHE});
       expect(result2.toObject()).to.be.equal(comparision2);
-      expect(result2.cached).to.be.true();
+      expect(result2.cached).to.not.exists();
 
       done();
     });
