@@ -1,7 +1,7 @@
 {
   "name": "which-browser",
-  "version": "0.1.0",
-  "description": "Browser sniffing tool and UA parser. This library is a porting of WhichBrowser/Parser",
+  "version": "0.2.0",
+  "description": "Browser sniffing tool and UA parser. Porting to VanillaJS of the PHP library WhichBrowser/Parser",
   "main": "src/Parser.js",
   "scripts": {
     "test": "lab -a code -v",

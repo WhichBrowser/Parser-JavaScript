@@ -156,7 +156,7 @@ result.os.toString();
 
 Or access parts of these properties directly:
 
-```php
+```js
 result.browser.name;
 // Chrome
 
@@ -172,7 +172,7 @@ result.engine.name;
 
 Finally you can also query versions directly:
 
-```php
+```js
 result.browser.version.is('>', 26);
 // true
 
@@ -192,46 +192,56 @@ In some cases you may want to disable the detection of bots. This allows the bot
 ```js
 result = new WhichBrowser(request.headers, { detectBots: false });
 ```
-<!---
 
 Enable result caching
 ---------------------
 
-WhichBrowser supports PSR-6 compatible cache adapters for caching results between requests. Using a cache is especially useful if you use WhichBrowser on every page of your website and a user visits multiple pages. During the first visit the headers will be parsed and the result will be cached. Upon further visits, the cached results will be used, which is much faster than having to parse the headers again and again.
+WhichBrowser can cache results between requests. Using a cache is especially useful if you use WhichBrowser on every page of your website and a user visits multiple pages. During the first visit the headers will be parsed and the result will be cached. Upon further visits, the cached results will be used, which is much faster than having to parse the headers again and again.
 
-There are adapters available for other types of caches, such as APC, Doctrine, Memcached, MongoDB, Redis and many more. The configuration of these adapters all differ from each other, but once configured, all you have to do is pass it as an option when creating the `Parser` object, or use the `setCache()` function to set it afterwards. WhichBrowser has been tested to work with the adapters provided by [PHP Cache](http://php-cache.readthedocs.org/en/latest/). For a list of other packages that provide adapters see [Packagist](https://packagist.org/providers/psr/cache-implementation).
+In order to enable caching you need to specify in the options object which type of cache you want use.
 
-For example, if you want to enable a memcached based cache you need to install an extra composer package:
+For example, if you want to enable the cache you need to construct the `WhichBrowser` object in this way:
 
-    composer require cache/memcached-adapter
-
-And change the call to WhichBrowser/Parser as follows:
-
-```php
-$client = new \Memcached();
-$client.addServer('localhost', 11211);
-
-$pool = new \Cache\Adapter\Memcached\MemcachedCachePool($client);
-
-result = new WhichBrowser\Parser(getallheaders(), [ 'cache' => $pool ]);
+```js
+const result = new WhichBrowser(request.header, {cache: WhichBrowser.SIMPLE_CACHE});
 ```
+If a result is retrieved from the cache it has the `cached` property set to `true`
 
-or
-
-```php
-$client = new \Memcached();
-$client.addServer('localhost', 11211);
-
-$pool = new \Cache\Adapter\Memcached\MemcachedCachePool($client);
-
-result = new WhichBrowser\Parser();
-result.setCache($pool);
-result.analyse(getallheaders());
+```js
+if (result.cached) {
+  // from cache
+} else {
+  // just parsed for the first time
+}
 ```
+You can also specify after how many seconds a cached result should be discarded. The default value is 900 seconds or 15 minutes. If you think WhichBrowser uses too much memory for caching, you should lower this value. You can do this by setting the `cacheExpires` property in the options object.
 
-You can also specify after how many seconds a cached result should be discarded. The default value is 900 seconds or 15 minutes. If you think WhichBrowser uses too much memory for caching, you should lower this value. You can do this by setting the `cacheExpires` option or passing it as a second parameter to the `setCache()` function.
+For example, if you want that your cached results lasts for 300 seconds or 5 minutes do:
 
--->
+```js
+const result = new WhichBrowser(request.header, {
+  cache: WhichBrowser.SIMPLE_CACHE,
+  cacheExpires: 300
+  }
+);
+```
+A value for `cacheExpires` less or equal to `0` disable the expiry for that result and it will last until you restart node or you parse the same set of headers with a `cacheExpires` greater than `0`.
+
+Cache validity is checked at a rate of `cacheExpires / 5` so, with a `cacheExpires` of `500`, you can rest assured that your result has been reaped from the cache after `500 + 500 / 5 + 1` seconds.
+
+If you want to speed up the process of validity check you can set the `cacheCheckInterval` property in the options object. This property can't be smaller than `1`.
+
+```js
+const result = new WhichBrowser(request.header, {
+  cache: WhichBrowser.SIMPLE_CACHE,
+  cacheExpires: 300,
+  cacheCheckInterval: 1
+  }
+);
+```
+In this way the cache lasts for `300` seconds but is checked every `1` second.
+
+> Be aware that changing `cacheExpiries` or `cacheCheckInterval` impact the cache validity check rate for **ALL** records in the cache. For example setting `cacheExpiries` to `0` will prevent **ALL** results to expire because it will disable the cache validity check (for the sake of truth it will be done every `57085` years, `5` months, `10` days, `7` hours, `35` minutes and `48` seconds).
 
 API reference
 -------------
