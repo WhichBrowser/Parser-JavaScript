@@ -62,6 +62,7 @@ yarn.lock
 #IDE
 .idea
 .history
+.vscode
 
 test
 bin
