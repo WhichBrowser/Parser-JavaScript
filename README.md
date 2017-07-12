@@ -1,8 +1,3 @@
-
-### This is a porting to JavaScript for Node.js of the original [WhichBrowser/Parser](https://github.com/WhichBrowser/Parser) written in PHP
-
----
-
 This is an extremely complicated and almost completely useless browser sniffing library written in JavaScript. Useless because you shouldn't use browser sniffing. So stop right now and go read something about feature detecting instead. I'm serious. Go away. You'll thank me later.
 
 [![Build Status](https://travis-ci.org/mariotsi/WhichBrowser-js.svg?branch=master)](https://travis-ci.org/mariotsi/WhichBrowser-js)
@@ -10,8 +5,10 @@ This is an extremely complicated and almost completely useless browser sniffing 
 [![npm](https://img.shields.io/npm/l/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
 [![npm](https://img.shields.io/npm/v/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
 [![Twitter Follow](https://img.shields.io/twitter/follow/simariot.svg?style=social)](https://twitter.com/simariot)
+---
+If you are looking for the PHP version of WhichBrowser, please go to the [WhichBrowser/Parser-PHP](https://github.com/WhichBrowser/Parser-PHP) project.
 
-If you are looking for the JavaScript API for original PHP  WhichBrowser version, please go to the [WhichBrowser/Server](https://github.com/WhichBrowser/Server) project.
+If you are looking for the JavaScript API for WhichBrowser, please go to the [WhichBrowser/Server](https://github.com/WhichBrowser/Server) project.
 
 ---
 
