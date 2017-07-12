@@ -132,8 +132,8 @@
     readable: 'Safari on an emulator running iOS 4.1'
 -
     headers: 'User-Agent: Mozilla/5.0 (iPhone Simulator; U; CPU iPhone OS 4_3 like Mac OS X; xx) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile/8F192'
-    result: { engine: { name: Webkit, version: 533.17.9 }, os: { name: iOS, version: '4.3' }, device: { type: emulator, manufacturer: Apple } }
-    readable: 'an emulator running iOS 4.3'
+    result: { browser: { using: 'Safari WebView'}, engine: { name: Webkit, version: 533.17.9 }, os: { name: iOS, version: '4.3' }, device: { type: emulator, manufacturer: Apple } }
+    readable: 'Safari WebView on an emulator running iOS 4.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3'
     result: { browser: { name: Safari, version: '5.1', type: browser }, engine: { name: Webkit, version: '534.46' }, os: { name: iOS, version: '5.0' }, device: { type: mobile, subtype: smart, manufacturer: Apple, model: iPhone } }
@@ -466,3 +466,15 @@
     headers: 'User-Agent: AtomicLite/7.0.1 CFNetwork/672.1.13 Darwin/14.0.0'
     result: { browser: { name: Atomic, version: 7.0.1, type: browser }, os: { name: iOS, version: '7.1' }, device: { type: mobile, subtype: smart, manufacturer: Apple } }
     readable: 'Atomic 7.0.1 on iOS 7.1'
+-
+    headers: 'User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 10_0_1 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Mobile/14A403'
+    result: { browser: { using: Safari WebView }, engine: { name: Webkit, version: '602.1.50' }, os: { name: iOS, version: '10.0.1' }, device: { type: mobile, subtype: smart, manufacturer: Apple, model: iPhone } }
+    readable: 'Safari WebView on an Apple iPhone running iOS 10.0.1'
+-
+    headers: 'User-Agent: Mozilla/5.0 (iPad; U; CPU OS 4_3_2 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Mobile'
+    result: { browser: { using: Safari WebView }, engine: { name: Webkit, version: '533.17.9' }, os: { name: iOS, version: '4.3.2' }, device: { type: tablet, manufacturer: Apple, model: iPad } }
+    readable: 'Safari WebView on an Apple iPad running iOS 4.3.2'
+-
+    headers: 'User-Agent: Mozilla/5.0 (iPod; CPU iPod OS 7_0_2 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Mobile/11A501'
+    result: { browser: { using: Safari WebView }, engine: { name: Webkit, version: '537.51.1' }, os: { name: iOS, version: '7.0.2' }, device: { type: media, manufacturer: Apple, model: iPod touch } }
+    readable: 'Safari WebView on an Apple iPod touch running iOS 7.0.2'
