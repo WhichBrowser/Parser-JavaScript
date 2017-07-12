@@ -8,7 +8,7 @@ This is an extremely complicated and almost completely useless browser sniffing 
 ---
 If you are looking for the PHP version of WhichBrowser, please go to the [WhichBrowser/Parser-PHP](https://github.com/WhichBrowser/Parser-PHP) project.
 
-If you are looking for the JavaScript API for WhichBrowser, please go to the [WhichBrowser/Server](https://github.com/WhichBrowser/Server) project.
+If you are looking for the server written in PHP that provides a Javascript API for the browser, please go to the [WhichBrowser/Server](https://github.com/WhichBrowser/Server) project.
 
 ---
 
