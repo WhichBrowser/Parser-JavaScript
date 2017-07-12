@@ -59,6 +59,7 @@ class Browser {
   static refineBrowser(ua) {
     Browser.detectUCEngine.call(this, ua);
     Browser.detectLegacyNetscape.call(this, ua);
+    Browser.detectSafariWebView.call(this, ua);
 
     return this;
   }
@@ -2406,6 +2407,18 @@ class Browser {
     if (/WAP Browser\/MAUI/iu.test(ua)) {
       this.data.browser.name = 'MAUI WAP';
       this.data.browser.type = Constants.browserType.BROWSER;
+    }
+  }
+
+  static detectSafariWebView(ua) {
+    if (/(iPhone|iPod|iPad).*AppleWebKit(?!.*Safari)/iu.test(ua) && !this.data.browser.isDetected()) {
+      this.data.browser.reset({
+        using: new Using({
+          name: 'Safari WebView',
+        }),
+        type: Constants.browserType.UNKNOWN,
+        stock: true,
+      });
     }
   }
 }
