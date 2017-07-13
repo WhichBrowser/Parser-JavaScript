@@ -1,5 +1,6 @@
 This is an extremely complicated and almost completely useless browser sniffing library written in JavaScript. Useless because you shouldn't use browser sniffing. So stop right now and go read something about feature detecting instead. I'm serious. Go away. You'll thank me later.
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/026f9fea094c4f90ab8fdba98ced5a13)](https://www.codacy.com/app/mariotsi/Parser-JavaScript?utm_source=github.com&utm_medium=referral&utm_content=WhichBrowser/Parser-JavaScript&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/WhichBrowser/Parser-JavaScript.svg?branch=master)](https://travis-ci.org/WhichBrowser/Parser-JavaScript)
 [![Coverage Status](https://api.codacy.com/project/badge/Coverage/026f9fea094c4f90ab8fdba98ced5a13)](https://www.codacy.com/app/mariotsi/Parser-JavaScript?utm_source=github.com&utm_medium=referral&utm_content=WhichBrowser/Parser-JavaScript&utm_campaign=Badge_Coverage)
 [![npm](https://img.shields.io/npm/l/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
