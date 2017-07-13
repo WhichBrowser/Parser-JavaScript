@@ -1,11 +1,11 @@
 {
   "name": "which-browser",
   "version": "0.2.0",
-  "description": "Browser sniffing tool and UA parser. Porting to VanillaJS of the PHP library WhichBrowser/Parser",
+  "description": "Browser sniffing tool and UA parser. JavaScript version of WhichBrowser/Parser",
   "main": "src/Parser.js",
   "scripts": {
     "test": "lab -a code -v",
-    "test-and-coverage": "istanbul cover lab --report lcovonly  -- -a code -v --timeout 10000 -l  && codecov",
+    "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l  &&  cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage && codecov",
     "precommit": "lint-staged",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
@@ -34,6 +34,7 @@
   "author": "Simone Mariotti",
   "license": "MIT",
   "devDependencies": {
+    "codacy-coverage": "^2.0.2",
     "code": "^4.1.0",
     "codecov": "^2.2.0",
     "eslint": "^4.1.1",
