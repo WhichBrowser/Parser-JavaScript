@@ -7,12 +7,14 @@
     "test": "lab -a code -v",
     "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l  &&  cat ./coverage/lcov.info | codacy-coverage && codecov",
     "precommit": "lint-staged",
+    "update-applications": "node ./bin/update-applications",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
-    "update-profiles": "node ./bin/update-profiles",
-    "update-applications": "node ./bin/update-applications",
+    "update-indices": "node ./bin/update-indices",
     "update-models": "node ./bin/update-models",
-    "update-indices": "node ./bin/update-indices"
+    "update-profiles": "node ./bin/update-profiles",
+    "update-regexes": "node ./bin/update-regexes",
+    "update-all": "npm run update-applications && npm run update-browser-ids && npm run update-chrome && npm run update-indices && npm run update-models && npm run update-profiles && npm run update-regexes"
   },
   "engines": {
     "node": ">=6.0.0"
