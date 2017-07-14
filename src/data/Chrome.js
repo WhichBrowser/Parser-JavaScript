@@ -22,7 +22,7 @@ class Chrome {
         return Chrome.MOBILE[version];
     }
 
-    //return 'canary';
+    // return 'canary';
   }
 }
 Chrome.DESKTOP = chromeVersions.DESKTOP;
