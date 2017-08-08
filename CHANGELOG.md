@@ -1,3 +1,8 @@
+#### 0.2.2 (2017-08-08)
+
+##### New Features
+* **Database**: Added Chrome 60 ([0043804](https://github.com/WhichBrowser/Parser-JavaScript/commit/00438049ff3f30fb2810a980c88146b2112eff0b))
+
 #### 0.2.1 (2017-07-14)
 
 ##### News
