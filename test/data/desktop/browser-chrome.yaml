@@ -62,3 +62,7 @@
     headers: 'User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/534.16 (KHTML, like Gecko) Chrome/10.0.648.11 Safari/534.16'
     result: { browser: { name: Chrome, version: '10', type: browser }, engine: { name: Webkit, version: '534.16' }, os: { name: Linux }, device: { type: desktop } }
     readable: 'Chrome 10 on Linux'
+-
+    headers: 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    result: { browser: { name: Chrome, version: '61', type: browser }, engine: { name: Blink }, os: { alias: macOS, name: 'OS X', version: { nickname: Sierra, value: '10.12' } }, device: { manufacturer: Apple, model: Macintosh, type: desktop } }
+    readable: 'Chrome 61 on macOS Sierra 10.12'
