@@ -411,6 +411,9 @@ class Derive {
         if (this.data.os.version.is('10.12')) {
           this.data.os.version.nickname = 'Sierra';
         }
+        if (this.data.os.version.is('10.13')) {
+          this.data.os.version.nickname = 'High Sierra';
+        }
       }
     }
   }
