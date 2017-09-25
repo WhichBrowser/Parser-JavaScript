@@ -1,7 +1,11 @@
+#### 0.2.3 (2017-09-25) 
+* **Database:** Added Chrome 61 ([6d86594](https://github.com/WhichBrowser/Parser-JavaScript/commit/6d86594e82e795fb1720dfc162c002e73889be4b))
+* **Database:** Added macOS High Sierra ([5b8584a](https://github.com/WhichBrowser/Parser-JavaScript/commit/5b8584adf81f449b75d851c34d2d6ab39d138579))
+
 #### 0.2.2 (2017-08-08)
 
 ##### New Features
-* **Database**: Added Chrome 60 ([0043804](https://github.com/WhichBrowser/Parser-JavaScript/commit/00438049ff3f30fb2810a980c88146b2112eff0b))
+* **Database:** Added Chrome 60 ([0043804](https://github.com/WhichBrowser/Parser-JavaScript/commit/00438049ff3f30fb2810a980c88146b2112eff0b))
 
 #### 0.2.1 (2017-07-14)
 
@@ -13,7 +17,7 @@
 * **changelog:** added this changelog
 
 ##### New Features
-* **database**: updated with new devices ([0e9f5ff](https://github.com/WhichBrowser/Parser-JavaScript/commit/0e9f5ffe6c8c571edec13d9590c67348247a8bc1))
+* **database:** updated with new devices ([0e9f5ff](https://github.com/WhichBrowser/Parser-JavaScript/commit/0e9f5ffe6c8c571edec13d9590c67348247a8bc1))
 ([a9ed8a0](https://github.com/WhichBrowser/Parser-JavaScript/commit/a9ed8a0a45206eae7a64f8f86f861688b4ed3cca))
 ([cd4e0cd](https://github.com/WhichBrowser/Parser-JavaScript/commit/cd4e0cd158a897a917593e41cddd992b9325b53e))
 ([3fbe24d](https://github.com/WhichBrowser/Parser-JavaScript/commit/3fbe24d223eb45d3fd14e97e91f55ef5f98be065))

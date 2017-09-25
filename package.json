@@ -1,6 +1,6 @@
 {
   "name": "which-browser",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Browser sniffing tool and UA parser. Browser sniffing gone too far — A useragent parser library for JavaScript",
   "main": "src/Parser.js",
   "scripts": {
