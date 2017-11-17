@@ -1,3 +1,6 @@
+#### 0.2.4 (2017-11-17) 
+* **Database:** Added Chrome 62 ([3d4a74c](https://github.com/WhichBrowser/Parser-JavaScript/commit/3d4a74c1cf995a41bde6a6136bfd076d9e877286))
+
 #### 0.2.3 (2017-09-25) 
 * **Database:** Added Chrome 61 ([6d86594](https://github.com/WhichBrowser/Parser-JavaScript/commit/6d86594e82e795fb1720dfc162c002e73889be4b))
 * **Database:** Added macOS High Sierra ([5b8584a](https://github.com/WhichBrowser/Parser-JavaScript/commit/5b8584adf81f449b75d851c34d2d6ab39d138579))
