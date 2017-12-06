@@ -83,6 +83,11 @@ class Corrections {
         family: this.data.browser.family ? this.data.browser.family : null,
       });
     }
+    if (this.data.os.name === 'KaiOS' && this.data.browser.name === 'Firefox Mobile') {
+      this.data.browser.reset({
+        family: this.data.browser.family ? this.data.browser.family : null,
+      });
+    }
   }
 
   static hideBrowserOnDeviceTypeGaming() {

@@ -21,6 +21,7 @@ class Os {
     Os.detectChromeos.call(this, ua);
     Os.detectBlackberry.call(this, ua);
     Os.detectWebos.call(this, ua);
+    Os.detectKaiOS.call(this, ua);
     Os.detectSymbian.call(this, ua);
     Os.detectNokiaOs.call(this, ua);
     Os.detectTizen.call(this, ua);
@@ -79,7 +80,7 @@ class Os {
           }
         }
 
-        if ((match = /(iPad|iPhone|iPod)[0-9],[0-9]/u.exec(ua))) {
+        if ((match = /(iPad|iPhone|iPod)1?[0-9],[0-9][0-9]?/u.exec(ua))) {
           device = DeviceModels.identify('ios', match[0]);
 
           if (device) {
@@ -1611,6 +1612,19 @@ class Os {
       }
 
       this.data.device.identified |= Constants.id.MATCH_UA;
+    }
+  }
+
+  /* Kai OS */
+
+  static detectKaiOS(ua) {
+    let match;
+    if ((match = /Kai(OS)?\/([0-9.]+)/i.exec(ua))) {
+      this.data.os.reset({
+        name: 'KaiOS',
+        version: new Version({value: match[2]}),
+      });
+      this.data.os.family = new Family({name: 'Firefox OS'});
     }
   }
 
