@@ -197,8 +197,18 @@ class DeviceModels {
           if (DeviceModels.hasMatch(v, model)) {
             if (v) {
               if (v.endsWith('!!')) {
+                if (!list[v]) {
+                  if (!list[originalV]) {
+                    if (list[DeviceModels.getKey(v)]) {
+                      v = DeviceModels.getKey(v);
+                    } else if (list[DeviceModels.getKey(originalV)]) {
+                      v = DeviceModels.getKey(originalV);
+                    }
+                  }
+                }
+
                 for (let m2 of Object.keys(list[v] || list[originalV])) {
-                  const v2 = list[v][m2];
+                  const v2 = (list[v] || list[originalV])[m2];
                   if (DeviceModels.hasMatch(m2, model)) {
                     match = v2;
                     pattern = m2;
@@ -298,6 +308,17 @@ class DeviceModels {
    */
   static cleanUpPattern(pattern) {
     return `${pattern}`.replace('(?i)', '').replace('\\-', '-');
+  }
+
+  /**
+   * Make the pattern compatible with JavaScript key, remove something like O\+ and tranform it to O+
+   *
+   * @param {string} pattern
+   *
+   * @return {string}
+   */
+  static getKey(pattern) {
+    return `${pattern}`.replace('\\', '');
   }
 
   /**
