@@ -1,6 +1,8 @@
-#### 0.2.5 (2017-12-06)
+#### 0.2.5 (2017-12-07)
 * **Fixes:** 
     * Issue [#10](https://github.com/WhichBrowser/Parser-JavaScript/issues/10) - Thanks [@stouf](https://github.com/stouf) for reporting ([a3285e1](https://github.com/WhichBrowser/Parser-JavaScript/commit/a3285e1f1f439bccbbe2c1bb93abfdcd3a93f7de))
+* **Database:** Added Chrome 63, new iPhones, MANY new models of various manufacturers and Os ([6e6715e](https://github.com/WhichBrowser/Parser-JavaScript/commit/6e6715e022bb26e2a4bd5a7f24a6fc2a9a023ebb))
+* **Analisys:** Better management of Edge, added management of KaiOS ([22a2752](https://github.com/WhichBrowser/Parser-JavaScript/commit/22a27520ce38dd5f50954387b5e0499c88bef1e0))
 
 #### 0.2.4 (2017-11-17) 
 * **Database:** Added Chrome 62 ([3d4a74c](https://github.com/WhichBrowser/Parser-JavaScript/commit/3d4a74c1cf995a41bde6a6136bfd076d9e877286))
