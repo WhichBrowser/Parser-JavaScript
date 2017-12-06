@@ -216,7 +216,8 @@ class DeviceModels {
                   }
                 }
               } else {
-                match = list[v] || list[originalV];
+                match =
+                  list[v] || list[originalV] || list[DeviceModels.getKey(v)] || list[DeviceModels.getKey(originalV)];
                 pattern = v;
               }
             }
