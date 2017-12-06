@@ -62,6 +62,7 @@ typings/
 #IDE
 .idea
 .history
+.vscode
 
 #dist ES5 folder
 dist
