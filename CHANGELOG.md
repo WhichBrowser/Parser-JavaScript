@@ -1,3 +1,7 @@
+#### 0.2.5 (2017-12-06)
+* **Fixes:** 
+    * Issue [#10](https://github.com/WhichBrowser/Parser-JavaScript/issues/10) - Thanks [@stouf](https://github.com/stouf) for reporting ([a3285e1](https://github.com/WhichBrowser/Parser-JavaScript/commit/a3285e1f1f439bccbbe2c1bb93abfdcd3a93f7de))
+
 #### 0.2.4 (2017-11-17) 
 * **Database:** Added Chrome 62 ([3d4a74c](https://github.com/WhichBrowser/Parser-JavaScript/commit/3d4a74c1cf995a41bde6a6136bfd076d9e877286))
 
