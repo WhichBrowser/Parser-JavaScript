@@ -334,7 +334,7 @@ class DeviceModels {
     s = s.replace(/\/[^/]+$/u, '');
     s = s.replace(/\/[^/]+ Android\/.*/u, '');
     s = s.replace(/UCBrowser$/u, '');
-    s = s.replace(/(_TD|_LTE|_GPRS|_BLEU|_CMCC|_CMCC_TD|_CUCC)$/u, '');
+    s = s.replace(/(_TD-LTE|_TD|_LTE|_GPRS|_BLEU|_CMCC|_CMCC_TD|_CUCC)$/u, '');
     s = s.replace(/(-BREW| MIDP).+$/u, '');
     s = s.replace(/ AU-MIC.+$/u, '');
     s = s.replace(/ (AU|UP)\.Browser$/u, '');
