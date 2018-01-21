@@ -120,6 +120,9 @@ class Mobile {
       return;
     }
     if ((match = /(?:SAMSUNG; )?SAMSUNG ?[-\/]?([^;\/\)_,]+)/iu.exec(ua))) {
+      if (match[1] === 'Browser') {
+        return;
+      }
       this.data.device.manufacturer = 'Samsung';
       this.data.device.model = DeviceModels.cleanup(match[1]);
       this.data.device.identifier = match[0];
@@ -208,7 +211,7 @@ class Mobile {
       return;
     }
     if (
-      !/(T-Mobile|Danger|HPiPAQ|Acer|Amoi|AIRNESS|ASUS|BenQ|maui|ALCATEL|Bird|COOLPAD|CELKON|Coship|Cricket|DESAY|Diamond|dopod|Ericsson|FLY|GIONEE|Haier|HIKe|Hisense|HS|HTC|T[0-9]{4,4}|HUAWEI|Karbonn|KWC|KONKA|KTOUCH|K-Touch|Lenovo|Lephone|LG|Micromax|MOT|Nexian|NEC|NGM|OPPO|Panasonic|Pantech|Philips|Sagem|Sanyo|Sam|SEC|SGH|SCH|SIE|Sony|SE|SHARP|Spice|Tecno|T-smart|TCL|Tiphone|Toshiba|UTStar|Videocon|vk|Vodafone|Xiaomi|ZTE|WAP)/iu.test(
+      !/(T-Mobile|Danger|HPiPAQ|Acer|Amoi|AIRNESS|ASUS|BenQ|maui|ALCATEL|Bird|COOLPAD|CELKON|Coship|Cricket|DESAY|Diamond|dopod|Ericsson|FLY|GIONEE|GT-|Haier|HIKe|Hisense|HS|HTC|T[0-9]{4,4}|HUAWEI|Karbonn|KWC|KONKA|KTOUCH|K-Touch|Lenovo|Lephone|LG|Micromax|MOT|Nexian|NEC|NGM|OPPO|Panasonic|Pantech|Philips|Sagem|Sanyo|Sam|SEC|SGH|SCH|SIE|Sony|SE|SHARP|Spice|Tecno|T-smart|TCL|Tiphone|Toshiba|UTStar|Videocon|vk|Vodafone|VSUN|Wynncom|Xiaomi|YUANDA|Zen|Ziox|ZTE|WAP)/iu.test(
         ua
       )
     ) {
@@ -405,7 +408,7 @@ class Mobile {
       manufacturer: 'Motorola',
       model: (model) => model.toUpperCase(),
     });
-    this.data.device.identifyModel(/Motorola[_ ]([^\/_;]+)/iu, ua, {
+    this.data.device.identifyModel(/Motorola[_ ]([^\/_;\)]+)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Motorola',
     });
@@ -556,7 +559,7 @@ class Mobile {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Videocon',
     });
-    this.data.device.identifyModel(/Vodafone(?:[ _-]Chat)?[ _-]?([0-9]+)/u, ua, {
+    this.data.device.identifyModel(/Vodafone(?:[ _-]Chat)?[ _-]?([0-9]+)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Vodafone',
     });
@@ -564,9 +567,25 @@ class Mobile {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Vodafone',
     });
-    this.data.device.identifyModel(/Xiaomi[_]?([^\s]+)/iu, ua, {
+    this.data.device.identifyModel(/^VSUN([0-9]+[A-Z]?)/iu, ua, {
       type: Constants.deviceType.MOBILE,
-      manufacturer: 'Xiaomi',
+      manufacturer: 'Vsun',
+    });
+    this.data.device.identifyModel(/Wynncom[\-\s]([A-Z0-9\s]+\+?)/iu, ua, {
+      type: Constants.deviceType.MOBILE,
+      manufacturer: 'Wynncom',
+    });
+    this.data.device.identifyModel(/^YUANDA([0-9]+[A-Z]?)/iu, ua, {
+      type: Constants.deviceType.MOBILE,
+      manufacturer: 'Yuanda',
+    });
+    this.data.device.identifyModel(/^ZEN[_\s]([A-Z0-9\s\+]+)\*?[\s_]?(|\/|-|;|Dorado|MAUI|WAP|R2AE|Q03C)/iu, ua, {
+      type: Constants.deviceType.MOBILE,
+      manufacturer: 'Zen',
+    });
+    this.data.device.identifyModel(/^(?:Ziox[_\s])?Ziox[_\s](ZX?[0-9]+)/iu, ua, {
+      type: Constants.deviceType.MOBILE,
+      manufacturer: 'Ziox',
     });
     this.data.device.identifyModel(/ZTE[-_\s]?([^\s\/();,]+)/iu, ua, {
       type: Constants.deviceType.MOBILE,
