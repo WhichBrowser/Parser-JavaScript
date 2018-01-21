@@ -797,6 +797,7 @@ class Television {
                 this.data.device.series = 'NetCast TV 2012';
                 break;
               case 'LGwebOSTV':
+              case 'webOSTV3_0':
                 this.data.device.series = 'webOS TV';
                 break;
             }
@@ -950,13 +951,13 @@ class Television {
               case 'Viera2015.mid':
                 this.data.device.series = 'Viera 2015';
                 break;
-              case 'Viera2016':
+              case 'VIERA 2016':
                 this.data.device.series = 'Viera 2016';
                 break;
-              case 'Viera2017':
+              case 'VIERA 2017':
                 this.data.device.series = 'Viera 2017';
                 break;
-              case 'Viera2018':
+              case 'SmartTV2018mid':
                 this.data.device.series = 'Viera 2018';
                 break;
               default:

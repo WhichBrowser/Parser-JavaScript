@@ -579,7 +579,7 @@ class Mobile {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Yuanda',
     });
-    this.data.device.identifyModel(/^ZEN[_\s]([A-Z0-9\s\+]+)\*?[\s_]?(|\/|-|;|Dorado|MAUI|WAP|R2AE|Q03C)/iu, ua, {
+    this.data.device.identifyModel(/^ZEN[_\s]([A-Z0-9\s\+]+?)\*?[\s_]?($|\/|-|;|Dorado|MAUI|WAP|R2AE|Q03C)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Zen',
     });
