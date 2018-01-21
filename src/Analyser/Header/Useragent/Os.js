@@ -152,7 +152,7 @@ class Os {
 
     /* Mac OS */
 
-    if (/\(Macintosh;/u.test(ua) && !/OS X/u.test(ua)) {
+    if (/(; |\()Macintosh;/u.test(ua) && !/OS X/u.test(ua)) {
       this.data.os.name = 'Mac OS';
       this.data.device.type = Constants.deviceType.DESKTOP;
     }
@@ -1365,7 +1365,7 @@ class Os {
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
-    if (/Series[ ]?60/u.test(ua) || /S60[V\/;]/u.test(ua)) {
+    if (/Series[ ]?60/u.test(ua) || /S60[V\/;]/u.test(ua) || /S60 Symb/u.test(ua)) {
       this.data.os.name = 'Series60';
       this.data.os.family = new Family({name: 'Symbian'});
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -1396,6 +1396,7 @@ class Os {
 
     if (/Symbian/u.test(ua)) {
       this.data.os.family = new Family({name: 'Symbian'});
+      this.data.device.type = Constants.deviceType.MOBILE;
 
       if ((match = /SymbianOS\/([0-9.]*)/u.exec(ua))) {
         this.data.os.family.version = new Version({value: match[1]});
@@ -2115,15 +2116,6 @@ class Os {
         this.data.device.type = Constants.deviceType.DESKTOP;
       }
 
-      if (/elementary OS/u.test(ua)) {
-        this.data.os.name = 'elementary OS';
-        if ((match = /elementary OS ([A-Za-z]+)/u.exec(ua))) {
-          this.data.os.version = new Version({alias: match[1]});
-        }
-
-        this.data.device.type = Constants.deviceType.DESKTOP;
-      }
-
       if (/Fedora/u.test(ua)) {
         this.data.os.name = 'Fedora';
         if ((match = /Fedora\/[0-9.\-]+fc([0-9]+)/u.exec(ua))) {
@@ -2294,6 +2286,15 @@ class Os {
         this.data.os.name = 'EZX Linux';
         this.data.device.type = Constants.deviceType.MOBILE;
       }
+    }
+
+    if (/elementary OS/u.test(ua)) {
+      this.data.os.name = 'elementary OS';
+      if ((match = /elementary OS ([A-Za-z]+)/u.exec(ua))) {
+        this.data.os.version = new Version({alias: match[1]});
+      }
+
+      this.data.device.type = Constants.deviceType.DESKTOP;
     }
 
     if (/\(Ubuntu; (Mobile|Tablet)/u.test(ua)) {
