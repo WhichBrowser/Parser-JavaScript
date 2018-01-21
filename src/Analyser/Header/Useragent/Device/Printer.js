@@ -4,7 +4,7 @@ const Constants = require('../../../../constants');
 
 class Printer {
   static detectPrinter(ua) {
-    if (!/(TASKalfa|CanonIJCL|PrintSmart)/iu.test(ua)) {
+    if (!/(TASKalfa|CanonIJCL|IR-S|PrintSmart|EpsonHello)/iu.test(ua)) {
       return;
     }
     let match;
@@ -24,11 +24,27 @@ class Printer {
         type: Constants.deviceType.PRINTER,
       });
     }
+    /* Canon iR S */
+    if (/IR-S/iu.test(ua)) {
+      this.data.device.setIdentification({
+        manufacturer: 'Canon',
+        model: 'imageRUNNER',
+        type: Constants.deviceType.PRINTER,
+      });
+    }
     /* HP Web PrintSmart */
     if (/HP Web PrintSmart/iu.test(ua)) {
       this.data.device.setIdentification({
         manufacturer: 'HP',
         model: 'Web PrintSmart',
+        type: Constants.deviceType.PRINTER,
+      });
+    }
+    /* Epson Hello */
+    if (/EpsonHello\//iu.test(ua)) {
+      this.data.device.setIdentification({
+        manufacturer: 'Epson',
+        model: 'Hello',
         type: Constants.deviceType.PRINTER,
       });
     }
