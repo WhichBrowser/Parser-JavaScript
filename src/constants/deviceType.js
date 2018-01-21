@@ -23,4 +23,5 @@ module.exports = {
   CAR: 'car',
   POS: 'pos',
   BOT: 'bot',
+  PROJECTOR: 'projector',
 };
