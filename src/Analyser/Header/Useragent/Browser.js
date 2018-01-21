@@ -278,6 +278,7 @@ class Browser {
         this.data.device.manufacturer = 'Samsung';
         this.data.device.model = 'DeX';
         this.data.device.identifier = '';
+        this.data.device.identified |= Constants.id.PATTERN;
         this.data.device.type = Constants.deviceType.DESKTOP;
       } else {
         const channel = Chrome.getChannel('desktop', version);
@@ -1182,6 +1183,15 @@ class Browser {
       this.data.browser.channel = null;
     }
 
+    if ((match = /UCLite\/([0-9.]*)/u.exec(ua))) {
+      this.data.browser.stock = false;
+      this.data.browser.name = 'UC Browser';
+      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.type = Constants.browserType.BROWSER;
+
+      this.data.browser.channel = null;
+    }
+
     /* U2 is the Proxy service used by UC Browser on low-end phones */
     if (/U2\//u.test(ua)) {
       this.data.browser.stock = false;
@@ -1380,7 +1390,7 @@ class Browser {
 
     /* Netfront NX */
 
-    if ((match = /NX\/([0-9.]*)/u.exec(ua))) {
+    if ((match = /NX[/ ]([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'NetFront NX';
       this.data.browser.version = new Version({value: match[1], details: 2});
       this.data.browser.type = Constants.browserType.BROWSER;
@@ -1988,7 +1998,7 @@ class Browser {
 
   static detectMobileBrowsers(ua) {
     if (
-      !/(Ninesky|Skyfire|Dolphin|QQ|360|QHBrowser|Mercury|iBrowser|Puffin|MiniB|MxNitro|Sogou|Xiino|Palmscape|WebPro|Vision)/iu.test(
+      !/(Ninesky|Skyfire|Dolphin|QQ|360|QHBrowser|Mercury|iBrowser|Puffin|MiniB|MxNitro|Sogou|Xiino|Palmscape|WebPro|Vision|MiuiBrowser)/iu.test(
         ua
       )
     ) {
@@ -1996,6 +2006,20 @@ class Browser {
     }
 
     let match;
+    /* Xiaomi MIUI Browser */
+    if ((match = /MiuiBrowser\/([0-9.]*)/u.exec(ua))) {
+      this.data.browser.name = 'MIUI Browser';
+      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.type = Constants.browserType.BROWSER;
+      if (!this.data.os.isFamily('Android')) {
+        this.data.os.reset();
+        this.data.os.name = 'Android';
+        this.data.device.manufacturer = 'Xiaomi';
+        this.data.device.model = null;
+        this.data.device.type = Constants.deviceType.MOBILE;
+      }
+    }
+
     /* NineSky */
 
     if ((match = /Ninesky(?:-android-mobile(?:-cn)?)?\/([0-9.]*)/u.exec(ua))) {
@@ -2031,7 +2055,7 @@ class Browser {
 
     /* Dolphin HD */
 
-    if ((match = /Dolphin(?:HDCN)?\/(?:INT|CN)?-?([0-9.]*)/u.exec(ua))) {
+    if ((match = /Dolphin(?:HD|Browser)?(?:INT|CN)?\/(?:INT|CN)?-?([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Dolphin';
       this.data.browser.version = new Version({value: match[1]});
       this.data.browser.type = Constants.browserType.BROWSER;
@@ -2108,6 +2132,12 @@ class Browser {
     }
 
     /* 360 Phone Browser */
+    if (/360 (?:Aphone|Android Phone) Browser/u.test(ua)) {
+      this.data.browser.name = 'Qihoo 360 Browser';
+      this.data.browser.family = null;
+      this.data.browser.channel = '';
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
 
     if ((match = /360 (?:Aphone|Android Phone) Browser \((?:Version |V)?([0-9.]*)(?:beta)?\)/u.exec(ua))) {
       this.data.browser.name = 'Qihoo 360 Browser';
