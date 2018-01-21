@@ -292,7 +292,7 @@ class Television {
 
   static detectSamsungTelevision(ua) {
     let match;
-    if (/(SMART-TV|SmartHub)/u.test(ua)) {
+    if (/(SMART-TV;|SmartHub;)/u.test(ua)) {
       this.data.device.manufacturer = 'Samsung';
       this.data.device.series = 'Smart TV';
       this.data.device.type = Constants.deviceType.TELEVISION;
@@ -400,7 +400,7 @@ class Television {
       this.data.device.type = Constants.deviceType.TELEVISION;
       this.data.device.identified |= Constants.id.MATCH_UA;
 
-      if ((match = /Panasonic\.tv\.(?:mid\.)?([0-9]+)/u.exec(ua))) {
+      if ((match = /Panasonic\.tv\.(?:mid\.|pro4\.)?([0-9]+)/u.exec(ua))) {
         this.data.device.series = `Viera ${match[1]}`;
       }
 
@@ -859,7 +859,18 @@ class Television {
       }
 
       if (
-        ['Access', 'ANT', 'EMSYS', 'Em-Sys', 'Opera', 'Opera Software', 'Seraphic', 'Vendor'].includes(vendorName)
+        [
+          'Access',
+          'ANT',
+          'EMSYS',
+          'Em-Sys',
+          'Ocean Blue Software',
+          'Opera',
+          'Opera Software',
+          'Seraphic',
+          'ST',
+          'Vendor',
+        ].includes(vendorName)
       ) {
         found = false;
       }
@@ -880,6 +891,8 @@ class Television {
               case 'GLOBAL-PLAT4':
                 this.data.device.series = 'NetCast TV 2013';
                 break;
+              case 'WEBOS1':
+              case 'WEBOS2.0':
               case 'WEBOS3':
                 this.data.device.series = 'webOS TV';
                 break;
@@ -902,6 +915,12 @@ class Television {
                 break;
               case 'SmartTV2015':
                 this.data.device.series = 'Smart TV 2015';
+                break;
+              case 'SmartTV2016':
+                this.data.device.series = 'Smart TV 2016';
+                break;
+              case 'SmartTV2017':
+                this.data.device.series = 'Smart TV 2017';
                 break;
               case 'OTV-SMT-E5015':
                 this.data.device.model = 'Olleh SkyLife Smart Settopbox';
@@ -931,8 +950,21 @@ class Television {
               case 'Viera2015.mid':
                 this.data.device.series = 'Viera 2015';
                 break;
+              case 'Viera2016':
+                this.data.device.series = 'Viera 2016';
+                break;
+              case 'Viera2017':
+                this.data.device.series = 'Viera 2017';
+                break;
+              case 'Viera2018':
+                this.data.device.series = 'Viera 2018';
+                break;
               default:
                 this.data.device.model = modelName;
+                if ((modelName || '').startsWith('DIGA')) {
+                  this.data.device.series = 'Diga';
+                  this.data.device.model = null;
+                }
                 break;
             }
 
@@ -1149,4 +1181,5 @@ class Television {
     }
   }
 }
+
 module.exports = Television;
