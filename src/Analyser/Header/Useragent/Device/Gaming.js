@@ -17,6 +17,18 @@ class Gaming {
   /* Nintendo Wii and DS */
 
   static detectNintendo(ua) {
+    /* Switch */
+
+    if (/Nintendo Switch/u.test(ua)) {
+      this.data.os.reset();
+      this.data.device.setIdentification({
+        manufacturer: 'Nintendo',
+        model: 'Switch',
+        type: Constants.deviceType.GAMING,
+        subtype: Constants.deviceSubType.CONSOLE,
+      });
+    }
+
     /* Wii */
 
     if (/Nintendo Wii/u.test(ua)) {
@@ -172,7 +184,7 @@ class Gaming {
 
     /* PlayStation 4 */
 
-    if (/PlayStation 4/iu.test(ua)) {
+    if (/PlayStation 4/iu.test(ua) || /\(PS4/u.test(ua)) {
       this.data.os.reset();
       this.data.os.identifyVersion(/PlayStation 4 ([0-9.]*)/u, ua);
 
