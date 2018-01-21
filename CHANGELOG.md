@@ -1,3 +1,11 @@
+#### 0.2.6 (2018-01-21)
+** This update is too big to list all the improvements.** Just to list some of these:
+
+* Improved XIAOMI and MIUI browser detection
+* Added Zen, Ziox, Yuanda and many others
+* Added a lot of new models
+* Added new browsers
+
 #### 0.2.5 (2017-12-07)
 * **Fixes:** 
     * Issue [#10](https://github.com/WhichBrowser/Parser-JavaScript/issues/10) - Thanks [@stouf](https://github.com/stouf) for reporting ([a3285e1](https://github.com/WhichBrowser/Parser-JavaScript/commit/a3285e1f1f439bccbbe2c1bb93abfdcd3a93f7de))
