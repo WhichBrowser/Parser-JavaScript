@@ -1,5 +1,6 @@
 #### 0.2.6 (2018-01-21)
-** This update is too big to list all the improvements.** Just to list some of these:
+**This update is too big to list all the improvements** 
+Just to list some of these:
 
 * Improved XIAOMI and MIUI browser detection
 * Added Zen, Ziox, Yuanda and many others
