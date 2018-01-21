@@ -44,7 +44,10 @@ const models = [
     hasCarrier: true,
     needsDeviceConstants: true,
   },
-  {name: 'WP'},
+  {
+    name: 'WP',
+    needsDeviceConstants: true,
+  },
 ];
 
 const request = require('request');
