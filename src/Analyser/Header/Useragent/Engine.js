@@ -34,6 +34,9 @@ class Engine {
     if (/AppleWebkit\(like Gecko\)/iu.test(ua)) {
       this.data.engine.name = 'Webkit';
     }
+    if (/CoralWebkit/iu.test(ua)) {
+      this.data.engine.version = null;
+    }
   }
 
   /* KHTML */
