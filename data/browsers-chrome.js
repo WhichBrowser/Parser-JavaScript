@@ -67,6 +67,7 @@ module.exports = {
     '61.0.3163': 'stable',
     '62.0.3202': 'stable',
     '63.0.3239': 'stable',
+    '64.0.3282': 'stable',
   },
   MOBILE: {
     '16.0.912': 'beta',
@@ -108,5 +109,6 @@ module.exports = {
     '61.0.3163': 'stable',
     '62.0.3202': 'stable',
     '63.0.3239': 'stable',
+    '64.0.3282': 'stable',
   },
 };
