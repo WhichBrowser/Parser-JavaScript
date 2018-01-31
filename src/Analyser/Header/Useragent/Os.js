@@ -62,11 +62,15 @@ class Os {
       }
 
       if ((match = /OS (.*) like Mac OS X/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+        this.data.os.version = new Version({
+          value: match[1].replace(/_/g, '.'),
+        });
       }
 
       if ((match = /iPhone OS ([0-9._]*);/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+        this.data.os.version = new Version({
+          value: match[1].replace(/_/g, '.'),
+        });
       }
 
       if (/iPhone Simulator;/u.test(ua)) {
@@ -94,11 +98,17 @@ class Os {
       this.data.os.name = 'OS X';
 
       if ((match = /Mac OS X (10[0-9._]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace(/_/g, '.'), details: 2});
+        this.data.os.version = new Version({
+          value: match[1].replace(/_/g, '.'),
+          details: 2,
+        });
       }
 
       if ((match = /;os=Mac (10[0-9[.,]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1].replace(/,/g, '.'), details: 2});
+        this.data.os.version = new Version({
+          value: match[1].replace(/,/g, '.'),
+          details: 2,
+        });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -176,6 +186,11 @@ class Os {
         falsepositive = true;
       }
 
+      /* Prevent Windows 10 IoT Core from matching Android */
+      if (/Windows IoT/u.test(ua)) {
+        falsepositive = true;
+      }
+
       /* Prevent from OSes that claim to be 'like' Android from matching */
       if (/like Android/u.test(ua)) {
         falsepositive = true;
@@ -209,15 +224,27 @@ class Os {
         }
 
         if (/Android (?:L|4.4.99);/u.test(ua)) {
-          this.data.os.version = new Version({value: '5', details: 3, alias: 'L'});
+          this.data.os.version = new Version({
+            value: '5',
+            details: 3,
+            alias: 'L',
+          });
         }
 
         if (/Android (?:M|5.[01].99);/u.test(ua)) {
-          this.data.os.version = new Version({value: '6', details: 3, alias: 'M'});
+          this.data.os.version = new Version({
+            value: '6',
+            details: 3,
+            alias: 'M',
+          });
         }
 
         if (/Android (?:N|6.0.99);/u.test(ua)) {
-          this.data.os.version = new Version({value: '7', details: 3, alias: 'N'});
+          this.data.os.version = new Version({
+            value: '7',
+            details: 3,
+            alias: 'N',
+          });
         }
 
         this.data.device.type = Constants.deviceType.MOBILE;
@@ -632,22 +659,37 @@ class Os {
           case '10.1':
           case '10.0':
           case '6.4':
-            this.data.os.version = new Version({value: match[1], alias: '10'});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: '10',
+            });
             break;
 
           case '6.3':
             if (/; ARM;/u.test(ua)) {
-              this.data.os.version = new Version({value: match[1], alias: 'RT 8.1'});
+              this.data.os.version = new Version({
+                value: match[1],
+                alias: 'RT 8.1',
+              });
             } else {
-              this.data.os.version = new Version({value: match[1], alias: '8.1'});
+              this.data.os.version = new Version({
+                value: match[1],
+                alias: '8.1',
+              });
             }
             break;
 
           case '6.2':
             if (/; ARM;/u.test(ua)) {
-              this.data.os.version = new Version({value: match[1], alias: 'RT'});
+              this.data.os.version = new Version({
+                value: match[1],
+                alias: 'RT',
+              });
             } else {
-              this.data.os.version = new Version({value: match[1], alias: '8'});
+              this.data.os.version = new Version({
+                value: match[1],
+                alias: '8',
+              });
             }
             break;
 
@@ -655,25 +697,48 @@ class Os {
             this.data.os.version = new Version({value: match[1], alias: '7'});
             break;
           case '6.0':
-            this.data.os.version = new Version({value: match[1], alias: 'Vista'});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: 'Vista',
+            });
             break;
           case '5.2':
-            this.data.os.version = new Version({value: match[1], alias: 'Server 2003'});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: 'Server 2003',
+            });
             break;
           case '5.1':
-            this.data.os.version = new Version({value: match[1], alias: 'XP'});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: 'XP',
+            });
             break;
           case '5.0':
-            this.data.os.version = new Version({value: match[1], alias: '2000'});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: '2000',
+            });
             break;
           default:
-            this.data.os.version = new Version({value: match[1], alias: `NT ${match[1]}`});
+            this.data.os.version = new Version({
+              value: match[1],
+              alias: `NT ${match[1]}`,
+            });
             break;
         }
 
         Os.detectWindowsOemManufacturer.call(this, ua);
       }
 
+      /* Windows 10 IoT Core */
+
+      if ((match = /Windows IoT (1[0-9]\.[0-9]);/u.exec(ua))) {
+        this.data.os.version = new Version({
+          value: match[1],
+          alias: '10 IoT Core',
+        });
+      }
       /* Windows */
 
       if (/(Windows 95|Win95)/u.test(ua)) {
@@ -1476,7 +1541,9 @@ class Os {
         }
 
         if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+);/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+          this.data.os.version = new Version({
+            value: match[1].replace(/_/g, '.'),
+          });
         }
       }
 
@@ -2093,7 +2160,9 @@ class Os {
       if (/CentOS/u.test(ua)) {
         this.data.os.name = 'CentOS';
         if ((match = /CentOS\/[0-9\.\-]+el([0-9_]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+          this.data.os.version = new Version({
+            value: match[1].replace(/_/g, '.'),
+          });
         }
 
         if ((match = /CentOS Linux release ([0-9\.]+)/u.exec(ua))) {
@@ -2119,7 +2188,9 @@ class Os {
       if (/Fedora/u.test(ua)) {
         this.data.os.name = 'Fedora';
         if ((match = /Fedora\/[0-9.\-]+fc([0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+          this.data.os.version = new Version({
+            value: match[1].replace(/_/g, '.'),
+          });
         }
 
         if ((match = /Fedora release ([0-9.]+)/u.exec(ua))) {
@@ -2208,7 +2279,9 @@ class Os {
       if (/Red Hat/u.test(ua)) {
         this.data.os.name = 'Red Hat';
         if ((match = /Red Hat[^\/]*\/[0-9\.\-]+el([0-9_]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+          this.data.os.version = new Version({
+            value: match[1].replace(/_/g, '.'),
+          });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2266,7 +2339,9 @@ class Os {
 
       if ((match = /Fedora\/[0-9\.\-]+rs([0-9\.]+)/u.exec(ua))) {
         this.data.os.name = 'Red Star';
-        this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+        this.data.os.version = new Version({
+          value: match[1].replace(/_/g, '.'),
+        });
 
         this.data.device.type = Constants.deviceType.DESKTOP;
       }
@@ -2438,27 +2513,95 @@ class Os {
 
     const patterns = [
       {name: 'BeOS', regexp: [/BeOS/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'Haiku', regexp: [/Haiku/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'AmigaOS', regexp: [/AmigaOS ?([0-9.]+)/iu, /AmigaOS/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'MorphOS', regexp: [/MorphOS(?: ([0-9.]*))?/iu], type: Constants.deviceType.DESKTOP},
+      {
+        name: 'Haiku',
+        regexp: [/Haiku/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'AmigaOS',
+        regexp: [/AmigaOS ?([0-9.]+)/iu, /AmigaOS/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'MorphOS',
+        regexp: [/MorphOS(?: ([0-9.]*))?/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
       {name: 'AROS', regexp: [/AROS/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'OpenVMS', regexp: [/OpenVMS V([0-9.]+)/iu, /OpenVMS/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'RISC OS', regexp: [/RISC OS(?:-NC)? ([0-9.]*)/iu, /RISC OS/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'Joli OS', regexp: [/Joli OS\/([0-9.]*)/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'OS/2', regexp: [/OS\/2;(?: (?:U; )?Warp ([0-9.]*))?/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'Inferno', regexp: [/Inferno/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'Syllable', regexp: [/Syllable/iu], type: Constants.deviceType.DESKTOP},
-      {name: 'Grid OS', regexp: [/Grid OS ([0-9.]*)/iu], type: Constants.deviceType.TABLET},
-      {name: 'MRE', regexp: [/\(MTK;/iu, /\/MTK /iu], type: Constants.deviceType.MOBILE},
+      {
+        name: 'OpenVMS',
+        regexp: [/OpenVMS V([0-9.]+)/iu, /OpenVMS/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'RISC OS',
+        regexp: [/RISC OS(?:-NC)? ([0-9.]*)/iu, /RISC OS/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'Joli OS',
+        regexp: [/Joli OS\/([0-9.]*)/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'OS/2',
+        regexp: [/OS\/2;(?: (?:U; )?Warp ([0-9.]*))?/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'Inferno',
+        regexp: [/Inferno/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'Syllable',
+        regexp: [/Syllable/iu],
+        type: Constants.deviceType.DESKTOP,
+      },
+      {
+        name: 'Grid OS',
+        regexp: [/Grid OS ([0-9.]*)/iu],
+        type: Constants.deviceType.TABLET,
+      },
+      {
+        name: 'MRE',
+        regexp: [/\(MTK;/iu, /\/MTK /iu],
+        type: Constants.deviceType.MOBILE,
+      },
       {name: 'MRE', regexp: [/MRE\\\\/iu], type: Constants.deviceType.MOBILE},
-      {name: 'MRE', regexp: [/MAUI[-_ ](?:Browser|Runtime)/iu], type: Constants.deviceType.MOBILE},
-      {name: 'MRE', regexp: [/Browser\/MAUI/iu], type: Constants.deviceType.MOBILE},
-      {name: 'MRE', regexp: [/Nucleus RTOS\//iu], type: Constants.deviceType.MOBILE},
-      {name: 'MRE', regexp: [/\/Nucleus/iu], type: Constants.deviceType.MOBILE},
-      {name: 'MRE', regexp: [/Nucleus\//iu], type: Constants.deviceType.MOBILE},
+      {
+        name: 'MRE',
+        regexp: [/MAUI[-_ ](?:Browser|Runtime)/iu],
+        type: Constants.deviceType.MOBILE,
+      },
+      {
+        name: 'MRE',
+        regexp: [/Browser\/MAUI/iu],
+        type: Constants.deviceType.MOBILE,
+      },
+      {
+        name: 'MRE',
+        regexp: [/Nucleus RTOS\//iu],
+        type: Constants.deviceType.MOBILE,
+      },
+      {
+        name: 'MRE',
+        regexp: [/\/Nucleus/iu],
+        type: Constants.deviceType.MOBILE,
+      },
+      {
+        name: 'MRE',
+        regexp: [/Nucleus\//iu],
+        type: Constants.deviceType.MOBILE,
+      },
       {name: 'QNX', regexp: [/QNX/iu], type: Constants.deviceType.MOBILE},
       {name: 'VRE', regexp: [/\(VRE;/iu], type: Constants.deviceType.MOBILE},
-      {name: 'SpreadTrum', regexp: [/\(SpreadTrum;/iu], type: Constants.deviceType.MOBILE},
+      {
+        name: 'SpreadTrum',
+        regexp: [/\(SpreadTrum;/iu],
+        type: Constants.deviceType.MOBILE,
+      },
       {name: 'ThreadX', regexp: [/ThreadX(?:_OS)?\/([0-9.]*)/iu]},
     ];
 
