@@ -1,3 +1,7 @@
+#### 0.2.7 (2017-01-31)
+* **Fixes:** Windows IoT 10 beign detected as Android ([695751b](https://github.com/WhichBrowser/Parser-JavaScript/commit/695751b00a28b6ca28208c944e8bbf13a230c798))
+* **Database:** Added Chrome 64 ([ec0e117](https://github.com/WhichBrowser/Parser-JavaScript/commit/ec0e117b7e1f56a68d53cc2e8d0982b23827994a))
+
 #### 0.2.6 (2018-01-21)
 **This update is too big to list all the improvements** 
 Just to list some of these:
