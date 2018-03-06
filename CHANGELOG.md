@@ -1,3 +1,7 @@
+#### 0.2.8 (2017-03-06)
+* **Fixes:** Update dependencies due to [vulnerable moment.js version](https://nvd.nist.gov/vuln/detail/CVE-2017-18214)  ([4ed2fc2](https://github.com/WhichBrowser/Parser-JavaScript/commit/4ed2fc296e1949b0cb8c5563a65b8cf97649241a))
+* **Database:** Added Czech service, thanks to @pixietrixibell for [#90 on Parser-PHP](https://github.com/WhichBrowser/Parser-PHP/pull/90) ([8a96017](https://github.com/WhichBrowser/Parser-JavaScript/commit/8a96017408ac35b37e73d31b7746ad84723dcfc0))
+
 #### 0.2.7 (2017-01-31)
 * **Fixes:** Windows IoT 10 beign detected as Android ([695751b](https://github.com/WhichBrowser/Parser-JavaScript/commit/695751b00a28b6ca28208c944e8bbf13a230c798))
 * **Database:** Added Chrome 64 ([ec0e117](https://github.com/WhichBrowser/Parser-JavaScript/commit/ec0e117b7e1f56a68d53cc2e8d0982b23827994a))
