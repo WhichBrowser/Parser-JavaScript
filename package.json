@@ -1,6 +1,6 @@
 {
   "name": "which-browser",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Browser sniffing tool and UA parser. Browser sniffing gone too far — A useragent parser library for JavaScript",
   "main": "src/Parser.js",
   "scripts": {
@@ -36,18 +36,18 @@
   "author": "Simone Mariotti",
   "license": "MIT",
   "devDependencies": {
-    "codacy-coverage": "^2.0.2",
+    "codacy-coverage": "^2.1.0",
     "code": "^4.1.0",
-    "codecov": "^2.2.0",
-    "eslint": "^4.1.1",
+    "codecov": "^2.3.1",
+    "eslint": "^4.18.2",
     "eslint-config-google": "^0.8.0",
     "husky": "^0.14.1",
     "istanbul": "^0.4.5",
-    "lab": "^14.1.0",
-    "lint-staged": "^4.0.0",
-    "prettier": "^1.5.2",
-    "request": "^2.81.0",
-    "sinon": "^2.3.5",
+    "lab": "^14.3.2",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.11.1",
+    "request": "^2.83.0",
+    "sinon": "^2.4.1",
     "yamljs": "^0.3.0"
   },
   "lint-staged": {
