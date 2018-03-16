@@ -1,9 +1,12 @@
+#### 0.2.9 (2017-03-16)
+* **Database:** Added Chrome 65 ([c1c9148](https://github.com/WhichBrowser/Parser-JavaScript/commit/c1c9148397b179d0655ec0f5b181d8e65511df38))
+
 #### 0.2.8 (2017-03-06)
 * **Fixes:** Update dependencies due to [vulnerable moment.js version](https://nvd.nist.gov/vuln/detail/CVE-2017-18214)  ([4ed2fc2](https://github.com/WhichBrowser/Parser-JavaScript/commit/4ed2fc296e1949b0cb8c5563a65b8cf97649241a))
 * **Database:** Added Czech service, thanks to @pixietrixibell for [#90 on Parser-PHP](https://github.com/WhichBrowser/Parser-PHP/pull/90) ([8a96017](https://github.com/WhichBrowser/Parser-JavaScript/commit/8a96017408ac35b37e73d31b7746ad84723dcfc0))
 
 #### 0.2.7 (2017-01-31)
-* **Fixes:** Windows IoT 10 beign detected as Android ([695751b](https://github.com/WhichBrowser/Parser-JavaScript/commit/695751b00a28b6ca28208c944e8bbf13a230c798))
+* **Fixes:** Windows IoT 10 being detected as Android ([695751b](https://github.com/WhichBrowser/Parser-JavaScript/commit/695751b00a28b6ca28208c944e8bbf13a230c798))
 * **Database:** Added Chrome 64 ([ec0e117](https://github.com/WhichBrowser/Parser-JavaScript/commit/ec0e117b7e1f56a68d53cc2e8d0982b23827994a))
 
 #### 0.2.6 (2018-01-21)
@@ -19,7 +22,7 @@ Just to list some of these:
 * **Fixes:** 
     * Issue [#10](https://github.com/WhichBrowser/Parser-JavaScript/issues/10) - Thanks [@stouf](https://github.com/stouf) for reporting ([a3285e1](https://github.com/WhichBrowser/Parser-JavaScript/commit/a3285e1f1f439bccbbe2c1bb93abfdcd3a93f7de))
 * **Database:** Added Chrome 63, new iPhones, MANY new models of various manufacturers and Os ([6e6715e](https://github.com/WhichBrowser/Parser-JavaScript/commit/6e6715e022bb26e2a4bd5a7f24a6fc2a9a023ebb))
-* **Analisys:** Better management of Edge, added management of KaiOS ([22a2752](https://github.com/WhichBrowser/Parser-JavaScript/commit/22a27520ce38dd5f50954387b5e0499c88bef1e0))
+* **Analysis:** Better management of Edge, added management of KaiOS ([22a2752](https://github.com/WhichBrowser/Parser-JavaScript/commit/22a27520ce38dd5f50954387b5e0499c88bef1e0))
 
 #### 0.2.4 (2017-11-17) 
 * **Database:** Added Chrome 62 ([3d4a74c](https://github.com/WhichBrowser/Parser-JavaScript/commit/3d4a74c1cf995a41bde6a6136bfd076d9e877286))
@@ -64,4 +67,4 @@ Just to list some of these:
 
 ##### New Features
 
-* **npm:** First version of JavaScipt porting on npm 🎇
+* **npm:** First version of JavaScript porting on npm 🎇
