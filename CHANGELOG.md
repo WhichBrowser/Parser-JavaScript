@@ -1,3 +1,6 @@
+#### 0.3.0 (2017-06-19)
+* **Database:** Added Chrome 66 & 67 ([a9bce87](https://github.com/WhichBrowser/Parser-JavaScript/commit/a9bce872a9a17491539aca760d2627f1af2a6beb))
+
 #### 0.2.9 (2017-03-16)
 * **Database:** Added Chrome 65 ([c1c9148](https://github.com/WhichBrowser/Parser-JavaScript/commit/c1c9148397b179d0655ec0f5b181d8e65511df38))
 
