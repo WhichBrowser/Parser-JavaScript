@@ -12,7 +12,7 @@ exports.ANDROID_INDEX = {
     '[0-9]0[0-9]F!!',
     '(Haier[- ])?H[ETW]- ?[A-Z][0-9]!!',
     '(Hisense )?(LED[0-9]{2,2}(G|K|L|EC|XT)[0-9]{2,3})!',
-    '[SX0][0-9]{2,2}HT!!',
+    '[SX06][0-9]{2,2}HT!!',
     '(Huawei )?[MSTX](1|2|7|8|10)\\-[A-Z0-9][0-9]{2,2}!!',
     'G[0-9]{3,3}!!',
     'Y[0-9]{3,3}!!',
@@ -33,8 +33,8 @@ exports.ANDROID_INDEX = {
     'O\\+!!',
     '[0-9]{2,2}PFH6[0-9]{3,3}!',
     '(?:RIVO )?RHYTHM RX ?([0-9]+)!',
-    '[456A]0[0-9]SH!!',
-    '(3|5|6)0[0-9]SH!!',
+    '[4567A]0[0-9]SH!!',
+    '(3|5|6|7)0[0-9]SH!!',
     'C[0-9]{4,4}!!',
     'D[0-9]{4,4}!!',
     'E[0-9]{4,4}!!',
@@ -67,7 +67,7 @@ exports.ANDROID_INDEX = {
   '@2 ': ['(Lenovo )?(Tab ?)?(2 ?)?[AS](7|8|10)!!'],
   '@20': ['201M', '(Xiaomi )?20!!', '(Xiaomi |HM)?20!!'],
   '@2P': ['2PQ93', '2PS64'],
-  '@3': ['(3|5|6)0[0-9]SH!!'],
+  '@3': ['(3|5|6|7)0[0-9]SH!!'],
   '@36': ['360 N4S'],
   '@3G': ['3G7334i', '(Lenovo |Lephone )?3GC101!', '(Lenovo |Lephone )?3GW100!', '(Lenovo |Lephone )?3GW101!'],
   '@40': [
@@ -94,7 +94,7 @@ exports.ANDROID_INDEX = {
     '4037[AX]!',
     '4037[T]!',
     '4037[V]!',
-    '4045[ADELOX]!',
+    '4045[ADEFLOYX]!',
     '4055[JU]!',
     '4060[A]!',
     '4060[W]!',
@@ -103,7 +103,7 @@ exports.ANDROID_INDEX = {
     '402ZT'
   ],
   '@48': ['(48|50|55)AX600C!'],
-  '@5': ['(3|5|6)0[0-9]SH!!'],
+  '@5': ['(3|5|6|7)0[0-9]SH!!'],
   '@50': [
     '5010[DEGSUX]!',
     '5012[G]!',
@@ -122,9 +122,12 @@ exports.ANDROID_INDEX = {
     '5042[ADEFGTWXY]!',
     '5044[ADOY]!',
     '5045[ADGJTX]!',
-    '5046[Y]!',
+    '5046[DGJY]!',
+    '5047[DUY]!',
+    '5049[EGSWZ]!',
     '5050[ASYX]!',
     '5051[ADJMX]!',
+    '5052[D]!',
     '5054[ADOSTX]!',
     '5054[NW]!',
     '5056[ADENUWX]!',
@@ -132,11 +135,13 @@ exports.ANDROID_INDEX = {
     '5057[M]!',
     '5065[ADJNWX]!',
     '5070[DJX]!',
-    '5080[DX]!',
-    '5085[CD]!',
+    '5080[DFQX]!',
+    '5085[CDJNY]!',
+    '5090[Y]!',
     '5095[BIKY]!',
-    '5096[A]!',
+    '5096[AI]!',
     '5098[OS]!',
+    '5099[ADY]!',
     '504Q',
     '504Q+',
     '504QP',
@@ -148,6 +153,7 @@ exports.ANDROID_INDEX = {
   ],
   '@55': ['5560S', '(48|50|55)AX600C!'],
   '@58': [5832, 5855, 5860, '5860A', '5860E', '5860S', 5870],
+  '@6': ['(3|5|6|7)0[0-9]SH!!'],
   '@60': [
     '6014[DX]!',
     '6016[ADEX]!',
@@ -162,12 +168,14 @@ exports.ANDROID_INDEX = {
     '6050[AFWY]!',
     '6055[ABDHIKPUY]!',
     '6070[KOY]!',
+    '602LV',
     '60[0-9]SO!!',
+    '602ZT',
     '6034R ORANGE Niva'
   ],
   '@70': [
     '7030[L]!',
-    '7040[NR]!',
+    '7040[DNR]!',
     '7040[T]!',
     '7043[AEKY]!',
     '7044[AXY]!',
@@ -177,7 +185,9 @@ exports.ANDROID_INDEX = {
     '7050[Y]!',
     '7051[X]!',
     '7053[D]!',
-    '7055[AW]!'
+    '7055[AW]!',
+    '704DC',
+    '70[0-9]SO!!'
   ],
   '@71': ['710C'],
   '@72': [7260, 7266],
@@ -193,19 +203,19 @@ exports.ANDROID_INDEX = {
   '@89': [8950],
   '@8X': ['8x-1000'],
   '@90': [
-    '9001[DX]!',
+    '9001[DIX]!',
     '9002[AWX]!',
     '9003[AX]!',
     '9005[X]!',
     '9006[W]!',
     '9007[ATX]!',
-    '9008[AIJTUX]!',
+    '9008[ADIJTUX]!',
     '9010[X]!',
-    '9015[BJW]!',
+    '9015[BJWQ]!',
     '9022[SX]!',
-    '9024[W]!',
+    '9024[OW]!',
     '9025[MQ]!',
-    '9021A',
+    '9021[AM]!',
     '909d',
     9088,
     '9020[A]!'
@@ -499,7 +509,7 @@ exports.ANDROID_INDEX = {
     'Allwinner A10',
     '(Highscreen|Alpha|Bay|Boost|Cosmo|Explosion|Power|Prime|Zera)!!',
     '(HUAWEI )?(ALP|BLA|CRR|LON|MATE|MHA|MT1|MT2|MT7|M200|NXT|Z100)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'Alfa A93 POP',
     'Alfa L',
     'Ally',
@@ -582,6 +592,7 @@ exports.ANDROID_INDEX = {
     'AN10G2-LZ',
     'AN10BG3-LZ',
     'AN7DG3C',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     '(iBall )?Andi!!',
     'AND1',
     'AND1E',
@@ -721,7 +732,7 @@ exports.ANDROID_INDEX = {
     'AT1G*',
     'AT7E',
     'ATP515CKIT',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'aTab9.7 IPS',
     'AT735',
     'Atrix 2',
@@ -783,7 +794,7 @@ exports.ANDROID_INDEX = {
     'Barnes & Noble Nook HD+',
     '(Highscreen|Alpha|Bay|Boost|Cosmo|Explosion|Power|Prime|Zera)!!',
     'BAH-(W09|AL00|L09)!',
-    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22)!',
+    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22|TL00)!',
     'Backflip',
     'Backflip Me600',
     'Bambook S1',
@@ -801,6 +812,8 @@ exports.ANDROID_INDEX = {
     'BBB100-[0-9]!',
     'BBC100-[0-9]!',
     'BBD100-[0-9]!',
+    'BBE100-[0-9]!',
+    'BBF100-[0-9]!',
     '(BBG-|VIV-)?vivo!!',
     'Bbox Miami'
   ],
@@ -849,7 +862,7 @@ exports.ANDROID_INDEX = {
   '@BI': ['bird75v2', 'BioniQ!!', 'Bird!!', 'BizSmartPhone', 'BIP-6000', 'BIRDY'],
   '@BK': [
     '(BDS|BHX|BKO)\\-!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@BL': [
     'Blaze',
@@ -862,7 +875,7 @@ exports.ANDROID_INDEX = {
     'Blaze S180',
     'BLADE LE 70',
     '(HUAWEI )?(ALP|BLA|CRR|LON|MATE|MHA|MT1|MT2|MT7|M200|NXT|Z100)!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
     '(BLF-)?lephone!!',
     'Blackphone 2',
@@ -876,11 +889,12 @@ exports.ANDROID_INDEX = {
     '(NOOK )?BNTV250!',
     '(NOOK )?BNRV350!',
     '(NOOK )?BNTV(400)!',
+    '(NOOK )?BNTV(450)!',
     '(NOOK )?BNTV(600)!',
     '(NOOK )?BNTV(800)!',
     'BN Nook HD',
     'BN NookHD+',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@BO': [
     'Boost',
@@ -984,8 +998,8 @@ exports.ANDROID_INDEX = {
     'Casper VIA!!',
     'CAT!!',
     'Candy TV',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     '(HW-|HUAWEI )?CAZ-(AL10|TL10|TL20)!',
     '(HW-|HUAWEI )?CAN-(L01|L11|L12)!',
     'calgary',
@@ -1009,7 +1023,7 @@ exports.ANDROID_INDEX = {
     'Cherry w500',
     'CHUWI!!',
     'CHONG!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
     'chagall',
     'chiron'
@@ -1065,6 +1079,7 @@ exports.ANDROID_INDEX = {
     'Connect-2G-2.0',
     '(Highscreen|Alpha|Bay|Boost|Cosmo|Explosion|Power|Prime|Zera)!!',
     'Coquettish Red',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'Comet',
     'Corvair',
     'COOLPIX S800c',
@@ -1091,7 +1106,7 @@ exports.ANDROID_INDEX = {
     'Cross!!',
     'Crosscall!!',
     '(HUAWEI )?(ALP|BLA|CRR|LON|MATE|MHA|MT1|MT2|MT7|M200|NXT|Z100)!!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     'CRONO 22',
     'Crescent'
   ],
@@ -1118,7 +1133,7 @@ exports.ANDROID_INDEX = {
     'CUBOT!!',
     '(CUBE ?)?(K8|U1|U2|U3|U5|U6|U8|U9)[0-9]?GT!!',
     'CUBE!!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!'
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!'
   ],
   '@CW': ['CW[- ]!!'],
   '@CX': ['CX-919', 'CX-921', 'CX-921B', 'CX-929', 'CX-950', 'CX-958'],
@@ -1133,7 +1148,7 @@ exports.ANDROID_INDEX = {
   ],
   '@D2': [
     'D2-[0-9]{3,3}!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
   ],
   '@D5': ['D530', 'D539'],
   '@D7': ['D709', 'D7800AD', 'D75E', 'D70W'],
@@ -1144,7 +1159,7 @@ exports.ANDROID_INDEX = {
     '(BLU|DASH|LIFE|NEO|STUDIO|VIVO)!!',
     'Dakele A380',
     'DAKELE MC001',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'DATAM803HC',
     'DATAM805HC',
     'DATAM819HD!',
@@ -1212,10 +1227,10 @@ exports.ANDROID_INDEX = {
     'DL8006',
     'DLX',
     'DLXU',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'dL1'
   ],
-  '@DM': ['DM0[0-9]{2,2}(K|SH)!!', 'DM-01G', 'DM-02H', 'DMC-CM1', 'DM-01H', 'DM-01J'],
+  '@DM': ['DM0[0-9]{2,2}(K|SH)!!', 'DM-01G', 'DM-01K', 'DM-02H', 'DMC-CM1', 'DM-01H', 'DM-01J'],
   '@DN': [
     'DNS Airbook TYT701',
     '(DNS )?(Airtab )?(E|ES|M|MA|MC|MF|MW|P|PC|PF)[0-9]{2,4}!!',
@@ -1241,6 +1256,7 @@ exports.ANDROID_INDEX = {
     'Dream',
     '(GIO-)?(GiONEE[- ])?Dream D1!',
     'Droid Incredible',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
     'DroniX-0.5',
     'Droid',
     'DROID',
@@ -1276,7 +1292,7 @@ exports.ANDROID_INDEX = {
   '@DS': ['Dslide!!'],
   '@DT': ['Dtac phone Joey Jet 2', 'dtab01'],
   '@DU': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@DW': ['DW-PS3G5', 'DW-UBT7W', 'DW-UBT7SC*', 'DW-UBT27Cz', 'DW-UBT23G7'],
   '@DY': [
@@ -1317,7 +1333,7 @@ exports.ANDROID_INDEX = {
   '@ED': [
     '(bq|Aquaris|Edison|Maxwell)!!',
     'edgejr',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'edenTAB ET-701'
   ],
   '@EE': ['eeepc', 'eee 701', '(Eee Pad )?Transformer Prime TF201!'],
@@ -1358,7 +1374,14 @@ exports.ANDROID_INDEX = {
     'Elite 5.5L+',
     'Elite 6.0L'
   ],
-  '@EM': ['EMBT3C', 'EM63', 'EM01F', 'eMAX mini', 'EMR1879'],
+  '@EM': [
+    'EMBT3C',
+    'EM63',
+    'EM01F',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    'eMAX mini',
+    'EMR1879'
+  ],
   '@EN': ['Endeavour!!', 'ENR U', 'EndeavorU', 'Enjoy 71', 'Enjoy 7 Plus'],
   '@EP': ['EPAD', 'epade!!'],
   '@EQ': ['equiso.smart.tv.pro'],
@@ -1392,7 +1415,7 @@ exports.ANDROID_INDEX = {
     'EVO ?3D!',
     'EVO 4G',
     'Evo V 4G',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     '(EV|KM)-[ES][0-9]{3,3}!!',
     'Event',
     'EVERY35'
@@ -1419,7 +1442,7 @@ exports.ANDROID_INDEX = {
   '@FI': [
     'FIH-FB0',
     'FIH-!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'Find 5',
     'FIND7'
   ],
@@ -1453,6 +1476,7 @@ exports.ANDROID_INDEX = {
     'Flylife!!',
     'Fly Flylife Web 7.85 Slim',
     'Flyer',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
     'Flair E1',
     'Flair E2',
     'FlairE3',
@@ -1488,14 +1512,14 @@ exports.ANDROID_INDEX = {
   '@FP': ['FP1', 'FP1U', 'FP2'],
   '@FR': [
     'Freelander I20',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(MODECOM )?FreeTAB!!'
   ],
-  '@FS': ['FS403', 'FS407', 'FS451'],
+  '@FS': ['FS403', 'FS407', 'FS451', 'FS514'],
   '@FT': ['FTJ152A', 'FTJ161B', 'FTJ162E'],
   '@FU': ['full Android on Microsoft Windows, pad, pc, n*books', 'Fusion Bolt', 'FUSIONideos', 'Fuel F2'],
   '@FW': ['FWS[0-9]{3,3}!!'],
-  '@FZ': ['FZ-A1(A|B)!', 'FZ-A2A', 'FZ-B2(B|D)!', 'FZ-N1', 'FZ-X1'],
+  '@FZ': ['FZ-A1(A|B)!', 'FZ-A2A', 'FZ-B2(B|D)!', 'FZ-N1', 'FZ-T1', 'FZ-X1'],
   '@G ': ['G Watch', 'G Watch R'],
   '@G0': ['G0215D', 'G0775'],
   '@G1': [
@@ -1520,8 +1544,12 @@ exports.ANDROID_INDEX = {
   ],
   '@G2': ['G2S', 'G2SMNT'],
   '@G3': ['(Moto)?G3$!', '(Moto)?G3-TE$!', 'G3SMNTS22', 'G3SMNTS23'],
-  '@G6': ['(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'],
-  '@G7': ['(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'],
+  '@G6': [
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+  ],
+  '@G7': [
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+  ],
   '@G9': ['G9'],
   '@GA': ['(Google )?Galaxy Nexus!', 'Galaxy S4 Google Editon', 'Garmin!!', 'Galaxy!!'],
   '@GE': [
@@ -1781,7 +1809,7 @@ exports.ANDROID_INDEX = {
   '@GR': [
     'Grouper',
     'GR-TB!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'greenridge',
     'Graphos A10',
     '(ZTE )?(Grand|Mimosa)!!'
@@ -1817,12 +1845,12 @@ exports.ANDROID_INDEX = {
   '@H1': ['H120'],
   '@H2': ['H2000+'],
   '@H3': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@H6': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
-  '@H7': ['H701', 'H7100', 'H7500+', 'H710VL'],
+  '@H7': ['H701', 'H7100', 'H7500+', 'H710VL', 'H715BL'],
   '@H8': ['H8 Life', 'H866C', 'H882L'],
   '@H9': ['H940', 'H9500'],
   '@HA': [
@@ -1839,7 +1867,12 @@ exports.ANDROID_INDEX = {
     'Hayabusa'
   ],
   '@HB': ['HB-100 DASAN', 'HB-100 DASAN Networks, Inc.', 'HB-1000'],
-  '@HD': ['HD2', 'HD2 LEO', 'HD7  Pro'],
+  '@HD': [
+    'HD2',
+    'HD2 LEO',
+    'HD7  Pro',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
+  ],
   '@HE': ['HEDY!!', 'HERO H7500+', 'Hero', 'HERO CDMA', 'HERO200'],
   '@HI': [
     'HiBook pro',
@@ -1869,11 +1902,11 @@ exports.ANDROID_INDEX = {
     '(Xiaomi |HM)?20!!'
   ],
   '@HN': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@HO': [
     'HOSIN!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'Honor3c2G-T',
     'Honor Bee',
     'HOMESYNCT2WIFI'
@@ -1921,17 +1954,18 @@ exports.ANDROID_INDEX = {
     '(Huawei )?[MSTX](1|2|7|8|10)\\-[A-Z0-9][0-9]{2,2}!!',
     'HUAWEI GEM-703L',
     '(HUAWEI )?(ALP|BLA|CRR|LON|MATE|MHA|MT1|MT2|MT7|M200|NXT|Z100)!!',
-    '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'HUAWEI A168-(AL10|DL09|L09|L29)!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     '(HW-|HUAWEI )?CAZ-(AL10|TL10|TL20)!',
     '(HW-|HUAWEI )?CAN-(L01|L11|L12)!',
     '(HW-|HUAWEI )?MLA-(L01|L03|L11|L12|L13)!',
     '(HW-|HUAWEI )?DIG-(AL00|L01|L03|L21|TL10)!',
-    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22)!',
+    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22|TL00)!',
+    '(HW-|HUAWEI )?HWI-(AL00|TL00)!',
     '(HW-|HUAWEI )?MLA-(AL00|AL10)!',
     '(HW-|HUAWEI )?MLA-(TL00|TL10|UL00)!',
     'Huawei P7 mini',
@@ -1945,23 +1979,26 @@ exports.ANDROID_INDEX = {
     'Huawei 858'
   ],
   '@HW': [
-    '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     '(HW-|HUAWEI )?CAZ-(AL10|TL10|TL20)!',
     '(HW-|HUAWEI )?CAN-(L01|L11|L12)!',
     '(HW-|HUAWEI )?MLA-(L01|L03|L11|L12|L13)!',
     '(HW-|HUAWEI )?DIG-(AL00|L01|L03|L21|TL10)!',
-    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22)!',
+    '(HW-|HUAWEI )?BAC-(AL00|L03|L21|L22|TL00)!',
+    '(HW-|HUAWEI )?HWI-(AL00|TL00)!',
     '(HW-|HUAWEI )?MLA-(AL00|AL10)!',
     '(HW-|HUAWEI )?MLA-(TL00|TL10|UL00)!',
     '(Huawei|Ascend|HW-)!!',
     'hwu8812D',
     'HW-01E',
+    'HW-01K',
     'HW-03E',
-    'HWT31'
+    'HWT31',
+    'HWV32'
   ],
   '@HY': ['HY5001', 'HYUNDAI!!', 'Hydro', 'Hydro PLUS', 'HYPER X BLADE'],
   '@I ': ['I 7520'],
@@ -2062,6 +2099,9 @@ exports.ANDROID_INDEX = {
   '@JD': ['JDN-W09'],
   '@JI': ['(JIAYU|JY)!!', 'JIMMY'],
   '@JJ': ['JJ5S+'],
+  '@JM': [
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
+  ],
   '@JO': ['Jolla', 'Joy', 'JOIN'],
   '@JT': ['JT SmartPC02', 'JT-Smart PC01', 'JT-H580VT', 'JT-H581VT', 'JT-B1'],
   '@JX': ['JXD!!'],
@@ -2138,7 +2178,7 @@ exports.ANDROID_INDEX = {
   ],
   '@KI': [
     'Kindle Fire',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
     'KIOTO 793',
     'KITE',
@@ -2146,7 +2186,7 @@ exports.ANDROID_INDEX = {
   ],
   '@KM': ['(EV|KM)-[ES][0-9]{3,3}!!'],
   '@KN': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@KO': [
     'Konka Amber3',
@@ -2214,10 +2254,7 @@ exports.ANDROID_INDEX = {
     'LC-((A|S|LX)[0-9]{1,3}[A-Z])!',
     'LCD-((S|V|LX|UF)[0-9]{1,3}[A-Z])!'
   ],
-  '@LD': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
-    'LDK-ICK v1.4'
-  ],
+  '@LD': ['(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!', 'LDK-ICK v1.4'],
   '@LE': [
     '(LE[0-9]{2,2}[BMU][0-9]{4,4}[A-Z]+)!',
     '(Hisense )?(LED[0-9]{2,2}(G|K|L|EC|XT)[0-9]{2,3})!',
@@ -2391,6 +2428,7 @@ exports.ANDROID_INDEX = {
     'LG-VS[0-9]{3,3}!!',
     'LG-X[0-9]{3,3}!!',
     'LGM-[GKVX][0-9]{3,3}!!',
+    'LGMP450',
     'lge-F160!',
     'LGE-E988!',
     'lgp-970',
@@ -2416,7 +2454,22 @@ exports.ANDROID_INDEX = {
     'Light Tab 2',
     'Light Tab 2W'
   ],
-  '@LL': ['(Lanix )?(Ilium|llium)!!'],
+  '@LL': [
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
+    '(Lanix )?(Ilium|llium)!!'
+  ],
+  '@LM': [
+    'LM-G710!',
+    'LM-G715!',
+    'LM-Q610!',
+    'LM-Q710!',
+    'LM-V350!',
+    'LM-X210!',
+    'LM-X410!',
+    'LM-X415!',
+    'LM-X510!',
+    'LM-Y110!'
+  ],
   '@LO': ['LogicPD Zoom2', '(HUAWEI )?(ALP|BLA|CRR|LON|MATE|MHA|MT1|MT2|MT7|M200|NXT|Z100)!!', 'Loox'],
   '@LS': [
     'LS670',
@@ -2462,7 +2515,7 @@ exports.ANDROID_INDEX = {
     'LUXURY 3',
     'LUXURY 4',
     'LUXURY 5',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     'Lucky Ultra Sonic U8650',
     'LU2300',
     'Lumia800',
@@ -2476,14 +2529,14 @@ exports.ANDROID_INDEX = {
     'Luna TAB10-150',
     'Luno'
   ],
-  '@LY': ['(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!', 'LYF LS-4006', 'LYF LS-5009'],
+  '@LY': ['(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!', 'LYF LS-4006', 'LYF LS-5009'],
   '@M': ['(DNS )?(Airtab )?(E|ES|M|MA|MC|MF|MW|P|PC|PF)[0-9]{2,4}!!'],
   '@M ': ['M POP 5020A', 'M POP'],
   '@M-': ['M-270', 'M-PAD N8'],
   '@M0': ['M01', 'M02', 'M01T', 'M009F', 'M030', 'M031', 'M032', 'M040', 'M045'],
   '@M1': [
     'M19',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'M1050S',
     'M1',
     'm1 metal',
@@ -2563,10 +2616,12 @@ exports.ANDROID_INDEX = {
     'Mediacom 810C',
     '(MEDION|(MD )?LIFETAB)!!',
     'MEEG!!',
+    'MEIZU E3',
     'meizu m1note',
     'MEIZU M5',
     'MEIZU M9',
     'MEIZU MX',
+    'Meizu S6',
     '(MEO )?Smart A!!',
     'MEU AN!!',
     'ME[0-9]{3,3}!!',
@@ -2629,6 +2684,7 @@ exports.ANDROID_INDEX = {
     '(Xiaomi )?(MI )?MAX 2$!',
     '(Xiaomi )?(MI )?MIX$!',
     '(Xiaomi )?(MI )?MIX 2$!',
+    '(Xiaomi )?(MI )?MIX 2S$!',
     'mido',
     '(Xiaomi|Xiaomi Mi|MI) Pad!!',
     '(Xiaomi|Xiaomi Mi|MI)Box!!',
@@ -2672,6 +2728,7 @@ exports.ANDROID_INDEX = {
     'Motorola MotoE2!',
     'Moto E (4)',
     'Moto E (4) Plus',
+    'moto e5 cruise',
     '(Moto)?G3$!',
     '(Moto)?G3-TE$!',
     'MOTOROLA MOTOG',
@@ -2682,9 +2739,12 @@ exports.ANDROID_INDEX = {
     'Moto G (5)',
     'Moto G (5) Plus',
     'Moto G (5S) Plus',
+    'moto g(6)',
+    'moto g(6) plus',
     'Moto Z (2)',
     'Moto Z2 Play',
     'Moto X Pro',
+    'moto x4',
     'Moto Backflip',
     'MOTOROLA XOOM MZ606',
     'MOTOROLA RAZR',
@@ -2695,6 +2755,7 @@ exports.ANDROID_INDEX = {
     'MoFing',
     'mocha',
     'MO-01J',
+    'MO-01K',
     'Movistar Express',
     'Movistar Link',
     'Movistar Motion',
@@ -2813,7 +2874,7 @@ exports.ANDROID_INDEX = {
   ],
   '@MX': ['MX Enjoy TV BOX', 'MX2', 'MX4', 'MX4 Pro', 'MX5', 'MX6'],
   '@MY': [
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     'MyPhone A818g Duo',
     'MyPhone A818 Slim Duo',
     'MyPhone A848 Duo',
@@ -2873,7 +2934,17 @@ exports.ANDROID_INDEX = {
     'myTouch 4G Slide',
     'myTouch Slide 4G'
   ],
-  '@MZ': ['MZ-m2 note', 'MZ-M571C', 'MZ-m3 note', 'MZ-MX4', 'MZ-MX4 Pro', 'MZ[0-9]{3,3}!!'],
+  '@MZ': [
+    'MZ-m2 note',
+    'MZ-M571C',
+    'MZ-m3 note',
+    'MZ-M5',
+    'MZ-MEIZU M6',
+    'MZ-MX4',
+    'MZ-MX4 Pro',
+    'MZ-MX5',
+    'MZ[0-9]{3,3}!!'
+  ],
   '@N-': ['N-0[0-9][A-Z]!!'],
   '@N1': ['N1', 'N12', 'N12R', 'N101 DUAL CORE!'],
   '@N2': ['N2T'],
@@ -2904,7 +2975,7 @@ exports.ANDROID_INDEX = {
     'NATCOM N8302'
   ],
   '@NB': ['NB036', 'NBX-T7013N', 'NBX-T7023N'],
-  '@NC': ['(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!'],
+  '@NC': ['(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!'],
   '@NE': [
     '(HTC )?Nexus ?One!',
     '(Google )?Nexus S!',
@@ -2939,7 +3010,7 @@ exports.ANDROID_INDEX = {
     '(BLU|DASH|LIFE|NEO|STUDIO|VIVO)!!',
     'NexusHD2',
     'Nexus HD2',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'Neon7',
     'Neon9',
     '(NetTab|NT-)!!',
@@ -3019,7 +3090,7 @@ exports.ANDROID_INDEX = {
   ],
   '@NI': ['NITROGEN6X', 'NID 7010', 'Nibiru H1', 'Nibiru H1c', 'nine i7400', 'nikeh', 'nikel'],
   '@NM': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     '(NMP|MBR|XDK|XDS|XMP)\\-!!'
   ],
   '@NO': [
@@ -3068,6 +3139,7 @@ exports.ANDROID_INDEX = {
     '(NOOK )?BNTV250!',
     '(NOOK )?BNRV350!',
     '(NOOK )?BNTV(400)!',
+    '(NOOK )?BNTV(450)!',
     '(NOOK )?BNTV(600)!',
     '(NOOK )?BNTV(800)!',
     'Nook HD',
@@ -3307,6 +3379,7 @@ exports.ANDROID_INDEX = {
     'ONEPLUS A3010',
     'ONEPLUS A5000',
     'ONEPLUS A5010',
+    'ONEPLUS A6000',
     'ONE E1000',
     'ONE E1001',
     'ONE E1003',
@@ -3489,7 +3562,7 @@ exports.ANDROID_INDEX = {
   '@P2': [
     'P2A700',
     'P2Lite',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
   ],
   '@P3': ['P330X', 'P350X', 'P360X', 'P300(Funbook)'],
   '@P4': ['P4i', 'P4', 'P4D Sirius'],
@@ -3500,10 +3573,10 @@ exports.ANDROID_INDEX = {
     'P6 Pro',
     'P6 Qmax',
     'P6 Quad',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
   ],
   '@P7': [
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'P700i',
     'P701',
     'P7',
@@ -3630,7 +3703,7 @@ exports.ANDROID_INDEX = {
   ],
   '@PD': ['PD10-DYD', 'PD6D1J'],
   '@PE': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'PEDI',
     'Penta!!',
     'Pentagram!!',
@@ -3744,7 +3817,7 @@ exports.ANDROID_INDEX = {
   '@PL': [
     'PLE-701L',
     'PLE-703L',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'Planet II v2',
     'PLANET',
     'Playboy PB-S3',
@@ -3855,7 +3928,7 @@ exports.ANDROID_INDEX = {
   '@PR': [
     'Project Tango Tablet Development Kit',
     '(Highscreen|Alpha|Bay|Boost|Cosmo|Explosion|Power|Prime|Zera)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'Pro 10 dual core',
     'Prada 3.0',
     'PRO 5',
@@ -4192,7 +4265,7 @@ exports.ANDROID_INDEX = {
     'Rikomagic MK802III',
     'Rikomagic MK802IIIS',
     '(Gsmart|Gigabyte|Rio)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'Rise',
     '(Ritmix )?RM[DP]-?[0-9]{3,3}!!',
     'RIDGE',
@@ -4233,7 +4306,7 @@ exports.ANDROID_INDEX = {
   ],
   '@RM': ['RM02', 'RM-980', 'RM-1061', '(Ritmix )?RM[DP]-?[0-9]{3,3}!!', 'RMD-[0-9]{2,3}G!!'],
   '@RN': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!'
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!'
   ],
   '@RO': ['Rock-(AL00|CL00|L01|L03)!', 'roiX', 'RoverPad 3W T71D', 'ROAR', 'Roar A50', 'Roar V25', 'rolex'],
   '@RP': ['RP-UDM01A'],
@@ -4276,9 +4349,9 @@ exports.ANDROID_INDEX = {
   ],
   '@SB': ['SBM[0-9]0[0-9]SH!!'],
   '@SC': [
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
-    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LYO|MYA)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(CRO|LUA|CUN|SCC|SCU|CAM|LDN|LYO|MYA)!!',
     'SCH-[iI][0-9]{3,3}!!',
     'SCH-L710!',
     'SCH-M828!',
@@ -4333,6 +4406,7 @@ exports.ANDROID_INDEX = {
     'SH-M02',
     'SH-M02-EVA20',
     'SH-M03',
+    'SH-M07',
     'SH-RM02',
     'SH-[01][0-9][A-Z]!!',
     '(SHP-)?(SHARP )?SH[0-9]{2,3}!!',
@@ -4349,7 +4423,14 @@ exports.ANDROID_INDEX = {
     'SK-Mtek GT7305',
     '(ZTE )?Skate!!'
   ],
-  '@SL': ['Slider SL101', 'SL930', '(HP|Slate)!!', '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!', 'Slidepad!!', 'SLIDE'],
+  '@SL': [
+    'Slider SL101',
+    'SL930',
+    '(HP|Slate)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
+    'Slidepad!!',
+    'SLIDE'
+  ],
   '@SM': [
     'smdk6410',
     'SMDKC110',
@@ -4408,7 +4489,7 @@ exports.ANDROID_INDEX = {
     'Softwinerf900',
     'SoftwinerEvbV13',
     'soho',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'SONIC',
     'Sonim!!',
     'SO-0[0-9][A-Z]!!',
@@ -4469,7 +4550,7 @@ exports.ANDROID_INDEX = {
     'ST7001',
     'ST8000',
     'ST9001',
-    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|KIW|LDD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF)!!',
+    '(HW-|HUAWEI |HONOR )?(ATH|BLN|BKL|BND|CHE|CHM|COL|DUA|DUK|DLI|EDI|FRD|HN3|H30|H60|HOL|JMM|KIW|LLD|NEM|NMO|PE|PLK|RNE|SCL|KNT|CAM|STF|HDN)!!',
     'ST10',
     'ST940I-UP',
     'STM[0-9]{3,3}H!!',
@@ -4607,7 +4688,7 @@ exports.ANDROID_INDEX = {
     'Tablet-P27',
     'TA10CA3',
     '(tablet )?fnac!!',
-    '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
     '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!',
     'TA-FONE!!',
     'TAB1011',
@@ -4616,11 +4697,18 @@ exports.ANDROID_INDEX = {
     'TAB950',
     'TAB1062',
     'TAB192',
+    'TA-10(07|29)!',
+    'TA-10(84)!',
     'TA-10(20|28|32|38)!',
     'TA-10(24|27|44|53)!',
+    'TA-10(61|75|81|88)!',
     'TA-10(00|03|21|25|33|39)!',
+    'TA-10(43|50|54|68)!',
     'TA-10(41)!',
+    'TA-10(62)!',
     'TA-10(04|12|52)!',
+    'TA-10(99)!',
+    'TA-11(03|16)!',
     '(POV )?TAB-PLAYTABPRO!',
     '(POV )?TAB-PROTAB25!',
     '(POV )?TAB-PROTAB26!',
@@ -4765,7 +4853,7 @@ exports.ANDROID_INDEX = {
   '@TI': [
     'Tilapia',
     'Titan TV S320',
-    '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
     '(Karbonn|Titanium)!!',
     'TI320-DU',
     'TI320-DU TV',
@@ -4870,7 +4958,7 @@ exports.ANDROID_INDEX = {
     'TR720F',
     'TR10CS1',
     'TripNiCE Pyramid',
-    '(HW-|HUAWEI )?(TIT|TAG|NCE|TRT|SLA)!!',
+    '(HW-|HUAWEI )?(DRA|FLA|TIT|TAG|NCE|TRT|SLA)!!',
     'TR10RS1',
     '(KAZAM|Thunder|Tornado|Trooper)!!',
     'Triumph',
@@ -5095,7 +5183,7 @@ exports.ANDROID_INDEX = {
     'Vibo-A688',
     'VitMod ExtraLite 1.6.5.fullodex for HTC HD7 Pro',
     'Vivid 4G',
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'Vibe K5 Plus',
     'VIBE X2 (X2)',
     'VIBE X3',
@@ -5146,7 +5234,7 @@ exports.ANDROID_INDEX = {
     'VIETTEL V8509'
   ],
   '@VK': [
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'VK410',
     'VK700',
     'VK810 4G',
@@ -5154,7 +5242,9 @@ exports.ANDROID_INDEX = {
   ],
   '@VL': ['VL-[0-9]{3,3}!!'],
   '@VM': ['VMware Virtual Platform', '(AC|BC|LC|MT|RC|QS|VM|TS|OC)[0-9]{4,4}[A-Z]!!', 'VM670'],
-  '@VN': ['(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'],
+  '@VN': [
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!'
+  ],
   '@VO': [
     'Vogue',
     'Volantis',
@@ -5204,7 +5294,7 @@ exports.ANDROID_INDEX = {
     'Vsun V9'
   ],
   '@VT': [
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'VT6078',
     'VT75C',
     'VT77C',
@@ -5225,7 +5315,7 @@ exports.ANDROID_INDEX = {
   '@W8': ['W820', '(GIO-)?(GiONEE[- ])?W800!', 'W800', 'W806', 'W808', 'W810', 'W880', 'W8', 'W8 beyond'],
   '@W9': ['W900', 'W990'],
   '@WA': [
-    '(HW-|HUAWEI )?(ALE|D2|DAV|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
+    '(HW-|HUAWEI )?(ALE|ANE|D2|DAV|EML|EVA|FIG|G6|G7|GRA|M100|P2|P6|P7|PRA|RIO|SC|Sophia|VIE|VKY|VNS|VTR|WAS)!!',
     'WA-U420D',
     'WALSUN S1 Pro',
     'WALSUN S2',
@@ -5557,6 +5647,7 @@ exports.ANDROID_INDEX = {
     '(Xiaomi )?(MI )?MAX 2$!',
     '(Xiaomi )?(MI )?MIX$!',
     '(Xiaomi )?(MI )?MIX 2$!',
+    '(Xiaomi )?(MI )?MIX 2S$!',
     '(Xiaomi )?20!!',
     '(Xiaomi )?(Redmi|RedRice|HM)!!',
     '(Xiaomi )?(Redmi|HM)[ \\-]?Note!!',
@@ -5792,6 +5883,7 @@ exports.ANDROID_INDEX = {
     'Z01BDC',
     'Z01BS',
     'Z01FD',
+    'Z01GD',
     'Z01HD',
     'Z01HDA',
     'Z01KD',
@@ -5878,6 +5970,7 @@ exports.ANDROID_INDEX = {
     'ZE550KL',
     'ZE552KL',
     'ZE553KL',
+    'ZE554KL',
     'ZEN Touch 2',
     '(Highscreen|Alpha|Bay|Boost|Cosmo|Explosion|Power|Prime|Zera)!!',
     'ZEN 4.5',
@@ -6010,6 +6103,7 @@ exports.ANDROID_INDEX = {
     'ZTE B2016',
     'ZTE B2017',
     'ZTE B2017G',
+    'ZTE B2019G',
     'ZTE C2016',
     'ZTE C2017',
     'ZTE STAR',

@@ -16,7 +16,8 @@ exports.FIREFOXOS_INDEX = {
     'ALCATELOneTouch4022!',
     'ALCATELOneTouch4023!',
     'ALCATELOneTouch6015X!',
-    'ALCATEL4044[MNOTVW]!'
+    'ALCATEL4044[MNOTVW]!',
+    'ALCATEL4044C!'
   ],
   '@HU': ['HUAWEI Ascend Y300-F1', 'HUAWEIY300-F1'],
   '@LG': ['LG-D3(00|01)!', 'LGL25'],

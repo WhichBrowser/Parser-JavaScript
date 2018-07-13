@@ -12,6 +12,8 @@ exports.TIZEN_INDEX = {
   '@KI': ['KIRAN'],
   '@MO': ['Mobile-RD-PQ', 'Mobile-Emulator'],
   '@NX': ['NX300'],
+  '@RF': ['RF10M9995!', 'RF23M8590!', 'RF265BEAE!', 'RF28M9580!', 'RF56M9540!', 'RF85K9993!', 'RF85M95A2!'],
+  '@RH': ['RH81M8090!'],
   '@SC': ['SC-03F'],
   '@SD': ['sdk'],
   '@SE': ['SEC SC-001', 'SEC SC-03F'],
@@ -38,7 +40,8 @@ exports.TIZEN_INDEX = {
     'SM-R750!',
     'SM-R760!',
     'SM-R765!',
-    'SM-R770!'
+    'SM-R770!',
+    'SM-R805!'
   ],
   '@TI': ['TIZEN SM-Z130!', 'TIZEN SM-Z300!', 'TIZEN Emulator'],
   '@TM': ['TM1'],
