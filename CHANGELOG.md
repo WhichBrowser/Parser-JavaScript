@@ -1,3 +1,6 @@
+#### 0.3.1 (2017-07-13)
+* **Database:** Updated Models, Indices and Profiles ([fa4dd85](https://github.com/WhichBrowser/Parser-JavaScript/commit/fa4dd8514991578da4102027269071db860194f3))
+
 #### 0.3.0 (2017-06-19)
 * **Database:** Added Chrome 66 & 67 ([a9bce87](https://github.com/WhichBrowser/Parser-JavaScript/commit/a9bce872a9a17491539aca760d2627f1af2a6beb))
 
