@@ -1,3 +1,4 @@
+/* eslint-disable valid-jsdoc */
 const Browser = require('./Browser');
 const Engine = require('./Engine');
 const Os = require('./Os');
@@ -19,7 +20,6 @@ class Main {
     this.camouflage = false;
     this.features = [];
   }
-
 
   /**
    * Check the name of a property and optionally is a specific version
@@ -63,7 +63,6 @@ class Main {
     return true;
   }
 
-
   /**
    * Check the name of the browser and optionally is a specific version
    *
@@ -79,7 +78,6 @@ class Main {
     args.unshift('browser');
     return this.isX(...args);
   }
-
 
   /**
    * @param  {...*} args   arguments array
@@ -107,7 +105,6 @@ class Main {
     return this.isX(...args);
   }
 
-
   /**
    * Check if the detected browser is of the specified type
    *
@@ -116,9 +113,10 @@ class Main {
    * @return {boolean}
    */
   isDevice(model) {
-    return (this.device.series && this.device.series === model) || (this.device.model && this.device.model === model);
+    return (
+      (this.device.series && this.device.series === model) || (this.device.model && this.device.model === model)
+    );
   }
-
 
   /**
    * Get the type and subtype, separated by a semicolon (if applicable)
@@ -126,9 +124,8 @@ class Main {
    * @return {string}
    */
   getType() {
-    return `${this.device.type }${this.device.subtype ? `:${this.device.subtype}` : ''}`;
+    return `${this.device.type}${this.device.subtype ? `:${this.device.subtype}` : ''}`;
   }
-
 
   /**
    * Check if the detected browser is of the specified type
@@ -157,7 +154,6 @@ class Main {
     return false;
   }
 
-
   /**
    * Check if the detected browser is a mobile device
    *
@@ -175,7 +171,6 @@ class Main {
     );
   }
 
-
   /**
    * Check if a browser was detected
    *
@@ -184,7 +179,6 @@ class Main {
   isDetected() {
     return this.browser.isDetected() || this.os.isDetected() || this.engine.isDetected() || this.device.isDetected();
   }
-
 
   /**
    * Return the input string prefixed with 'a' or 'an' depending on the first letter of the string
@@ -196,9 +190,8 @@ class Main {
    * @return {string}
    */
   static a(str) {
-    return `${(/^[aeiou]/i.test(str) ? 'an ' : 'a ')}${str}`;
+    return `${/^[aeiou]/i.test(str) ? 'an ' : 'a '}${str}`;
   }
-
 
   /**
    * Get a human readable string of the whole browser identification
@@ -212,7 +205,6 @@ class Main {
     const engine = this.engine.toString();
     let device = this.device.toString();
 
-
     if (!device && !os && this.device.type === 'television') {
       device = 'television';
     }
@@ -220,7 +212,6 @@ class Main {
     if (!device && this.device.type === 'emulator') {
       device = 'emulator';
     }
-
 
     if (browser && os && device) {
       return `${prefix}${browser} on ${Main.a(device)} running ${os}`;
@@ -265,7 +256,6 @@ class Main {
     return 'an unknown browser';
   }
 
-
   /**
    * Get an object of all defined properties
    *
@@ -289,5 +279,7 @@ class Main {
     return result;
   }
 }
+
+/* eslint-enable valid-jsdoc */
 
 module.exports = Main;

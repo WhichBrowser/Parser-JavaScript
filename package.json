@@ -6,6 +6,7 @@
   "scripts": {
     "test": "lab -a code -v",
     "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l  &&  cat ./coverage/lcov.info | codacy-coverage && codecov",
+    "lint": "eslint --quiet .",
     "precommit": "lint-staged",
     "update-applications": "node ./bin/update-applications",
     "update-browser-ids": "node ./bin/update-browser-ids",
