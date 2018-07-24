@@ -150,7 +150,13 @@ class Browser {
 
         /* Webview for Android 4.4 and higher */
 
-        if (version.split('.').slice(1, 3).join('.') === '0.0' && (/Version\//u.test(ua) || /Release\//u.test(ua))) {
+        if (
+          version
+            .split('.')
+            .slice(1, 3)
+            .join('.') === '0.0' &&
+          (/Version\//u.test(ua) || /Release\//u.test(ua))
+        ) {
           this.data.browser.using = new Using({
             name: 'Chromium WebView',
             version: new Version({value: version.split('.')[0]}),
@@ -248,7 +254,7 @@ class Browser {
 
         /* Oculus Chromium based browsers */
         if ((match = /OculusBrowser\/([0-9.]*)/u.exec(ua))) {
-          this.data.browser.name = 'Oculus Internet';
+          this.data.browser.name = 'Oculus Browser';
           this.data.browser.channel = null;
           this.data.browser.stock = true;
           this.data.browser.version = new Version({
@@ -256,9 +262,9 @@ class Browser {
             details: 2,
           });
 
-          if (/Mobile VR/.test(ua)) {
-            this.data.device.manufacturer = 'Samsung';
-            this.data.device.model = 'Gear VR';
+          if (/Pacific/.test(ua)) {
+            this.data.device.manufacturer = 'Oculus';
+            this.data.device.model = 'Go';
             this.data.device.type = Constants.deviceType.HEADSET;
           }
         }
