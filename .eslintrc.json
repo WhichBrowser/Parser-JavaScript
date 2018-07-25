@@ -11,6 +11,7 @@
     "google"
   ],
   "rules": {
+    "no-control-regex": 0,
     "max-len": [
       1,
       120
