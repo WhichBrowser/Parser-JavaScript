@@ -16,6 +16,7 @@
       1,
       120
     ],
-    "no-console":"warn"
+    "no-console":"warn",
+    "require-jsdoc": 0
   }
 }
