@@ -117,5 +117,6 @@ module.exports = {
     '65.0.3325': 'stable',
     '66.0.3359': 'stable',
     '67.0.3396': 'stable',
+    '68.0.3440': 'stable',
   },
 };
