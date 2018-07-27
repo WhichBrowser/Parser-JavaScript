@@ -262,6 +262,12 @@ class Browser {
             details: 2,
           });
 
+          if (/Mobile VR/.test(ua)) {
+            this.data.device.manufacturer = 'Samsung';
+            this.data.device.model = 'Gear VR';
+            this.data.device.type = Constants.deviceType.HEADSET;
+          }
+
           if (/Pacific/.test(ua)) {
             this.data.device.manufacturer = 'Oculus';
             this.data.device.model = 'Go';
