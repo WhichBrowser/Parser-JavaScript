@@ -1,3 +1,6 @@
+#### 0.3.3 (2017-08-22)
+* **Fixes:** Now is possible to *really* disable the bot detection with the option `detectBots: false` ([5e02e9a](https://github.com/WhichBrowser/Parser-JavaScript/commit/5e02e9a01fdee83b7bb0b6e91372b1870b157d52))
+
 #### 0.3.2 (2017-07-27)
 * **Database:** Added Chrome 68 ([0d04c8d](https://github.com/WhichBrowser/Parser-JavaScript/commit/0d04c8def9971c7a6bf16e1b1398bb475e69a310) & [cd5ec81](https://github.com/WhichBrowser/Parser-JavaScript/commit/cd5ec8183a6145dd901e3433c78846e1f9af5976))
 * **Database:** Fixed name of Oculus Browser and added Oculus Go detection, thanks @frankolivier (#23) ([b38377c](https://github.com/WhichBrowser/Parser-JavaScript/commit/b38377c8d1856a316c6f74fea15ee3228aa050d6))
