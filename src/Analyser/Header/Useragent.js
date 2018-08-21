@@ -17,7 +17,7 @@ class Useragent {
     Using.detectUsing.call(this, header);
     Engine.detectEngine.call(this, header);
     /* Detect bots */
-    if (!this.options.detectBots || this.options.detectBots === true) {
+    if (typeof this.options.detectBots === 'undefined' || this.options.detectBots === true) {
       Bot.detectBot.call(this, header);
     }
     /* Refine some of the information */
