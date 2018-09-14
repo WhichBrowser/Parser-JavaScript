@@ -1,4 +1,4 @@
-#### 0.3.4 (2017-09-12)
+#### 0.3.4 (2017-09-13)
 * **Database:** Added Chrome 69 ([5b8a4fa](https://github.com/WhichBrowser/Parser-JavaScript/commit/5b8a4fa5e81740336cf29c88982af152f70e81c9))
 
 #### 0.3.3 (2017-08-22)
