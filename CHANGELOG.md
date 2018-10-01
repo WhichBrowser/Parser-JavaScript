@@ -1,3 +1,6 @@
+#### 0.3.5 (2017-10-01)
+* **Database:** Added new iPhones XS, XS Max, XR ([911ae7a](https://github.com/WhichBrowser/Parser-JavaScript/commit/911ae7a7847acc2be01a809db95bbfaeb930ae73))
+
 #### 0.3.4 (2017-09-13)
 * **Database:** Added Chrome 69 ([5b8a4fa](https://github.com/WhichBrowser/Parser-JavaScript/commit/5b8a4fa5e81740336cf29c88982af152f70e81c9))
 
