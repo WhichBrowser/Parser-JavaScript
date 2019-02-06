@@ -7610,7 +7610,7 @@ exports.PROFILES = {
   'http://wap1.huawei.com/uaprof/HW_HUAWEI_H891L.xml': ['Huawei', 'Pronto', 'Android', DeviceType.MOBILE],
   'http://wap1.huawei.com/uaprof/HuaweiMediaPad_FDR-A04L.xml': [
     'Huawei',
-    'Qua tab 02 HWT31',
+    'Qua tab 02 HWT31',
     'Android',
     DeviceType.MOBILE,
   ],
@@ -9342,7 +9342,7 @@ exports.PROFILES = {
   'http://gsm.lge.com/html/gsm/L24-M3-D1.xml': ['LG', 'isai FL', 'Android', DeviceType.MOBILE],
   'http://gsm.lge.com/html/gsm/YSdHbanpHC5h2R_E/V32-M3-D1.xml': [
     'LG',
-    'isai vivid LGV32',
+    'isai vivid LGV32',
     'Android',
     DeviceType.MOBILE,
   ],
@@ -16891,7 +16891,7 @@ exports.PROFILES = {
   ],
   'http://wap.samsungmobile.com/uaprof/SM-G610F.xml': ['Samsung', 'Galaxy J7 Prime', 'Android', DeviceType.MOBILE],
   'http://wap.samsungmobile.com/uaprof/SM-G610Y.xml': ['Samsung', 'Galaxy J7 Prime', 'Android', DeviceType.MOBILE],
-  'http://wap.samsungmobile.com/uaprof/SGH-N075T.xml': ['Samsung', 'GALAXY J SC-02F', 'Android', DeviceType.MOBILE],
+  'http://wap.samsungmobile.com/uaprof/SGH-N075T.xml': ['Samsung', 'GALAXY J SC-02F', 'Android', DeviceType.MOBILE],
   'http://wap.samsungmobile.com/uaprof/SM-C111.xml': ['Samsung', 'Galaxy K Zoom', 'Android', DeviceType.MOBILE],
   'http://wap.samsungmobile.com/uaprof/SM-C111M.xml': ['Samsung', 'Galaxy K Zoom', 'Android', DeviceType.MOBILE],
   'http://wap.samsungmobile.com/uaprof/SM-C115.xml': ['Samsung', 'Galaxy K Zoom', 'Android', DeviceType.MOBILE],
@@ -17663,7 +17663,7 @@ exports.PROFILES = {
   'http://wap.samsungmobile.com/uaprof/SM-N915W8.xml': ['Samsung', 'Galaxy Note Edge', 'Android', DeviceType.MOBILE],
   'http://wap.samsungmobile.com/uaprof/SCL24.xml': [
     'Samsung',
-    'GALAXY Note Edge SCL24',
+    'GALAXY Note Edge SCL24',
     'Android',
     DeviceType.MOBILE,
   ],
@@ -19909,7 +19909,7 @@ exports.PROFILES = {
     'Android',
     DeviceType.MOBILE,
   ],
-  'http://wap.samsungmobile.com/uaprof/SC-05G.xml': ['Samsung', 'GALAXY S6 SC-05G', 'Android', DeviceType.MOBILE],
+  'http://wap.samsungmobile.com/uaprof/SC-05G.xml': ['Samsung', 'GALAXY S6 SC-05G', 'Android', DeviceType.MOBILE],
   'http://device.sprintpcs.com/Samsung/SM-G930P-BOOST/PH7.rdf': [
     'Samsung',
     'Galaxy S7',
