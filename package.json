@@ -7,7 +7,6 @@
     "test": "lab -a code -v",
     "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l",
     "lint": "eslint --quiet .",
-    "precommit": "lint-staged",
     "update-applications": "node ./bin/update-applications",
     "update-browser-ids": "node ./bin/update-browser-ids",
     "update-chrome": "node ./bin/update-chrome",
@@ -57,5 +56,10 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
