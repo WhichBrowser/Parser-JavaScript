@@ -1,5 +1,5 @@
 #### 0.4.2 (2019-06-01)
-Now *TypeScript Types* are available thanks to @[AnandChowdhary](https://github.com/AnandChowdhary) and his PR #36 
+Now *TypeScript Types* are available thanks to @[AnandChowdhary](https://github.com/AnandChowdhary) and his PR [#36](https://github.com/WhichBrowser/Parser-JavaScript/pull/36) 
 * **Database:** Added Chrome 73 and 74 ([d2ea800](https://github.com/WhichBrowser/Parser-JavaScript/commit/d2ea8009277426ea874559e8e426f29510816ae0))
 
 #### 0.4.0 (2019-02-07)
