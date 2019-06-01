@@ -1,3 +1,7 @@
+#### 0.4.2 (2019-06-01)
+Now *TypeScript Types* are available thanks to @[AnandChowdhary](https://github.com/AnandChowdhary) and his PR #36 
+* **Database:** Added Chrome 73 and 74 ([d2ea800](https://github.com/WhichBrowser/Parser-JavaScript/commit/d2ea8009277426ea874559e8e426f29510816ae0))
+
 #### 0.4.0 (2019-02-07)
 * **Fix:** [Issue 96 of WhichBrowser/Parser-PHP](https://github.com/WhichBrowser/Parser-PHP/issues/96), `profiles.js` and `models-*.js` files had some occourrences of spaces replaced by Unicode Character 'EN SPACE' (U+2002). The scripts that download these files are now stripping away that character and replacing it with a normal space. Thanks @[koconder](https://github.com/koconder) for [#29](https://github.com/WhichBrowser/Parser-JavaScript/pull/29) and @[Taiwaninja](https://github.com/Taiwaninja) for reporting it.
 * **Tools:** WhichBrowser/Parser-Javascript is now tested on all the node versions between 6 and 11 included. Thanks again to @[koconder](https://github.com/koconder) for [#30](https://github.com/WhichBrowser/Parser-JavaScript/pull/30).
