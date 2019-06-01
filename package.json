@@ -1,8 +1,9 @@
 {
   "name": "which-browser",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Browser sniffing tool and UA parser. Browser sniffing gone too far — A useragent parser library for JavaScript",
   "main": "src/Parser.js",
+  "types": "which-browser.d.ts",
   "scripts": {
     "test": "lab -a code -v",
     "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l",
