@@ -43,7 +43,10 @@ function escapeString(str) {
   if (!str) {
     return null;
   }
-  return `'${(str + '').replace(/[\\']/g, '\\$&').replace(/\u0000/g, '\\0')}'`;
+  return `'${(str + '')
+    .replace(/[\\']/g, '\\$&')
+    .replace(/\u{0000}/gu, '\\0')
+    .replace(/\u{2002}/gu, ' ')}'`;
 }
 
 /**

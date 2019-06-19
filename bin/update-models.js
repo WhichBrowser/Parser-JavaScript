@@ -76,6 +76,9 @@ models.forEach((type) => {
       // Remove ] from subgroups
       result = result.replace(/ {2,}],\n/g, '    },\n');
 
+      // Remove occurrences of unicode character 'EN SPACE' (U+2002)
+      result = result.replace(/\u{2002}/gu, ' ');
+
       // Fixing regex eg. /Yahoo\! Mindset/u -> /Yahoo! Mindset/u and /jsRSS++\/([0-9.]*)/u -> /jsRSS\+\+\/([0-9.]*)/u
       // result = result.replace(/\\!/g, '!').replace(/(regexp:\s+?.*?)\+\+(.*?)/g, '$1\\+\\+$2');
 
