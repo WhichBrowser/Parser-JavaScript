@@ -173,7 +173,11 @@ class Derive {
           '2.2': '9.7',
           '2.1': '9.6',
         };
-        const key = this.data.engine.getVersion().split('.').slice(0, 2).join('.');
+        const key = this.data.engine
+          .getVersion()
+          .split('.')
+          .slice(0, 2)
+          .join('.');
         if (data[key]) {
           this.data.browser.version = new Version({value: data[key]});
         } else {
@@ -413,6 +417,12 @@ class Derive {
         }
         if (this.data.os.version.is('10.13')) {
           this.data.os.version.nickname = 'High Sierra';
+        }
+        if (this.data.os.version.is('10.14')) {
+          this.data.os.version.nickname = 'Mojave';
+        }
+        if (this.data.os.version.is('10.15')) {
+          this.data.os.version.nickname = 'Catalina';
         }
       }
     }

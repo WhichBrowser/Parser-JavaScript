@@ -533,6 +533,16 @@ class Browser {
       });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
+
+    if ((match = /Edg\/([0-9.]*)/u.exec(ua))) {
+      this.data.browser.name = 'Edge';
+      this.data.browser.channel = '';
+      this.data.browser.version = new Version({
+        value: match[1],
+        details: 1,
+      });
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
   }
 
   /* Opera */
@@ -1486,7 +1496,7 @@ class Browser {
       }
     }
 
-    if ((match = /(Q)0?([0-9][A-Z])/u.exec(ua))) {
+    if ((match = /[^A-Z](Q)0?([0-9][A-Z])/u.exec(ua))) {
       this.data.browser.name = `Obigo ${match[1].toUpperCase()}`;
       this.data.browser.version = new Version(processObigoVersion(match[2]));
       this.data.browser.type = Constants.browserType.BROWSER;
