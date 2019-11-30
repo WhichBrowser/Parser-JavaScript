@@ -1,3 +1,6 @@
+#### 0.5.1 (2019-11-30)
+* **Database:**  Added Chrome 77 and 78. 
+
 #### 0.5.0 (2019-08-25)
 * **Database:** Added support for Chromium based Edge. Updated Android and iOS models. Added Chrome 75 and 76. Added Samsung Galaxy Fold and Galaxy A models.
 * **Fixes:** False positive for Obigo browser. 
