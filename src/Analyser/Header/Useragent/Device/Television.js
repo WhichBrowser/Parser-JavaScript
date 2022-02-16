@@ -596,29 +596,92 @@ class Television {
 
     /* Roku  */
 
-    if ((match = /^Roku\/DVP-(?:[0-9A-Z]+-)?[0-9.]+ \(([0-9]{2,2})/u.exec(ua))) {
+    if ((match = /Roku(?:([0-9]+)[A-Z]+)?\/DVP-(?:([0-9]+)[A-Z]+-)?[0-9.]+/u.exec(ua))) {
       this.data.os.reset();
 
       this.data.device.manufacturer = 'Roku';
       this.data.device.type = Constants.deviceType.TELEVISION;
 
-      switch (match[1]) {
-        case '02':
-          this.data.device.model = '2 XS';
+      const models = {
+        '2000': 'HD',
+        '2050': 'XD',
+        '2100': 'XDS',
+        '2400': 'LT',
+        '2450': 'LT',
+        '2500': 'HD',
+        '2700': 'LT',
+        '2710': '1 SE',
+        '2720': '2',
+        '3000': '2 HD',
+        '3050': '2 XD',
+        '3100': '2 XS',
+        '3400': 'Streaming Stick, MHL',
+        '3420': 'Streaming Stick, MHL',
+        '3500': 'Streaming Stick, HDMI',
+        '3600': 'Streaming Stick',
+        '3700': 'Express',
+        '3710': 'Express+',
+        '3800': 'Streaming Stick',
+        '3810': 'Streaming Stick+',
+        '3900': 'Express',
+        '3910': 'Express+',
+        '3920': 'Premiere',
+        '3921': 'Premiere+',
+        '3930': 'Express',
+        '3931': 'Express+',
+        '4200': '3',
+        '4210': '2',
+        '4230': '3',
+        '4400': '4',
+        '4620': 'Premiere',
+        '4630': 'Premiere+',
+        '4640': 'Ultra',
+        '4660': 'Ultra',
+        '4661': 'Ultra',
+        '4662': 'Ultra LT',
+        '4670': 'Ultra',
+        '4800': 'Ultra',
+      };
+
+      if (match[1] || match[2]) {
+        const model = match[1] || match[2];
+        if (models[model]) {
+          this.data.device.model = models[model];
           this.data.device.generic = false;
-          break;
-        case '04':
-          this.data.device.model = '3';
-          this.data.device.generic = false;
-          break;
-        case '07':
-          this.data.device.model = 'LT';
-          this.data.device.generic = false;
-          break;
-        case '09':
-          this.data.device.model = 'Streaming Stick';
-          this.data.device.generic = false;
-          break;
+        }
+      }
+
+      this.data.device.identified |= Constants.id.MATCH_UA;
+    }
+
+    if ((match = /Roku\/DVP-[0-9.]+ \(([0-9A-Z]{2,2})[0-9]+\./u.exec(ua))) {
+      this.data.os.reset();
+
+      this.data.device.manufacturer = 'Roku';
+      this.data.device.type = Constants.deviceType.TELEVISION;
+
+      const models = {
+        '02': '2 XS',
+        '03': 'LT',
+        '04': '3',
+        '07': 'LT',
+        '09': 'Streaming Stick',
+        '29': 'Ultra',
+        '30': ['TCL', '4K Roku TV'],
+        '51': 'Express',
+        'AE': 'Express',
+      };
+
+      if (match[1]) {
+        const model = match[1];
+        if (models[model]) {
+          if (Array.isArray(models[model])) {
+            this.data.device.manufacturer = models[model][0];
+            this.data.device.model = models[model][1];
+          } else {
+            this.data.device.model = models[model];
+          }
+        }
       }
 
       this.data.device.identified |= Constants.id.MATCH_UA;

@@ -73,6 +73,12 @@ class Os {
         });
       }
 
+      if ((match = /iOS ([0-9.]*);/u.exec(ua))) {
+        this.data.os.version = new Version({
+          value: match[1].replace(/_/g, '.'),
+        });
+      }
+
       if (/iPhone Simulator;/u.test(ua)) {
         this.data.device.type = Constants.deviceType.EMULATOR;
       } else {
@@ -97,16 +103,23 @@ class Os {
 
       this.data.os.name = 'OS X';
 
-      if ((match = /Mac OS X (10[0-9._]*)/u.exec(ua))) {
+      if ((match = /Mac OS X (1[0-9][0-9\._]*)/u.exec(ua))) {
         this.data.os.version = new Version({
           value: match[1].replace(/_/g, '.'),
           details: 2,
         });
       }
 
-      if ((match = /;os=Mac (10[0-9[.,]*)/u.exec(ua))) {
+      if ((match = /;os=Mac (1[0-9][0-9[\.,]*)/u.exec(ua))) {
         this.data.os.version = new Version({
           value: match[1].replace(/,/g, '.'),
+          details: 2,
+        });
+      }
+
+      if (!!this.data.os.version && this.data.os.version.is('10.16')) {
+        this.data.os.version = new Version({
+          value: '11.0',
           details: 2,
         });
       }
@@ -259,7 +272,7 @@ class Os {
 
         let candidates = [];
 
-        if (/Build/iu.test(ua)) {
+        if (/Build/iu.test(ua) && (!/AppleWebKit.*Build/iu.test(ua) || /Build.*AppleWebKit/iu.test(ua))) {
           /* Normal Android useragent strings */
 
           if ((match = /; [a-z][a-zA-Z][-_][a-zA-Z][a-zA-Z] ([^;]*[^;\s])\s+(?:BUILD|Build|build)/u.exec(ua))) {
@@ -302,7 +315,7 @@ class Os {
           /* Old Android useragent strings */
 
           if (
-            (match = /Linux; (?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^)\/;]+)\)/u.exec(
+            (match = /Linux; (?:arm; |arm_64; )?(?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^)\/;]+)\)/u.exec(
               ua
             ))
           ) {

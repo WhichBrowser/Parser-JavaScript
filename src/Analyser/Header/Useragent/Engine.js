@@ -12,6 +12,7 @@ class Engine {
     Engine.detectPresto.call(this, ua);
     Engine.detectTrident.call(this, ua);
     Engine.detectEdgeHTMLUseragent.call(this, ua);
+    Engine.detectFlow.call(this, ua);
     return this;
   }
 
@@ -138,6 +139,15 @@ class Engine {
     if ((match = /Edge\/([0-9.]*)/u.exec(ua))) {
       this.data.engine.name = 'EdgeHTML';
       this.data.engine.version = new Version({value: match[1], hidden: true});
+    }
+  }
+
+  /* Flow */
+  static detectFlow(ua) {
+    let match;
+    if ((match = /EkiohFlow\/([0-9.]*)/u.exec(ua))) {
+      this.data.engine.name = 'EkiohFlow';
+      this.data.engine.version = new Version({value: match[1]});
     }
   }
 }

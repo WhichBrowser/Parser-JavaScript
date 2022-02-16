@@ -118,9 +118,11 @@ class Header {
   }
 
   static getHeader(h) {
+    /* Find the header that matches */
     for (let header of Object.keys(this.headers)) {
       if (h.toLowerCase() === header.toLowerCase()) {
-        return this.headers[header];
+        /* And return the first 1024 bytes */
+        return (this.headers[header] || '').substring(0, 1024);
       }
     }
   }

@@ -13,8 +13,8 @@ class Browser {
     /* Detect major browsers */
     Browser.detectSafari.call(this, ua);
     Browser.detectExplorer.call(this, ua);
-    Browser.detectFirefox.call(this, ua);
     Browser.detectChrome.call(this, ua);
+    Browser.detectFirefox.call(this, ua);
     Browser.detectEdge.call(this, ua);
     Browser.detectOpera.call(this, ua);
 
@@ -500,6 +500,25 @@ class Browser {
       }
     }
 
+    /* Microsoft Open Live Writer */
+
+    if ((match = /Open Live Writer ([0-9.]*)/u.exec(ua))) {
+      this.data.browser.type = Constants.browserType.BROWSER;
+      this.data.browser.stock = false;
+      this.data.browser.name = 'Open Live Writer';
+      this.data.browser.version = new Version({
+        value: match[1],
+      });
+      this.data.browser.channel = null;
+
+      if ((match = /MSIE ([0-9.]*)/u.exec(ua))) {
+        this.data.browser.using = new Using({
+          name: 'Internet Explorer',
+          version: new Version({value: match[1]}),
+        });
+      }
+    }
+
     /* Set the browser family */
 
     if (
@@ -548,7 +567,7 @@ class Browser {
   /* Opera */
 
   static detectOpera(ua) {
-    if (!/(OPR|OMI|Opera|OPiOS|Coast|Oupeng)/iu.test(ua)) {
+    if (!/(OPR|OMI|Opera|OPiOS|OPT|Coast|Oupeng|OPRGX|MMS)/iu.test(ua)) {
       return;
     }
     let match;
@@ -689,6 +708,15 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
+    if ((match = /OPT\/([0-9]\.[0-9.]+)?/u.exec(ua))) {
+      this.data.browser.stock = false;
+      this.data.browser.name = 'Opera Touch';
+      this.data.browser.type = Constants.browserType.BROWSER;
+      if (match[1]) {
+        this.data.browser.version = new Version({value: match[1], details: 2});
+      }
+    }
+
     if ((match = /Coast\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Coast by Opera';
@@ -702,6 +730,20 @@ class Browser {
       this.data.browser.version = new Version({value: match[1], details: 2});
       this.data.browser.type = Constants.browserType.BROWSER;
     }
+
+    if ((match = /\sMMS\/([0-9.]*)$/u.exec(ua))) {
+      this.data.browser.stock = false;
+      this.data.browser.name = 'Opera Neon';
+      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
+
+    if ((match = /OPRGX\/([0-9.]*)$/u.exec(ua))) {
+      this.data.browser.stock = false;
+      this.data.browser.name = 'Opera GX';
+      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
   }
 
   /* Firefox */
@@ -709,7 +751,9 @@ class Browser {
   static detectFirefox(ua) {
     let match;
     if (
-      !/(Firefox|GranParadiso|Namoroka|Shiretoko|Minefield|BonEcho|Fennec|Phoenix|Firebird|Minimo|FxiOS)/iu.test(ua)
+      !/(Firefox|Lorentz|GranParadiso|Namoroka|Shiretoko|Minefield|BonEcho|Fennec|Phoenix|Firebird|Minimo|FxiOS|Focus)/iu.test(
+        ua
+      )
     ) {
       return;
     }
@@ -776,7 +820,7 @@ class Browser {
       }
     }
 
-    if ((match = /(GranParadiso|Namoroka|Shiretoko|Minefield|BonEcho)/u.exec(ua))) {
+    if ((match = /(Lorentz|GranParadiso|Namoroka|Shiretoko|Minefield|BonEcho)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Firefox';
       this.data.browser.channel = match[1].replace('GranParadiso', 'Gran Paradiso');
@@ -810,6 +854,12 @@ class Browser {
 
     if ((match = /FxiOS\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Firefox';
+      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
+
+    if ((match = /Focus\/([0-9.]*)/u.exec(ua))) {
+      this.data.browser.name = 'Firefox Focus';
       this.data.browser.version = new Version({value: match[1]});
       this.data.browser.type = Constants.browserType.BROWSER;
     }
@@ -1908,7 +1958,7 @@ class Browser {
   /* Other browsers */
 
   static detectDesktopBrowsers(ua) {
-    if (!/(WebPositive|WebExplorer|WorldWideweb|Midori|Maxthon|Browse)/iu.test(ua)) {
+    if (!/(WebPositive|WebExplorer|WorldWideweb|Midori|Maxthon|Browse|Flow)/iu.test(ua)) {
       return;
     }
 
@@ -2015,6 +2065,21 @@ class Browser {
       this.data.browser.channel = '';
       this.data.browser.version = new Version({value: match[1]});
       this.data.browser.type = Constants.browserType.BROWSER;
+    }
+
+    /* Browse for Flow */
+
+    if ((match = / Flow\/([0-9.]+)/iu.exec(ua))) {
+      this.data.browser.name = 'Flow';
+      this.data.browser.channel = '';
+      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.type = Constants.browserType.BROWSER;
+      this.data.browser.family = null;
+
+      if ((match = /EkiohFlow\/[0-9.]+M/u.exec(ua))) {
+        this.data.browser.name = 'Flow Nightly Build';
+        this.data.browser.version = null;
+      }
     }
   }
 
