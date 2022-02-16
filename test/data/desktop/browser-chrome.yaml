@@ -184,7 +184,7 @@
       device: { type: desktop, manufacturer: Apple, model: Macintosh },
     }
   readable: "Chrome 87 on macOS Big Sur 11.0"
-- headers: Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36
+- headers: "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 12_2_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
   result:
     {
       browser: { name: Chrome, version: "98", type: browser },
