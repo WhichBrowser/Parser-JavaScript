@@ -1,6 +1,7 @@
 #### 0.6.0 (2022-02-16)
 
 - **Database:** Synced the JavaScript version of WhichBrowser with the latest changes happened in WhichBrowser-PHP until [WhichBrowser-PHP@d082883](https://github.com/WhichBrowser/Parser-PHP/commit/d0828833c1e2e05654b72e78d6944732adeb606b) [[diff](https://github.com/WhichBrowser/Parser-PHP/compare/0ef1a43950f14c65a760fe8123b4401e2b315bc3...d082883)].
+- **Operations:** Migrate from TravisCI to GitHub Actuibs
 
 #### 0.5.1 (2019-11-30)
 
