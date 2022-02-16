@@ -14,8 +14,15 @@ function getDirContent(category = '') {
 describe('Testing Parser with YAML files', () => {
   getDirContent().forEach((category) => {
     getDirContent(category).forEach((file) => {
-      const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
-      yamlContent.forEach(makeTest);
+      try {
+        const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
+        yamlContent.forEach(makeTest);
+      } catch (e) {
+        console.error(e);
+        console.error('The above error is caused in the test file ' + category + '/' + file);
+
+        throw new Error('Aborting the tests');
+      }
     });
   });
 });
