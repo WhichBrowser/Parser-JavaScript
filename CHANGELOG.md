@@ -1,3 +1,8 @@
+#### 0.6.1 (2022-04-07)
+
+- **Database:** Added Chrome 99 and 100 ([a770c30](https://github.com/WhichBrowser/Parser-JavaScript/commit/a770c30d29045893797b79f6c623b9ab8ebb8cc0))
+- **Fixes:** Chrome 100+ was being detected as a browser in Camouflage mode. Fixes [#61](https://github.com/WhichBrowser/Parser-JavaScript/issues/61)
+
 #### 0.6.0 (2022-02-16)
 
 - **Database:** Synced the JavaScript version of WhichBrowser with the latest changes happened in WhichBrowser-PHP until [WhichBrowser-PHP@d082883](https://github.com/WhichBrowser/Parser-PHP/commit/d0828833c1e2e05654b72e78d6944732adeb606b) [[diff](https://github.com/WhichBrowser/Parser-PHP/compare/0ef1a43950f14c65a760fe8123b4401e2b315bc3...d082883)].
