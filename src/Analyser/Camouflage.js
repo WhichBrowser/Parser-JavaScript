@@ -99,7 +99,7 @@ class Camouflage {
     if (this.data.isBrowser('Chrome')) {
       if (
         /(?:Chrome|CrMo|CriOS)\//u.test(ua) &&
-        !/(?:Chrome|CrMo|CriOS)\/([0-9]{1,2}\.[0-9]\.[0-9]{3,4}\.[0-9]+)/u.test(ua)
+        !/(?:Chrome|CrMo|CriOS)\/([0-9]{1,3}\.[0-9]\.[0-9]{3,4}\.[0-9]+)/u.test(ua)
       ) {
         this.data.features.push('wrongVersion');
         this.data.camouflage = true;
