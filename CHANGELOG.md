@@ -1,3 +1,19 @@
+#### 0.7.0 (2022-04-21)
+
+- Sync WhichBrowser/Parser-JavaScript to [WhichBrowser/Parser-PHP@1044880](https://github.com/WhichBrowser/Parser-PHP/commit/1044880bc792dbce5948fbff22ae731c43c280d9)
+
+- Supports [Chrome UA reduction](https://developer.chrome.com/docs/privacy-sandbox/user-agent/)
+
+- **BREAKING:** `Plasystation` has been reworded to `PlayStation` across the whole codebase. 
+
+- **Database:** 
+  * Adds support for `Huawei Browser`
+  * Adds support for `Xbox Series X`
+  * Adds support for `PlayStation 5`
+  * Adds support for `HarmonyOS`
+
+
+
 #### 0.6.1 (2022-04-07)
 
 - **Database:** Added Chrome 99 and 100 ([a770c30](https://github.com/WhichBrowser/Parser-JavaScript/commit/a770c30d29045893797b79f6c623b9ab8ebb8cc0))

@@ -362,14 +362,14 @@ describe('Device Class', () => {
 
         device.setIdentification({
           manufacturer: 'Sony',
-          model: 'Playstation 4',
+          model: 'PlayStation 4',
           type: Constants.deviceType.GAMING,
           subtype: Constants.deviceSubType.CONSOLE,
         });
 
         expect(device.toObject()).equal({
           manufacturer: 'Sony',
-          model: 'Playstation 4',
+          model: 'PlayStation 4',
           type: Constants.deviceType.GAMING,
           subtype: Constants.deviceSubType.CONSOLE,
         });

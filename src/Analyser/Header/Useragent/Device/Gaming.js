@@ -124,7 +124,7 @@ class Gaming {
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
-        model: 'Playstation Portable',
+        model: 'PlayStation Portable',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.PORTABLE,
       });
@@ -138,25 +138,25 @@ class Gaming {
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
-        model: 'Playstation Vita',
+        model: 'PlayStation Vita',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.PORTABLE,
       });
 
       if (/VTE\//u.test(ua)) {
-        this.data.device.model = 'Playstation TV';
+        this.data.device.model = 'PlayStation TV';
         this.data.device.subtype = Constants.deviceSubType.CONSOLE;
       }
     }
 
     /* PlayStation 2 */
 
-    if (/Playstation2/u.test(ua) || /\(PS2/u.test(ua)) {
+    if (/PlayStation2/iu.test(ua) || /\(PS2/u.test(ua)) {
       this.data.os.reset();
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
-        model: 'Playstation 2',
+        model: 'PlayStation 2',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.CONSOLE,
       });
@@ -176,7 +176,7 @@ class Gaming {
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
-        model: 'Playstation 3',
+        model: 'PlayStation 3',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.CONSOLE,
       });
@@ -190,7 +190,21 @@ class Gaming {
 
       this.data.device.setIdentification({
         manufacturer: 'Sony',
-        model: 'Playstation 4',
+        model: 'PlayStation 4',
+        type: Constants.deviceType.GAMING,
+        subtype: Constants.deviceSubType.CONSOLE,
+      });
+    }
+
+    /* PlayStation 5 */
+
+    if (/PlayStation 5/iu.test(ua) || /\(PS5/u.test(ua)) {
+      this.data.os.reset();
+      this.data.os.identifyVersion(/PlayStation 5 ([0-9.]*)/u, ua);
+
+      this.data.device.setIdentification({
+        manufacturer: 'Sony',
+        model: 'PlayStation 5',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.CONSOLE,
       });
@@ -200,18 +214,6 @@ class Gaming {
   /* Microsoft Xbox */
 
   static detectXbox(ua) {
-    /* Xbox 360 */
-
-    if (/Xbox\)$/u.test(ua)) {
-      this.data.os.reset();
-      this.data.device.setIdentification({
-        manufacturer: 'Microsoft',
-        model: 'Xbox 360',
-        type: Constants.deviceType.GAMING,
-        subtype: Constants.deviceSubType.CONSOLE,
-      });
-    }
-
     /* Xbox One */
 
     if (/Xbox One\)/u.test(ua)) {
@@ -227,6 +229,26 @@ class Gaming {
       this.data.device.setIdentification({
         manufacturer: 'Microsoft',
         model: 'Xbox One',
+        type: Constants.deviceType.GAMING,
+        subtype: Constants.deviceSubType.CONSOLE,
+      });
+
+      /* Xbox Series X */
+    } else if (/Xbox Series X\)/u.test(ua)) {
+      this.data.os.reset();
+      this.data.device.setIdentification({
+        manufacturer: 'Microsoft',
+        model: 'Xbox Series X',
+        type: Constants.deviceType.GAMING,
+        subtype: Constants.deviceSubType.CONSOLE,
+      });
+
+      /* Xbox 360 */
+    } else if (/Xbox\)$/u.test(ua)) {
+      this.data.os.reset();
+      this.data.device.setIdentification({
+        manufacturer: 'Microsoft',
+        model: 'Xbox 360',
         type: Constants.deviceType.GAMING,
         subtype: Constants.deviceSubType.CONSOLE,
       });

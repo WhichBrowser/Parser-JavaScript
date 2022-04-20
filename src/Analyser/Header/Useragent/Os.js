@@ -288,6 +288,10 @@ class Os {
           if ((match = /;\+? ?(?:\*\*)?([^;]*[^;\s]);?\s+(?:BUILD|Build|build)/u.exec(ua))) {
             candidates.push(match[1]);
           }
+        } else if ((match = /\(Linux; Android [0-9\.]+; ([^\/]+)(; wv)?\) AppleWebKit/u.exec(ua))) {
+          /* New style minimal Android useragent string */
+
+          candidates.push(match[1]);
         } else if (/Release\//iu.test(ua)) {
           /* WAP style useragent strings */
           const Useragent = require('../../Header/Useragent.js');
@@ -315,7 +319,7 @@ class Os {
           /* Old Android useragent strings */
 
           if (
-            (match = /Linux; (?:arm; |arm_64; )?(?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^)\/;]+)\)/u.exec(
+            (match = /Linux; (?:arm; |arm_64; )?(?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^\/;]+)\) /u.exec(
               ua
             ))
           ) {
@@ -348,12 +352,22 @@ class Os {
             continue;
           }
 
+          /* Ignore "K" or "Unspecified Device" as a device, as it is a dummy value used by Chrome UA reduction */
+
+          if (candidates[c] == 'K' || candidates[c] == 'Unspecified Device') {
+            candidates.splice(c, 1);
+            continue;
+          }
+
           candidates[c] = candidates[c].replace(/^[a-zA-Z][a-zA-Z][-_][a-zA-Z][a-zA-Z]\s+/u, '');
           candidates[c] = candidates[c].replace(
             /(.*) - [0-9\.]+ - (?:with Google Apps - )?API [0-9]+ - [0-9]+x[0-9]+/,
             '$1'
           );
           candidates[c] = candidates[c].replace(/^sprd-/u, '');
+          candidates[c] = candidates[c].replace(/^HarmonyOS; /u, '');
+          candidates[c] = candidates[c].replace(/; GMSCore.*/u, '');
+          candidates[c] = candidates[c].replace(/; HMSCore.*/u, '');
         }
 
         candidates = [...new Set(candidates)];
@@ -439,6 +453,17 @@ class Os {
 
         this.data.os.name = 'Android';
         this.data.device = device;
+      }
+    }
+
+    /* Harmony OS */
+
+    if ((match = /HarmonyOS/u.exec(ua))) {
+      this.data.os.name = 'Harmony OS';
+      this.data.os.version = new Version();
+
+      if ((match = /; Android ([0-9\.]+);/u.exec(ua))) {
+        this.data.os.family = new Family({name: 'Android', version: new Version({value: match[1], details: 3})});
       }
     }
 
@@ -1635,7 +1660,7 @@ class Os {
     let match;
     if ((match = /(?:web|hpw)OS\/(?:HP webOS )?([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'webOS';
-      this.data.os.version = new Version({value: match[1], details: 2});
+      this.data.os.version = new Version({value: match[1]});
       this.data.device.type = /Tablet/iu.test(ua) ? Constants.deviceType.TABLET : Constants.deviceType.MOBILE;
       this.data.device.generic = false;
     }

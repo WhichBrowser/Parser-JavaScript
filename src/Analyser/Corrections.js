@@ -93,7 +93,7 @@ class Corrections {
   static hideBrowserOnDeviceTypeGaming() {
     if (
       this.data.device.model &&
-      this.data.device.model === 'Playstation 2' &&
+      this.data.device.model === 'PlayStation 2' &&
       this.data.browser.name === 'Internet Explorer'
     ) {
       this.data.browser.reset();

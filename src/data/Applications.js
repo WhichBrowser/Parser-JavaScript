@@ -91,6 +91,10 @@ class Applications {
    * @return {Browser}
    */
   static identifyBot(ua = '') {
+    if (!ua) {
+      return;
+    }
+
     if (ua.match(Applications.BOTS_REGEX)) {
       for (let item of Applications.BOTS) {
         let match;
