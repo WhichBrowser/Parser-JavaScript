@@ -71,7 +71,7 @@ class Version extends Base {
    * @return {object}
    */
   getParts() {
-    const parts = this.value.split('.');
+    const parts = this.value ? this.value.split('.') : [];
     return {
       major: Number(parts[0] || 0),
       minor: Number(parts[1] || 0),

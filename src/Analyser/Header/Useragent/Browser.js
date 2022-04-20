@@ -128,6 +128,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
 
+      let reduced = false;
       let version = '';
       if ((match = /(?:Chrome|CrMo|CriOS)\/([0-9.]*)/u.exec(ua))) {
         version = match[1];
@@ -135,17 +136,25 @@ class Browser {
       if ((match = /Browser\/Chrome([0-9.]*)/u.exec(ua))) {
         version = match[1];
       }
+
+      if ((match = /Chrome\/([789][0-9]|[1-9][0-9][0-9])\.0\.0\.0 /u.exec(ua))) {
+        reduced = true;
+      }
       this.data.browser.version = new Version({value: version});
 
       if (this.data.os.name && this.data.os.name === 'Android') {
-        const channel = Chrome.getChannel('mobile', this.data.browser.version.value);
-
-        if (channel === 'stable') {
+        if (reduced) {
           this.data.browser.version.details = 1;
-        } else if (channel === 'beta') {
-          this.data.browser.channel = 'Beta';
         } else {
-          this.data.browser.channel = 'Dev';
+          const channel = Chrome.getChannel('mobile', this.data.browser.version.value);
+
+          if (channel === 'stable') {
+            this.data.browser.version.details = 1;
+          } else if (channel === 'beta') {
+            this.data.browser.channel = 'Beta';
+          } else {
+            this.data.browser.channel = 'Dev';
+          }
         }
 
         /* Webview for Android 4.4 and higher */
@@ -293,18 +302,22 @@ class Browser {
         this.data.device.identified |= Constants.id.PATTERN;
         this.data.device.type = Constants.deviceType.DESKTOP;
       } else {
-        const channel = Chrome.getChannel('desktop', version);
-
-        if (channel === 'stable') {
-          if (version.split('.')[1] === '0') {
-            this.data.browser.version.details = 1;
-          } else {
-            this.data.browser.version.details = 2;
-          }
-        } else if (channel === 'beta') {
-          this.data.browser.channel = 'Beta';
+        if (reduced) {
+          this.data.browser.version.details = 1;
         } else {
-          this.data.browser.channel = 'Dev';
+          const channel = Chrome.getChannel('desktop', version);
+
+          if (channel === 'stable') {
+            if (version.split('.')[1] === '0') {
+              this.data.browser.version.details = 1;
+            } else {
+              this.data.browser.version.details = 2;
+            }
+          } else if (channel === 'beta') {
+            this.data.browser.channel = 'Beta';
+          } else {
+            this.data.browser.channel = 'Dev';
+          }
         }
       }
 
@@ -410,7 +423,9 @@ class Browser {
 
         if (
           this.data.device.model &&
-          (this.data.device.model === 'Xbox 360' || this.data.device.model === 'Xbox One')
+          (this.data.device.model === 'Xbox 360' ||
+            this.data.device.model === 'Xbox One' ||
+            this.data.device.model === 'Xbox Series X')
         ) {
           this.data.browser.name = 'Internet Explorer';
         }
@@ -1452,7 +1467,7 @@ class Browser {
         if (['ACCESS/NFPS', 'SUNSOFT/EnjoyMagic'].includes(match[1])) {
           this.data.device.setIdentification({
             manufacturer: 'Sony',
-            model: 'Playstation 2',
+            model: 'PlayStation 2',
             type: Constants.deviceType.GAMING,
             subtype: Constants.deviceSubType.CONSOLE,
           });
@@ -2085,7 +2100,7 @@ class Browser {
 
   static detectMobileBrowsers(ua) {
     if (
-      !/(Ninesky|Skyfire|Dolphin|QQ|360|QHBrowser|Mercury|iBrowser|Puffin|MiniB|MxNitro|Sogou|Xiino|Palmscape|WebPro|Vision|MiuiBrowser)/iu.test(
+      !/(Huawei|Ninesky|Skyfire|Dolphin|QQ|360|QHBrowser|Mercury|iBrowser|Puffin|MiniB|MxNitro|Sogou|Xiino|Palmscape|WebPro|Vision|MiuiBrowser)/iu.test(
         ua
       )
     ) {
@@ -2093,6 +2108,14 @@ class Browser {
     }
 
     let match;
+
+    /* Huawei Browser */
+    if ((match = /HuaweiBrowser\/([0-9.]*)/u.exec(ua))) {
+      this.data.browser.name = 'Huawei Browser';
+      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.type = Constants.browserType.BROWSER;
+    }
+
     /* Xiaomi MIUI Browser */
     if ((match = /MiuiBrowser\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'MIUI Browser';
@@ -2544,7 +2567,7 @@ class Browser {
       if (/SPS/u.test(ua)) {
         this.data.device.setIdentification({
           manufacturer: 'Sony',
-          model: 'Playstation 2',
+          model: 'PlayStation 2',
           type: Constants.deviceType.GAMING,
           subtype: Constants.deviceSubType.CONSOLE,
         });
