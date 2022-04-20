@@ -1,8 +1,8 @@
 This is an extremely complicated and almost completely useless browser sniffing library written in JavaScript. Useless because you shouldn't use browser sniffing. So stop right now and go read something about feature detecting instead. I'm serious. Go away. You'll thank me later.
 
 ![Build Status](https://github.com/WhichBrowser/Parser-JavaScript/actions/workflows/main.yml/badge.svg?event=push)
-[![npm](https://img.shields.io/npm/l/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
-[![npm](https://img.shields.io/npm/v/which-browser.svg)](https://yarnpkg.com/en/package/which-browser)
+[![npm](https://img.shields.io/npm/l/which-browser.svg)](https://www.npmjs.com/package/which-browser)
+[![npm](https://img.shields.io/npm/v/which-browser.svg)](https://www.npmjs.com/package/which-browser)
 [![Twitter Follow](https://img.shields.io/twitter/follow/simariot.svg?style=social)](https://twitter.com/simariot)
 
 ---
