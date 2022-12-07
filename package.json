@@ -46,7 +46,7 @@
     "husky": "^2.4.1",
     "istanbul": "^0.4.5",
     "lab": "^14.3.2",
-    "lint-staged": "^8.1.0",
+    "lint-staged": "^13.1.0",
     "prettier": "^1.11.1",
     "request": "^2.83.0",
     "sinon": "^2.4.1",
