@@ -63,7 +63,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_MEDIAPLAYER;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
       this.data.device.model = match[1];
       this.data.device.identified |= Constants.id.PATTERN;
@@ -77,9 +77,10 @@ class Application {
     /* "Android Application" */
     if (/Android Application/iu.test(ua)) {
       if (
-        (match = /^(.+) Android Application \([0-9]+, .+ v[0-9.]+\) - [a-z-]+ (.*) [a-z_-]+ - [0-9A-F]{8,8}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{12,12}$/iu.exec(
-          ua
-        ))
+        (match =
+          /^(.+) Android Application \([0-9]+, .+ v[0-9.]+\) - [a-z-]+ (.*) [a-z_-]+ - [0-9A-F]{8,8}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{12,12}$/iu.exec(
+            ua
+          ))
       ) {
         this.data.browser.name = match[1];
         this.data.browser.version = null;
@@ -97,9 +98,10 @@ class Application {
         }
       }
       if (
-        (match = /^(.+) Android Application - (.*) Build\/(.+) {2}- [0-9A-F]{8,8}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{12,12}$/iu.exec(
-          ua
-        ))
+        (match =
+          /^(.+) Android Application - (.*) Build\/(.+) {2}- [0-9A-F]{8,8}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{4,4}-[0-9A-F]{12,12}$/iu.exec(
+            ua
+          ))
       ) {
         this.data.browser.name = match[1];
         this.data.browser.version = null;
@@ -144,7 +146,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[1]}),
+        version: new Version({ value: match[1] }),
       });
       this.data.device.model = match[2];
       this.data.device.identified |= Constants.id.PATTERN;
@@ -157,16 +159,17 @@ class Application {
     }
     /* Instagram */
     if (
-      (match = /^Instagram ([0-9.]+) Android (?:IC )?\([0-9]+\/([0-9.]+); [0-9]+dpi; [0-9]+x[0-9]+; [^;]+; ([^;]*);/iu.exec(
-        ua
-      ))
+      (match =
+        /^Instagram ([0-9.]+) Android (?:IC )?\([0-9]+\/([0-9.]+); [0-9]+dpi; [0-9]+x[0-9]+; [^;]+; ([^;]*);/iu.exec(
+          ua
+        ))
     ) {
       this.data.browser.name = 'Instagram';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.APP_SOCIAL;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
       this.data.device.model = match[3];
       this.data.device.identified |= Constants.id.PATTERN;
@@ -180,11 +183,11 @@ class Application {
     /* Pinterest */
     if ((match = /^Pinterest for Android( Tablet)?\/([0-9.]+) \(([^;]+); ([0-9.]+)\)/iu.exec(ua))) {
       this.data.browser.name = 'Pinterest';
-      this.data.browser.version = new Version({value: match[2]});
+      this.data.browser.version = new Version({ value: match[2] });
       this.data.browser.type = Constants.browserType.APP_SOCIAL;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[4]}),
+        version: new Version({ value: match[4] }),
       });
       this.data.device.model = match[3];
       this.data.device.identified |= Constants.id.PATTERN;
@@ -209,7 +212,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_ANTIVIRUS;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[3]}),
+        version: new Version({ value: match[3] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[2]);
@@ -228,7 +231,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[3]}),
+        version: new Version({ value: match[3] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[2]);
@@ -247,7 +250,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_SHOPPING;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       this.data.device.model = match[3];
@@ -259,9 +262,10 @@ class Application {
     }
     /* Whatsapp */
     if (
-      (match = /WhatsApp\+?\/([0-9.]+?) (Android|S60Version|WP7)\/([0-9._]+?) Device\/([^-]+?)-(.*?)(?:-\([0-9]+?\.[0-9]+?\))?(?:-H[0-9]+?\.[0-9]+?\.[0-9]+?\.[0-9]+?)?$/u.exec(
-        ua
-      ))
+      (match =
+        /WhatsApp\+?\/([0-9.]+?) (Android|S60Version|WP7)\/([0-9._]+?) Device\/([^-]+?)-(.*?)(?:-\([0-9]+?\.[0-9]+?\))?(?:-H[0-9]+?\.[0-9]+?\.[0-9]+?\.[0-9]+?)?$/u.exec(
+          ua
+        ))
     ) {
       this.data.browser.name = 'WhatsApp';
       this.data.browser.version = new Version({
@@ -303,7 +307,7 @@ class Application {
       if (match[2] === 'S60Version') {
         this.data.os.reset({
           name: 'Series60',
-          version: new Version({value: match[3]}),
+          version: new Version({ value: match[3] }),
           family: new Family({
             name: 'Symbian',
           }),
@@ -331,9 +335,10 @@ class Application {
     }
     /* Yahoo */
     if (
-      (match = /YahooMobile(?:Messenger|Mail|Weather)\/1.0 \(Android (Messenger|Mail|Weather); ([0-9.]+)\) \([^;]+; ?[^;]+; ?([^;]+); ?([0-9.]+)\/[^;)/]+\)/u.exec(
-        ua
-      ))
+      (match =
+        /YahooMobile(?:Messenger|Mail|Weather)\/1.0 \(Android (Messenger|Mail|Weather); ([0-9.]+)\) \([^;]+; ?[^;]+; ?([^;]+); ?([0-9.]+)\/[^;)/]+\)/u.exec(
+          ua
+        ))
     ) {
       this.data.browser.name = `Yahoo ${match[1]}`;
       this.data.browser.version = new Version({
@@ -353,7 +358,7 @@ class Application {
       }
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[4]}),
+        version: new Version({ value: match[4] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[3]);
@@ -364,9 +369,10 @@ class Application {
     }
     /* Yahoo Mobile App */
     if (
-      (match = /YahooJMobileApp\/[0-9.]+ \(Android [a-z]+; ([0-9.]+)\) \([^;]+; ?[^;]+; ?[^;]+; ?([^;]+); ?([0-9.]+)\/[^;)/]+\)/u.exec(
-        ua
-      ))
+      (match =
+        /YahooJMobileApp\/[0-9.]+ \(Android [a-z]+; ([0-9.]+)\) \([^;]+; ?[^;]+; ?[^;]+; ?([^;]+); ?([0-9.]+)\/[^;)/]+\)/u.exec(
+          ua
+        ))
     ) {
       this.data.browser.name = 'Yahoo Mobile';
       this.data.browser.version = new Version({
@@ -376,7 +382,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_SEARCH;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[3]}),
+        version: new Version({ value: match[3] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[2]);
@@ -395,7 +401,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_CHAT;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[3]);
@@ -418,7 +424,7 @@ class Application {
       }
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[3]}),
+        version: new Version({ value: match[3] }),
       });
       this.data.device.type = Constants.deviceType.MOBILE;
       device = DeviceModels.identify('android', match[2]);
@@ -439,7 +445,7 @@ class Application {
       this.data.browser.type = Constants.browserType.APP_SOCIAL;
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
       this.data.device.model = match[3];
       this.data.device.identified |= Constants.id.PATTERN;

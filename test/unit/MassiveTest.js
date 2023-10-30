@@ -1,7 +1,7 @@
 /* eslint-disable require-jsdoc */
 
-const {describe, it} = (exports.lab = require('lab').script());
-const expect = require('code').expect;
+const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const expect = require('@hapi/code').expect;
 const Parser = require('../../src/Parser');
 const path = require('path');
 const fs = require('fs');
@@ -28,7 +28,7 @@ describe('Testing Parser with YAML files', () => {
 });
 
 function makeTest(options) {
-  it(`With header: ${options.headers}`, (done) => {
+  it(`With header: ${options.headers}`, () => {
     if (options.headers && typeof options.headers === 'string') {
       options.headers = parseHeaders(options.headers);
     }
@@ -37,7 +37,6 @@ function makeTest(options) {
     expect(parserObj.toString()).to.be.equal(options.readable);
     expect(parserObj.toObject()).to.be.equal(options.result);
     expect(parserObj.cached).to.not.exists();
-    done();
   });
 }
 
@@ -45,7 +44,7 @@ function parseHeaders(rawHeaders) {
   const headers = {};
   let key = '';
 
-  for (let header of rawHeaders.split('\n')) {
+  for (const header of rawHeaders.split('\n')) {
     let [headerName, ...headerValue] = header.split(':');
     headerValue = headerValue.join(':');
     if (headerValue) {

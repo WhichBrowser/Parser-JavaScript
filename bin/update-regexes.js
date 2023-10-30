@@ -35,7 +35,7 @@ function updateRegexes(type) {
  */
 function getSet(list) {
   const set = new Set();
-  list.forEach(({id}) => set.add(id));
+  list.forEach(({ id }) => set.add(id));
   return set;
 }
 

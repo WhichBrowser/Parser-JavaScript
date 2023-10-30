@@ -58,7 +58,7 @@ class Os {
       this.data.os.name = 'iOS';
 
       if (/CPU like Mac OS X/u.test(ua)) {
-        this.data.os.version = new Version({value: '1.0'});
+        this.data.os.version = new Version({ value: '1.0' });
       }
 
       if ((match = /OS (.*) like Mac OS X/u.exec(ua))) {
@@ -221,19 +221,19 @@ class Os {
             ua.replace('-update', ',')
           ))
         ) {
-          this.data.os.version = new Version({value: match[1], details: 3});
+          this.data.os.version = new Version({ value: match[1], details: 3 });
         }
 
         if ((match = /Android [0-9][0-9].[0-9][0-9].[0-9][0-9]\(([^)]+)\);/u.exec(ua.replace('-update', ',')))) {
-          this.data.os.version = new Version({value: match[1], details: 3});
+          this.data.os.version = new Version({ value: match[1], details: 3 });
         }
 
         if (/Android Eclair/u.test(ua)) {
-          this.data.os.version = new Version({value: '2.0', details: 3});
+          this.data.os.version = new Version({ value: '2.0', details: 3 });
         }
 
         if (/Android KeyLimePie/u.test(ua)) {
-          this.data.os.version = new Version({value: '4.4', details: 3});
+          this.data.os.version = new Version({ value: '4.4', details: 3 });
         }
 
         if (/Android (?:L|4.4.99);/u.test(ua)) {
@@ -297,9 +297,10 @@ class Os {
           const Useragent = require('../../Header/Useragent.js');
           // removed this regex  /^(?U)([^\/]+)(?U)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*)? Linux\/[0-9.+]+ Android\/[0-9.]+/u
           if (
-            (match = /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Linux\/[0-9.+]+? Android\/[0-9.]+?/u.exec(
-              Useragent.removeKnownPrefixes(ua)
-            ))
+            (match =
+              /^([^\/]+?)(?:(?:_CMCC_TD|_CMCC|_TD|_TDLTE|_LTE)?\/[^\/]*?)? Linux\/[0-9.+]+? Android\/[0-9.]+?/u.exec(
+                Useragent.removeKnownPrefixes(ua)
+              ))
           ) {
             candidates.push(match[1]);
           } else if (
@@ -319,9 +320,10 @@ class Os {
           /* Old Android useragent strings */
 
           if (
-            (match = /Linux; (?:arm; |arm_64; )?(?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^\/;]+)\) /u.exec(
-              ua
-            ))
+            (match =
+              /Linux; (?:arm; |arm_64; )?(?:U; )?Android [^;]+; (?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?(?:[^;]+; ?)?([^\/;]+)\) /u.exec(
+                ua
+              ))
           ) {
             candidates.push(match[1]);
           } else if ((match = /\(([^;]+);U;Android\/[^;]+;[0-9]+\*[0-9]+;CTC\/2.0\)/u.exec(ua))) {
@@ -397,9 +399,8 @@ class Os {
     }
 
     if (
-      (match = /\(Linux; (?:U; )?(?:([0-9.]+); )?(?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?([^;]+) Build/u.exec(
-        ua
-      ))
+      (match =
+        /\(Linux; (?:U; )?(?:([0-9.]+); )?(?:[a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?; )?([^;]+) Build/u.exec(ua))
     ) {
       falsepositive = false;
 
@@ -414,7 +415,7 @@ class Os {
         this.data.os.name = 'Android';
 
         if (match[1]) {
-          this.data.os.version = new Version({value: match[1], details: 3});
+          this.data.os.version = new Version({ value: match[1], details: 3 });
         }
 
         device = DeviceModels.identify('android', match[2]);
@@ -428,9 +429,10 @@ class Os {
     }
 
     if (
-      (match = /Linux x86_64; ([^;\)]+)(?:; [a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?)?\) AppleWebKit\/534.24 \(KHTML, like Gecko\) Chrome\/11.0.696.34 Safari\/534.24/u.exec(
-        ua
-      ))
+      (match =
+        /Linux x86_64; ([^;\)]+)(?:; [a-zA-Z][a-zA-Z](?:[-_][a-zA-Z][a-zA-Z])?)?\) AppleWebKit\/534.24 \(KHTML, like Gecko\) Chrome\/11.0.696.34 Safari\/534.24/u.exec(
+          ua
+        ))
     ) {
       device = DeviceModels.identify('android', match[1]);
       if (device.identified) {
@@ -463,7 +465,7 @@ class Os {
       this.data.os.version = new Version();
 
       if ((match = /; Android ([0-9\.]+);/u.exec(ua))) {
-        this.data.os.family = new Family({name: 'Android', version: new Version({value: match[1], details: 3})});
+        this.data.os.family = new Family({ name: 'Android', version: new Version({ value: match[1], details: 3 }) });
       }
     }
 
@@ -471,15 +473,15 @@ class Os {
 
     if (/Aliyun/u.test(ua) || /YunOs/iu.test(ua)) {
       this.data.os.name = 'Aliyun OS';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.version = new Version();
 
       if ((match = /YunOs[ \/]([0-9.]+)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1], details: 3});
+        this.data.os.version = new Version({ value: match[1], details: 3 });
       }
 
       if ((match = /AliyunOS ([0-9.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1], details: 3});
+        this.data.os.version = new Version({ value: match[1], details: 3 });
       }
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -502,25 +504,25 @@ class Os {
     if (/Android/u.test(ua)) {
       if ((match = /Android v(1.[0-9][0-9])_[0-9][0-9].[0-9][0-9]-/u.exec(ua))) {
         this.data.os.name = 'Aliyun OS';
-        this.data.os.family = new Family({name: 'Android'});
-        this.data.os.version = new Version({value: match[1], details: 3});
+        this.data.os.family = new Family({ name: 'Android' });
+        this.data.os.version = new Version({ value: match[1], details: 3 });
       }
 
       if ((match = /Android[ \/](1.[0-9].[0-9].[0-9]+)-R?T/u.exec(ua))) {
         this.data.os.name = 'Aliyun OS';
-        this.data.os.family = new Family({name: 'Android'});
-        this.data.os.version = new Version({value: match[1], details: 3});
+        this.data.os.family = new Family({ name: 'Android' });
+        this.data.os.version = new Version({ value: match[1], details: 3 });
       }
 
       if ((match = /Android ([12].[0-9].[0-9]+)-R-20[0-9]+/u.exec(ua))) {
         this.data.os.name = 'Aliyun OS';
-        this.data.os.family = new Family({name: 'Android'});
-        this.data.os.version = new Version({value: match[1], details: 3});
+        this.data.os.family = new Family({ name: 'Android' });
+        this.data.os.version = new Version({ value: match[1], details: 3 });
       }
 
       if ((match = /Android 20[0-9]+\./u.exec(ua))) {
         this.data.os.name = 'Aliyun OS';
-        this.data.os.family = new Family({name: 'Android'});
+        this.data.os.family = new Family({ name: 'Android' });
         this.data.os.version = null;
       }
     }
@@ -529,7 +531,7 @@ class Os {
 
     if (/Baidu Yi/u.test(ua)) {
       this.data.os.name = 'Baidu Yi';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.version = null;
     }
 
@@ -537,7 +539,7 @@ class Os {
 
     if (/GoogleTV/u.test(ua)) {
       this.data.os.name = 'Google TV';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
 
       this.data.device.type = Constants.deviceType.TELEVISION;
 
@@ -560,10 +562,10 @@ class Os {
 
     if (/LeOS/u.test(ua)) {
       this.data.os.name = 'LeOS';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
 
       if ((match = /LeOS([0-9\.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.TABLET;
@@ -587,10 +589,10 @@ class Os {
 
     if (/WoPhone/u.test(ua)) {
       this.data.os.name = 'WoPhone';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
 
       if ((match = /WoPhone\/([0-9\.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -601,20 +603,20 @@ class Os {
     if (/(COS|(China|Chinese) Operating System)/iu.test(ua)) {
       if ((match = /COS[\/ ]?([0-9]\.[0-9.]+)/iu.exec(ua))) {
         this.data.os.name = 'COS';
-        this.data.os.family = new Family({name: 'Android'});
-        this.data.os.version = new Version({value: match[1], details: 2});
+        this.data.os.family = new Family({ name: 'Android' });
+        this.data.os.version = new Version({ value: match[1], details: 2 });
       } else if ((match = /(?:\(|; )(?:China|Chinese) Operating System ([0-9]\.[0-9.]*);/iu.exec(ua))) {
         this.data.os.name = 'COS';
-        this.data.os.family = new Family({name: 'Android'});
-        this.data.os.version = new Version({value: match[1], details: 2});
+        this.data.os.family = new Family({ name: 'Android' });
+        this.data.os.version = new Version({ value: match[1], details: 2 });
       } else if ((match = /COS like Android/iu.exec(ua))) {
         this.data.os.name = 'COS';
-        this.data.os.family = new Family({name: 'Android'});
+        this.data.os.family = new Family({ name: 'Android' });
         this.data.os.version = null;
         this.data.device.type = Constants.deviceType.MOBILE;
       } else if ((match = /(COS like Android|COSBrowser\/|\(COS;|\(COS 998;)/iu.exec(ua))) {
         this.data.os.name = 'COS';
-        this.data.os.family = new Family({name: 'Android'});
+        this.data.os.family = new Family({ name: 'Android' });
       }
     }
 
@@ -623,15 +625,15 @@ class Os {
     if (/RemixOS/u.test(ua)) {
       this.data.os.name = 'Remix OS';
       this.data.os.version = null;
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
 
       if ((match = /RemixOS ([0-9]\.[0-9])/u.exec(ua))) {
         switch (match[1]) {
           case '5.1':
-            this.data.os.version = new Version({value: '1.0'});
+            this.data.os.version = new Version({ value: '1.0' });
             break;
           case '6.0':
-            this.data.os.version = new Version({value: '2.0'});
+            this.data.os.version = new Version({ value: '2.0' });
             break;
         }
       }
@@ -679,19 +681,19 @@ class Os {
       /* Windows NT */
 
       if (/Windows 2000/u.test(ua)) {
-        this.data.os.version = new Version({value: '5.0', alias: '2000'});
+        this.data.os.version = new Version({ value: '5.0', alias: '2000' });
       }
 
       if (/(Windows XP|WinXP)/u.test(ua)) {
-        this.data.os.version = new Version({value: '5.1', alias: 'XP'});
+        this.data.os.version = new Version({ value: '5.1', alias: 'XP' });
       }
 
       if (/Windows Vista/u.test(ua)) {
-        this.data.os.version = new Version({value: '6.0', alias: 'Vista'});
+        this.data.os.version = new Version({ value: '6.0', alias: 'Vista' });
       }
 
       if ((match = /(?:Windows NT |WinNT)([0-9][0-9]?\.[0-9])/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
 
         switch (match[1]) {
           case '10.1':
@@ -732,7 +734,7 @@ class Os {
             break;
 
           case '6.1':
-            this.data.os.version = new Version({value: match[1], alias: '7'});
+            this.data.os.version = new Version({ value: match[1], alias: '7' });
             break;
           case '6.0':
             this.data.os.version = new Version({
@@ -780,29 +782,29 @@ class Os {
       /* Windows */
 
       if (/(Windows 95|Win95)/u.test(ua)) {
-        this.data.os.version = new Version({value: '4.0', alias: '95'});
+        this.data.os.version = new Version({ value: '4.0', alias: '95' });
       }
 
       if (/(Windows 98|Win98)/u.test(ua)) {
-        this.data.os.version = new Version({value: '4.1', alias: '98'});
+        this.data.os.version = new Version({ value: '4.1', alias: '98' });
       }
 
       if (/(Windows M[eE]|WinME)/u.test(ua)) {
-        this.data.os.version = new Version({value: '4.9', alias: 'ME'});
+        this.data.os.version = new Version({ value: '4.9', alias: 'ME' });
       }
 
       if ((match = /(?:Windows|Win 9x) (([1234]\.[0-9])[0-9\.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
 
         switch (match[2]) {
           case '4.0':
-            this.data.os.version = new Version({value: '4.0', alias: '95'});
+            this.data.os.version = new Version({ value: '4.0', alias: '95' });
             break;
           case '4.1':
-            this.data.os.version = new Version({value: '4.1', alias: '98'});
+            this.data.os.version = new Version({ value: '4.1', alias: '98' });
             break;
           case '4.9':
-            this.data.os.version = new Version({value: '4.9', alias: 'ME'});
+            this.data.os.version = new Version({ value: '4.9', alias: 'ME' });
             break;
         }
       }
@@ -811,14 +813,14 @@ class Os {
 
       if (/WPDesktop/u.test(ua)) {
         this.data.os.name = 'Windows Phone';
-        this.data.os.version = new Version({value: '8.0', details: 2});
+        this.data.os.version = new Version({ value: '8.0', details: 2 });
         this.data.device.type = Constants.deviceType.MOBILE;
         this.data.browser.mode = 'desktop';
       }
 
       if (/WP7/u.test(ua)) {
         this.data.os.name = 'Windows Phone';
-        this.data.os.version = new Version({value: '7', details: 1});
+        this.data.os.version = new Version({ value: '7', details: 1 });
         this.data.device.type = Constants.deviceType.MOBILE;
         this.data.browser.mode = 'desktop';
       }
@@ -828,7 +830,7 @@ class Os {
         this.data.device.type = Constants.deviceType.MOBILE;
 
         if ((match = /WinMobile\/([0-9.]*)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
         }
       }
 
@@ -840,29 +842,29 @@ class Os {
 
           if (/ IEMobile\/9/u.test(ua)) {
             this.data.os.name = 'Windows Phone';
-            this.data.os.version = new Version({value: '7.5', details: 2});
+            this.data.os.version = new Version({ value: '7.5', details: 2 });
           }
 
           if (/ IEMobile 8/u.test(ua)) {
-            this.data.os.version = new Version({value: '6.5', details: 2});
+            this.data.os.version = new Version({ value: '6.5', details: 2 });
           }
 
           if (/ IEMobile 7/u.test(ua)) {
-            this.data.os.version = new Version({value: '6.1', details: 2});
+            this.data.os.version = new Version({ value: '6.1', details: 2 });
           }
 
           if (/ IEMobile 6/u.test(ua)) {
-            this.data.os.version = new Version({value: '6.0', details: 2});
+            this.data.os.version = new Version({ value: '6.0', details: 2 });
           }
         } else {
           this.data.os.name = 'Windows CE';
 
           if ((match = /WindowsCEOS\/([0-9.]*)/u.exec(ua))) {
-            this.data.os.version = new Version({value: match[1], details: 2});
+            this.data.os.version = new Version({ value: match[1], details: 2 });
           }
 
           if ((match = /Windows CE ([0-9.]*)/u.exec(ua))) {
-            this.data.os.version = new Version({value: match[1], details: 2});
+            this.data.os.version = new Version({ value: match[1], details: 2 });
           }
         }
 
@@ -870,9 +872,10 @@ class Os {
 
         if (
           !model &&
-          (match = /IEMobile [0-9.]+\)\s{1,2}(?:PPC; |SP; |Smartphone; )?(?:[0-9]+[Xx][0-9]+;? )?(?:VZW; )?([^;\(]+)/u.exec(
-            ua
-          ))
+          (match =
+            /IEMobile [0-9.]+\)\s{1,2}(?:PPC; |SP; |Smartphone; )?(?:[0-9]+[Xx][0-9]+;? )?(?:VZW; )?([^;\(]+)/u.exec(
+              ua
+            ))
         ) {
           if (!/(Profile\/MIDP|UNTRUSTED)/u.test(match[1])) {
             model = match[1];
@@ -932,9 +935,10 @@ class Os {
 
         if (
           !model &&
-          (match = /MSIE [0-9.]+; Windows CE; ([^;\)]+)(?:; (?:PPC|SP|Smartphone); [0-9]+x[0-9]+)?\)( \[[a-zA-Z\-]+\])?$/u.exec(
-            ua
-          ))
+          (match =
+            /MSIE [0-9.]+; Windows CE; ([^;\)]+)(?:; (?:PPC|SP|Smartphone); [0-9]+x[0-9]+)?\)( \[[a-zA-Z\-]+\])?$/u.exec(
+              ua
+            ))
         ) {
           if (!/^(IEMobile|MIDP-2.0|Smartphone|PPC$)/u.test(match[1])) {
             model = match[1];
@@ -992,7 +996,7 @@ class Os {
         this.data.device.type = Constants.deviceType.MOBILE;
 
         if ((match = /Windows ?Mobile[\/ ]([0-9.]*)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
         }
 
         if ((match = /Windows Mobile; (?:SHARP\/)?([^;]+); (?:PPC|Smartphone);/u.exec(ua))) {
@@ -1023,7 +1027,7 @@ class Os {
         this.data.device.type = Constants.deviceType.MOBILE;
 
         if ((match = /Windows Phone(?: OS)?[ \/]([0-9.]*)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
 
           if (parseInt(match[1], 10) < 7) {
             this.data.os.name = 'Windows Mobile';
@@ -1061,9 +1065,10 @@ class Os {
 
         /* Windows Phone 7 and 8 */
         if (
-          (match = /IEMobile\/[^;]+;(?: ARM; Touch; )?(?:rv:[0-9]+; )?(?: WpsLondonTest; )?\s*([^;\s][^;\)]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
-            ua
-          ))
+          (match =
+            /IEMobile\/[^;]+;(?: ARM; Touch; )?(?:rv:[0-9]+; )?(?: WpsLondonTest; )?\s*([^;\s][^;\)]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
+              ua
+            ))
         ) {
           this.data.device.manufacturer = match[1];
           this.data.device.model = match[2];
@@ -1078,9 +1083,10 @@ class Os {
 
         /* Windows Phone 10 */
         if (
-          (match = /Windows Phone 1[0-9]\.[0-9]; Android [0-9\.]+; (?:WebView\/[0-9\.]+; )?([^;\s][^;]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
-            ua
-          ))
+          (match =
+            /Windows Phone 1[0-9]\.[0-9]; Android [0-9\.]+; (?:WebView\/[0-9\.]+; )?([^;\s][^;]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
+              ua
+            ))
         ) {
           this.data.device.manufacturer = match[1];
           this.data.device.model = match[2];
@@ -1109,9 +1115,10 @@ class Os {
 
         /* Third party browsers */
         if (
-          (match = /IEMobile\/[^;]+;(?: ARM; Touch; )?\s*(?:[^\/]+\/[^\/]+);\s*([^;\s][^;]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
-            ua
-          ))
+          (match =
+            /IEMobile\/[^;]+;(?: ARM; Touch; )?\s*(?:[^\/]+\/[^\/]+);\s*([^;\s][^;]*);\s*([^;\)\s][^;\)]*)[;|\)]/u.exec(
+              ua
+            ))
         ) {
           this.data.device.manufacturer = match[1];
           this.data.device.model = match[2];
@@ -1291,7 +1298,7 @@ class Os {
       this.data.os.name = 'Bada';
 
       if ((match = /[b|B]ada[\/ ]([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1], details: 2});
+        this.data.os.version = new Version({ value: match[1], details: 2 });
       }
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -1322,7 +1329,7 @@ class Os {
       this.data.os.name = 'Tizen';
 
       if ((match = /Tizen[\/ ]?([0-9.]*[0-9])/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /\(([^;]+); ([^\/]+)\//u.exec(ua))) {
@@ -1397,7 +1404,7 @@ class Os {
         this.data.browser.name = 'Samsung Browser';
         this.data.browser.channel = null;
         this.data.browser.stock = true;
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
         this.data.browser.channel = null;
       }
     }
@@ -1425,13 +1432,13 @@ class Os {
 
     if ((match = /EPOC(?:32)?[;\-\)]/u.exec(ua))) {
       this.data.os.name = 'EPOC';
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.PDA;
 
       if ((match = /Crystal\/([0-9.]*)/u.exec(ua))) {
         this.data.os.name = 'Series80';
-        this.data.os.version = new Version({value: '1.0'});
-        this.data.os.family.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: '1.0' });
+        this.data.os.family.version = new Version({ value: match[1] });
         this.data.device.type = Constants.deviceType.MOBILE;
 
         this.data.device.manufacturer = 'Nokia';
@@ -1441,7 +1448,7 @@ class Os {
 
       if (/Nokia\/Series-9200/u.test(ua)) {
         this.data.os.name = 'Series80';
-        this.data.os.version = new Version({value: '1.0'});
+        this.data.os.version = new Version({ value: '1.0' });
         this.data.device.type = Constants.deviceType.MOBILE;
 
         this.data.device.manufacturer = 'Nokia';
@@ -1454,8 +1461,8 @@ class Os {
 
     if ((match = /Series80\/([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'Series80';
-      this.data.os.version = new Version({value: match[1]});
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.version = new Version({ value: match[1] });
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
@@ -1463,26 +1470,26 @@ class Os {
 
     if (/Symbian\/3/u.test(ua)) {
       this.data.os.name = 'Series60';
-      this.data.os.version = new Version({value: '5.2'});
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.version = new Version({ value: '5.2' });
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
     if (/Series[ ]?60/u.test(ua) || /S60[V\/;]/u.test(ua) || /S60 Symb/u.test(ua)) {
       this.data.os.name = 'Series60';
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.MOBILE;
 
       if ((match = /Series60\/([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /S60\/([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /S60V([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -1490,19 +1497,19 @@ class Os {
 
     if ((match = /UIQ\/([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'UIQ';
-      this.data.os.version = new Version({value: match[1]});
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.version = new Version({ value: match[1] });
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
     /* Symbian */
 
     if (/Symbian/u.test(ua)) {
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.type = Constants.deviceType.MOBILE;
 
       if ((match = /SymbianOS\/([0-9.]*)/u.exec(ua))) {
-        this.data.os.family.version = new Version({value: match[1]});
+        this.data.os.family.version = new Version({ value: match[1] });
       }
     }
 
@@ -1574,7 +1581,7 @@ class Os {
         if (device.identified) {
           device.identified |= this.data.device.identified;
           this.data.os.name = 'Nokia Asha Platform';
-          this.data.os.version = new Version({value: '1.0'});
+          this.data.os.version = new Version({ value: '1.0' });
           this.data.device = device;
         }
 
@@ -1642,7 +1649,7 @@ class Os {
 
     if ((match = /Geos ([0-9.]+)/u.exec(ua))) {
       this.data.os.name = 'GEOS';
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = Constants.deviceType.MOBILE;
 
       if ((match = /Nokia-([0-9]{4,4}[a-z]?)/u.exec(ua))) {
@@ -1660,7 +1667,7 @@ class Os {
     let match;
     if ((match = /(?:web|hpw)OS\/(?:HP webOS )?([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'webOS';
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = /Tablet/iu.test(ua) ? Constants.deviceType.TABLET : Constants.deviceType.MOBILE;
       this.data.device.generic = false;
     }
@@ -1728,9 +1735,9 @@ class Os {
     if ((match = /Kai(OS)?\/([0-9.]+)/i.exec(ua))) {
       this.data.os.reset({
         name: 'KaiOS',
-        version: new Version({value: match[2]}),
+        version: new Version({ value: match[2] }),
       });
-      this.data.os.family = new Family({name: 'Firefox OS'});
+      this.data.os.family = new Family({ name: 'Firefox OS' });
     }
   }
 
@@ -1760,7 +1767,7 @@ class Os {
       if (!/Opera/u.test(ua)) {
         if ((match = /BlackBerry([0-9]+[ei]?)\/([0-9.]*)/u.exec(ua))) {
           this.data.device.model = match[1];
-          this.data.os.version = new Version({value: match[2], details: 2});
+          this.data.os.version = new Version({ value: match[2], details: 2 });
         }
 
         if ((match = /; BlackBerry ([0-9]*);/u.exec(ua))) {
@@ -1772,7 +1779,7 @@ class Os {
         }
 
         if ((match = /Version\/([0-9.]*)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
         }
 
         if (this.data.os.version && this.data.os.version.toFloat() >= 10) {
@@ -1794,7 +1801,7 @@ class Os {
 
     if ((match = /\(BB(1[^;]+); ([^\)]+)\)/u.exec(ua))) {
       this.data.os.name = 'BlackBerry';
-      this.data.os.version = new Version({value: match[1], details: 2});
+      this.data.os.version = new Version({ value: match[1], details: 2 });
 
       this.data.device.manufacturer = 'BlackBerry';
       this.data.device.model = match[2];
@@ -1815,7 +1822,7 @@ class Os {
       this.data.device.identified |= Constants.id.MATCH_UA;
 
       if ((match = /Version\/([0-9.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1], details: 2});
+        this.data.os.version = new Version({ value: match[1], details: 2 });
       }
     }
 
@@ -1823,7 +1830,7 @@ class Os {
 
     if ((match = /RIM Tablet OS ([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'BlackBerry Tablet OS';
-      this.data.os.version = new Version({value: match[1], details: 2});
+      this.data.os.version = new Version({ value: match[1], details: 2 });
 
       this.data.device.manufacturer = 'RIM';
       this.data.device.model = 'BlackBerry PlayBook';
@@ -1831,7 +1838,7 @@ class Os {
       this.data.device.identified |= Constants.id.MATCH_UA;
     } else if (/\(PlayBook;/u.test(ua) && (match = /PlayBook Build\/([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'BlackBerry Tablet OS';
-      this.data.os.version = new Version({value: match[1], details: 2});
+      this.data.os.version = new Version({ value: match[1], details: 2 });
 
       this.data.device.manufacturer = 'RIM';
       this.data.device.model = 'BlackBerry PlayBook';
@@ -1840,7 +1847,7 @@ class Os {
     } else if (/PlayBook/u.test(ua) && !/Android/u.test(ua)) {
       if ((match = /Version\/([0-9.]*)/u.exec(ua))) {
         this.data.os.name = 'BlackBerry Tablet OS';
-        this.data.os.version = new Version({value: match[1], details: 2});
+        this.data.os.version = new Version({ value: match[1], details: 2 });
 
         this.data.device.manufacturer = 'RIM';
         this.data.device.model = 'BlackBerry PlayBook';
@@ -1888,19 +1895,19 @@ class Os {
       this.data.os.version = null;
 
       if ((match = /OpenTV Build\/([0-9\.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /OpenTV ([0-9\.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /Opentv([0-9]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /OTV([0-9\.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
   }
@@ -1913,7 +1920,7 @@ class Os {
 
       let match;
       if ((match = /Qtopia\/([0-9.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
   }
@@ -1935,8 +1942,8 @@ class Os {
 
     if ((match = /(?:UNIX_System_V|UNIX_SV) ([0-9.]*)/u.exec(ua))) {
       this.data.os.name = 'UNIX System V';
-      this.data.os.family = new Family({name: 'UNIX'});
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.family = new Family({ name: 'UNIX' });
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = Constants.deviceType.DESKTOP;
     }
 
@@ -1944,10 +1951,10 @@ class Os {
 
     if (/OSF1?[ _]/u.test(ua)) {
       this.data.os.name = 'Digital Unix';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /OSF1?[ _]V?([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -1957,10 +1964,10 @@ class Os {
 
     if (/ULTRIX/u.test(ua)) {
       this.data.os.name = 'ULTRIX';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if ((match = /ULTRIX ([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -1970,10 +1977,10 @@ class Os {
 
     if (/HP-UX/u.test(ua)) {
       this.data.os.name = 'HP-UX';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /HP-UX [A-Z].0?([1-9][0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -1983,37 +1990,37 @@ class Os {
 
     if (/SunOS/u.test(ua)) {
       this.data.os.name = 'Solaris';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /SunOS ([1234]\.[0-9\.]+)/u.exec(ua))) {
         this.data.os.name = 'SunOS';
-        this.data.os.version = new Version({value: match[1]});
-        this.data.os.family = new Family({name: 'BSD'});
+        this.data.os.version = new Version({ value: match[1] });
+        this.data.os.family = new Family({ name: 'BSD' });
 
         if ((match = /SunOS 4\.1\.([1234])/u.exec(ua))) {
           this.data.os.name = 'Solaris';
 
           switch (match[1]) {
             case '1':
-              this.data.os.version = new Version({value: '1.0'});
+              this.data.os.version = new Version({ value: '1.0' });
               break;
             case '2':
-              this.data.os.version = new Version({value: '1.0.1'});
+              this.data.os.version = new Version({ value: '1.0.1' });
               break;
             case '3':
-              this.data.os.version = new Version({value: '1.1'});
+              this.data.os.version = new Version({ value: '1.1' });
               break;
             case '4':
-              this.data.os.version = new Version({value: '1.1.2'});
+              this.data.os.version = new Version({ value: '1.1.2' });
               break;
           }
         }
       }
 
       if ((match = /SunOS 5\.([123456](?:\.[0-9.]*)?) /u.exec(ua))) {
-        this.data.os.version = new Version({value: `2.${match[1]}`});
+        this.data.os.version = new Version({ value: `2.${match[1]}` });
       } else if ((match = /SunOS 5\.([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2021,10 +2028,10 @@ class Os {
 
     if ((match = /Solaris(?: ([0-9.]+))?;/u.exec(ua))) {
       this.data.os.name = 'Solaris';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /Solaris ([0-9.]+);/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2034,10 +2041,10 @@ class Os {
 
     if (/AIX/u.test(ua)) {
       this.data.os.name = 'AIX';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /AIX ([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2047,14 +2054,14 @@ class Os {
 
     if (/IRIX/u.test(ua)) {
       this.data.os.name = 'IRIX';
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       if ((match = /IRIX ([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       if ((match = /IRIX;?(?:64|32) ([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2064,11 +2071,11 @@ class Os {
 
     if ((match = /NEWS-OS ([0-9\.]+)/u.exec(ua))) {
       this.data.os.name = 'NEWS OS';
-      this.data.os.version = new Version({value: match[1]});
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.version = new Version({ value: match[1] });
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if (/NEWS-OS [56]/u.test(ua)) {
-        this.data.os.family = new Family({name: 'UNIX'});
+        this.data.os.family = new Family({ name: 'UNIX' });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2078,8 +2085,8 @@ class Os {
 
     if ((match = /EWS-UNIX rev ([0-9.]+)/u.exec(ua))) {
       this.data.os.name = 'EWS-UX';
-      this.data.os.version = new Version({value: match[1]});
-      this.data.os.family = new Family({name: 'UNIX'});
+      this.data.os.version = new Version({ value: match[1] });
+      this.data.os.family = new Family({ name: 'UNIX' });
 
       this.data.device.type = Constants.deviceType.DESKTOP;
     }
@@ -2088,8 +2095,8 @@ class Os {
 
     if ((match = /GENIX ([0-9.]+)/u.exec(ua))) {
       this.data.os.name = 'GENIX';
-      this.data.os.version = new Version({value: match[1]});
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.version = new Version({ value: match[1] });
+      this.data.os.family = new Family({ name: 'BSD' });
 
       this.data.device.type = Constants.deviceType.DESKTOP;
     }
@@ -2112,15 +2119,15 @@ class Os {
 
     if (/BSD\/386/u.test(ua)) {
       this.data.os.name = 'BSD/OS';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
     }
 
     if (/BSD\/OS/u.test(ua)) {
       this.data.os.name = 'BSD/OS';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if ((match = /BSD\/OS ([0-9.]*)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2128,10 +2135,10 @@ class Os {
 
     if (/FreeBSD/iu.test(ua)) {
       this.data.os.name = 'FreeBSD';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if ((match = /FreeBSD[ -\/]?([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2139,10 +2146,10 @@ class Os {
 
     if (/OpenBSD/iu.test(ua)) {
       this.data.os.name = 'OpenBSD';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if ((match = /OpenBSD ?([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2150,10 +2157,10 @@ class Os {
 
     if (/NetBSD/iu.test(ua)) {
       this.data.os.name = 'NetBSD';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
 
       if ((match = /NetBSD ?([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2161,7 +2168,7 @@ class Os {
 
     if (/DragonFly/iu.test(ua)) {
       this.data.os.name = 'DragonFly BSD';
-      this.data.os.family = new Family({name: 'BSD'});
+      this.data.os.family = new Family({ name: 'BSD' });
     }
   }
 
@@ -2189,7 +2196,7 @@ class Os {
       if (/Black Lab Linux/u.test(ua)) {
         this.data.os.name = 'Black Lab Linux';
         if ((match = /Black Lab Linux ([0-9\.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2204,7 +2211,7 @@ class Os {
         }
 
         if ((match = /CentOS Linux release ([0-9\.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2213,11 +2220,11 @@ class Os {
       if (/Debian/u.test(ua)) {
         this.data.os.name = 'Debian';
         if ((match = /Debian\/([0-9.]*)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         if ((match = /Debian GNU\/Linux ([0-9\.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2232,7 +2239,7 @@ class Os {
         }
 
         if ((match = /Fedora release ([0-9.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2241,7 +2248,7 @@ class Os {
       if (/Gentoo/u.test(ua)) {
         this.data.os.name = 'Gentoo';
         if ((match = /Gentoo Base System release ([0-9.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2250,7 +2257,7 @@ class Os {
       if (/gNewSense/u.test(ua)) {
         this.data.os.name = 'gNewSense';
         if ((match = /gNewSense\/[^(]+\(([0-9.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2259,7 +2266,7 @@ class Os {
       if (/Kubuntu/u.test(ua)) {
         this.data.os.name = 'Kubuntu';
         if ((match = /Kubuntu[ \/]([0-9.]*)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2268,7 +2275,7 @@ class Os {
       if (/Linux Mint/u.test(ua)) {
         this.data.os.name = 'Linux Mint';
         if ((match = /Linux Mint ([0-9.]+)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2277,7 +2284,7 @@ class Os {
       if (/Mandriva Linux/u.test(ua)) {
         this.data.os.name = 'Mandriva';
         if ((match = /Mandriva Linux\/[0-9.\-]+mdv([0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2286,11 +2293,11 @@ class Os {
       if (/Mageia/u.test(ua)) {
         this.data.os.name = 'Mageia';
         if ((match = /Mageia\/[0-9\.\-]+mga([0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         if ((match = /Mageia ([0-9\.]+)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2299,7 +2306,7 @@ class Os {
       if (/Mandriva/u.test(ua)) {
         this.data.os.name = 'Mandriva';
         if ((match = /Mandriva\/[0-9\.\-]+mdv([0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2308,7 +2315,7 @@ class Os {
       if (/moonOS/u.test(ua)) {
         this.data.os.name = 'moonOS';
         if ((match = /moonOS\/([0-9.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2328,7 +2335,7 @@ class Os {
       if (/Slackware/u.test(ua)) {
         this.data.os.name = 'Slackware';
         if ((match = /Slackware[ \/](1[0-9.]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2337,11 +2344,11 @@ class Os {
       if (/SUSE/u.test(ua)) {
         this.data.os.name = 'SUSE';
         if ((match = /SUSE\/([0-9]\.[0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         if ((match = /openSUSE ([0-9\.]+)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2350,7 +2357,7 @@ class Os {
       if (/Turbolinux/u.test(ua)) {
         this.data.os.name = 'Turbolinux';
         if ((match = /Turbolinux\/([0-9]\.[0-9]+)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2359,11 +2366,11 @@ class Os {
       if (/Ubuntu/u.test(ua)) {
         this.data.os.name = 'Ubuntu';
         if ((match = /Ubuntu\/([0-9.]*)/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         if ((match = /Ubuntu ([0-9\.]+)/iu.exec(ua))) {
-          this.data.os.version = new Version({value: match[1], details: 2});
+          this.data.os.version = new Version({ value: match[1], details: 2 });
         }
 
         this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2371,7 +2378,7 @@ class Os {
 
       if ((match = /《붉은별》\/([0-9.]*)/iu.exec(ua))) {
         this.data.os.name = 'Red Star';
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
         this.data.device.type = Constants.deviceType.DESKTOP;
       }
 
@@ -2391,7 +2398,7 @@ class Os {
 
       if ((match = /Linux\/SLP\/([0-9.]+)/u.exec(ua))) {
         this.data.os.name = 'Linux SLP';
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
         this.data.device.type = Constants.deviceType.MOBILE;
       }
 
@@ -2404,7 +2411,7 @@ class Os {
     if (/elementary OS/u.test(ua)) {
       this.data.os.name = 'elementary OS';
       if ((match = /elementary OS ([A-Za-z]+)/u.exec(ua))) {
-        this.data.os.version = new Version({alias: match[1]});
+        this.data.os.version = new Version({ alias: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.DESKTOP;
@@ -2423,13 +2430,13 @@ class Os {
 
     if ((match = /(?:\(|; )Ubuntu ([0-9.]+) like Android/u.exec(ua))) {
       this.data.os.name = 'Ubuntu Touch';
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
     if ((match = /Lindows ([0-9.]+)/u.exec(ua))) {
       this.data.os.name = 'Lindows';
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = Constants.deviceType.DESKTOP;
     }
   }
@@ -2466,17 +2473,17 @@ class Os {
       }
 
       if ((match = /; Brew ([0-9.]+);/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       } else if ((match = /BREW; U; ([0-9.]+)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       } else if ((match = /[\(;]BREW[\/ ]([0-9.]+)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       } else if ((match = /BREW MP ([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       } else if ((match = /BMP ([0-9.]*); U/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       } else if ((match = /B(?:rew)?MP\/([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -2521,9 +2528,10 @@ class Os {
       }
 
       if (
-        (match = /\(BREW [^;]+; U; [^;]+; [^;]+; Opera Mobi; Presto\/[0-9\.]+\/(?:WAP|AMB|INT)\) ([^\/]+) [^\/]+\//iu.exec(
-          ua
-        ))
+        (match =
+          /\(BREW [^;]+; U; [^;]+; [^;]+; Opera Mobi; Presto\/[0-9\.]+\/(?:WAP|AMB|INT)\) ([^\/]+) [^\/]+\//iu.exec(
+            ua
+          ))
       ) {
         this.data.device.model = match[1];
         this.data.device.identified = Constants.id.PATTERN;
@@ -2550,7 +2558,7 @@ class Os {
     }
 
     const patterns = [
-      {name: 'BeOS', regexp: [/BeOS/iu], type: Constants.deviceType.DESKTOP},
+      { name: 'BeOS', regexp: [/BeOS/iu], type: Constants.deviceType.DESKTOP },
       {
         name: 'Haiku',
         regexp: [/Haiku/iu],
@@ -2566,7 +2574,7 @@ class Os {
         regexp: [/MorphOS(?: ([0-9.]*))?/iu],
         type: Constants.deviceType.DESKTOP,
       },
-      {name: 'AROS', regexp: [/AROS/iu], type: Constants.deviceType.DESKTOP},
+      { name: 'AROS', regexp: [/AROS/iu], type: Constants.deviceType.DESKTOP },
       {
         name: 'OpenVMS',
         regexp: [/OpenVMS V([0-9.]+)/iu, /OpenVMS/iu],
@@ -2607,7 +2615,7 @@ class Os {
         regexp: [/\(MTK;/iu, /\/MTK /iu],
         type: Constants.deviceType.MOBILE,
       },
-      {name: 'MRE', regexp: [/MRE\\\\/iu], type: Constants.deviceType.MOBILE},
+      { name: 'MRE', regexp: [/MRE\\\\/iu], type: Constants.deviceType.MOBILE },
       {
         name: 'MRE',
         regexp: [/MAUI[-_ ](?:Browser|Runtime)/iu],
@@ -2633,14 +2641,14 @@ class Os {
         regexp: [/Nucleus\//iu],
         type: Constants.deviceType.MOBILE,
       },
-      {name: 'QNX', regexp: [/QNX/iu], type: Constants.deviceType.MOBILE},
-      {name: 'VRE', regexp: [/\(VRE;/iu], type: Constants.deviceType.MOBILE},
+      { name: 'QNX', regexp: [/QNX/iu], type: Constants.deviceType.MOBILE },
+      { name: 'VRE', regexp: [/\(VRE;/iu], type: Constants.deviceType.MOBILE },
       {
         name: 'SpreadTrum',
         regexp: [/\(SpreadTrum;/iu],
         type: Constants.deviceType.MOBILE,
       },
-      {name: 'ThreadX', regexp: [/ThreadX(?:_OS)?\/([0-9.]*)/iu]},
+      { name: 'ThreadX', regexp: [/ThreadX(?:_OS)?\/([0-9.]*)/iu] },
     ];
 
     const count = patterns.length;

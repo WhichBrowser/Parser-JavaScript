@@ -189,7 +189,7 @@ class DeviceModels {
     const keys = [`@${model.substring(0, 2).toUpperCase()}`, '@'];
     let pattern = null;
     let match = null;
-    for (let key of keys) {
+    for (const key of keys) {
       if (index[key]) {
         for (let v of index[key]) {
           const originalV = v;
@@ -207,7 +207,7 @@ class DeviceModels {
                   }
                 }
 
-                for (let m2 of Object.keys(list[v] || list[originalV])) {
+                for (const m2 of Object.keys(list[v] || list[originalV])) {
                   const v2 = (list[v] || list[originalV])[m2];
                   if (DeviceModels.hasMatch(m2, model)) {
                     match = v2;

@@ -95,7 +95,7 @@ class Browser {
           this.data.browser.stock = this.data.os.name === 'OS X';
 
           if ((match = /Version\/([0-9.]+)/u.exec(ua))) {
-            this.data.browser.version = new Version({value: match[1]});
+            this.data.browser.version = new Version({ value: match[1] });
           }
 
           if (/AppleWebKit\/[0-9.]+\+/u.test(ua)) {
@@ -140,7 +140,7 @@ class Browser {
       if ((match = /Chrome\/([789][0-9]|[1-9][0-9][0-9])\.0\.0\.0 /u.exec(ua))) {
         reduced = true;
       }
-      this.data.browser.version = new Version({value: version});
+      this.data.browser.version = new Version({ value: version });
 
       if (this.data.os.name && this.data.os.name === 'Android') {
         if (reduced) {
@@ -159,16 +159,10 @@ class Browser {
 
         /* Webview for Android 4.4 and higher */
 
-        if (
-          version
-            .split('.')
-            .slice(1, 3)
-            .join('.') === '0.0' &&
-          (/Version\//u.test(ua) || /Release\//u.test(ua))
-        ) {
+        if (version.split('.').slice(1, 3).join('.') === '0.0' && (/Version\//u.test(ua) || /Release\//u.test(ua))) {
           this.data.browser.using = new Using({
             name: 'Chromium WebView',
-            version: new Version({value: version.split('.')[0]}),
+            version: new Version({ value: version.split('.')[0] }),
           });
           this.data.browser.type = Constants.browserType.UNKNOWN;
           this.data.browser.stock = true;
@@ -181,7 +175,7 @@ class Browser {
         if (/; wv\)/u.test(ua)) {
           this.data.browser.using = new Using({
             name: 'Chromium WebView',
-            version: new Version({value: version.split('.')[0]}),
+            version: new Version({ value: version.split('.')[0] }),
           });
           this.data.browser.type = Constants.browserType.UNKNOWN;
           this.data.browser.stock = true;
@@ -211,7 +205,7 @@ class Browser {
             this.data.browser.name = 'Samsung Internet';
             this.data.browser.channel = null;
             this.data.browser.stock = true;
-            this.data.browser.version = new Version({value: '1.0'});
+            this.data.browser.version = new Version({ value: '1.0' });
           }
 
           /* Version 1.5 */
@@ -219,7 +213,7 @@ class Browser {
             this.data.browser.name = 'Samsung Internet';
             this.data.browser.channel = null;
             this.data.browser.stock = true;
-            this.data.browser.version = new Version({value: '1.5'});
+            this.data.browser.version = new Version({ value: '1.5' });
           }
 
           /* Version 1.6 */
@@ -227,7 +221,7 @@ class Browser {
             this.data.browser.name = 'Samsung Internet';
             this.data.browser.channel = null;
             this.data.browser.stock = true;
-            this.data.browser.version = new Version({value: '1.6'});
+            this.data.browser.version = new Version({ value: '1.6' });
           }
 
           /* Version 2.0 */
@@ -235,7 +229,7 @@ class Browser {
             this.data.browser.name = 'Samsung Internet';
             this.data.browser.channel = null;
             this.data.browser.stock = true;
-            this.data.browser.version = new Version({value: '2.0'});
+            this.data.browser.version = new Version({ value: '2.0' });
           }
 
           /* Version 2.1 */
@@ -243,7 +237,7 @@ class Browser {
             this.data.browser.name = 'Samsung Internet';
             this.data.browser.channel = null;
             this.data.browser.stock = true;
-            this.data.browser.version = new Version({value: '2.1'});
+            this.data.browser.version = new Version({ value: '2.1' });
           }
         }
 
@@ -252,7 +246,7 @@ class Browser {
           this.data.browser.name = 'Samsung Internet';
           this.data.browser.channel = null;
           this.data.browser.stock = true;
-          this.data.browser.version = new Version({value: match[1]});
+          this.data.browser.version = new Version({ value: match[1] });
 
           if (/Mobile VR/.test(ua)) {
             this.data.device.manufacturer = 'Samsung';
@@ -291,7 +285,7 @@ class Browser {
         this.data.browser.name = 'Samsung Internet';
         this.data.browser.channel = null;
         this.data.browser.stock = true;
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
 
         this.data.os.name = 'Android';
         this.data.os.version = null;
@@ -335,7 +329,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Chromium\/([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if (this.data.device.type === '') {
@@ -346,7 +340,7 @@ class Browser {
     /* Chrome Content Shell */
 
     if (/Chrome\/[0-9]+\.77\.34\.5/u.test(ua)) {
-      this.data.browser.using = new Using({name: 'Chrome Content Shell'});
+      this.data.browser.using = new Using({ name: 'Chrome Content Shell' });
 
       this.data.browser.type = Constants.browserType.UNKNOWN;
       this.data.browser.stock = false;
@@ -358,7 +352,7 @@ class Browser {
     /* Chromium WebView by Amazon */
 
     if (/AmazonWebAppPlatform\//u.test(ua)) {
-      this.data.browser.using = new Using({name: 'Amazon WebView'});
+      this.data.browser.using = new Using({ name: 'Amazon WebView' });
 
       this.data.browser.type = Constants.browserType.UNKNOWN;
       this.data.browser.stock = false;
@@ -372,7 +366,7 @@ class Browser {
     if ((match = /Crosswalk\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.using = new Using({
         name: 'Crosswalk WebView',
-        version: new Version({value: match[1], details: 1}),
+        version: new Version({ value: match[1], details: 1 }),
       });
 
       this.data.browser.type = Constants.browserType.UNKNOWN;
@@ -387,7 +381,7 @@ class Browser {
     if (this.data.isBrowser('Chrome') || this.data.isBrowser('Chromium')) {
       this.data.browser.family = new Family({
         name: 'Chrome',
-        version: this.data.browser.version ? new Version({value: this.data.browser.version.getMajor()}) : null,
+        version: this.data.browser.version ? new Version({ value: this.data.browser.version.getMajor() }) : null,
       });
     }
   }
@@ -398,13 +392,13 @@ class Browser {
     let match;
     if ((match = /\(IE ([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Internet Explorer';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /Browser\/IE([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Internet Explorer';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -456,20 +450,20 @@ class Browser {
 
     if ((match = /Trident\/[789][^)]+; rv:([0-9.]*)\)/u.exec(ua))) {
       this.data.browser.name = 'Internet Explorer';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /Trident\/[789][^)]+; Touch; rv:([0-9.]*);\s+IEMobile\//u.exec(ua))) {
       this.data.browser.name = 'Mobile Internet Explorer';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /Trident\/[789][^)]+; Touch; rv:([0-9.]*); WPDesktop/u.exec(ua))) {
       this.data.browser.mode = 'desktop';
       this.data.browser.name = 'Mobile Internet Explorer';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -481,14 +475,14 @@ class Browser {
 
     if (/Microsoft Pocket Internet Explorer\//u.test(ua)) {
       this.data.browser.name = 'Pocket Internet Explorer';
-      this.data.browser.version = new Version({value: '1.0'});
+      this.data.browser.version = new Version({ value: '1.0' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.MOBILE;
     }
 
     if ((match = /MSPIE ([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Pocket Internet Explorer2';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.MOBILE;
     }
@@ -529,7 +523,7 @@ class Browser {
       if ((match = /MSIE ([0-9.]*)/u.exec(ua))) {
         this.data.browser.using = new Using({
           name: 'Internet Explorer',
-          version: new Version({value: match[1]}),
+          version: new Version({ value: match[1] }),
         });
       }
     }
@@ -553,7 +547,7 @@ class Browser {
       this.data.browser.name = 'Edge';
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: match[1], details: 1});
+      this.data.browser.version = new Version({ value: match[1], details: 1 });
 
       this.data.browser.family = null;
     }
@@ -590,7 +584,7 @@ class Browser {
       this.data.browser.stock = false;
       this.data.browser.channel = '';
       this.data.browser.name = 'Opera';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (/Edition Developer/iu.test(ua)) {
@@ -612,7 +606,7 @@ class Browser {
 
     if ((match = /OMI\/([0-9]+\.[0-9]+)/u.exec(ua))) {
       this.data.browser.name = 'Opera Devices';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.TELEVISION;
@@ -629,12 +623,12 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Opera[/| ]?([0-9.]+)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if ((match = /Version\/([0-9.]+)/u.exec(ua))) {
         if (parseFloat(match[1]) >= 10) {
-          this.data.browser.version = new Version({value: match[1]});
+          this.data.browser.version = new Version({ value: match[1] });
         }
       }
 
@@ -719,7 +713,7 @@ class Browser {
     if ((match = /OPiOS\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Opera Mini';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -728,35 +722,35 @@ class Browser {
       this.data.browser.name = 'Opera Touch';
       this.data.browser.type = Constants.browserType.BROWSER;
       if (match[1]) {
-        this.data.browser.version = new Version({value: match[1], details: 2});
+        this.data.browser.version = new Version({ value: match[1], details: 2 });
       }
     }
 
     if ((match = /Coast\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Coast by Opera';
-      this.data.browser.version = new Version({value: match[1], details: 3});
+      this.data.browser.version = new Version({ value: match[1], details: 3 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /Oupeng(?:HD)?[/-]([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Opera Oupeng';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /\sMMS\/([0-9.]*)$/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Opera Neon';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /OPRGX\/([0-9.]*)$/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'Opera GX';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
   }
@@ -779,7 +773,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Firefox\/([0-9ab.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
 
         if (/a/u.test(match[1])) {
           this.data.browser.channel = 'Aurora';
@@ -792,7 +786,7 @@ class Browser {
 
       if ((match = /Aurora\/([0-9ab.]*)/u.exec(ua))) {
         this.data.browser.channel = 'Aurora';
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if (/Fennec/u.test(ua)) {
@@ -808,7 +802,7 @@ class Browser {
             device.identified |= this.data.device.identified;
             this.data.device = device;
             if (!this.data.isOs('KaiOS')) {
-              this.data.os.reset({name: 'Firefox OS'});
+              this.data.os.reset({ name: 'Firefox OS' });
             }
           }
         }
@@ -820,7 +814,7 @@ class Browser {
 
       if (/Viera;(?: ([^;]+);)? rv/u.test(ua)) {
         this.data.device.type = Constants.deviceType.TELEVISION;
-        this.data.os.reset({name: 'Firefox OS'});
+        this.data.os.reset({ name: 'Firefox OS' });
       }
 
       if (
@@ -842,7 +836,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = new RegExp(`${match[1]}/([0-9ab.]*)`, 'u').exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
@@ -852,7 +846,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Fennec\/([0-9ab.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       this.data.browser.channel = 'Fennec';
@@ -863,19 +857,19 @@ class Browser {
       this.data.browser.name = match[1];
       this.data.browser.type = Constants.browserType.BROWSER;
       if ((match = new RegExp(`${match[1]}/([0-9ab.]*)`, 'u').exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
     if ((match = /FxiOS\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Firefox';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /Focus\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Firefox Focus';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -894,7 +888,7 @@ class Browser {
     }
 
     if (this.data.isBrowser('Minimo')) {
-      this.data.browser.family = new Family({name: 'Firefox'});
+      this.data.browser.family = new Family({ name: 'Firefox' });
     }
   }
 
@@ -908,14 +902,14 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /SeaMonkey\/([0-9ab.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
     if ((match = /PmWFx\/([0-9ab.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'SeaMonkey';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
   }
@@ -957,7 +951,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Netscape[0-9]?\/([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
@@ -965,7 +959,7 @@ class Browser {
       this.data.browser.stock = false;
       this.data.browser.name = 'Netscape Navigator';
       this.data.browser.type = Constants.browserType.BROWSER;
-      this.data.browser.version = new Version({value: match[1], details: 3});
+      this.data.browser.version = new Version({ value: match[1], details: 3 });
     }
   }
 
@@ -978,85 +972,84 @@ class Browser {
     }
 
     if (
-      (match = /(?:NCSA[ _])?Mosaic(?:\(tm\))?(?: for the X Window System| for Windows)?\/(?:Version )?([0-9.]*)/u.exec(
-        ua
-      ))
+      (match =
+        /(?:NCSA[ _])?Mosaic(?:\(tm\))?(?: for the X Window System| for Windows)?\/(?:Version )?([0-9.]*)/u.exec(ua))
     ) {
       this.data.browser.name = 'NCSA Mosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /AIR_Mosaic(?:\(16bit\))?\/v([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'AIR Mosaic';
-      this.data.browser.version = new Version({value: match[1], details: 2});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /(?:MosaicView|Spyglass[ _]Mosaic)\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Spyglass Mosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /SPRY_Mosaic(?:\(16bit\))?\/v([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'SPRY Mosaic';
-      this.data.browser.version = new Version({value: match[1], details: 2});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /DCL SuperMosaic\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'SuperMosaic';
-      this.data.browser.version = new Version({value: match[1], details: 2});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /VMS_Mosaic\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'VMS Mosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /mMosaic\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'mMosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /Quarterdeck Mosaic Version ([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Quarterdeck Mosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /WinMosaic\/Version ([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'WinMosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
     }
 
     if ((match = /Device Mosaic ([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Device Mosaic';
-      this.data.browser.version = new Version({value: match[1]});
-      this.data.browser.family = new Family({name: 'Mosaic'});
+      this.data.browser.version = new Version({ value: match[1] });
+      this.data.browser.family = new Family({ name: 'Mosaic' });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.stock = false;
 
@@ -1101,12 +1094,13 @@ class Browser {
       }
 
       if (
-        (match = /^JUC ?\(Linux; ?U; ?(?:Android)? ?([0-9.]+)[^;]*; ?[^;]+; ?([^;]*[^\s])\s*; ?[0-9]+\*[0-9]+;?\)/u.exec(
-          ua
-        ))
+        (match =
+          /^JUC ?\(Linux; ?U; ?(?:Android)? ?([0-9.]+)[^;]*; ?[^;]+; ?([^;]*[^\s])\s*; ?[0-9]+\*[0-9]+;?\)/u.exec(
+            ua
+          ))
       ) {
         this.data.os.name = 'Android';
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
 
         this.data.device = DeviceModels.identify('android', match[2]);
       }
@@ -1127,7 +1121,7 @@ class Browser {
 
       if ((match = /\((?:Linux|MIDP-2.0); U; Adr ([0-9.]+)(?:-update[0-9])?; [^;]+; ([^;]*[^\s])\)/u.exec(ua))) {
         this.data.os.name = 'Android';
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
 
         this.data.device.model = match[2];
         this.data.device.identified |= Constants.id.PATTERN;
@@ -1142,7 +1136,7 @@ class Browser {
 
       if (/\((?:iOS|iPhone);/u.test(ua)) {
         this.data.os.name = 'iOS';
-        this.data.os.version = new Version({value: '1.0'});
+        this.data.os.version = new Version({ value: '1.0' });
 
         if ((match = /OS[_ ]([0-9_]*);/u.exec(ua))) {
           this.data.os.version = new Version({
@@ -1163,10 +1157,10 @@ class Browser {
       if (/\(Symbian;/u.test(ua)) {
         this.data.os.name = 'Series60';
         this.data.os.version = null;
-        this.data.os.family = new Family({name: 'Symbian'});
+        this.data.os.family = new Family({ name: 'Symbian' });
 
         if ((match = /S60 V([0-9])/u.exec(ua))) {
-          this.data.os.version = new Version({value: match[1]});
+          this.data.os.version = new Version({ value: match[1] });
         }
 
         if ((match = /; Nokia([^;]+)\)/iu.exec(ua))) {
@@ -1189,16 +1183,16 @@ class Browser {
         if ((match = /wds ([0-9]+\.[0-9])/u.exec(ua))) {
           switch (match[1]) {
             case '7.1':
-              this.data.os.version = new Version({value: '7.5'});
+              this.data.os.version = new Version({ value: '7.5' });
               break;
             case '8.0':
-              this.data.os.version = new Version({value: '8.0'});
+              this.data.os.version = new Version({ value: '8.0' });
               break;
             case '8.1':
-              this.data.os.version = new Version({value: '8.1'});
+              this.data.os.version = new Version({ value: '8.1' });
               break;
             case '10.0':
-              this.data.os.version = new Version({value: '10.0'});
+              this.data.os.version = new Version({ value: '10.0' });
               break;
           }
         }
@@ -1221,7 +1215,7 @@ class Browser {
     if ((match = /Ucweb\/([0-9]*[.][0-9]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'UC Browser';
-      this.data.browser.version = new Version({value: match[1], details: 3});
+      this.data.browser.version = new Version({ value: match[1], details: 3 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -1251,7 +1245,7 @@ class Browser {
     if ((match = /UC ?Browser\/?([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'UC Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.browser.channel = null;
@@ -1264,7 +1258,7 @@ class Browser {
     if ((match = /UBrowser\/?([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'UC Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.browser.channel = null;
@@ -1273,7 +1267,7 @@ class Browser {
     if ((match = /UCLite\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.stock = false;
       this.data.browser.name = 'UC Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.browser.channel = null;
@@ -1363,7 +1357,7 @@ class Browser {
 
     if ((match = /CNF\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Compact NetFront';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.MOBILE;
     }
@@ -1376,7 +1370,7 @@ class Browser {
       this.data.browser.channel = null;
 
       if ((match = /NetFront[ /]?([0-9.]*)/iu.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       /* Detect device type based on NetFront identifier */
@@ -1428,7 +1422,7 @@ class Browser {
       (match = /(?:Browser\/(?:NF|NetFr?ont-)|NF-Browser\/|ACS-NF\/|NetFront FullBrowser\/)([0-9.]*)/iu.exec(ua))
     ) {
       this.data.browser.name = 'NetFront';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = null;
 
@@ -1439,7 +1433,7 @@ class Browser {
 
     if ((match = /(?:AVE-Front|AveFront)\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'NetFront';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /Category=([^);]+)[);]/u.exec(ua))) {
@@ -1479,7 +1473,7 @@ class Browser {
 
     if ((match = /NX[/ ]([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'NetFront NX';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = null;
 
@@ -1506,7 +1500,7 @@ class Browser {
 
   /* Obigo */
   static detectObigo(ua) {
-    const processObigoVersion = function(version) {
+    const processObigoVersion = function (version) {
       const result = {
         value: version,
       };
@@ -1574,13 +1568,13 @@ class Browser {
     let match;
     if ((match = /ANTFresco\/([0-9.]+)/iu.exec(ua))) {
       this.data.browser.name = 'ANT Fresco';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /ANTGalio\/([0-9.]+)/iu.exec(ua))) {
       this.data.browser.name = 'ANT Galio';
-      this.data.browser.version = new Version({value: match[1], details: 3});
+      this.data.browser.version = new Version({ value: match[1], details: 3 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
   }
@@ -1597,7 +1591,7 @@ class Browser {
     let match;
     if ((match = /SRAF\/([0-9.]+)/iu.exec(ua))) {
       this.data.browser.name = 'Seraphic Sraf';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.TELEVISION;
     }
@@ -1610,7 +1604,7 @@ class Browser {
     if ((match = /mbxtWebKit\/([0-9.]*)/u.exec(ua))) {
       this.data.os.name = '';
       this.data.browser.name = 'MachBlue XT';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.TELEVISION;
     }
@@ -1641,7 +1635,7 @@ class Browser {
       }
       let match;
       if ((match = /Espial(?: Browser|TVBrowser)?\/(?:sig)?([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if ((match = /;(L6200|L7200)/u.exec(ua))) {
@@ -1664,7 +1658,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
       let match;
       if ((match = /Iris\/([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if ((match = / WM([0-9]) /u.exec(ua))) {
@@ -1673,7 +1667,7 @@ class Browser {
 
         this.data.os.reset();
         this.data.os.name = 'Windows Mobile';
-        this.data.os.version = new Version({value: `${match[1]}.0`});
+        this.data.os.version = new Version({ value: `${match[1]}.0` });
       }
 
       if (/Windows NT/u.test(ua)) {
@@ -1696,11 +1690,11 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
       let match;
       if ((match = /(?:Dolfin|Jasmine)\/([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if ((match = /Browser\/Dolfin([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
   }
@@ -1769,7 +1763,7 @@ class Browser {
 
           if (this.data.os.name && (this.data.os.name !== 'Android' || this.data.os.name !== 'FireOS')) {
             this.data.os.name = 'FireOS';
-            this.data.os.family = new Family({name: 'Android'});
+            this.data.os.family = new Family({ name: 'Android' });
             this.data.os.alias = null;
             this.data.os.version = null;
           }
@@ -1869,7 +1863,7 @@ class Browser {
           if (device.identified) {
             device.identified |= this.data.device.identified;
             this.data.os.name = 'Nokia Asha Platform';
-            this.data.os.version = new Version({value: '1.0'});
+            this.data.os.version = new Version({ value: '1.0' });
             this.data.device = device;
 
             if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+);/u.exec(ua))) {
@@ -1918,7 +1912,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
       let match;
       if ((match = /[k|K]onqueror\/([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       if (this.data.device.type === '') {
@@ -2001,7 +1995,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /IBM[- ]WebExplorer[ -]?(?:DLL ?|Window API ?)?\/v([0-9]\.[0-9.]+)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
 
       this.data.os.name = 'OS/2';
@@ -2024,7 +2018,7 @@ class Browser {
 
     if ((match = /Midori\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Midori';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.manufacturer = null;
@@ -2044,7 +2038,7 @@ class Browser {
       this.data.device.type = Constants.deviceType.DESKTOP;
 
       if ((match = /midori\/([0-9.]*)$/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
@@ -2078,7 +2072,7 @@ class Browser {
     if ((match = /^Browse\/([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'Browse';
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -2087,7 +2081,7 @@ class Browser {
     if ((match = / Flow\/([0-9.]+)/iu.exec(ua))) {
       this.data.browser.name = 'Flow';
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.family = null;
 
@@ -2112,14 +2106,14 @@ class Browser {
     /* Huawei Browser */
     if ((match = /HuaweiBrowser\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Huawei Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     /* Xiaomi MIUI Browser */
     if ((match = /MiuiBrowser\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'MIUI Browser';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
       if (!this.data.os.isFamily('Android')) {
         this.data.os.reset();
@@ -2135,7 +2129,7 @@ class Browser {
     if ((match = /Ninesky(?:-android-mobile(?:-cn)?)?\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.reset();
       this.data.browser.name = 'NineSky';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (this.data.device.manufacturer && this.data.device.manufacturer === 'Apple') {
@@ -2154,7 +2148,7 @@ class Browser {
 
     if ((match = /Skyfire\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Skyfire';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -2167,7 +2161,7 @@ class Browser {
 
     if ((match = /Dolphin(?:HD|Browser)?(?:INT|CN)?\/(?:INT|CN)?-?([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Dolphin';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -2183,7 +2177,7 @@ class Browser {
         version = `${version[0]}.${version[1]}`;
       }
 
-      this.data.browser.version = new Version({value: version, details: 2});
+      this.data.browser.version = new Version({ value: version, details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = '';
 
@@ -2194,7 +2188,7 @@ class Browser {
       if ((match = /MQQBrowser\/[0-9.]+\/Adr \(Linux; U; ([0-9.]+); [^;]+; (.+) Build/u.exec(ua))) {
         this.data.os.reset({
           name: 'Android',
-          version: new Version({value: match[1]}),
+          version: new Version({ value: match[1] }),
         });
 
         this.data.device.type = Constants.deviceType.MOBILE;
@@ -2211,7 +2205,7 @@ class Browser {
       if ((match = /MQQBrowser\/[0-9.]+\/WP7 \([^;]+;WPOS:([0-9]\.[0-9])[0-9.]*;([^;]+); ([^)]+)\)/u.exec(ua))) {
         this.data.os.reset({
           name: 'Windows Phone',
-          version: new Version({value: match[1]}),
+          version: new Version({ value: match[1] }),
         });
 
         this.data.device.type = Constants.deviceType.MOBILE;
@@ -2229,14 +2223,14 @@ class Browser {
 
     if ((match = /MQQBrowser\/Mini([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'QQ Browser Mini';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = '';
     }
 
     if ((match = /QQ\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'QQ Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.browser.channel = '';
     }
@@ -2253,7 +2247,7 @@ class Browser {
       this.data.browser.name = 'Qihoo 360 Browser';
       this.data.browser.family = null;
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (!this.data.os.isFamily('Android')) {
@@ -2268,7 +2262,7 @@ class Browser {
       this.data.browser.name = 'Qihoo 360 Browser';
       this.data.browser.family = null;
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -2280,7 +2274,7 @@ class Browser {
 
       this.data.browser.name = 'Qihoo 360 Browser';
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: version});
+      this.data.browser.version = new Version({ value: version });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (!this.data.isOs('iOS')) {
@@ -2301,7 +2295,7 @@ class Browser {
 
       this.data.browser.name = 'Mercury Browser';
       this.data.browser.channel = '';
-      this.data.browser.version = new Version({value: version});
+      this.data.browser.version = new Version({ value: version });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -2315,14 +2309,14 @@ class Browser {
         version = `${version[0]}.${version[1]}`;
       }
 
-      this.data.browser.version = new Version({value: version, details: 2});
+      this.data.browser.version = new Version({ value: version, details: 2 });
       this.data.browser.channel = '';
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
     if ((match = /iBrowser\/Mini([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'iBrowser Mini';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.channel = '';
       this.data.browser.type = Constants.browserType.BROWSER;
     }
@@ -2343,13 +2337,13 @@ class Browser {
         switch (match[2]) {
           case 'A':
             if (!this.data.isOs('Android')) {
-              this.data.os.reset({name: 'Android'});
+              this.data.os.reset({ name: 'Android' });
             }
             break;
 
           case 'I':
             if (!this.data.isOs('iOS')) {
-              this.data.os.reset({name: 'iOS'});
+              this.data.os.reset({ name: 'iOS' });
             }
             break;
         }
@@ -2382,7 +2376,7 @@ class Browser {
 
     if ((match = /MiniBr?owserM(?:obile)?\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'MiniBrowser';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.MOBILE;
@@ -2413,7 +2407,7 @@ class Browser {
 
     if ((match = /SogouAndroidBrowser\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Sogou Mobile';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (this.data.device.manufacturer && this.data.device.manufacturer === 'Apple') {
@@ -2427,7 +2421,7 @@ class Browser {
 
     if ((match = /Xiino\/([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'Xiino';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.PDA;
@@ -2435,7 +2429,7 @@ class Browser {
       this.data.os.name = 'Palm OS';
 
       if ((match = /\(v. ([0-9.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2443,7 +2437,7 @@ class Browser {
 
     if ((match = /Palmscape\/(?:PR)?([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'Palmscape';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.type = Constants.deviceType.PDA;
@@ -2451,7 +2445,7 @@ class Browser {
       this.data.os.name = 'Palm OS';
 
       if ((match = /\(v. ([0-9.]+)/u.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
     }
 
@@ -2463,7 +2457,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if ((match = /WebPro\/?([0-9.]*)/u.exec(ua))) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 
@@ -2471,7 +2465,7 @@ class Browser {
 
     if ((match = /(?:Vision-Browser|Novarra-Vision)\/?([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Novarra Vision';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.family = null;
       this.data.browser.mode = 'proxy';
       this.data.browser.type = Constants.browserType.BROWSER;
@@ -2492,7 +2486,7 @@ class Browser {
     let match;
     if (/Roku/u.test(ua) && (match = /Web\/([0-9.]+)/u.exec(ua))) {
       this.data.browser.name = 'Web';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
     }
 
@@ -2500,7 +2494,7 @@ class Browser {
 
     if ((match = /LG Browser\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'LG Browser';
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.device.type = Constants.deviceType.TELEVISION;
     }
@@ -2522,7 +2516,7 @@ class Browser {
 
     if ((match = /DreamKey\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Dreamkey';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.setIdentification({
@@ -2537,7 +2531,7 @@ class Browser {
 
     if ((match = /DreamPassport\/([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Dream Passport';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       this.data.device.setIdentification({
@@ -2552,7 +2546,7 @@ class Browser {
 
     if ((match = /Planetweb\/v?([0-9.]*)/u.exec(ua))) {
       this.data.browser.name = 'Planetweb';
-      this.data.browser.version = new Version({value: match[1]});
+      this.data.browser.version = new Version({ value: match[1] });
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (/Dreamcast/u.test(ua)) {
@@ -2594,13 +2588,13 @@ class Browser {
     if ((match = /Browser\/Dorado([0-9.]*)/iu.exec(ua))) {
       this.data.browser.name = 'Dorado WAP';
       this.data.browser.type = Constants.browserType.BROWSER;
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
     }
 
     if ((match = /Dorado WAP-Browser\/([0-9.]*)/iu.exec(ua))) {
       this.data.browser.name = 'Dorado WAP';
       this.data.browser.type = Constants.browserType.BROWSER;
-      this.data.browser.version = new Version({value: match[1], details: 2});
+      this.data.browser.version = new Version({ value: match[1], details: 2 });
     }
 
     if ((match = /MAUI[ _]WAP[ _]Browser(?:\/([0-9.]*))?/iu.exec(ua))) {
@@ -2608,7 +2602,7 @@ class Browser {
       this.data.browser.type = Constants.browserType.BROWSER;
 
       if (match[1]) {
-        this.data.browser.version = new Version({value: match[1]});
+        this.data.browser.version = new Version({ value: match[1] });
       }
     }
 

@@ -1,13 +1,12 @@
 {
   "name": "which-browser",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Browser sniffing tool and UA parser. Browser sniffing gone too far — A useragent parser library for JavaScript",
   "main": "src/Parser.js",
   "types": "which-browser.d.ts",
   "scripts": {
-    "pre-commit": "lint-staged",
-    "test": "lab -a code -v",
-    "test-and-coverage": "istanbul cover lab --report lcovonly -- -a code -v --timeout 10000 -l",
+    "test": "lab -a @hapi/code -v",
+    "test-and-coverage": "nyc lab -a @hapi/code -v --timeout 10000 -l",
     "lint": "eslint --quiet .",
     "update-applications": "node ./bin/update-applications",
     "update-browser-ids": "node ./bin/update-browser-ids",
@@ -16,7 +15,8 @@
     "update-models": "node ./bin/update-models",
     "update-profiles": "node ./bin/update-profiles",
     "update-regexes": "node ./bin/update-regexes",
-    "update-all": "npm run update-applications && npm run update-browser-ids && npm run update-chrome && npm run update-indices && npm run update-models && npm run update-profiles && npm run update-regexes"
+    "update-all": "npm run update-applications && npm run update-browser-ids && npm run update-chrome && npm run update-indices && npm run update-models && npm run update-profiles && npm run update-regexes",
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=6.0.0"
@@ -38,30 +38,29 @@
   "author": "Simone Mariotti",
   "license": "MIT",
   "devDependencies": {
-    "codacy-coverage": "^3.4.0",
-    "code": "^4.1.0",
-    "codecov": "^3.1.0",
-    "eslint": "^5.12.1",
-    "eslint-config-google": "^0.8.0",
-    "husky": "^2.4.1",
-    "istanbul": "^0.4.5",
-    "lab": "^14.3.2",
-    "lint-staged": "^8.1.0",
-    "prettier": "^1.11.1",
-    "request": "^2.83.0",
-    "sinon": "^2.4.1",
+    "@hapi/code": "^9.0.3",
+    "@hapi/lab": "^25.1.3",
+    "eslint": "^8.52.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "nyc": "^15.1.0",
+    "prettier": "^3.0.3",
+    "request": "^2.88.2",
+    "sinon": "^17.0.0",
     "yamljs": "^0.3.0"
   },
   "lint-staged": {
     "*.js": [
-      "prettier --print-width 117 --single-quote --write",
-      "eslint --fix",
-      "git add"
+      "prettier --write",
+      "eslint --fix"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 117,
+    "trailingComma": "es5"
   }
 }

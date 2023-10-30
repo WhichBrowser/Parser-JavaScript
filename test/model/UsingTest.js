@@ -1,11 +1,11 @@
-const {describe, it} = (exports.lab = require('lab').script());
-const expect = require('code').expect;
+const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const expect = require('@hapi/code').expect;
 const Using = require('../../src/model/Using');
 const Version = require('../../src/model/Version');
 
 describe('Using Class', () => {
   describe('getName method', () => {
-    it('should return the right name', (done) => {
+    it('should return the right name', () => {
       const using = new Using();
       expect(using.getName()).to.be.empty();
 
@@ -15,13 +15,11 @@ describe('Using Class', () => {
       });
 
       expect(using.getName()).to.be.equal('Crosswalk WebView');
-
-      done();
     });
   });
 
   describe('getVersion method', () => {
-    it('should return the right version', (done) => {
+    it('should return the right version', () => {
       const using = new Using();
       expect(using.getVersion()).to.be.empty();
 
@@ -31,13 +29,11 @@ describe('Using Class', () => {
       });
 
       expect(using.getVersion()).to.be.equal('11');
-
-      done();
     });
   });
 
   describe('toString method', () => {
-    it('should return the right version', (done) => {
+    it('should return the right version', () => {
       const using = new Using();
       expect(using.toString()).to.be.empty();
 
@@ -47,14 +43,12 @@ describe('Using Class', () => {
       });
 
       expect(using.toString()).to.be.equal('Crosswalk WebView 11');
-
-      done();
     });
   });
 
   describe('toObject method', () => {
     describe('with name but not version defined', () => {
-      it('should return the name as string', (done) => {
+      it('should return the name as string', () => {
         const using = new Using();
         expect(using.toObject()).to.be.empty();
 
@@ -63,13 +57,11 @@ describe('Using Class', () => {
         });
 
         expect(using.toObject()).to.be.equal('Crosswalk WebView');
-
-        done();
       });
     });
 
     describe('with name and version defined', () => {
-      it('should return an object with both properties', (done) => {
+      it('should return an object with both properties', () => {
         const using = new Using();
         expect(using.toObject()).to.be.empty();
 
@@ -82,13 +74,11 @@ describe('Using Class', () => {
           name: 'Crosswalk WebView',
           version: '17.12',
         });
-
-        done();
       });
     });
 
     describe('with name and complex version defined', () => {
-      it('should return an object with both properties exploded', (done) => {
+      it('should return an object with both properties exploded', () => {
         const using = new Using();
         expect(using.toObject()).to.be.empty();
 
@@ -101,8 +91,6 @@ describe('Using Class', () => {
           name: 'Crosswalk WebView',
           version: {value: '17', alias: 'Codename'},
         });
-
-        done();
       });
     });
   });

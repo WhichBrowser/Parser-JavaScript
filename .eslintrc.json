@@ -8,14 +8,11 @@
   },
   "extends": [
     "eslint:recommended",
-    "google"
+    "google",
+    "plugin:prettier/recommended"
   ],
   "rules": {
     "no-control-regex": 0,
-    "max-len": [
-      1,
-      120
-    ],
     "no-console":"warn",
     "require-jsdoc": 0
   }

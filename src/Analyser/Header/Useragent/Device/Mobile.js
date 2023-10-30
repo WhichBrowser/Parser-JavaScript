@@ -33,7 +33,7 @@ class Mobile {
     let match;
     if ((match = /KIN\.(One|Two) ([0-9.]*)/iu.exec(ua))) {
       this.data.os.name = 'Kin OS';
-      this.data.os.version = new Version({value: match[2], details: 2});
+      this.data.os.version = new Version({ value: match[2], details: 2 });
       switch (match[1]) {
         case 'One':
           this.data.device.manufacturer = 'Microsoft';
@@ -76,9 +76,9 @@ class Mobile {
           this.data.device = device;
           if (!this.data.os.name || this.data.os.name !== 'Nokia Asha Platform') {
             this.data.os.name = 'Nokia Asha Platform';
-            this.data.os.version = new Version({value: '1.0'});
+            this.data.os.version = new Version({ value: '1.0' });
             if ((match = /java_runtime_version=Nokia_Asha_([0-9_]+)[;)]/u.exec(ua))) {
-              this.data.os.version = new Version({value: match[1].replace(/_/g, '.')});
+              this.data.os.version = new Version({ value: match[1].replace(/_/g, '.') });
             }
           }
         }
@@ -102,7 +102,7 @@ class Mobile {
           if (!this.data.os.name || this.data.os.name !== 'Series60') {
             this.data.os.name = 'Series60';
             this.data.os.version = null;
-            this.data.os.family = new Family({name: 'Symbian'});
+            this.data.os.family = new Family({ name: 'Symbian' });
           }
         }
       }
@@ -153,10 +153,10 @@ class Mobile {
             this.data.os.name = 'Touchwiz';
             switch (version) {
               case '0.8':
-                this.data.os.version = new Version({value: '1.0'});
+                this.data.os.version = new Version({ value: '1.0' });
                 break;
               case '1.0':
-                this.data.os.version = new Version({value: '2.0', alias: '2.0 or earlier'});
+                this.data.os.version = new Version({ value: '2.0', alias: '2.0 or earlier' });
                 break;
             }
           }
@@ -170,10 +170,10 @@ class Mobile {
             this.data.os.name = 'Bada';
             switch (version) {
               case '2.0':
-                this.data.os.version = new Version({value: '1.0'});
+                this.data.os.version = new Version({ value: '1.0' });
                 break;
               case '2.2':
-                this.data.os.version = new Version({value: '1.2'});
+                this.data.os.version = new Version({ value: '1.2' });
                 break;
             }
           } else {
@@ -184,13 +184,13 @@ class Mobile {
               this.data.os.name = 'Touchwiz';
               switch (version) {
                 case '1.0':
-                  this.data.os.version = new Version({value: '2.0', alias: '2.0 or earlier'});
+                  this.data.os.version = new Version({ value: '2.0', alias: '2.0 or earlier' });
                   break;
                 case '1.5':
-                  this.data.os.version = new Version({value: '2.0'});
+                  this.data.os.version = new Version({ value: '2.0' });
                   break;
                 case '2.0':
-                  this.data.os.version = new Version({value: '3.0'});
+                  this.data.os.version = new Version({ value: '3.0' });
                   break;
               }
             }
@@ -253,14 +253,14 @@ class Mobile {
     this.data.device.identifyModel(/ maui ([a-z0-9]+)/u, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'BenQ',
-      model: function(model) {
+      model: function (model) {
         return `Maui ${model.toUpperCase()}`;
       },
     });
     this.data.device.identifyModel(/ALCATEL[_-]([^\/]*)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Alcatel',
-      model: function(model) {
+      model: function (model) {
         if ((match = /^TRIBE ([^\s]+)/iu.exec(model))) {
           model = `One Touch Tribe ${match[1]}`;
         } else if ((match = /^ONE TOUCH ([^\s]*)/iu.exec(model))) {
@@ -447,7 +447,7 @@ class Mobile {
     this.data.device.identifyModel(/PHILIPS-([a-zA-Z0-9@]+(?: [0-9]+)?)/u, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Philips',
-      model: function(model) {
+      model: function (model) {
         if ((match = /Az@lis([0-9]{3,3})/iu.exec(model))) {
           return `Az@lis ${match[1]}`;
         }
@@ -505,7 +505,7 @@ class Mobile {
     this.data.device.identifyModel(/SonyE?ricsson ?([^\/\);]+)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'Sony Ericsson',
-      model: function(model) {
+      model: function (model) {
         if ((match = /^([A-Z]) ([0-9]+)$/u.exec(model))) {
           model = `${match[1]}${match[2]}`;
         }
@@ -590,7 +590,7 @@ class Mobile {
     this.data.device.identifyModel(/ZTE[-_\s]?([^\s\/();,]+)/iu, ua, {
       type: Constants.deviceType.MOBILE,
       manufacturer: 'ZTE',
-      model: function(model) {
+      model: function (model) {
         return /[A-Z]+[0-9]+/iu.test(model) ? model.toUpperCase() : model;
       },
     });
@@ -612,7 +612,7 @@ class Mobile {
     if (/^DoCoMo/u.test(ua)) {
       ua = ua.replace(
         /\\x([0-9A-Fa-f]{2})/g,
-        function(m) {
+        function (m) {
           return String.fromCharCode(parseInt(m.substring(2), 16));
         },
         ua
@@ -751,7 +751,7 @@ class Mobile {
         case 'F07B':
         case 'F08B':
         case 'SH07B':
-          this.data.os.reset({family: new Family({name: 'Symbian'})});
+          this.data.os.reset({ family: new Family({ name: 'Symbian' }) });
           this.data.device.flag = Constants.flag.MOAPS;
           break;
       }
@@ -954,7 +954,7 @@ class Mobile {
         candidates.splice(i, 1);
       }
     }
-    for (let id of candidates) {
+    for (const id of candidates) {
       Mobile.identifyBasedOnIdUsingOs.call(this, id);
       if (this.data.device.identified & Constants.id.MATCH_UA) {
         return;
@@ -973,13 +973,13 @@ class Mobile {
     if (this.data.device.model) {
       ids.push(this.data.device.model);
     }
-    for (let id of ids) {
+    for (const id of ids) {
       Mobile.identifyBasedOnIdUsingOs.call(this, id);
       if (this.data.device.identified & Constants.id.MATCH_UA) {
         return;
       }
     }
-    for (let id of ids) {
+    for (const id of ids) {
       Mobile.identifyBasedOnId.call(this, id);
       if (this.data.device.identified & Constants.id.MATCH_UA) {
         return;
@@ -1072,7 +1072,7 @@ class Mobile {
         device.identified |= this.data.device.identified;
         this.data.device = device;
         this.data.os.reset({
-          family: new Family({name: 'Symbian'}),
+          family: new Family({ name: 'Symbian' }),
         });
       }
     }
