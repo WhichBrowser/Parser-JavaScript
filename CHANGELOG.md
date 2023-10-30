@@ -1,3 +1,7 @@
+#### 0.7.1 (2023-10-30)
+
+- **Database:** Added Chrome 101 to 118.
+
 #### 0.7.0 (2022-04-21)
 
 - Sync WhichBrowser/Parser-JavaScript to [WhichBrowser/Parser-PHP@1044880](https://github.com/WhichBrowser/Parser-PHP/commit/1044880bc792dbce5948fbff22ae731c43c280d9)
