@@ -21,7 +21,7 @@ class Version extends Base {
     if (properties.value) {
       properties.value = '' + properties.value;
     }
-    super(Object.assign({}, {hidden: false}, properties));
+    super(Object.assign({}, { hidden: false }, properties));
   }
 
   /**
@@ -129,7 +129,7 @@ class Version extends Base {
       result += '.';
       count = parts.length;
       for (let p = 1; p < count; p++) {
-        let tempString = `0000${parts[p]}`;
+        const tempString = `0000${parts[p]}`;
         result += tempString.substr(tempString.length - 4);
       }
     }
@@ -170,7 +170,7 @@ class Version extends Base {
     if (this.value) {
       const matches = this.value.match(/([0-9]+)(?:\.([0-9]+))?(?:\.([0-9]+))?(?:\.([0-9]+))?(?:([ab])([0-9]+))?/);
       if (matches) {
-        let v = [matches[1]];
+        const v = [matches[1]];
         if (matches[2]) {
           v.push(matches[2]);
         }

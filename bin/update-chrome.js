@@ -22,20 +22,10 @@ request('http://omahaproxy.appspot.com/history', (err, response = {}) => {
   omaha.forEach((line) => {
     const [os, stability, version] = line.split(',');
     if (os === 'mac' && stability === 'stable') {
-      stable.desktop.push(
-        version
-          .split('.')
-          .slice(0, 3)
-          .join('.')
-      );
+      stable.desktop.push(version.split('.').slice(0, 3).join('.'));
     }
     if (os === 'android' && stability === 'stable') {
-      stable.mobile.push(
-        version
-          .split('.')
-          .slice(0, 3)
-          .join('.')
-      );
+      stable.mobile.push(version.split('.').slice(0, 3).join('.'));
     }
   });
 

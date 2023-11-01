@@ -16,7 +16,7 @@ class Os extends NameVersion {
    * @internal
    */
   constructor(properties = {}) {
-    super(Object.assign({}, {hidden: false}, properties));
+    super(Object.assign({}, { hidden: false }, properties));
   }
 
   /**
@@ -77,9 +77,9 @@ class Os extends NameVersion {
       return '';
     }
 
-    return `${this.getName()}${this.version && !this.version.hidden ?
-      ` ${this.getVersion()}` :
-      ''}${this.edition ? ` ${this.edition}` : ''}`.trim();
+    return `${this.getName()}${this.version && !this.version.hidden ? ` ${this.getVersion()}` : ''}${
+      this.edition ? ` ${this.edition}` : ''
+    }`.trim();
   }
 
   /**
@@ -104,7 +104,7 @@ class Os extends NameVersion {
       result.edition = this.edition;
     }
     let versionObj;
-    if (this.version && Object.keys(( versionObj = this.version.toObject())).length) {
+    if (this.version && Object.keys((versionObj = this.version.toObject())).length) {
       result.version = versionObj;
     }
     return result;

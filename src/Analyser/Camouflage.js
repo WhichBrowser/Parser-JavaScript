@@ -118,7 +118,7 @@ class Camouflage {
       if (this.data.isOs('Windows')) {
         this.data.os.reset();
       }
-      this.data.engine.reset({name: 'Gecko'});
+      this.data.engine.reset({ name: 'Gecko' });
       this.data.device.type = 'mobile';
     }
     let match;
@@ -126,7 +126,7 @@ class Camouflage {
       if ((match = /UBrowser\/?([0-9.]*)/u.exec(ua))) {
         this.data.browser.stock = false;
         this.data.browser.name = 'UC Browser';
-        this.data.browser.version = new Version({value: match[1], details: 2});
+        this.data.browser.version = new Version({ value: match[1], details: 2 });
         this.data.browser.type = Constants.browserType.BROWSER;
         this.data.browser.channel = null;
       }
@@ -168,7 +168,7 @@ class Camouflage {
       /* If it claims not to be Webkit, but it is probably Webkit running camouflage mode */
       if (this.options.engine & Constants.engineType.WEBKIT) {
         this.data.features.push('webkit');
-        if (this.data.engine.name && (this.data.engine.name !== 'Blink' && this.data.engine.name !== 'Webkit')) {
+        if (this.data.engine.name && this.data.engine.name !== 'Blink' && this.data.engine.name !== 'Webkit') {
           this.data.camouflage = true;
         }
         if (this.data.browser.name && this.data.browser.name === 'Internet Explorer') {
@@ -209,9 +209,9 @@ class Camouflage {
         this.data.features.push('chrome');
         if (
           this.data.engine.name &&
-          (this.data.engine.name !== 'EdgeHTML' &&
-            this.data.engine.name !== 'Blink' &&
-            this.data.engine.name !== 'Webkit')
+          this.data.engine.name !== 'EdgeHTML' &&
+          this.data.engine.name !== 'Blink' &&
+          this.data.engine.name !== 'Webkit'
         ) {
           this.data.camouflage = true;
         }

@@ -1,5 +1,5 @@
 const Main = require('./model/Main');
-const {Camouflage, Corrections, Derive, Header} = require('./Analyser/');
+const { Camouflage, Corrections, Derive, Header } = require('./Analyser/');
 
 /**
  * Class that parse the user-agent

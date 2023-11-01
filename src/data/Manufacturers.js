@@ -1,5 +1,7 @@
 const Constants = require('../constants');
-const {MANUFACTURERS: {TELEVISION, GENERIC}} = require('../../data/manufacturer-names');
+const {
+  MANUFACTURERS: { TELEVISION, GENERIC },
+} = require('../../data/manufacturer-names');
 /**
  * Manufacturers utility
  *

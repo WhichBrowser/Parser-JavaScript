@@ -73,10 +73,10 @@ class Derive {
         this.data.engine.reset();
       }
       if (version >= 5 && version < 5.5 && !this.data.isEngine('WebCore')) {
-        this.data.engine.reset({name: 'WebCore'});
+        this.data.engine.reset({ name: 'WebCore' });
       }
       if (version >= 5.5 && !this.data.isEngine('WebKit')) {
-        this.data.engine.reset({name: 'WebKit'});
+        this.data.engine.reset({ name: 'WebKit' });
       }
     }
   }
@@ -85,35 +85,35 @@ class Derive {
     if (this.data.isBrowser('Opera') || this.data.isBrowser('Opera Mobile')) {
       const version = this.data.browser.getVersion();
       if (version >= 3.5 && version < 7 && !this.data.isEngine('Electra')) {
-        this.data.engine.reset({name: 'Electra'});
+        this.data.engine.reset({ name: 'Electra' });
       }
       if (version >= 7 && version < 13 && !this.data.isEngine('Presto')) {
-        this.data.engine.reset({name: 'Presto'});
+        this.data.engine.reset({ name: 'Presto' });
       }
     }
     if (this.data.isBrowser('Opera Mini') && !this.data.isOs('iOS') && !this.data.isEngine('Presto')) {
-      this.data.engine.reset({name: 'Presto'});
+      this.data.engine.reset({ name: 'Presto' });
     }
   }
 
   static deriveNetFrontRenderingEngine() {
     if (this.data.isBrowser('NetFront') && !this.data.isEngine('NetFront')) {
-      this.data.engine.reset({name: 'NetFront'});
+      this.data.engine.reset({ name: 'NetFront' });
     }
   }
 
   static deriveTrident() {
     if (this.data.isType('desktop') && this.data.isBrowser('Internet Explorer') && !this.data.engine.getName()) {
       if (this.data.isBrowser('Internet Explorer', '>=', 4)) {
-        this.data.engine.set({name: 'Trident'});
+        this.data.engine.set({ name: 'Trident' });
       }
     }
     if (this.data.isMobile() && this.data.isBrowser('Mobile Internet Explorer') && !this.data.engine.getName()) {
       if (this.data.isBrowser('Mobile Internet Explorer', '=', 6)) {
-        this.data.engine.set({name: 'Trident'});
+        this.data.engine.set({ name: 'Trident' });
       }
       if (this.data.isBrowser('Mobile Internet Explorer', '=', 7)) {
-        this.data.engine.set({name: 'Trident', version: new Version({value: '3.1'})});
+        this.data.engine.set({ name: 'Trident', version: new Version({ value: '3.1' }) });
       }
     }
   }
@@ -125,31 +125,31 @@ class Derive {
     if (this.data.os.name && this.data.os.name === 'Firefox OS' && this.data.engine.name === 'Gecko') {
       switch (this.data.engine.getVersion()) {
         case '18.0':
-          this.data.os.version = new Version({value: '1.0.1'});
+          this.data.os.version = new Version({ value: '1.0.1' });
           break;
         case '18.1':
-          this.data.os.version = new Version({value: '1.1'});
+          this.data.os.version = new Version({ value: '1.1' });
           break;
         case '26.0':
-          this.data.os.version = new Version({value: '1.2'});
+          this.data.os.version = new Version({ value: '1.2' });
           break;
         case '28.0':
-          this.data.os.version = new Version({value: '1.3'});
+          this.data.os.version = new Version({ value: '1.3' });
           break;
         case '30.0':
-          this.data.os.version = new Version({value: '1.4'});
+          this.data.os.version = new Version({ value: '1.4' });
           break;
         case '32.0':
-          this.data.os.version = new Version({value: '2.0'});
+          this.data.os.version = new Version({ value: '2.0' });
           break;
         case '34.0':
-          this.data.os.version = new Version({value: '2.1'});
+          this.data.os.version = new Version({ value: '2.1' });
           break;
         case '37.0':
-          this.data.os.version = new Version({value: '2.2'});
+          this.data.os.version = new Version({ value: '2.2' });
           break;
         case '44.0':
-          this.data.os.version = new Version({value: '2.5'});
+          this.data.os.version = new Version({ value: '2.5' });
           break;
       }
     }
@@ -161,25 +161,21 @@ class Derive {
       this.data.browser.version = null;
       if (this.data.engine.getName() === 'Presto') {
         const data = {
-          '2.12': '3.4',
-          '2.11': '3.3',
+          2.12: '3.4',
+          2.11: '3.3',
           '2.10': '3.2',
-          '2.9': '3.1',
-          '2.8': '3.0',
-          '2.7': '2.9',
-          '2.6': '2.8',
-          '2.4': '10.3',
-          '2.3': '10',
-          '2.2': '9.7',
-          '2.1': '9.6',
+          2.9: '3.1',
+          2.8: '3.0',
+          2.7: '2.9',
+          2.6: '2.8',
+          2.4: '10.3',
+          2.3: '10',
+          2.2: '9.7',
+          2.1: '9.6',
         };
-        const key = this.data.engine
-          .getVersion()
-          .split('.')
-          .slice(0, 2)
-          .join('.');
+        const key = this.data.engine.getVersion().split('.').slice(0, 2).join('.');
         if (data[key]) {
-          this.data.browser.version = new Version({value: data[key]});
+          this.data.browser.version = new Version({ value: data[key] });
         } else {
           this.data.browser.version = null;
         }
@@ -192,33 +188,33 @@ class Derive {
     const flag = this.data.device.flag;
     if (flag === Constants.flag.NOKIAX) {
       this.data.os.name = 'Nokia X Platform';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.version = null;
       this.data.device.flag = null;
     }
     if (flag === Constants.flag.FIREOS) {
       this.data.os.name = 'FireOS';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       if (this.data.os.version && this.data.os.version.value) {
         switch (this.data.os.version.value) {
           case '2.3.3':
           case '2.3.4':
-            this.data.os.version = new Version({value: '1'});
+            this.data.os.version = new Version({ value: '1' });
             break;
           case '4.0.3':
-            this.data.os.version = new Version({value: '2'});
+            this.data.os.version = new Version({ value: '2' });
             break;
           case '4.2.2':
-            this.data.os.version = new Version({value: '3'});
+            this.data.os.version = new Version({ value: '3' });
             break;
           case '4.4.2':
-            this.data.os.version = new Version({value: '4'});
+            this.data.os.version = new Version({ value: '4' });
             break;
           case '4.4.3':
-            this.data.os.version = new Version({value: '4.5'});
+            this.data.os.version = new Version({ value: '4.5' });
             break;
           case '5.1.1':
-            this.data.os.version = new Version({value: '5'});
+            this.data.os.version = new Version({ value: '5' });
             break;
           default:
             this.data.os.version = null;
@@ -227,28 +223,28 @@ class Derive {
       }
       if (this.data.isBrowser('Chrome')) {
         this.data.browser.reset();
-        this.data.browser.using = new Using({name: 'Amazon WebView'});
+        this.data.browser.using = new Using({ name: 'Amazon WebView' });
       }
       if (this.data.browser.isUsing('Chromium WebView')) {
-        this.data.browser.using = new Using({name: 'Amazon WebView'});
+        this.data.browser.using = new Using({ name: 'Amazon WebView' });
       }
       this.data.device.flag = null;
     }
     if (flag === Constants.flag.GOOGLETV) {
       this.data.os.name = 'Google TV';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.version = null;
       this.data.device.flag = null;
     }
     if (flag === Constants.flag.ANDROIDTV) {
       this.data.os.name = 'Android TV';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.device.flag = null;
       this.data.device.series = null;
     }
     if (flag === Constants.flag.ANDROIDWEAR) {
       this.data.os.name = 'Android Wear';
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.version = null;
       this.data.device.flag = null;
       if (this.data.browser.isUsing('Chrome Content Shell')) {
@@ -257,7 +253,7 @@ class Derive {
       }
     }
     if (flag === Constants.flag.GOOGLEGLASS) {
-      this.data.os.family = new Family({name: 'Android'});
+      this.data.os.family = new Family({ name: 'Android' });
       this.data.os.name = null;
       this.data.os.version = null;
       this.data.device.flag = null;

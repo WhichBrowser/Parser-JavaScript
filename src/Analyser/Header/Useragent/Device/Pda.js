@@ -47,7 +47,7 @@ class Pda {
       this.data.os.name = 'Palm OS';
       this.data.device.type = Constants.deviceType.PDA;
       if ((match = /PalmOS ([0-9.]*)/iu.exec(ua))) {
-        this.data.os.version = new Version({value: match[1]});
+        this.data.os.version = new Version({ value: match[1] });
       }
       if ((match = /; ([^;)]+)\)/u.exec(ua))) {
         device = DeviceModels.identify('palmos', match[1]);
@@ -66,7 +66,7 @@ class Pda {
     }
     if ((match = /Palm OS ([0-9.]*)/iu.exec(ua))) {
       this.data.os.name = 'Palm OS';
-      this.data.os.version = new Version({value: match[1]});
+      this.data.os.version = new Version({ value: match[1] });
       this.data.device.type = Constants.deviceType.PDA;
     }
     if ((match = /PalmSource/u.exec(ua))) {
@@ -106,7 +106,7 @@ class Pda {
       this.data.browser.version = null;
       this.data.browser.type = Constants.browserType.BROWSER;
       this.data.os.name = 'EPOC';
-      this.data.os.family = new Family({name: 'Symbian'});
+      this.data.os.family = new Family({ name: 'Symbian' });
       this.data.device.manufacturer = 'Psion';
       this.data.device.identified |= Constants.id.MATCH_UA;
       this.data.device.type = Constants.deviceType.PDA;

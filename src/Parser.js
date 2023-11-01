@@ -32,7 +32,7 @@ class Parser extends Main {
     let o = options;
     let h;
     if (typeof headers === 'string') {
-      h = {'User-Agent': headers};
+      h = { 'User-Agent': headers };
     } else if (headers['headers']) {
       h = headers['headers'];
 

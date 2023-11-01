@@ -17,7 +17,7 @@ class BuildIds {
       if (typeof build === 'object') {
         return new Version(build);
       } else {
-        return new Version({value: build});
+        return new Version({ value: build });
       }
     }
   }

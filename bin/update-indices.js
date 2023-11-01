@@ -105,6 +105,9 @@ function updateIndecesFromWeb(type) {
  * @param {object} obj
  * @return {object}
  */
-const ksort = (obj) => Object.keys(obj).sort().reduce((acc, val) => Object.assign(acc, {[val]: obj[val]}), {});
+const ksort = (obj) =>
+  Object.keys(obj)
+    .sort()
+    .reduce((acc, val) => Object.assign(acc, { [val]: obj[val] }), {});
 
 types.forEach(useWeb ? updateIndecesFromWeb : updateIndeces);

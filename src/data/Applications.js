@@ -24,8 +24,8 @@ class Applications {
    */
   static identifyBrowser(ua = '') {
     if (ua.match(Applications.BROWSERS_REGEX)) {
-      for (let type of Object.keys(Applications.BROWSERS)) {
-        for (let item of Applications.BROWSERS[type]) {
+      for (const type of Object.keys(Applications.BROWSERS)) {
+        for (const item of Applications.BROWSERS[type]) {
           let match;
           if ((match = ua.match(item.regexp))) {
             return {
@@ -42,7 +42,7 @@ class Applications {
                     })
                   : null,
               },
-              device: typeof item.type !== 'undefined' ? {type: item.type} : null,
+              device: typeof item.type !== 'undefined' ? { type: item.type } : null,
             };
           }
         }
@@ -58,8 +58,8 @@ class Applications {
    */
   static identifyOther(ua = '') {
     if (ua.match(Applications.OTHERS_REGEX)) {
-      for (let type of Object.keys(Applications.OTHERS)) {
-        for (let item of Applications.OTHERS[type]) {
+      for (const type of Object.keys(Applications.OTHERS)) {
+        for (const item of Applications.OTHERS[type]) {
           let match;
           if ((match = ua.match(item.regexp))) {
             return {
@@ -76,7 +76,7 @@ class Applications {
                     })
                   : null,
               },
-              device: typeof item.type !== 'undefined' ? {type: item.type} : null,
+              device: typeof item.type !== 'undefined' ? { type: item.type } : null,
             };
           }
         }
@@ -96,7 +96,7 @@ class Applications {
     }
 
     if (ua.match(Applications.BOTS_REGEX)) {
-      for (let item of Applications.BOTS) {
+      for (const item of Applications.BOTS) {
         let match;
         if ((match = ua.match(item.regexp))) {
           return new Browser({

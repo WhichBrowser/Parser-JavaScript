@@ -1,7 +1,7 @@
 /* eslint-disable require-jsdoc */
 
 const Constants = require('../constants');
-const {Baidu, BrowserId, OperaMini, Puffin, UCBrowserNew, UCBrowserOld, Useragent, Wap} = require('./Header/');
+const { Baidu, BrowserId, OperaMini, Puffin, UCBrowserNew, UCBrowserOld, Useragent, Wap } = require('./Header/');
 
 class Header {
   static analyseHeaders() {
@@ -119,7 +119,7 @@ class Header {
 
   static getHeader(h) {
     /* Find the header that matches */
-    for (let header of Object.keys(this.headers)) {
+    for (const header of Object.keys(this.headers)) {
       if (h.toLowerCase() === header.toLowerCase()) {
         /* And return the first 1024 bytes */
         return (this.headers[header] || '').substring(0, 1024);

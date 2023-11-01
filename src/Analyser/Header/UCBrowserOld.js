@@ -19,9 +19,9 @@ class UCBrowserOld {
     }
 
     this.data.browser.mode = 'proxy';
-    this.data.engine.reset({name: 'Gecko'});
+    this.data.engine.reset({ name: 'Gecko' });
 
-    const extra = new Parser({headers: {'User-Agent': header}});
+    const extra = new Parser({ headers: { 'User-Agent': header } });
 
     if (extra.device.type !== Constants.deviceType.DESKTOP) {
       if (extra.os.getName() !== '' && (this.data.os.getName() === '' || extra.os.getVersion() !== '')) {
