@@ -15,7 +15,7 @@ class UCBrowserNew {
         this.data.browser.stock = false;
         this.data.browser.version = null;
         if ((match = /pr\(UCBrowser(?:\/([0-9.]+))/u.exec(header))) {
-          this.data.browser.version = new Version({value: match[1], details: 2});
+          this.data.browser.version = new Version({ value: match[1], details: 2 });
         }
       }
     }

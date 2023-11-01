@@ -39,7 +39,7 @@ The useragent header looks like Opera 11.10 on Linux, but we know it's Opera Min
 
 ## Requirements
 
-WhichBrowser requires node 6 or higher.
+WhichBrowser requires Node 6 or higher to run and Node 16 or higher to build and test.
 
 ## Dependencies
 

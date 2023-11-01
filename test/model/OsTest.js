@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Os = require('../../src/model/Os');
 const Version = require('../../src/model/Version');
@@ -12,7 +12,7 @@ describe('Os Class', () => {
           name: 'iOS',
           alias: 'iPhone OS',
           hidden: true,
-          version: new Version({value: '3.0'}),
+          version: new Version({ value: '3.0' }),
         });
         expect(os.name).to.be.equal('iOS');
         expect(os.alias).to.be.equal('iPhone OS');
@@ -34,7 +34,7 @@ describe('Os Class', () => {
           name: 'iOS',
           alias: 'iPhone OS',
           hidden: true,
-          version: new Version({value: '3.0'}),
+          version: new Version({ value: '3.0' }),
         });
         expect(os.name).to.be.equal('iOS');
         expect(os.alias).to.be.equal('iPhone OS');
@@ -44,7 +44,7 @@ describe('Os Class', () => {
         os.reset({
           name: 'Android',
           alias: 'Android OS',
-          version: new Version({value: '4.1.1'}),
+          version: new Version({ value: '4.1.1' }),
         });
 
         expect(os.name).to.be.equal('Android');
@@ -63,7 +63,7 @@ describe('Os Class', () => {
 
         os.reset({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         expect(os.getName()).to.be.equal('iOS');
@@ -78,7 +78,7 @@ describe('Os Class', () => {
         os.reset({
           name: 'iOS',
           alias: 'iPhone OS',
-          version: new Version({value: '3.0'}),
+          version: new Version({ value: '3.0' }),
         });
 
         expect(os.getName()).to.be.equal('iPhone OS');
@@ -91,7 +91,7 @@ describe('Os Class', () => {
       it('should return the version', () => {
         const os = new Os({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         expect(os.getVersion()).to.be.equal('8.0');
@@ -102,7 +102,7 @@ describe('Os Class', () => {
       it('should return nickname + value', () => {
         const os = new Os({
           name: 'OS X',
-          version: new Version({value: '10.11', nickname: 'El Captain'}),
+          version: new Version({ value: '10.11', nickname: 'El Captain' }),
         });
 
         expect(os.getVersion()).to.be.equal('El Captain 10.11');
@@ -113,7 +113,7 @@ describe('Os Class', () => {
       it('should return the alias', () => {
         const os = new Os({
           name: 'Windows',
-          version: new Version({value: '5.1', alias: 'XP'}),
+          version: new Version({ value: '5.1', alias: 'XP' }),
         });
 
         expect(os.getVersion()).to.be.equal('XP');
@@ -128,7 +128,7 @@ describe('Os Class', () => {
 
       os.reset({
         name: 'iOS',
-        version: new Version({value: '8.0'}),
+        version: new Version({ value: '8.0' }),
       });
 
       expect(os.isDetected()).to.be.true();
@@ -150,18 +150,18 @@ describe('Os Class', () => {
       it('should return true', () => {
         const os = new Os({
           name: 'FireOS',
-          family: new Family({name: 'Android'}),
+          family: new Family({ name: 'Android' }),
         });
 
         expect(os.isFamily('Android')).to.be.true();
       });
     });
 
-    describe('with family property that doesn\'t match the isFamily parameter', () => {
+    describe("with family property that doesn't match the isFamily parameter", () => {
       it('should return false', () => {
         const os = new Os({
           name: 'FireOS',
-          family: new Family({name: 'Android'}),
+          family: new Family({ name: 'Android' }),
         });
 
         expect(os.isFamily('iOS')).to.be.false();
@@ -174,7 +174,7 @@ describe('Os Class', () => {
       it('should return the name and version', () => {
         const os = new Os({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         expect(os.toString()).to.be.equal('iOS 8.0');
@@ -186,7 +186,7 @@ describe('Os Class', () => {
         const os = new Os({
           name: 'iOS',
           alias: 'iPhone OS',
-          version: new Version({value: '3.0'}),
+          version: new Version({ value: '3.0' }),
         });
 
         expect(os.toString()).to.be.equal('iPhone OS 3.0');
@@ -197,7 +197,7 @@ describe('Os Class', () => {
       it('should return the name, alias and version', () => {
         const os = new Os({
           name: 'OS X',
-          version: new Version({value: '10.11', nickname: 'El Captain'}),
+          version: new Version({ value: '10.11', nickname: 'El Captain' }),
         });
 
         expect(os.toString()).to.be.equal('OS X El Captain 10.11');
@@ -208,7 +208,7 @@ describe('Os Class', () => {
       it('should return the name and alias', () => {
         const os = new Os({
           name: 'Windows',
-          version: new Version({value: '10.11', alias: 'XP'}),
+          version: new Version({ value: '10.11', alias: 'XP' }),
         });
 
         expect(os.toString()).to.be.equal('Windows XP');
@@ -221,7 +221,7 @@ describe('Os Class', () => {
           name: 'Windows Phone',
           alias: 'Windows',
           edition: 'Mobile',
-          version: new Version({value: '10.0', alias: '10'}),
+          version: new Version({ value: '10.0', alias: '10' }),
         });
 
         expect(os.toString()).to.be.equal('Windows 10 Mobile');
@@ -245,7 +245,7 @@ describe('Os Class', () => {
       it('should return the version with underscore replaced', () => {
         const os = new Os();
 
-        os.identifyVersion(/OS ([0-9_]+)/u, 'iPhone OS 9_0_2', {type: 'underscore'});
+        os.identifyVersion(/OS ([0-9_]+)/u, 'iPhone OS 9_0_2', { type: 'underscore' });
 
         expect(os.getVersion()).to.be.equal('9.0.2');
       });
@@ -293,7 +293,7 @@ describe('Os Class', () => {
 
         os.reset({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         expect(os.toObject()).to.equal({
@@ -311,7 +311,7 @@ describe('Os Class', () => {
         os.reset({
           name: 'iOS',
           alias: 'iPhone OS',
-          version: new Version({value: '3.0'}),
+          version: new Version({ value: '3.0' }),
         });
 
         expect(os.toObject()).to.equal({
@@ -329,12 +329,12 @@ describe('Os Class', () => {
 
         os.reset({
           name: 'OS X',
-          version: new Version({value: '10.11', nickname: 'El Captain'}),
+          version: new Version({ value: '10.11', nickname: 'El Captain' }),
         });
 
         expect(os.toObject()).to.equal({
           name: 'OS X',
-          version: {value: '10.11', nickname: 'El Captain'},
+          version: { value: '10.11', nickname: 'El Captain' },
         });
       });
     });
@@ -346,12 +346,12 @@ describe('Os Class', () => {
 
         os.reset({
           name: 'Windows',
-          version: new Version({value: '5.1', alias: 'XP'}),
+          version: new Version({ value: '5.1', alias: 'XP' }),
         });
 
         expect(os.toObject()).to.equal({
           name: 'Windows',
-          version: {value: '5.1', alias: 'XP'},
+          version: { value: '5.1', alias: 'XP' },
         });
       });
     });
@@ -365,14 +365,14 @@ describe('Os Class', () => {
           name: 'Windows Phone',
           alias: 'Windows',
           edition: 'Mobile',
-          version: new Version({value: '10.0', alias: '10'}),
+          version: new Version({ value: '10.0', alias: '10' }),
         });
 
         expect(os.toObject()).to.equal({
           name: 'Windows Phone',
           alias: 'Windows',
           edition: 'Mobile',
-          version: {value: '10.0', alias: '10'},
+          version: { value: '10.0', alias: '10' },
         });
       });
     });
@@ -384,7 +384,7 @@ describe('Os Class', () => {
 
         os.reset({
           name: 'FireOS',
-          family: new Family({name: 'Android'}),
+          family: new Family({ name: 'Android' }),
         });
 
         expect(os.toObject()).to.equal({

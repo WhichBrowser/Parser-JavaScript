@@ -23,7 +23,7 @@ class Browser extends NameVersion {
    * @internal
    */
   constructor(properties = {}) {
-    super(Object.assign({}, {stock: true, hidden: false, mode: '', type: ''}, properties));
+    super(Object.assign({}, { stock: true, hidden: false, mode: '', type: '' }, properties));
   }
 
   /**

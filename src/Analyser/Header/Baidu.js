@@ -3,7 +3,7 @@
  * Class for baidu detection
  */
 class Baidu {
-  constructor(header, data = {browser: {}}) {
+  constructor(header, data = { browser: {} }) {
     this.data = data;
     if (!this.data.browser.name || this.data.browser.name !== 'Baidu Browser') {
       this.data.browser.name = 'Baidu Browser';

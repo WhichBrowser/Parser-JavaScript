@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Constants = require('../../src/constants');
 const Main = require('../../src/model/Main');
@@ -37,7 +37,7 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Chrome',
-          version: new Version({value: '40.0.2214', details: 1}),
+          version: new Version({ value: '40.0.2214', details: 1 }),
         });
 
         expect(main.isBrowser('Chrome')).to.be.true();
@@ -65,7 +65,7 @@ describe('Browser Class', () => {
 
         main.os.set({
           name: 'OS X',
-          version: new Version({value: '10.11.1', details: 2}),
+          version: new Version({ value: '10.11.1', details: 2 }),
         });
 
         expect(main.isOs('OS X')).to.be.true();
@@ -126,7 +126,7 @@ describe('Browser Class', () => {
 
       main.browser.set({
         name: 'Chrome',
-        version: new Version({value: '47.0.2526.73', details: 1}),
+        version: new Version({ value: '47.0.2526.73', details: 1 }),
       });
 
       expect(main.isDetected()).to.be.true();
@@ -228,7 +228,7 @@ describe('Browser Class', () => {
       it('should return the type', () => {
         const main = new Main();
 
-        main.device.reset({type: Constants.deviceType.GAMING});
+        main.device.reset({ type: Constants.deviceType.GAMING });
 
         expect(main.getType()).to.be.equal('gaming');
       });
@@ -258,7 +258,7 @@ describe('Browser Class', () => {
       it('should return the type', () => {
         const main = new Main();
 
-        main.device.reset({type: Constants.deviceType.MOBILE});
+        main.device.reset({ type: Constants.deviceType.MOBILE });
 
         expect(main.getType()).to.be.equal('mobile');
       });
@@ -312,14 +312,14 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
         main.engine.set({
           name: 'Blink',
         });
         main.os.set({
           name: 'OS X',
-          version: new Version({value: '10.11', nickname: 'El Captain'}),
+          version: new Version({ value: '10.11', nickname: 'El Captain' }),
         });
 
         expect(main.toString()).to.be.equal('Chrome 47 on OS X El Captain 10.11');
@@ -335,7 +335,7 @@ describe('Browser Class', () => {
         });
         main.os.set({
           name: 'Tizen',
-          version: new Version({value: '2.0'}),
+          version: new Version({ value: '2.0' }),
         });
 
         expect(main.toString()).to.be.equal('Tizen 2.0');
@@ -348,7 +348,7 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
 
         expect(main.toString()).to.be.equal('Chrome 47');
@@ -361,14 +361,14 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Safari',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
         main.engine.set({
           name: 'WebKit',
         });
         main.os.set({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
         main.device.setIdentification({
           manufacturer: 'Apple',
@@ -386,11 +386,11 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
         main.os.set({
           name: 'Android',
-          version: new Version({value: '4.4'}),
+          version: new Version({ value: '4.4' }),
         });
         main.device.set({
           model: 'SM-A300',
@@ -425,7 +425,7 @@ describe('Browser Class', () => {
         });
         main.os.set({
           name: 'OS X',
-          version: new Version({value: '10.11', nickname: 'El Captain'}),
+          version: new Version({ value: '10.11', nickname: 'El Captain' }),
         });
         main.device.set({
           type: Constants.deviceType.DESKTOP,
@@ -441,7 +441,7 @@ describe('Browser Class', () => {
 
         main.browser.set({
           name: 'Safari',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         main.device.setIdentification({
@@ -460,7 +460,7 @@ describe('Browser Class', () => {
 
         main.os.set({
           name: 'iOS',
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         main.device.setIdentification({
@@ -518,14 +518,14 @@ describe('Browser Class', () => {
 
       main.browser.set({
         name: 'Safari',
-        version: new Version({value: '8.0'}),
+        version: new Version({ value: '8.0' }),
       });
       main.engine.set({
         name: 'WebKit',
       });
       main.os.set({
         name: 'iOS',
-        version: new Version({value: '8.0'}),
+        version: new Version({ value: '8.0' }),
       });
       main.device.setIdentification({
         manufacturer: 'Apple',

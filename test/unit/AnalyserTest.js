@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Main = require('../../src/model/Main');
 const Analyser = require('../../src/Analyser');

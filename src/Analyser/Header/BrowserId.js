@@ -6,7 +6,7 @@ const Constants = require('../../constants');
 const BrowserIds = require('../../data/BrowserIds');
 
 class BrowserId {
-  constructor(header, data = {browser: {}}) {
+  constructor(header, data = { browser: {} }) {
     if (header === 'XMLHttpRequest') {
       return;
     }
@@ -21,7 +21,7 @@ class BrowserId {
       this.data.browser.reset();
       this.data.browser.using = new Using({
         name: 'Chromium WebView',
-        version: new Version({value: version.split('.')[0]}),
+        version: new Version({ value: version.split('.')[0] }),
       });
     }
 

@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Parser = require('../../src/Parser');
 
@@ -15,7 +15,7 @@ describe('Parser Class', () => {
 
   describe('Creating Parse with headers object', () => {
     it('should work', () => {
-      const parser = new Parser({'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; InfoPath.1)'});
+      const parser = new Parser({ 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; InfoPath.1)' });
 
       expect(parser).to.be.instanceOf(Parser);
 
@@ -26,7 +26,7 @@ describe('Parser Class', () => {
   describe('Creating Parse with options', () => {
     it('should work', () => {
       const parser = new Parser({
-        headers: {'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; InfoPath.1)'},
+        headers: { 'User-Agent': 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; InfoPath.1)' },
       });
 
       expect(parser).to.be.instanceOf(Parser);

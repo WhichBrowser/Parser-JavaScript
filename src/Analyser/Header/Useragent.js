@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
 
-const {Application, Bot, Browser, Device, Engine, Os, Using} = require('./Useragent/');
+const { Application, Bot, Browser, Device, Engine, Os, Using } = require('./Useragent/');
 
 class Useragent {
   constructor(header, data, options) {

@@ -53,7 +53,7 @@ class Ereader {
 
   static detectNook(ua) {
     if (/nook browser/u.test(ua)) {
-      this.data.os.reset({name: 'Android'});
+      this.data.os.reset({ name: 'Android' });
       this.data.device.setIdentification({
         manufacturer: 'Barnes & Noble',
         series: 'NOOK',

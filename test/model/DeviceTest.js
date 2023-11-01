@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Device = require('../../src/model/Device');
 const Constants = require('../../src/constants');
@@ -27,7 +27,7 @@ describe('Device Class', () => {
 
   describe('test with properties', () => {
     it('should all be empty', () => {
-      const device = new Device({model: 'Wii'});
+      const device = new Device({ model: 'Wii' });
 
       expect(device.getModel()).to.be.equal('Wii');
     });
@@ -37,7 +37,7 @@ describe('Device Class', () => {
     it('should correctly set properties', () => {
       const device = new Device();
 
-      device.set({model: 'Wii'});
+      device.set({ model: 'Wii' });
 
       expect(device.getModel()).to.be.equal('Wii');
     });
@@ -87,12 +87,12 @@ describe('Device Class', () => {
       it('should reset to defaults and apply defaults', () => {
         const device = new Device();
 
-        device.setIdentification({model: 'Wii'});
+        device.setIdentification({ model: 'Wii' });
 
         expect(device.getModel()).to.be.equal('Wii');
         expect(device.generic).to.be.false();
 
-        device.reset({model: 'Xbox One'});
+        device.reset({ model: 'Xbox One' });
 
         expect(device.getModel()).to.be.equal('Xbox One');
         expect(device.generic).to.be.true();

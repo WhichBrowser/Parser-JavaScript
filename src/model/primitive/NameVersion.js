@@ -19,7 +19,6 @@ class NameVersion extends Base {
     properties && this.set(properties);
   }
 
-
   /**
    * Identify the version based on a pattern
    *
@@ -31,7 +30,7 @@ class NameVersion extends Base {
   identifyVersion(pattern, subject, defaults = {}) {
     let match;
     let version;
-    if ((match = pattern.exec(subject) ) !== null) {
+    if ((match = pattern.exec(subject)) !== null) {
       version = match[1];
 
       if (defaults.type) {
@@ -45,10 +44,9 @@ class NameVersion extends Base {
         }
       }
 
-      this.version = new Version(Object.assign({}, defaults, {value: version}));
+      this.version = new Version(Object.assign({}, defaults, { value: version }));
     }
   }
-
 
   /**
    * Get the name in a human readable format
@@ -59,7 +57,6 @@ class NameVersion extends Base {
     return this.alias || this.name || '';
   }
 
-
   /**
    * Get the version in a human readable format
    *
@@ -69,7 +66,6 @@ class NameVersion extends Base {
     return this.version ? this.version.toString() : '';
   }
 
-
   /**
    * Is a name detected?
    *
@@ -78,7 +74,6 @@ class NameVersion extends Base {
   isDetected() {
     return !!this.name;
   }
-
 
   /**
    * Get the name and version in a human readable format

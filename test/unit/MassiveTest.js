@@ -1,6 +1,6 @@
 /* eslint-disable require-jsdoc */
 
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Parser = require('../../src/Parser');
 const path = require('path');
@@ -18,7 +18,9 @@ describe('Testing Parser with YAML files', () => {
         const yamlContent = yaml.load(path.join(__dirname, '../data', category, file));
         yamlContent.forEach(makeTest);
       } catch (e) {
+        // eslint-disable-next-line no-console
         console.error(e);
+        // eslint-disable-next-line no-console
         console.error('The above error is caused in the test file ' + category + '/' + file);
 
         throw new Error('Aborting the tests');

@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Family = require('../../src/model/Family');
 const Version = require('../../src/model/Version');
@@ -11,7 +11,7 @@ describe('Family Class', () => {
 
       using.reset({
         name: 'Android',
-        version: new Version({value: '4.1.1'}),
+        version: new Version({ value: '4.1.1' }),
       });
 
       expect(using.getName()).to.be.equal('Android');
@@ -25,7 +25,7 @@ describe('Family Class', () => {
 
       using.reset({
         name: 'Android',
-        version: new Version({value: '4.1.1'}),
+        version: new Version({ value: '4.1.1' }),
       });
 
       expect(using.getVersion()).to.be.equal('4.1.1');
@@ -39,7 +39,7 @@ describe('Family Class', () => {
 
       using.reset({
         name: 'Android',
-        version: new Version({value: '4.1.1'}),
+        version: new Version({ value: '4.1.1' }),
       });
 
       expect(using.toString()).to.be.equal('Android 4.1.1');
@@ -67,7 +67,7 @@ describe('Family Class', () => {
 
         using.reset({
           name: 'Android',
-          version: new Version({value: '4.1.1'}),
+          version: new Version({ value: '4.1.1' }),
         });
 
         expect(using.toObject()).to.equal({
@@ -84,12 +84,12 @@ describe('Family Class', () => {
 
         using.reset({
           name: 'Android',
-          version: new Version({value: '4.1.1', details: 1, alias: 'Jelly Bean'}),
+          version: new Version({ value: '4.1.1', details: 1, alias: 'Jelly Bean' }),
         });
 
         expect(using.toObject()).to.equal({
           name: 'Android',
-          version: {value: '4', alias: 'Jelly Bean'},
+          version: { value: '4', alias: 'Jelly Bean' },
         });
       });
     });

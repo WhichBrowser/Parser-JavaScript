@@ -56,10 +56,10 @@ class Media {
     }
     /* Generation 6 with Android */
     if ((match = /ARCHOS; GOGI; A5[SH]; Version ([0-9]\.[0-9])/u.exec(ua))) {
-      const version = new Version({value: match[1]});
+      const version = new Version({ value: match[1] });
       this.data.os.reset({
         name: 'Android',
-        version: new Version({value: version.is('<', '1.7') ? '1.5' : '1.6'}),
+        version: new Version({ value: version.is('<', '1.7') ? '1.5' : '1.6' }),
       });
       this.data.device.setIdentification({
         manufacturer: 'Archos',

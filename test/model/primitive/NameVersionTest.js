@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const NameVersion = require('../../../src/model/primitive/NameVersion');
 const Version = require('../../../src/model/Version');
@@ -17,7 +17,7 @@ describe('NameVersion Class', () => {
       nameVersion.name = 'Test';
       nameVersion.reset({
         name: 'Generic',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.getName()).to.be.equal('Generic');
@@ -29,7 +29,7 @@ describe('NameVersion Class', () => {
       nameVersion.reset({
         name: 'Generic',
         alias: 'Alias',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.getName()).to.be.equal('Alias');
@@ -44,7 +44,7 @@ describe('NameVersion Class', () => {
 
       nameVersion.reset({
         name: 'Generic',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.getVersion()).to.be.equal('1.0');
@@ -57,7 +57,7 @@ describe('NameVersion Class', () => {
 
       nameVersion.reset({
         name: 'Generic',
-        version: new Version({value: '1.0', details: 1}),
+        version: new Version({ value: '1.0', details: 1 }),
       });
 
       expect(nameVersion.getVersion()).to.be.equal('1');
@@ -72,7 +72,7 @@ describe('NameVersion Class', () => {
 
       nameVersion.reset({
         name: 'Generic',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.isDetected()).to.be.true();
@@ -87,7 +87,7 @@ describe('NameVersion Class', () => {
 
       nameVersion.reset({
         name: 'Generic',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.toString()).to.be.equal('Generic 1.0');
@@ -101,7 +101,7 @@ describe('NameVersion Class', () => {
       nameVersion.reset({
         name: 'Generic',
         alias: 'Alias',
-        version: new Version({value: '1.0'}),
+        version: new Version({ value: '1.0' }),
       });
 
       expect(nameVersion.toString()).to.be.equal('Alias 1.0');
@@ -134,7 +134,7 @@ describe('NameVersion Class', () => {
       it('should find the version and truncate it according to details', () => {
         const nameVersion = new NameVersion();
 
-        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1.0', {details: 1});
+        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1.0', { details: 1 });
         expect(nameVersion.getVersion()).to.be.equal('1');
       });
     });
@@ -143,7 +143,7 @@ describe('NameVersion Class', () => {
       it('should find the version and replace underscores', () => {
         const nameVersion = new NameVersion();
 
-        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1_0_2', {type: 'underscore'});
+        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1_0_2', { type: 'underscore' });
         expect(nameVersion.getVersion()).to.be.equal('1');
       });
     });
@@ -152,7 +152,7 @@ describe('NameVersion Class', () => {
       it('should find the version and transform it from legacy', () => {
         const nameVersion = new NameVersion();
 
-        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1.02', {type: 'legacy'});
+        nameVersion.identifyVersion(/Version\/([0-9.]+)/u, 'Version/1.02', { type: 'legacy' });
         expect(nameVersion.getVersion()).to.be.equal('1.0.2');
       });
     });

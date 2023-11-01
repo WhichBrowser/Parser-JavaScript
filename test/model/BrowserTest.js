@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Browser = require('../../src/model/Browser');
 const Version = require('../../src/model/Version');
@@ -43,7 +43,7 @@ describe('Browser Class', () => {
     it('should return the name', () => {
       const browser = new Browser({
         name: 'Chrome',
-        version: new Version({value: '47.0.2526.73', details: 1}),
+        version: new Version({ value: '47.0.2526.73', details: 1 }),
       });
       expect(browser.getName()).to.be.equal('Chrome');
     });
@@ -54,7 +54,7 @@ describe('Browser Class', () => {
       it('should return the entire version', () => {
         const browser = new Browser({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73'}),
+          version: new Version({ value: '47.0.2526.73' }),
         });
 
         expect(browser.getVersion()).to.equal('47.0.2526.73');
@@ -65,7 +65,7 @@ describe('Browser Class', () => {
       it('should return the entire version', () => {
         const browser = new Browser({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
 
         expect(browser.getVersion()).to.equal('47');
@@ -79,7 +79,7 @@ describe('Browser Class', () => {
       expect(browser.isDetected()).to.be.false();
       browser.reset({
         name: 'Chrome',
-        version: new Version({value: '47.0.2526.73', details: 1}),
+        version: new Version({ value: '47.0.2526.73', details: 1 }),
       });
       expect(browser.isDetected()).to.be.true();
     });
@@ -98,7 +98,7 @@ describe('Browser Class', () => {
       it('should return true', () => {
         const browser = new Browser({
           name: 'Opera',
-          family: new Family({name: 'Chrome'}),
+          family: new Family({ name: 'Chrome' }),
         });
 
         expect(browser.isFamily('Chrome')).to.be.true();
@@ -109,7 +109,7 @@ describe('Browser Class', () => {
       it('should return true', () => {
         const browser = new Browser({
           name: 'Opera',
-          family: new Family({name: 'Chrome'}),
+          family: new Family({ name: 'Chrome' }),
         });
 
         expect(browser.isFamily('Firefox')).to.be.false();
@@ -122,7 +122,7 @@ describe('Browser Class', () => {
       it('should return the name and version', () => {
         const browser = new Browser({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
 
         expect(browser.toString()).to.be.equal('Chrome 47');
@@ -134,7 +134,7 @@ describe('Browser Class', () => {
         const browser = new Browser({
           name: 'Safari',
           hidden: true,
-          version: new Version({value: '8.0'}),
+          version: new Version({ value: '8.0' }),
         });
 
         expect(browser.toString()).to.be.equal('');
@@ -145,7 +145,7 @@ describe('Browser Class', () => {
       it('should return the name', () => {
         const browser = new Browser({
           name: 'TestBrowser',
-          using: new Using({name: 'Crosswalk Webview'}),
+          using: new Using({ name: 'Crosswalk Webview' }),
         });
 
         expect(browser.toString()).to.be.equal('TestBrowser');
@@ -155,7 +155,7 @@ describe('Browser Class', () => {
     describe('without name and with using property', () => {
       it('should return the name', () => {
         const browser = new Browser({
-          using: new Using({name: 'Crosswalk Webview'}),
+          using: new Using({ name: 'Crosswalk Webview' }),
         });
 
         expect(browser.toString()).to.be.equal('Crosswalk Webview');
@@ -179,7 +179,7 @@ describe('Browser Class', () => {
       it('should return the major version', () => {
         const browser = new Browser();
 
-        browser.identifyVersion(/Chrome\/([0-9.]+)/u, 'Chrome/47.0.2526.73', {details: 1});
+        browser.identifyVersion(/Chrome\/([0-9.]+)/u, 'Chrome/47.0.2526.73', { details: 1 });
 
         expect(browser.getVersion()).to.be.equal('47');
       });
@@ -189,7 +189,7 @@ describe('Browser Class', () => {
       it('should return the version in the current format', () => {
         const browser = new Browser();
 
-        browser.identifyVersion(/Mozilla\/([0-9.]+)/u, 'Mozilla/2.03', {type: 'legacy'});
+        browser.identifyVersion(/Mozilla\/([0-9.]+)/u, 'Mozilla/2.03', { type: 'legacy' });
 
         expect(browser.getVersion()).to.be.equal('2.0.3');
       });
@@ -221,16 +221,16 @@ describe('Browser Class', () => {
       it('should return the name value according to details level', () => {
         const browser = new Browser({
           name: 'Chrome',
-          version: new Version({value: '47.0.2526.73', details: 1}),
+          version: new Version({ value: '47.0.2526.73', details: 1 }),
         });
 
-        expect(browser.toObject()).to.equal({name: 'Chrome', version: '47'});
+        expect(browser.toObject()).to.equal({ name: 'Chrome', version: '47' });
       });
     });
 
     describe('with name and alias filled', () => {
       it('should return an object with name and alias properties', () => {
-        const properties = {name: 'TestBrowser', alias: 'Alias'};
+        const properties = { name: 'TestBrowser', alias: 'Alias' };
         const browser = new Browser(properties);
 
         expect(browser.toObject()).to.equal(properties);
@@ -241,7 +241,7 @@ describe('Browser Class', () => {
       it('should return an object with name and family properties', () => {
         const browser = new Browser({
           name: 'Opera',
-          family: new Family({name: 'Chrome'}),
+          family: new Family({ name: 'Chrome' }),
         });
 
         expect(browser.toObject()).to.equal({
@@ -255,7 +255,7 @@ describe('Browser Class', () => {
       it('should return an object with name and using properties', () => {
         const browser = new Browser({
           name: 'TestBrowser',
-          using: new Using({name: 'Crosswalk WebView'}),
+          using: new Using({ name: 'Crosswalk WebView' }),
         });
 
         expect(browser.toObject()).to.equal({

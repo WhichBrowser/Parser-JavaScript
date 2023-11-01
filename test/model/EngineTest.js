@@ -1,4 +1,4 @@
-const {describe, it} = (exports.lab = require('@hapi/lab').script());
+const { describe, it } = (exports.lab = require('@hapi/lab').script());
 const expect = require('@hapi/code').expect;
 const Engine = require('../../src/model/Engine');
 const Version = require('../../src/model/Version');
@@ -12,7 +12,7 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.getName()).to.be.equal('WebKit');
@@ -27,7 +27,7 @@ describe('Engine Class', () => {
         engine.reset({
           name: 'WebKit',
           alias: 'Blink',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.getName()).to.be.equal('Blink');
@@ -43,7 +43,7 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.getVersion()).to.be.equal('601.3.9');
@@ -57,7 +57,7 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9', details: 1}),
+          version: new Version({ value: '601.3.9', details: 1 }),
         });
 
         expect(engine.getVersion()).to.be.equal('601');
@@ -72,7 +72,7 @@ describe('Engine Class', () => {
 
       engine.reset({
         name: 'WebKit',
-        version: new Version({value: '601.3.9'}),
+        version: new Version({ value: '601.3.9' }),
       });
 
       expect(engine.isDetected()).to.be.true();
@@ -87,7 +87,7 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.toString()).to.be.equal('WebKit 601.3.9');
@@ -102,7 +102,7 @@ describe('Engine Class', () => {
         engine.reset({
           name: 'WebKit',
           alias: 'Blink',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.toString()).to.be.equal('Blink 601.3.9');
@@ -135,7 +135,7 @@ describe('Engine Class', () => {
       it('should return the truncated version', () => {
         const engine = new Engine();
 
-        engine.identifyVersion(/AppleWebKit\/([0-9.]+)/u, 'AppleWebKit/601.3.9', {details: 1});
+        engine.identifyVersion(/AppleWebKit\/([0-9.]+)/u, 'AppleWebKit/601.3.9', { details: 1 });
 
         expect(engine.getVersion()).to.be.equal('601');
       });
@@ -152,7 +152,7 @@ describe('Engine Class', () => {
           name: 'Test',
         });
 
-        expect(engine.toObject()).to.equal({name: 'Test'});
+        expect(engine.toObject()).to.equal({ name: 'Test' });
       });
     });
 
@@ -176,7 +176,7 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9'}),
+          version: new Version({ value: '601.3.9' }),
         });
 
         expect(engine.toObject()).to.equal({
@@ -193,12 +193,12 @@ describe('Engine Class', () => {
 
         engine.reset({
           name: 'WebKit',
-          version: new Version({value: '601.3.9', details: 1, alias: 'TestVersion'}),
+          version: new Version({ value: '601.3.9', details: 1, alias: 'TestVersion' }),
         });
 
         expect(engine.toObject()).to.equal({
           name: 'WebKit',
-          version: {value: '601', alias: 'TestVersion'},
+          version: { value: '601', alias: 'TestVersion' },
         });
       });
     });
