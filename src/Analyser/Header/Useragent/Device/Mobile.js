@@ -837,7 +837,7 @@ class Mobile {
       }
     }
     /* Finally identify it based on carrier */
-    this.data.device.identifyModel(/\(([A-Z]+[0-9]+[A-Z])[^;]*; ?FOMA/iu, ua, {
+    this.data.device.identifyModel(/\(([A-Z]+[0-9]+[A-Z])[^;]*; ?FOMA/u, ua, {
       type: Constants.deviceType.MOBILE,
       carrier: 'DoCoMo',
     });
