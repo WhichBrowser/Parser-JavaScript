@@ -319,7 +319,7 @@ class DeviceModels {
    * @return {string}
    */
   static getKey(pattern) {
-    return `${pattern}`.replace('\\', '');
+    return `${pattern}`.replace(/\\/g, '');
   }
 
   /**
