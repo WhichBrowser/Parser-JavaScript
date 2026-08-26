@@ -36,8 +36,8 @@
     readable: 'Chrome 44 on a Samsung Galaxy Axiom running Android 1.6'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 10.0; GT-S6310 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Young' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Young running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Young' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Young running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 17.0; GT-S7580 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '43', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend Plus' } }
@@ -84,8 +84,8 @@
     readable: 'Chrome 18 on a Samsung Galaxy S II LTE running Android 4.0.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.3; SHV-E120L Build/IML74K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.3 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy S II HD LTE' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy S II HD LTE running Android 4.0.3'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.3 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy S II HD LTE' } }
+    readable: 'Chrome 26 on a Samsung Galaxy S II HD LTE running Android 4.0.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4;  GT-I8150 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.133 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy W' } }
@@ -148,8 +148,8 @@
     readable: 'Chrome 27 on a Samsung Galaxy Ace Plus running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; GT-S7560 Build/IMM76I) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Ace II x' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Ace II x running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Ace II x' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Ace II x running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; GT-S7562 Build/452) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '31', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy S Duos' } }
@@ -184,8 +184,8 @@
     readable: 'Chrome 18 on a Samsung Galaxy Stellar running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; SCH-R740C Build/IMM76D) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Discover' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Discover running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Discover' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Discover running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; SCH-S738C Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Centura' } }
@@ -196,8 +196,8 @@
     readable: 'Chrome 25 on a Samsung SCH-W2013 running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; SCH-i929 Build/IMM76D) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.64 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.64, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy S II Duos' } }
-    readable: 'Chrome Dev 28.0.1500.64 on a Samsung Galaxy S II Duos running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy S II Duos' } }
+    readable: 'Chrome 28 on a Samsung Galaxy S II Duos running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; SCL21 Build/IMM76D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'GALAXY S III Progre SCL21', carrier: au } }
@@ -276,12 +276,12 @@
     readable: 'Chrome 34 on a Samsung Galaxy Star Trios running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S5310 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Pocket Neo' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Pocket Neo running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Pocket Neo' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Pocket Neo running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S5312 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Pocket Neo Duos' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Pocket Neo Duos running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Pocket Neo Duos' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Pocket Neo Duos running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S5830 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '27', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Ace' } }
@@ -300,28 +300,28 @@
     readable: 'Chrome 27 on a Samsung Galaxy Y Duos TV running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S6790 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Fame Lite' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Samsung Galaxy Fame Lite running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Fame Lite' } }
+    readable: 'Chrome 28 on a Samsung Galaxy Fame Lite running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S6792L Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Fame Lite Duos' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Fame Lite Duos running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Fame Lite Duos' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Fame Lite Duos running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S6810 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Fame' } }
     readable: 'Chrome 18 on a Samsung Galaxy Fame running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S7262 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Star Pro' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Samsung Galaxy Star Pro running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Star Pro' } }
+    readable: 'Chrome 28 on a Samsung Galaxy Star Pro running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S7390 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend Lite' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Trend Lite running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend Lite' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Trend Lite running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S7392 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Trend running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Trend running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; GT-S7572 Build/JRO03L) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.141 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '35', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Trend II Duos' } }
@@ -352,8 +352,8 @@
     readable: 'Chrome 40 on a Samsung Galaxy Trend 2 running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; SCH-I759 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Infinite' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Infinite running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Infinite' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Infinite running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; SCH-I829 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '27', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Style Duos' } }
@@ -372,8 +372,8 @@
     readable: 'Chrome 34 on a Samsung Galaxy Win Pro running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; SPH-M840 Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Ring' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Ring running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Ring' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Ring running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; xx; GT-N7100 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Version/1.0.130207 Chrome/18.0.1025.308 Mobile Safari/535.19'
     result: { browser: { name: 'Samsung Internet', version: '1.0', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: Samsung, model: 'Galaxy Note II' } }

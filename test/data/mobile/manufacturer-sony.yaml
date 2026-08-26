@@ -20,8 +20,8 @@
     readable: 'Chrome 18 on a Sony Xperia Z running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; LT25c Build/9.0.E.0.287) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia VC' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia VC running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia VC' } }
+    readable: 'Chrome 28 on a Sony Xperia VC running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; LT25i Build/9.0.1.D.0.10) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia V' } }
@@ -92,8 +92,8 @@
     readable: 'Chrome 18 on a Sony Xperia J running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; ST27a Build/6.1.1.B.0.145) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Go' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia Go running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Go' } }
+    readable: 'Chrome 28 on a Sony Xperia Go running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.1; C1504 Build/11.3.A.0.47) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.1.1 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia E' } }
@@ -136,24 +136,24 @@
     readable: 'Chrome 31 on a Sony Xperia E4g running Android 4.2.1'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; C2004 Build/15.2.A.1.12) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia M dual' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Sony Xperia M dual running Android 4.2.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia M dual' } }
+    readable: 'Chrome 26 on a Sony Xperia M dual running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; C6802 Build/14.1.B.0.406) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.90 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '27', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z Ultra' } }
     readable: 'Chrome 27 on a Sony Xperia Z Ultra running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; C6902 Build/14.1.G.1.493) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Sony Xperia Z1 running Android 4.2.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1' } }
+    readable: 'Chrome 26 on a Sony Xperia Z1 running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; SO-02F Build/14.1.H.1.230) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1 f SO-02F', carrier: DoCoMo } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia Z1 f SO-02F running Android 4.2.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1 f SO-02F', carrier: DoCoMo } }
+    readable: 'Chrome 28 on a Sony Xperia Z1 f SO-02F running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3.1; D2303 Build/21.0.D.8.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.3.1 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia M2' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia M2 running Android 4.3.1'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.3.1 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia M2' } }
+    readable: 'Chrome 28 on a Sony Xperia M2 running Android 4.3.1'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3.1; Xperia Z Ultra Build/JLS36I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '31', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.3.1 }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z Ultra (Google Edition)' } }
@@ -168,8 +168,8 @@
     readable: 'Chrome 31 on a Sony Xperia Z1s running Android 4.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3; D2004 Build/20.0.A.1.12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia E1' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia E1 running Android 4.3'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia E1' } }
+    readable: 'Chrome 28 on a Sony Xperia E1 running Android 4.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3; D2104 Build/20.0.B.0.84) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.89 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '40', type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia E1 dual' } }
@@ -184,8 +184,8 @@
     readable: 'Chrome 31 on a Sony Xperia T2 Ultra dual running Android 4.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3; D5503 Build/14.2.A.1.114) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1 Compact' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a Sony Xperia Z1 Compact running Android 4.3'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z1 Compact' } }
+    readable: 'Chrome 28 on a Sony Xperia Z1 Compact running Android 4.3'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3; Xperia Z2 Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '39', type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: Sony, model: 'Xperia Z2' } }

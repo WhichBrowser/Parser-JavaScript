@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../constants');
 const DeviceModels = require('../data/DeviceModels');
 const Version = require('../model/Version');

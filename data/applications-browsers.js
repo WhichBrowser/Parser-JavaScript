@@ -69,7 +69,7 @@ exports.BROWSERS = {
       id: 'chromeplus',
       regexp: /ChromePlus(?:\/([0-9.]*))?$/u,
       details: 3,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'Colibri', id: 'colibri', regexp: /Colibri\/([0-9.]*)/u, type: DeviceType.DESKTOP }, // see: https://colibri.opqr.co/
     { name: 'Columbus', id: 'columbus', regexp: /Columbus\/([0-9.]*)/u, type: DeviceType.DESKTOP },
@@ -81,7 +81,7 @@ exports.BROWSERS = {
       id: 'dragon',
       regexp: /IceDragon\/([0-9.]*)/u,
       details: 2,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'Conkeror', id: 'conkeror', regexp: /[Cc]onkeror\/([0-9.]*)/u },
     { name: 'Coc Coc', id: 'coc', regexp: /coc_coc_browser\/([0-9.]*)/u, type: DeviceType.DESKTOP }, // see: https://coccoc.com/en/
@@ -90,7 +90,7 @@ exports.BROWSERS = {
       id: 'coolnovo',
       regexp: /(?:CoolNovo|CoolNovoChromePlus)\/([0-9.]*)/u,
       details: 3,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'Corom Browser', id: 'corom', regexp: / CoRom\/([0-9.]*)/u, type: DeviceType.MOBILE }, // see: https://apkpure.com/corom-browser-for-android/com.coccoc.corom
     { name: 'Crazy Browser', id: 'crazy', regexp: /Crazy Browser ([0-9.]*)/u, type: DeviceType.DESKTOP },
@@ -213,7 +213,7 @@ exports.BROWSERS = {
       name: 'VMware Workspace ONE',
       id: 'airwatch',
       regexp: /Air[Ww]atch Browser v([0-9.]*)/u,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'Vonkeror', id: 'vonkeror', regexp: /Vonkeror\/([0-9.]*)/u, type: DeviceType.DESKTOP },
     { name: 'Voyager', id: 'voyager', regexp: /AmigaVoyager\/([0-9.]*)/u },
@@ -255,7 +255,7 @@ exports.BROWSERS = {
     { name: 'EMOBILE Browser', id: 'www browser', regexp: /WWW Browser\/ver([0-9.]*)/u },
     { name: 'Epic Browser', id: 'epic', regexp: / Epic\/([0-9.]*)/u, type: DeviceType.MOBILE }, // see: https://en.wikipedia.org/wiki/Epic_(web_browser)
     { name: 'EUI Browser', id: 'eui', regexp: /EUI Browser\/[^0-9\s]*([0-9.]*)/u, details: 2 },
-    { name: 'Go.Web', id: 'go.web', regexp: /Go\.Web\/([0-9.]*)/u }, // used on early Blackberry, by GoAmerica
+    { name: 'Go.Web', id: 'go\.web', regexp: /Go\.Web\/([0-9.]*)/u }, // used on early Blackberry, by GoAmerica
     { name: 'Helium', id: 'helium', regexp: /HeliumMobileBrowser\/([0-9.]*)/u },
     { name: 'HeyTap Browser', id: 'heytap', regexp: /HeyTapBrowser\/([0-9.]*)/u, type: DeviceType.MOBILE },
     { name: 'Huohou Browser', id: 'huohoubrowser', regexp: /HuohouBrowser\/([0-9.]*)/u },
@@ -267,7 +267,7 @@ exports.BROWSERS = {
       name: 'Jig Browser',
       id: 'jig browser',
       regexp: /jig browser(?: web| core|9i?)?;? ?([0-9.]+)?/u,
-      type: DeviceType.MOBILE
+      type: DeviceType.MOBILE,
     },
     { name: 'Jumanji', id: 'jumanji', regexp: /jumanji/u }, // see: jumanji browser ubuntu
     { name: 'K.Browser', id: 'tnsbrowser', regexp: /TNSBrowser\/([0-9.]*)/u, type: DeviceType.MOBILE }, // see: https://play.google.com/store/apps/details?id=com.tnsua.browser
@@ -298,7 +298,7 @@ exports.BROWSERS = {
       id: 'openwave',
       regexp: /Openwave Mobile Browser ([0-9.]*)/u,
       details: 2,
-      type: DeviceType.MOBILE
+      type: DeviceType.MOBILE,
     },
     { name: 'Openwave', id: 'openwave', regexp: /Browser\/OpenWave([0-9.]*)/u, details: 2, type: DeviceType.MOBILE },
     {
@@ -306,7 +306,7 @@ exports.BROWSERS = {
       id: 'up',
       regexp: /UP\. ?Browser(?:\/([a-z0-9.]*))?/iu,
       details: 2,
-      type: DeviceType.MOBILE
+      type: DeviceType.MOBILE,
     },
     { name: 'Openwave', id: 'km', regexp: /KM\.Browser\/([0-9.]+)/iu, details: 2, type: DeviceType.MOBILE },
     { name: 'Openwave', id: 'up', regexp: /UP\/([0-9.]+)/u, details: 2, type: DeviceType.MOBILE },
@@ -387,7 +387,7 @@ exports.BROWSERS = {
     { name: 'Wyzo', id: 'wyzo', regexp: /Wyzo\/([0-9.]*)/u, details: 3 },
     { name: 'Yelang', id: 'yelang', regexp: /Yelang\/([0-9.]*)/u, details: 3 }, // see: wellgo.org
     { name: 'YRC Weblink', id: 'yrcweb', regexp: /YRCWeblink\/([0-9.]*)/u },
-    { name: '冲浪浏览器', id: 'surf', regexp: /CMSurfClient-Android/u }
+    { name: '冲浪浏览器', id: 'surf', regexp: /CMSurfClient-Android/u },
   ],
 
   [BrowserType.BROWSER_TEXT]: [
@@ -396,7 +396,7 @@ exports.BROWSERS = {
     { name: 'Lynx', id: 'lynx', regexp: /Lynx \(textmode\)/u },
     { name: 'ELinks', id: 'links', regexp: /E[Ll]inks(?:\/| \()([0-9.]*[0-9])/u, type: DeviceType.DESKTOP },
     { name: 'Links', id: 'links', regexp: /Links \(([0-9.]*)/u },
-    { name: 'w3m', id: 'w3m', regexp: /w3m\/([0-9.]*)/u }
+    { name: 'w3m', id: 'w3m', regexp: /w3m\/([0-9.]*)/u },
   ],
 
   [BrowserType.UNKNOWN]: [
@@ -406,8 +406,8 @@ exports.BROWSERS = {
     { name: 'Open Sankoré', id: 'sankore', regexp: /Open-Sankore\/([0-9.]*)/u, type: DeviceType.WHITEBOARD },
     { name: 'Adapi', id: 'adapi', regexp: / ADAPI\/([0-9.]*)/u, hidden: true, type: DeviceType.SIGNAGE },
     { name: 'BrightSign', id: 'brightsign', regexp: /BrightSign\/([0-9.]*)/u, type: DeviceType.SIGNAGE },
-    { name: 'Coship MMCP', id: 'coship', regexp: /Coship_MMCP_([0-9.]*)/u, type: DeviceType.SIGNAGE }
-  ]
+    { name: 'Coship MMCP', id: 'coship', regexp: /Coship_MMCP_([0-9.]*)/u, type: DeviceType.SIGNAGE },
+  ],
 };
 
 /* This file is automatically generated, do not edit manually! */

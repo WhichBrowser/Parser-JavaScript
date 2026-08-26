@@ -23,7 +23,7 @@ exports.OTHERS = {
     { name: 'FlyCast', id: 'flycast', regexp: /FlyCast\/([0-9.]*)/u },
     { name: 'Boxee', id: 'boxee', regexp: /Boxee(?:\/([0-9.]*))?/u, type: DeviceType.TELEVISION },
     { name: 'Kodi', id: 'kodi', regexp: /^Kodi\/([0-9.]+)/u, details: 2 },
-    { name: 'XBMC', id: 'xbmc', regexp: /^XBMC\/(?:PRE-)?([0-9.]+)/u, details: 2 }
+    { name: 'XBMC', id: 'xbmc', regexp: /^XBMC\/(?:PRE-)?([0-9.]+)/u, details: 2 },
   ],
 
   [BrowserType.APP_EMAIL]: [
@@ -34,32 +34,32 @@ exports.OTHERS = {
       id: 'outlook',
       regexp: /Microsoft Outlook IMO, Build ([0-9.]*)/u,
       details: 2,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     {
       name: 'Microsoft Outlook',
       id: 'outlook',
       regexp: /Microsoft Outlook ([0-9.]*)/u,
       details: 2,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     {
       name: 'Microsoft Outlook Express',
       id: 'outlook',
       regexp: /Outlook-Express\/([0-9.]*)/u,
       details: 2,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'Lotus Notes', id: 'lotus', regexp: /Lotus-Notes\/([0-9.]*)/u, details: 2, type: DeviceType.DESKTOP },
     { name: 'Postbox', id: 'postbox', regexp: /Postbox[\/ ]([0-9.]*)/u, details: 2 },
     { name: 'The Bat!', id: 'bat', regexp: /The Bat! ([0-9.]*)/u, details: 3 },
-    { name: 'Yahoo Mail', id: 'yahoo', regexp: /YahooMobile\/1.0 \(mail; ([0-9.]+)\)/u, details: 3 }
+    { name: 'Yahoo Mail', id: 'yahoo', regexp: /YahooMobile\/1.0 \(mail; ([0-9.]+)\)/u, details: 3 },
   ],
 
   [BrowserType.APP_NEWS]: [
     { name: 'Daum', id: 'daum', regexp: /DaumApps\/([0-9.]*)/u },
     { name: 'Daum', id: 'daum', regexp: /daumcafe\/([0-9.]*)/u },
-    { name: 'Flipboard', id: 'flipboard', regexp: /Flipboard\/([0-9.]+)/u }
+    { name: 'Flipboard', id: 'flipboard', regexp: /Flipboard\/([0-9.]+)/u },
   ],
 
   [BrowserType.APP_FEEDREADER]: [
@@ -80,7 +80,7 @@ exports.OTHERS = {
     { name: 'ReedKit', id: 'reedkit', regexp: /ReedKit\/([0-9.]*)/u, type: DeviceType.DESKTOP },
     { name: 'Rome', id: 'rome', regexp: /Rome Client/u },
     { name: 'jsRSS++', id: 'rss', regexp: /jsRSS\+\+\/([0-9.]*)/u },
-    { name: 'Windows RSS Platorm', id: 'rss', regexp: /Windows-RSS-Platform\/([0-9.]*)/u }
+    { name: 'Windows RSS Platorm', id: 'rss', regexp: /Windows-RSS-Platform\/([0-9.]*)/u },
   ],
 
   [BrowserType.APP_PODCAST]: [{ name: 'Ziepod', id: 'ziepod', regexp: /Ziepod\+? ([0-9.]*)/u }],
@@ -101,7 +101,7 @@ exports.OTHERS = {
     { name: 'Yahoo Messenger', id: 'yahoo', regexp: /YahooMobile\/1.0 \(im; ([0-9.]+)\)/u, details: 3 },
     { name: 'Yammer', id: 'yammer', regexp: /Yammer\/([0-9.]*)/u, details: 2 },
     { name: 'Zalo', id: 'zalo', regexp: /Zalo-win32-([0-9.]*)/u },
-    { name: 'Zalo', id: 'zalo', regexp: / Zalo\/([0-9.]*)/u }
+    { name: 'Zalo', id: 'zalo', regexp: / Zalo\/([0-9.]*)/u },
   ],
 
   [BrowserType.APP_SOCIAL]: [
@@ -117,7 +117,7 @@ exports.OTHERS = {
     { name: 'Twitter', id: 'twitter', regexp: /TwitterAndroid/u },
     { name: 'Twitter', id: 'twitter', regexp: /Twitter for iPhone/u },
     { name: 'WordPress', id: 'wp-android', regexp: /wp-android\/([0-9.]*)/u },
-    { name: 'Yelp', id: 'yelp', regexp: /YelpApp\/([0-9.]*)/u }
+    { name: 'Yelp', id: 'yelp', regexp: /YelpApp\/([0-9.]*)/u },
   ],
 
   [BrowserType.APP_OFFICE]: [
@@ -128,7 +128,7 @@ exports.OTHERS = {
     { name: 'Microsoft OneNote', id: 'office', regexp: /Microsoft Office OneNote ([0-9.]*)/u },
     { name: 'Microsoft PowerPoint', id: 'office', regexp: /Microsoft Office PowerPoint ([0-9.]*)/u },
     { name: 'Microsoft Word', id: 'office', regexp: /Microsoft Office Word ([0-9.]*)/u },
-    { name: 'OpenOffice', id: 'office', regexp: /OpenOffice\/([0-9.]*)/u }
+    { name: 'OpenOffice', id: 'office', regexp: /OpenOffice\/([0-9.]*)/u },
   ],
 
   [BrowserType.APP_SEARCH]: [
@@ -137,7 +137,7 @@ exports.OTHERS = {
     { name: 'Google Search', id: 'gsa', regexp: /GSA\/([0-9.]*)/u, details: 3 },
     { name: 'NAVER', id: 'naver', regexp: /NAVER\(inapp; search; [0-9]+; ([0-9.]*)\)/u },
     { name: 'Sogou Search', id: 'sogousearch', regexp: /SogouSearch Android(?:[0-9.]*) version([0-9.]*)/u },
-    { name: 'Yandex Search', id: 'yandex', regexp: /YandexSearch\/([0-9.]*)/u }
+    { name: 'Yandex Search', id: 'yandex', regexp: /YandexSearch\/([0-9.]*)/u },
   ],
 
   [BrowserType.APP_EDITOR]: [
@@ -150,22 +150,26 @@ exports.OTHERS = {
       id: 'frontpage',
       regexp: /MS ?FrontPage[ \/]([0-9.]*)/u,
       details: 2,
-      type: DeviceType.DESKTOP
+      type: DeviceType.DESKTOP,
     },
     { name: 'W3C Amaya', id: 'amaya', regexp: /amaya\/([0-9.]*)/u },
-    { name: 'IBM WebSphere Homepage Builder', id: 'websphere', regexp: /IBM WebSphere Homepage Builder V([0-9.]*)/u }
+    {
+      name: 'IBM WebSphere Homepage Builder',
+      id: 'websphere',
+      regexp: /IBM WebSphere Homepage Builder V([0-9.]*)/u,
+    },
   ],
 
   [BrowserType.APP_DOWNLOAD]: [
     { name: 'Download Manager', id: 'download', regexp: /AndroidDownloadManager\//u },
-    { name: 'Tanso Download Manager', id: 'tansodl', regexp: /TansoDL/u }
+    { name: 'Tanso Download Manager', id: 'tansodl', regexp: /TansoDL/u },
   ],
 
   [BrowserType.APP_GAME]: [
     { name: 'EA Origin', id: 'origin', regexp: /Origin\/([0-9.]*)/u },
     { name: 'SecondLife', id: 'secondlife', regexp: /SecondLife\/([0-9.]*)/u },
     { name: 'Valve Steam', id: 'valve', regexp: /Valve Steam/u },
-    { name: 'Raptr', id: 'raptr', regexp: /Raptr/u }
+    { name: 'Raptr', id: 'raptr', regexp: /Raptr/u },
   ],
 
   [BrowserType.APP]: [
@@ -174,8 +178,8 @@ exports.OTHERS = {
     { name: 'Google Earth', id: 'google', regexp: /Google Earth\/([0-9.]*)/u, details: 2 },
     { name: 'Google Desktop', id: 'google', regexp: /Google Desktop\/([0-9.]*)/u, details: 2 },
     { name: 'Leechcraft', id: 'leechcraft', regexp: /Leechcraft(?:\/([0-9.]*))?/u, details: 2 },
-    { name: 'Lotus Expeditor', id: 'expeditor', regexp: /Gecko Expeditor ([0-9.]*)/u, details: 3 }
-  ]
+    { name: 'Lotus Expeditor', id: 'expeditor', regexp: /Gecko Expeditor ([0-9.]*)/u, details: 3 },
+  ],
 };
 
 /* This file is automatically generated, do not edit manually! */

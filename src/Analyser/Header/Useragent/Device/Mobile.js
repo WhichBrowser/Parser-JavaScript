@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-useless-escape */
 
 const Constants = require('../../../../constants');

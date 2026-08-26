@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../../../../constants');
 const Manufacturers = require('../../../../data/Manufacturers');
 

@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const {
   Appliance,
   Cars,

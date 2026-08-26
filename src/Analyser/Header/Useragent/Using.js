@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Version = require('../../../model/Version');
 const UsingClass = require('../../../model/Using');
 

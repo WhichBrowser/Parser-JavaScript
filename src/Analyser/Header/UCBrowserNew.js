@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const DeviceModels = require('../../data/DeviceModels');
 const Family = require('../../model/Family');
 const Version = require('../../model/Version');

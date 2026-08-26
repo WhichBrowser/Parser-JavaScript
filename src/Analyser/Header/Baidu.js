@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 /**
  * Class for baidu detection
  */

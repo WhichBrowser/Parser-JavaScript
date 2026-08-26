@@ -188,8 +188,8 @@
     readable: 'Chrome 18 on a LG Escape running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; LG-P925 Build/ICS) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.64 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.64, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: Thrill } }
-    readable: 'Chrome Dev 28.0.1500.64 on a LG Thrill running Android 4.0.4'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: Thrill } }
+    readable: 'Chrome 28 on a LG Thrill running Android 4.0.4'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.0.4; LG-SU660 Build/IMM76L) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.0.4 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus 2X' } }
@@ -236,8 +236,8 @@
     readable: 'Chrome 18 on a LG Lucid 2 running Android 4.1.1'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; AS870 4G Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus F5' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a LG Optimus F5 running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus F5' } }
+    readable: 'Chrome 26 on a LG Optimus F5 running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; LG-AS780 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '41', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus F7' } }
@@ -248,12 +248,12 @@
     readable: 'Chrome 35 on a LG Optimus F3Q running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; LG-E410 Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus L1 II' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a LG Optimus L1 II running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus L1 II' } }
+    readable: 'Chrome 28 on a LG Optimus L1 II running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; LG-E415f Build/JZO54K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus L1 II Dual' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a LG Optimus L1 II Dual running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus L1 II Dual' } }
+    readable: 'Chrome 28 on a LG Optimus L1 II Dual running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; LG-E425 Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19'
     result: { browser: { name: Chrome, version: '18', type: browser }, engine: { name: Webkit, version: '535.19' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus L3 II' } }
@@ -304,16 +304,16 @@
     readable: 'Chrome 29 on a LG Connect 4G running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; VS890 4G Build/JZO54K) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Mobile Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: Enact } }
-    readable: 'Chrome Dev 26.0.1410.58 on a LG Enact running Android 4.1.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.1.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: Enact } }
+    readable: 'Chrome 26 on a LG Enact running Android 4.1.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; L-05E Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36'
     result: { browser: { name: Chrome, version: '34', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus it L-05E', carrier: DoCoMo } }
     readable: 'Chrome 34 on a LG Optimus it L-05E running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; Optimusx4 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.94 Mobile Safari/537.36'
-    result: { browser: { name: Chrome, version: 28.0.1500.94, type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus X4' } }
-    readable: 'Chrome Dev 28.0.1500.94 on a LG Optimus X4 running Android 4.2.2'
+    result: { browser: { name: Chrome, version: '28', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Optimus X4' } }
+    readable: 'Chrome 28 on a LG Optimus X4 running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.3; AOSP on Mako Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/38.0.2125.102 Mobile Safari/537.36'
     result: { browser: { name: 'LG Browser', type: browser }, engine: { name: Blink }, os: { name: Android, version: '4.3' }, device: { type: mobile, subtype: smart, manufacturer: LG, model: 'Nexus 4' } }

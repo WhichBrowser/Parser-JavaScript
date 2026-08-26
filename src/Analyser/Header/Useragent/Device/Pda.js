@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../../../../constants');
 const Version = require('../../../../model/Version');
 const Family = require('../../../../model/Family');

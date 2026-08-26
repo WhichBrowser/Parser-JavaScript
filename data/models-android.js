@@ -489,7 +489,7 @@ exports.ANDROID_MODELS = {
     QS9715F: ['3Q', 'Qoo! Surf Tablet QS9715F', DeviceType.TABLET],
     QS9719D: ['3Q', 'Qoo! Surf Tablet QS9719D', DeviceType.TABLET],
     QS1023H: ['3Q', 'Qoo! Surf Tablet QS1023H', DeviceType.TABLET],
-    VM0711A: ['3Q', 'Qoo! Surf Tablet VM0711A', DeviceType.TABLET]
+    VM0711A: ['3Q', 'Qoo! Surf Tablet VM0711A', DeviceType.TABLET],
   },
 
   'BioniQ!!': {
@@ -497,7 +497,7 @@ exports.ANDROID_MODELS = {
     BioniQ700HX: ['a-rival', 'BioniQ 700 HX', DeviceType.TABLET],
     'BioniQ 800': ['a-rival', 'BioniQ 800', DeviceType.TABLET],
     'BioniQ 1001': ['a-rival', 'BioniQ 1001', DeviceType.TABLET],
-    'BioniQ 8008': ['a-rival', 'BioniQ 8008', DeviceType.TABLET]
+    'BioniQ 8008': ['a-rival', 'BioniQ 8008', DeviceType.TABLET],
   },
 
   'RTC-700A': ['Aaeon', 'RTC-700A', DeviceType.TABLET],
@@ -517,7 +517,7 @@ exports.ANDROID_MODELS = {
     A511: ['Acer', 'Iconia Tab A511', DeviceType.TABLET],
     A700: ['Acer', 'Iconia Tab A700', DeviceType.TABLET],
     A701: ['Acer', 'Iconia Tab A701', DeviceType.TABLET],
-    A800: ['Acer', 'Iconia Tab A800', DeviceType.TABLET]
+    A800: ['Acer', 'Iconia Tab A800', DeviceType.TABLET],
   },
 
   P2A700: ['Acer', 'Iconia Tab A700', DeviceType.TABLET],
@@ -536,7 +536,7 @@ exports.ANDROID_MODELS = {
     'A1-840FHD': ['Acer', 'Iconia Tab 8 A1-840 FHD', DeviceType.TABLET],
     'A1-841': ['Acer', 'Iconia Tab 8 A1-841', DeviceType.TABLET],
     'A1-850': ['Acer', 'Iconia One 8 A1-850', DeviceType.TABLET],
-    'A1-860': ['Acer', 'Iconia Tab 8 A1-860', DeviceType.TABLET]
+    'A1-860': ['Acer', 'Iconia Tab 8 A1-860', DeviceType.TABLET],
   },
 
   'A3-A[0-9]{2,2}!!': {
@@ -545,7 +545,7 @@ exports.ANDROID_MODELS = {
     'A3-A20': ['Acer', 'Iconia Tab 10 A3-A20', DeviceType.TABLET],
     'A3-A20FHD': ['Acer', 'Iconia Tab 10 A3-A20 FHD', DeviceType.TABLET],
     'A3-A30': ['Acer', 'Iconia Tab 10 A3-A30', DeviceType.TABLET],
-    'A3-A40': ['Acer', 'Iconia Tab 10 A3-A40', DeviceType.TABLET]
+    'A3-A40': ['Acer', 'Iconia Tab 10 A3-A40', DeviceType.TABLET],
   },
 
   'B1-[A0-9][A0-9]{2,2}!!': {
@@ -569,7 +569,7 @@ exports.ANDROID_MODELS = {
     'B1-820': ['Acer', 'Iconia One 8 B1-820', DeviceType.TABLET],
     'B1-830': ['Acer', 'Iconia One 8 B1-830', DeviceType.TABLET],
     'B1-850': ['Acer', 'Iconia One 8 B1-850', DeviceType.TABLET],
-    'B1-860A': ['Acer', 'Iconia One 8 B1-860A', DeviceType.TABLET]
+    'B1-860A': ['Acer', 'Iconia One 8 B1-860A', DeviceType.TABLET],
   },
 
   'B3-A10': ['Acer', 'Iconia One 10 B3-A10', DeviceType.TABLET],
@@ -588,7 +588,7 @@ exports.ANDROID_MODELS = {
     'ICONIA Tab W500': ['Acer', 'Iconia W500', DeviceType.TABLET],
     'ICONIA Tab W500P': ['Acer', 'Iconia W500P', DeviceType.TABLET],
     'ICONIA Tab W501': ['Acer', 'Iconia W501', DeviceType.TABLET],
-    'ICONIA W700': ['Acer', 'Iconia W700', DeviceType.TABLET]
+    'ICONIA W700': ['Acer', 'Iconia W700', DeviceType.TABLET],
   },
 
   'GT-810': ['Acer', 'Predator 8', DeviceType.TABLET],
@@ -606,7 +606,7 @@ exports.ANDROID_MODELS = {
     E380: ['Acer', 'Liquid E3'],
     E400: ['Acer', 'beTouch E400'],
     E600: ['Acer', 'Liquid E600'],
-    E39: ['Acer', 'Liquid E700']
+    E39: ['Acer', 'Liquid E700'],
   },
 
   I110: ['Acer', 'Liquid C1'],
@@ -623,13 +623,13 @@ exports.ANDROID_MODELS = {
     S55: ['Acer', 'Liquid Jade'],
     S56: ['Acer', 'Liquid Jade S'],
     S57: ['Acer', 'Liquid Jade Z'],
-    S59: ['Acer', 'Liquid X2']
+    S59: ['Acer', 'Liquid X2'],
   },
 
   'V[0-9]{2,2}0!!': {
     V360: ['Acer', 'Liquid E1'],
     V370: ['Acer', 'Liquid E2'],
-    V380: ['Acer', 'Liquid E3']
+    V380: ['Acer', 'Liquid E3'],
   },
 
   'Z[0-9]{3,3}!!': {
@@ -646,7 +646,7 @@ exports.ANDROID_MODELS = {
     Z410: ['Acer', 'Liquid Z410'],
     Z500: ['Acer', 'Liquid Z500'],
     Z520: ['Acer', 'Liquid Z520'],
-    Z530: ['Acer', 'Liquid Z530']
+    Z530: ['Acer', 'Liquid Z530'],
   },
 
   Z4: ['Acer', 'Liquid Z4'],
@@ -671,7 +671,7 @@ exports.ANDROID_MODELS = {
     'LIQUID E3': ['Acer', 'Liquid E3 '],
     'Liquid MT': ['Acer', 'Liquid mt'],
     'Liquid Metal': ['Acer', 'Liquid mt'],
-    'Liquid Z205': ['Acer', 'Liquid Z205']
+    'Liquid Z205': ['Acer', 'Liquid Z205'],
   },
 
   Stream: ['Acer', 'Stream'],
@@ -686,7 +686,7 @@ exports.ANDROID_MODELS = {
     DA223HQL: ['Acer', 'All-in-One DA223HQL', DeviceType.MONITOR],
     DA226HQ: ['Acer', 'All-in-One DA226HQ', DeviceType.MONITOR],
     DA241HL: ['Acer', 'All-in-One DA241HL', DeviceType.MONITOR],
-    DA245HQL: ['Acer', 'Touch and 3D Monitor DA245HQL', DeviceType.MONITOR]
+    DA245HQL: ['Acer', 'Touch and 3D Monitor DA245HQL', DeviceType.MONITOR],
   },
 
   TA272HUL: ['Acer', 'All-in-One TA272HUL', DeviceType.MONITOR],
@@ -700,7 +700,7 @@ exports.ANDROID_MODELS = {
     'Aspire ([A-Z][0-9]{4,4}[A-Z]?)!': ['Acer', 'Aspire $1', DeviceType.DESKTOP],
     'Aspire ([A-Z]{2,2}[0-9]-[0-9]{3,3})!': ['Acer', 'Aspire $1', DeviceType.DESKTOP],
     'Aspire one': ['Acer', 'Aspire One', DeviceType.DESKTOP],
-    'Aspire one Pro': ['Acer', 'Aspire One Pro', DeviceType.DESKTOP]
+    'Aspire one Pro': ['Acer', 'Aspire One Pro', DeviceType.DESKTOP],
   },
 
   C908: ['Acho', 'C908', DeviceType.TABLET],
@@ -786,7 +786,7 @@ exports.ANDROID_MODELS = {
     'Numy 3G AX3': ['Ainol', 'Numy 3G AX3', DeviceType.TABLET],
     'Numy 3G BW1': ['Ainol', 'Numy 3G BW1', DeviceType.TABLET],
     'Numy 3G Vegas': ['Ainol', 'Numy 3G Vegas', DeviceType.TABLET],
-    'Numy Note 9': ['Ainol', 'Numy Note 9', DeviceType.TABLET]
+    'Numy Note 9': ['Ainol', 'Numy Note 9', DeviceType.TABLET],
   },
 
   Novo7: ['Ainovo', 'Novo7', DeviceType.TABLET],
@@ -1120,8 +1120,8 @@ exports.ANDROID_MODELS = {
   '8020[D]!': ['Alcatel', 'One Touch Hero'],
   'one ?touch 8030!': ['Alcatel', 'One Touch Hero 2'],
   '8030[BY]!': ['Alcatel', 'One Touch Hero 2'],
-  '8063': ['Alcatel', 'Pixi 4'],
-  '8082': ['Alcatel', '1T', DeviceType.TABLET],
+  8063: ['Alcatel', 'Pixi 4'],
+  8082: ['Alcatel', '1T', DeviceType.TABLET],
   '8082 EEA': ['Alcatel', '1T', DeviceType.TABLET],
   '8094[X]!': ['Alcatel', '3T 10', DeviceType.TABLET],
   '9001[DIX]!': ['Alcatel', 'One Touch Pixi 4 (6)'],
@@ -1295,7 +1295,7 @@ exports.ANDROID_MODELS = {
     AllviewCityLife: ['Allview', 'Alldro City Life', DeviceType.TABLET],
     'ALLVIEW VIPER I': ['Allview', 'Viper I', DeviceType.TABLET],
     'Allview Viva H8': ['Allview', 'Viva H8', DeviceType.TABLET],
-    ALLVIEW3CONECT: ['Allview', '3 Conect', DeviceType.TABLET]
+    ALLVIEW3CONECT: ['Allview', '3 Conect', DeviceType.TABLET],
   },
 
   A10: ['AllWinner', 'A10', DeviceType.TABLET],
@@ -1394,7 +1394,7 @@ exports.ANDROID_MODELS = {
     'AMOI M8448': ['Amoi', 'M8448'],
     'AMOI M8458': ['Amoi', 'M8458'],
     'AMOI-X4': ['Amoi', 'X4'],
-    'Amoi Q50H': ['Amoi', 'Q50H', DeviceType.TABLET]
+    'Amoi Q50H': ['Amoi', 'Q50H', DeviceType.TABLET],
   },
 
   A726T: ['Amoi', 'A726T'],
@@ -1714,7 +1714,7 @@ exports.ANDROID_MODELS = {
     'Archos Oxygen 63': ['Archos', 'Oxygen 63'],
     'Archos Saphir 50X': ['Archos', 'Saphir 50X'],
     'Archos Sense 55 DC': ['Archos', 'Sense 55'],
-    'Archos Sense 55 S': ['Archos', 'Sense 55']
+    'Archos Sense 55 S': ['Archos', 'Sense 55'],
   },
 
   'X67 5G': ['Archos', 'X67 5G'],
@@ -1745,7 +1745,7 @@ exports.ANDROID_MODELS = {
     'ASK SP583 HD': ['ASK', 'SP583 HD'],
     'ASK SP584 FHD': ['ASK', 'SP584 FHD'],
     'ASK SP591': ['ASK', 'SP591'],
-    'ASK SP628 HD': ['ASK', 'SP628 HD']
+    'ASK SP628 HD': ['ASK', 'SP628 HD'],
   },
 
   ASTRI: ['ASTRI', 'e-reader', DeviceType.EREADER],
@@ -2035,7 +2035,7 @@ exports.ANDROID_MODELS = {
     'QiLive 8QC': ['Auchan', 'QiLive 8” Quad core tablet', DeviceType.TABLET],
     'QiLive 97': ['Auchan', 'QiLive 9.7” Dual core tablet', DeviceType.TABLET],
     'QiLive 97R': ['Auchan', 'QiLive 9.7R Quad core tablet', DeviceType.TABLET],
-    'QILIVE 101': ['Auchan', 'QiLive 10.1” Dual core tablet', DeviceType.TABLET]
+    'QILIVE 101': ['Auchan', 'QiLive 10.1” Dual core tablet', DeviceType.TABLET],
   },
 
   'T-07B': ['AudioSonic', 'T07B', DeviceType.TABLET],
@@ -2055,14 +2055,14 @@ exports.ANDROID_MODELS = {
     'AUX V950': ['AUX', 'V950'],
     'AUX V950P': ['AUX', 'V950P'],
     'AUX V965T': ['AUX', 'V965T'],
-    'AUX W6': ['AUX', 'W6']
+    'AUX W6': ['AUX', 'W6'],
   },
 
   'Avea!!': {
     'Avea inTouch 2': ['Avea', 'inTouch 2', DeviceType.TABLET],
     'Avea inTouch 3': ['Avea', 'inTouch 3', DeviceType.TABLET],
     'Avea inTouch 3 Large': ['Avea', 'inTouch 3', DeviceType.TABLET],
-    'Avea inTouch 4': ['Avea', 'inTouch 4', DeviceType.TABLET]
+    'Avea inTouch 4': ['Avea', 'inTouch 4', DeviceType.TABLET],
   },
 
   '(Ilium )?Avvio!!': {
@@ -2091,10 +2091,10 @@ exports.ANDROID_MODELS = {
     'Avvio L500 Claro': ['Avvio', 'L500'],
     'Avvio Q797': ['Avvio', 'Q797'],
     'Avvio PAD': ['Avvio', 'Pad', DeviceType.TABLET],
-    'Avvio PAD10.1': ['Avvio', 'Pad', DeviceType.TABLET]
+    'Avvio PAD10.1': ['Avvio', 'Pad', DeviceType.TABLET],
   },
 
-  '(Axioo[- ])?PICO!!': {
+  '(Axioo[\- ])?PICO!!': {
     'PICOphone 2': ['Axioo', 'PICOphone 2'],
     'PICOphone 4': ['Axioo', 'PICOphone 4'],
     Picophone4: ['Axioo', 'PICOphone 4'],
@@ -2125,7 +2125,7 @@ exports.ANDROID_MODELS = {
     'PICOpad GJT': ['Axioo', 'PICOpad GJT', DeviceType.TABLET],
     'PICOpad-QGN': ['Axioo', 'PICOpad QGN', DeviceType.TABLET],
     'Axioo-VIGO350': ['Axioo', 'Vigo 350'],
-    'Axioo-VIGO410': ['Axioo', 'Vigo 410']
+    'Axioo-VIGO410': ['Axioo', 'Vigo 410'],
   },
 
   '(AXPAD|Axxion)!!': {
@@ -2134,7 +2134,7 @@ exports.ANDROID_MODELS = {
     'AXPAD 7I04': ['Axtrom', 'Axpad 7" Series-7I04', DeviceType.TABLET],
     'AXPAD 9P01': ['Axtrom', 'Axpad 9" Series-9P01', DeviceType.TABLET],
     'Axxion ATAB-701': ['Axxion', 'ATAB-701', DeviceType.TABLET],
-    'Axxion ATAB-902': ['Axxion', 'ATAB-902', DeviceType.TABLET]
+    'Axxion ATAB-902': ['Axxion', 'ATAB-902', DeviceType.TABLET],
   },
 
   'A10 MID': ['Azhuo', 'A10 MID', DeviceType.TABLET],
@@ -2156,10 +2156,10 @@ exports.ANDROID_MODELS = {
     'Azumi KL32': ['Azumi', 'KL32'],
     'Azumi IRO A5 Q': ['Azumi', 'Iro A5Q'],
     'Azumi IRO A5 QL': ['Azumi', 'Iro A5QL'],
-    'Azumi AT7': ['Azumi', 'AT7', DeviceType.TABLET]
+    'Azumi AT7': ['Azumi', 'AT7', DeviceType.TABLET],
   },
 
-  '(BDS|BHX|BKO)-!!': {
+  '(BDS|BHX|BKO)\-!!': {
     'BDS-S100': ['B box', 'B tv BDS-S100', DeviceType.TELEVISION],
     'BDS-S200': ['B box', 'B tv BDS-S200', DeviceType.TELEVISION],
     'BHX-S100': ['B box', 'B tv BHX-S100', DeviceType.TELEVISION],
@@ -2171,7 +2171,7 @@ exports.ANDROID_MODELS = {
     'BKO-UH400': ['B box', 'B tv UHD BHO-UH400', DeviceType.TELEVISION],
     'BKO-UH600': ['B box', 'B tv UHD BHO-UH600', DeviceType.TELEVISION],
     'BKO-S200': ['B box', 'B tv BKO-S200', DeviceType.TELEVISION],
-    'BKO-S200 TV': ['B box', 'B tv BKO-S200', DeviceType.TELEVISION]
+    'BKO-S200 TV': ['B box', 'B tv BKO-S200', DeviceType.TELEVISION],
   },
 
   'Aero A2-110': ['Banghó', 'Aero A2 110', DeviceType.TABLET],
@@ -2203,7 +2203,7 @@ exports.ANDROID_MODELS = {
   'WL-101GQC': ['Bauhn', 'WL-101GQC', DeviceType.TABLET],
   'BEE 9500': ['Bee Mobile', 'Bee 9500'],
 
-  'BF[ -]!!': {
+  'BF[ \-]!!': {
     'BF A8': ['Bellefonte', 'A8'],
     'BF-A10': ['Bellefonte', 'A10'],
     'BF A11': ['Bellefonte', 'A11'],
@@ -2211,21 +2211,21 @@ exports.ANDROID_MODELS = {
     'BF A16': ['Bellefonte', 'A16'],
     'BF C7': ['Bellefonte', 'C7'],
     'BF G11': ['Bellefonte', 'G11'],
-    'BF V5T!': ['Bellefonte', 'V5T']
+    'BF V5T!': ['Bellefonte', 'V5T'],
   },
 
   'BenQ!!': {
     'BenQ A3s': ['BenQ', 'A3s'],
     'BenQ F5': ['BenQ', 'F5'],
     'BenQ T3': ['BenQ', 'T3'],
-    'BenQ R71': ['BenQ', 'R71', DeviceType.TABLET]
+    'BenQ R71': ['BenQ', 'R71', DeviceType.TABLET],
   },
 
   'BenWee!!': {
     'BenWee 550S': ['BenWee', '550S'],
     'BenWee 5100S': ['BenWee', '5100S'],
     'BenWee N7': ['BenWee', 'N7'],
-    'BenWee N9': ['BenWee', 'N9']
+    'BenWee N9': ['BenWee', 'N9'],
   },
 
   'BePhone UN030': ['BePhone', 'UN030'],
@@ -2236,7 +2236,7 @@ exports.ANDROID_MODELS = {
     'Bestsonny LT988': ['Best Sonny', 'LT988'],
     'Best sonny T898': ['Best Sonny', 'T898'],
     BestsonnyT961: ['Best Sonny', 'T961'],
-    BestsonnyT962: ['Best Sonny', 'T962']
+    BestsonnyT962: ['Best Sonny', 'T962'],
   },
 
   CA907AAC0G: ['Besta', 'CA907AAC0G'],
@@ -2244,13 +2244,13 @@ exports.ANDROID_MODELS = {
   'BFB!!': {
     'BFB S7': ['BFB', 'S7'],
     'BFB W9000': ['BFB', 'W9000'],
-    'BFB W9900': ['BFB', 'W9900']
+    'BFB W9900': ['BFB', 'W9900'],
   },
 
   'BF[0-9]{2,2}00!!': {
     BF5200: ['Bifer', 'BF5200'],
     BF9100: ['Bifer', 'BF9100'],
-    BF9200: ['Bifer', 'BF9200']
+    BF9200: ['Bifer', 'BF9200'],
   },
 
   'Bird!!': {
@@ -2280,7 +2280,7 @@ exports.ANDROID_MODELS = {
     'BIRD-W3': ['Bird', 'W3'],
     'BIRD W5': ['Bird', 'W5'],
     'Bird W188': ['Bird', 'W188'],
-    'Bird XL100': ['Bird', 'XL100']
+    'Bird XL100': ['Bird', 'XL100'],
   },
 
   T9108: ['Bird', 'T9108'],
@@ -2333,7 +2333,7 @@ exports.ANDROID_MODELS = {
     'Endeavour 1001 DVB-T': ['Blaupunkt', 'Endeavour 1001 DVB-T', DeviceType.TABLET],
     'Endeavour 1010': ['Blaupunkt', 'Endeavour 1010', DeviceType.TABLET],
     'Endeavour 1013': ['Blaupunkt', 'Endeavour 1013', DeviceType.TABLET],
-    'Endeavour 1100': ['Blaupunkt', 'Endeavour 1100', DeviceType.TABLET]
+    'Endeavour 1100': ['Blaupunkt', 'Endeavour 1100', DeviceType.TABLET],
   },
 
   '(BLU|DASH|LIFE|NEO|STUDIO|VIVO)!!': {
@@ -2491,7 +2491,7 @@ exports.ANDROID_MODELS = {
     'BLU VIVO SELFIE': ['BLU', 'Vivo Selfie'],
     'VIVO XL': ['BLU', 'Vivo XL'],
     'Vivo XL2': ['BLU', 'Vivo XL2'],
-    'Vivo XI PLUS': ['BLU', 'Vivo XI+']
+    'Vivo XI PLUS': ['BLU', 'Vivo XI+'],
   },
 
   'R1 HD': ['BLU', 'R1 HD'],
@@ -2547,7 +2547,7 @@ exports.ANDROID_MODELS = {
     AX1055: ['Bmobile', 'AX1055'],
     'BMOBILE AX1060': ['Bmobile', 'AX1060'],
     AX1060: ['Bmobile', 'AX1060'],
-    'Bmobile AX1065': ['Bmobile', 'AX1065']
+    'Bmobile AX1065': ['Bmobile', 'AX1065'],
   },
 
   AX7OO: ['Bmobile', 'AX700'],
@@ -2586,7 +2586,7 @@ exports.ANDROID_MODELS = {
     'BOWAY V70': ['Boway', 'V70'],
     'BOWAY V80': ['Boway', 'V80'],
     'BOWAY V95Pro': ['Boway', 'V95 Pro'],
-    'BOWAY X6': ['Boway', 'X6']
+    'BOWAY X6': ['Boway', 'X6'],
   },
 
   'BroadSign Xpress!': ['BroadSign', 'Xpress', DeviceType.SIGNAGE],
@@ -2631,7 +2631,7 @@ exports.ANDROID_MODELS = {
     'BROR W68': ['BROR', 'W68'],
     'BRS-BROR W70': ['BROR', 'W70'],
     'BROR W80': ['BROR', 'W80'],
-    'BRS-BROR W80': ['BROR', 'W80']
+    'BRS-BROR W80': ['BROR', 'W80'],
   },
 
   '(bq|Aquaris|Edison|Maxwell)!!': {
@@ -2695,7 +2695,7 @@ exports.ANDROID_MODELS = {
     'bq Pascal 2!': ['bq', 'Pascal 2', DeviceType.TABLET],
     'bq Verne Plus': ['bq', 'Verne Plus', DeviceType.TABLET],
     'bq Verne Plus 3G': ['bq', 'Verne Plus', DeviceType.TABLET],
-    'bq Voltaire': ['bq', 'Voltaire', DeviceType.TABLET]
+    'bq Voltaire': ['bq', 'Voltaire', DeviceType.TABLET],
   },
 
   'BUSH!!': {
@@ -2712,7 +2712,7 @@ exports.ANDROID_MODELS = {
     'BUSH 10.1 TABLET': ['Bush', '10.1 Tablet', DeviceType.TABLET],
     'Bush 7.0 MyTablet': ['Bush', '7.0 MyTablet', DeviceType.TABLET],
     'Bush 10.0 MyTablet': ['Bush', '10.0 MyTablet', DeviceType.TABLET],
-    'Bush Mytablet 2': ['Bush', 'MyTablet 2', DeviceType.TABLET]
+    'Bush Mytablet 2': ['Bush', 'MyTablet 2', DeviceType.TABLET],
   },
 
   'Carbon 1 Mark II': ['Carbon', '1 MK II'],
@@ -2733,7 +2733,7 @@ exports.ANDROID_MODELS = {
     CT1002: ['Carrefour', 'Touch Tablet CT1002', DeviceType.TABLET],
     CT1002PLUS: ['Carrefour', 'Touch Tablet CT1002 plus', DeviceType.TABLET],
     CT1010: ['Carrefour', 'Touch Tablet CT1010', DeviceType.TABLET],
-    CT1020W: ['Carrefour', 'Touch Tablet CT1020W', DeviceType.TABLET]
+    CT1020W: ['Carrefour', 'Touch Tablet CT1020W', DeviceType.TABLET],
   },
 
   EM63: ['Carrefour', 'Touch Tablet CT720', DeviceType.TABLET],
@@ -2752,7 +2752,7 @@ exports.ANDROID_MODELS = {
     'CAPTIVA PAD 10.1': ['Captiva', 'Pad 10.1', DeviceType.TABLET],
     'CAPTIVA 10.1 HD': ['Captiva', 'Pad 10.1 HD', DeviceType.TABLET],
     'CAPTIVA PAD 10.1 Quad FHD': ['Captiva', 'Pad 10.1 Quad FHD', DeviceType.TABLET],
-    'CAPTIVA PAD 10.1 Quad FHD 3G': ['Captiva', 'Pad 10.1 Quad FHD', DeviceType.TABLET]
+    'CAPTIVA PAD 10.1 Quad FHD 3G': ['Captiva', 'Pad 10.1 Quad FHD', DeviceType.TABLET],
   },
 
   'Carpad T5': ['Carpad', 'T5'],
@@ -2770,7 +2770,7 @@ exports.ANDROID_MODELS = {
     'Casper VIA A6108': ['Casper', 'VIA A6108'],
     'Casper VIA V4': ['Casper', 'VIA V4'],
     'Casper VIA V5': ['Casper', 'VIA V5'],
-    'Casper VIA V8': ['Casper', 'VIA V8']
+    'Casper VIA V8': ['Casper', 'VIA V8'],
   },
 
   'VIA F1': ['Casper', 'VIA F1'],
@@ -2802,7 +2802,7 @@ exports.ANDROID_MODELS = {
     'Cat StarGate': ['CAT', 'STARGATE', DeviceType.TABLET],
     'Cat Tablet CSG 7J0': ['CAT', 'STARGATE', DeviceType.TABLET],
     'Cat Tablet StarGate 2': ['CAT', 'STARGATE 2', DeviceType.TABLET],
-    'Cat Tablet CSG2 7.1J0': ['CAT', 'STARGATE 2', DeviceType.TABLET]
+    'Cat Tablet CSG2 7.1J0': ['CAT', 'STARGATE 2', DeviceType.TABLET],
   },
 
   SK351: ['CCE', 'Motion.Plus SK351'],
@@ -2886,7 +2886,7 @@ exports.ANDROID_MODELS = {
     'Celkon Q550': ['Celkon', 'Millennia Epic Q550'],
     'Celkon Q567': ['Celkon', 'Millennia Q567'],
     'Celkon Q3000': ['Celkon', 'Millennia Power Q3000'],
-    'Celkon 4G TAB-8': ['Celkon', '4G Tab-8', DeviceType.TABLET]
+    'Celkon 4G TAB-8': ['Celkon', '4G Tab-8', DeviceType.TABLET],
   },
 
   A89: ['Celkon', 'A89'],
@@ -2919,14 +2919,14 @@ exports.ANDROID_MODELS = {
     'ChangHong ?Z1!': ['ChangHong', 'Z1'],
     ChanghongZ3t: ['ChangHong', 'Z3t'],
     ChangHongZ9: ['ChangHong', 'Z9'],
-    'changhong TV': ['ChangHong', null]
+    'changhong TV': ['ChangHong', null],
   },
 
   'CHER!!': {
     'CHER A50': ['Cher', 'A50'],
     'CHER A55w': ['Cher', 'A55w'],
     'CHER A90': ['Cher', 'A90'],
-    'CHER A91': ['Cher', 'A91']
+    'CHER A91': ['Cher', 'A91'],
   },
 
   PC1038: ['Cherry', 'Pro-Line 2', DeviceType.TABLET],
@@ -2977,7 +2977,7 @@ exports.ANDROID_MODELS = {
     'LA-M1': ['Chili', 'M1'],
     'LA-M1Y': ['Chili', 'M1Y'],
     'LA-M2': ['Chili', 'M2'],
-    'LA-Q1': ['Chili', 'Q1']
+    'LA-Q1': ['Chili', 'Q1'],
   },
 
   M623C: ['China Mobile', 'M623C', DeviceType.TABLET],
@@ -2993,7 +2993,7 @@ exports.ANDROID_MODELS = {
   'CHUWI!!': {
     'CHUWI V3': ['Chuwi', 'V3', DeviceType.TABLET],
     'CHUWI-V8-HD': ['Chuwi', 'V8 HD', DeviceType.TABLET],
-    'CHUWI V9': ['Chuwi', 'V9', DeviceType.TABLET]
+    'CHUWI V9': ['Chuwi', 'V9', DeviceType.TABLET],
   },
 
   cius: ['Cisco', 'Cius', DeviceType.TABLET],
@@ -3002,13 +3002,13 @@ exports.ANDROID_MODELS = {
   'CP-DX!!': {
     'CP-DX70': ['Cisco', 'DX70', DeviceType.TABLET],
     'CP-DX80': ['Cisco', 'DX80', DeviceType.TABLET],
-    'CP-DX650': ['Cisco', 'DX650', DeviceType.TABLET]
+    'CP-DX650': ['Cisco', 'DX650', DeviceType.TABLET],
   },
 
   'Citycall!!': {
     'Citycall A1': ['Citycall', 'A1'],
     'Citycall i310+': ['Citycall', 'i310+'],
-    'Citycall i930+': ['Citycall', 'i930+']
+    'Citycall i930+': ['Citycall', 'i930+'],
   },
 
   'Clarion Mirage 2': ['Clarion', 'Mirage 2', DeviceType.CAR],
@@ -3051,7 +3051,7 @@ exports.ANDROID_MODELS = {
     'CloudPad 701tv': ['Cloudfone', 'CloudPad 701tv'],
     'Cloudpad 705w': ['Cloudfone', 'CloudPad 705w'],
     'CloudPad 707qw': ['Cloudfone', 'CloudPad 707qw'],
-    'Cloudpad 800d': ['Cloudfone', 'CloudPad 800d']
+    'Cloudpad 800d': ['Cloudfone', 'CloudPad 800d'],
   },
 
   'CW[- ]!!': {
@@ -3068,7 +3068,7 @@ exports.ANDROID_MODELS = {
     'CW-V99': ['Chuwi', 'V99'],
     'CW-V99-QUAD': ['Chuwi', 'V99'],
     'CW-VX8-3G': ['Chuwi', 'VX8 3G'],
-    'CW-Hi8Pro': ['Chuwi', 'Hi8 Pro', DeviceType.TABLET]
+    'CW-Hi8Pro': ['Chuwi', 'Hi8 Pro', DeviceType.TABLET],
   },
 
   V17HD: ['Chuwi', 'V17HD'],
@@ -3101,7 +3101,7 @@ exports.ANDROID_MODELS = {
     'CnM-TOUCHPAD9': ['CnM', 'TouchPad 9', DeviceType.TABLET],
     'Cnm TOUCHPAD 9.7': ['CnM', 'TouchPad 9.7', DeviceType.TABLET],
     'CnM-TP-10DC-16-B': ['CnM', 'TouchPad 10 DC', DeviceType.TABLET],
-    'CnM TouchPad 10.1DC': ['CnM', 'TouchPad 10.1 DC', DeviceType.TABLET]
+    'CnM TouchPad 10.1DC': ['CnM', 'TouchPad 10.1 DC', DeviceType.TABLET],
   },
 
   'MID[0-9]{4,4}!!': {
@@ -3155,7 +3155,7 @@ exports.ANDROID_MODELS = {
     MID9724: ['Coby', 'Kyros MID9724', DeviceType.TABLET],
     MID9740: ['Coby', 'Kyros MID9740', DeviceType.TABLET],
     MID9742: ['Coby', 'Kyros MID9742', DeviceType.TABLET],
-    MID9760: ['Coby', 'Kyros MID9760', DeviceType.TABLET]
+    MID9760: ['Coby', 'Kyros MID9760', DeviceType.TABLET],
   },
 
   'Ultimix!!': {
@@ -3163,14 +3163,14 @@ exports.ANDROID_MODELS = {
     'Ultimix 88': ['Codegen', 'Ultimix 88', DeviceType.TABLET],
     Ultimix94: ['Codegen', 'Ultimix 94', DeviceType.TABLET],
     Ultimix95: ['Codegen', 'Ultimix 95', DeviceType.TABLET],
-    Ultimix99: ['Codegen', 'Ultimix 99', DeviceType.TABLET]
+    Ultimix99: ['Codegen', 'Ultimix 99', DeviceType.TABLET],
   },
 
   'BLADE LE 70': ['COMMAX', 'BLADE LE 70', DeviceType.TABLET],
 
   'Commodore!!': {
     'Commodore  IS-7107C': ['Commodore', 'IS-7107C', DeviceType.TABLET],
-    'Commodore IS-7107C': ['Commodore', 'IS-7107C', DeviceType.TABLET]
+    'Commodore IS-7107C': ['Commodore', 'IS-7107C', DeviceType.TABLET],
   },
 
   Z71: ['Commtiva', 'Z71'],
@@ -3196,7 +3196,7 @@ exports.ANDROID_MODELS = {
     'Colorfly E708 Q2': ['Colorfly', 'E708 Q2', DeviceType.TABLET],
     'Colorfly G708': ['Colorfly', 'G708', DeviceType.TABLET],
     'Colorfly S782 Q1': ['Colorfly', 'S782 Q1', DeviceType.TABLET],
-    'Colorfly U781 Q1': ['Colorfly', 'U781 Q1', DeviceType.TABLET]
+    'Colorfly U781 Q1': ['Colorfly', 'U781 Q1', DeviceType.TABLET],
   },
 
   K11: ['Colors', 'K11'],
@@ -3206,7 +3206,7 @@ exports.ANDROID_MODELS = {
     'Colors K22': ['Colors', 'K22'],
     'Colors X27': ['Colors', 'Xfactor Wave X27'],
     'Colors X45': ['Colors', 'X45'],
-    'Colors X115': ['Colors', 'Xfactor Quad II X115']
+    'Colors X115': ['Colors', 'Xfactor Quad II X115'],
   },
 
   'ConCorde!!': {
@@ -3220,7 +3220,7 @@ exports.ANDROID_MODELS = {
     'Concorde Tab Omega 3G': ['ConCorde', 'tab OMEGA', DeviceType.TABLET],
     'ConCorde tab PLAY': ['ConCorde', 'tab PLAY', DeviceType.TABLET],
     'ConCorde tab Speed': ['ConCorde', 'tab SPEED', DeviceType.TABLET],
-    'ConCorde Tab T10': ['ConCorde', 'tab T10', DeviceType.TABLET]
+    'ConCorde Tab T10': ['ConCorde', 'tab T10', DeviceType.TABLET],
   },
 
   'Coolgen!!': {
@@ -3230,7 +3230,7 @@ exports.ANDROID_MODELS = {
     'Coolgen E70 G': ['Coolgen', 'E70 G'],
     'Coolgen E71': ['Coolgen', 'E71'],
     'Coolgen E72 Note 3G': ['Coolgen', 'E72'],
-    'Coolgen E72 Note8': ['Coolgen', 'E72']
+    'Coolgen E72 Note8': ['Coolgen', 'E72'],
   },
 
   'Coolpad!!': {
@@ -3423,7 +3423,7 @@ exports.ANDROID_MODELS = {
     'Coolpad 9960': ['Coolpad', 'Grand HD 9960'],
     'Coolpad 9970': ['Coolpad', 'Grand 4 9970'],
     'Coolpad 9976!': ['Coolpad', '9976'],
-    'Coolpad Flo': ['Coolpad', 'Flo']
+    'Coolpad Flo': ['Coolpad', 'Flo'],
   },
 
   D530: ['Coolpad', 'D530'],
@@ -3433,20 +3433,20 @@ exports.ANDROID_MODELS = {
   W711: ['Coolpad', 'W711'],
   CP3700A: ['Coolpad', '3700A'],
   '5560S': ['Coolpad', '5560S'],
-  '5832': ['Coolpad', '5832'],
-  '5855': ['Coolpad', '5855'],
-  '5860': ['Coolpad', '5860'],
+  5832: ['Coolpad', '5832'],
+  5855: ['Coolpad', '5855'],
+  5860: ['Coolpad', '5860'],
   '5860A': ['Coolpad', '5860A'],
   '5860E': ['Coolpad', 'Quattro 4G 5860E'],
   '5860S': ['Coolpad', '5860S'],
-  '5870': ['Coolpad', '5870'],
-  '7260': ['Coolpad', '7260'],
-  '7266': ['Coolpad', '7266'],
-  '8022': ['Coolpad', '8022'],
+  5870: ['Coolpad', '5870'],
+  7260: ['Coolpad', '7260'],
+  7266: ['Coolpad', '7266'],
+  8022: ['Coolpad', '8022'],
   '8190Q': ['Coolpad', '8190'],
-  '8720': ['Coolpad', '8720'],
+  8720: ['Coolpad', '8720'],
   '8720L': ['Coolpad', '8720'],
-  '8810': ['Coolpad', '8810'],
+  8810: ['Coolpad', '8810'],
   '801ES': ['Coolpad', 'Quattro II 4G'],
   C8297W: ['Coolpad', 'Dashen F1'],
   'CP8676!': ['Coolpad', 'Note 3 8676'],
@@ -3458,7 +3458,7 @@ exports.ANDROID_MODELS = {
 
   'COWON!!': {
     'COWON D3': ['Cowon', 'D3 Plenue', DeviceType.MEDIA],
-    'COWON Z2': ['Cowon', 'Z2 Plenue', DeviceType.MEDIA]
+    'COWON Z2': ['Cowon', 'Z2 Plenue', DeviceType.MEDIA],
   },
 
   'COZCO C1 Plus': ['Cozco', 'C1 Plus'],
@@ -3471,7 +3471,7 @@ exports.ANDROID_MODELS = {
     CMP748: ['Craig', 'CMP748', DeviceType.TABLET],
     CMP749: ['Craig', 'CMP749', DeviceType.TABLET],
     CMP756: ['Craig', 'CMP756', DeviceType.TABLET],
-    'CMP 765': ['Craig', 'CMP765', DeviceType.TABLET]
+    'CMP 765': ['Craig', 'CMP765', DeviceType.TABLET],
   },
 
   'ZEN Touch 2': ['Creative', 'ZEN Touch 2', DeviceType.MEDIA],
@@ -3483,7 +3483,7 @@ exports.ANDROID_MODELS = {
     'ZiiLABS ZiiO10 ': ['Creative', 'ZiiO 10', DeviceType.TABLET],
     'ZiiLABS ZiiO10+': ['Creative', 'ZiiO 10', DeviceType.TABLET],
     'ZiiLABS ZiiO Shenbi': ['Creative', 'ZiiO ShenBi', DeviceType.TABLET],
-    'Zii EGG': ['Creative', 'Zii Egg', DeviceType.MEDIA]
+    'Zii EGG': ['Creative', 'Zii Egg', DeviceType.MEDIA],
   },
 
   CTP828BT: ['Cresta', 'CTP828BT', DeviceType.TABLET],
@@ -3512,12 +3512,12 @@ exports.ANDROID_MODELS = {
     'CROSS A88': ['Cross', 'A88'],
     'CROSS AT1': ['Cross', 'AT1', DeviceType.TABLET],
     'CROSS AT1G': ['Cross', 'AT1G', DeviceType.TABLET],
-    'CROSS AT1G*': ['Cross', 'AT1G', DeviceType.TABLET]
+    'CROSS AT1G*': ['Cross', 'AT1G', DeviceType.TABLET],
   },
 
   'Crosscall!!': {
     'Crosscall ELEMENT': ['Crosscall', 'ELEMENT'],
-    'CROSSCALL WILD': ['Crosscall', 'WILD']
+    'CROSSCALL WILD': ['Crosscall', 'WILD'],
   },
 
   'Core-M5': ['Crosscall', 'Core-M5'],
@@ -3532,7 +3532,7 @@ exports.ANDROID_MODELS = {
     'NovaPad 80 C124': ['Crypto', 'NovaPad 80 C124', DeviceType.TABLET],
     'Novapad D7000': ['Crypto', 'NovaPad D7000', DeviceType.TABLET],
     'Novapad D7001': ['Crypto', 'NovaPad D7001', DeviceType.TABLET],
-    'Novapad D7002': ['Crypto', 'NovaPad D7002', DeviceType.TABLET]
+    'Novapad D7002': ['Crypto', 'NovaPad D7002', DeviceType.TABLET],
   },
 
   'CUBOT!!': {
@@ -3552,7 +3552,7 @@ exports.ANDROID_MODELS = {
     'CUBOT S222': ['Cubot', 'S222'],
     'CUBOT X6': ['Cubot', 'X6'],
     'CUBOT X18 Plus': ['Cubot', 'X18 Plus'],
-    'CUBOT POWER': ['Cubot', 'Power']
+    'CUBOT POWER': ['Cubot', 'Power'],
   },
 
   S222: ['Cubot', 'S222'],
@@ -3663,14 +3663,14 @@ exports.ANDROID_MODELS = {
     'U55GT C8': ['Cube', 'U55GT C8', DeviceType.TABLET],
     'U55GT S': ['Cube', 'U55GT S', DeviceType.TABLET],
     'U59GT-C4': ['Cube', 'U59GT C4', DeviceType.TABLET],
-    U65GT: ['Cube', 'U65GT', DeviceType.TABLET]
+    U65GT: ['Cube', 'U65GT', DeviceType.TABLET],
   },
 
   'CUBE!!': {
     'CUBE Q7PRO': ['Cube', 'Q7 Pro', DeviceType.TABLET],
     'CUBE Q7PRO J': ['Cube', 'Q7 Pro', DeviceType.TABLET],
     'CUBE TALK7X': ['Cube', 'Talk 7X', DeviceType.TABLET],
-    'CUBE TALK7X C4': ['Cube', 'Talk 7X C4', DeviceType.TABLET]
+    'CUBE TALK7X C4': ['Cube', 'Talk 7X C4', DeviceType.TABLET],
   },
 
   'LT[0-9]{4,4}!!': {
@@ -3679,7 +3679,7 @@ exports.ANDROID_MODELS = {
     'LT7035-J': ['Curtis', 'Klu LT7035-J', DeviceType.TABLET],
     'LT7035-L': ['Curtis', 'Klu LT7035-L', DeviceType.TABLET],
     LT7052: ['Curtis', 'Klu LT7052', DeviceType.TABLET],
-    LT8088: ['Curtis', 'Klu LT8088', DeviceType.TABLET]
+    LT8088: ['Curtis', 'Klu LT8088', DeviceType.TABLET],
   },
 
   'Cydle M7!': ['Cydle', 'M7 MultiPAD', DeviceType.TABLET],
@@ -3698,7 +3698,7 @@ exports.ANDROID_MODELS = {
     'D2-911': ['D2pad', 'D2-911', DeviceType.TABLET],
     'D2-912': ['D2pad', 'D2-912', DeviceType.TABLET],
     'D2-927G': ['D2pad', 'D2-927G', DeviceType.TABLET],
-    'D2-961G': ['D2pad', 'D2-961G', DeviceType.TABLET]
+    'D2-961G': ['D2pad', 'D2-961G', DeviceType.TABLET],
   },
 
   'Dakele A380': ['Dakele', 'A380'],
@@ -3721,14 +3721,14 @@ exports.ANDROID_MODELS = {
     DSlide972: ['Danew', 'DSlide 972', DeviceType.TABLET],
     DSlide973: ['Danew', 'DSlide 973', DeviceType.TABLET],
     Dslide973QC: ['Danew', 'DSlide 973', DeviceType.TABLET],
-    'DSlide 1013': ['Danew', 'DSlide 1013', DeviceType.TABLET]
+    'DSlide 1013': ['Danew', 'DSlide 1013', DeviceType.TABLET],
   },
 
   'Genius!!': {
     'Genius TAB GIII': ['Dany', 'Genius Tab G3', DeviceType.TABLET],
     'GENIUS-G4': ['Dany', 'Genius Tab G4', DeviceType.TABLET],
     'Genius TAB G4': ['Dany', 'Genius Tab G4', DeviceType.TABLET],
-    'Genius Tab Q4': ['Dany', 'Genius Tab Q4', DeviceType.TABLET]
+    'Genius Tab Q4': ['Dany', 'Genius Tab Q4', DeviceType.TABLET],
   },
 
   'EvoPAD!!': {
@@ -3739,7 +3739,7 @@ exports.ANDROID_MODELS = {
     'EVOPad R9720': ['Dark', 'EvoPad R9720', DeviceType.TABLET],
     'EvoPAD R9740': ['Dark', 'EvoPad R9740', DeviceType.TABLET],
     'EvoPAD-R9722': ['Dark', 'EvoPad R9722', DeviceType.TABLET],
-    'Evopad R9730': ['Dark', 'EvoPad R9730', DeviceType.TABLET]
+    'Evopad R9730': ['Dark', 'EvoPad R9730', DeviceType.TABLET],
   },
 
   'HB-100 DASAN': ['Dasan', 'HB-100', DeviceType.TELEVISION],
@@ -3774,7 +3774,7 @@ exports.ANDROID_MODELS = {
     'Dell Streak 7': ['Dell', 'Streak 7', DeviceType.TABLET],
     'Dell Streak 10 Pro': ['Dell', 'Streak 10 Pro', DeviceType.TABLET],
     'Dell streak 10 Pro 940': ['Dell', 'Streak 10 Pro', DeviceType.TABLET],
-    'Dell Venue': ['Dell', 'Venue']
+    'Dell Venue': ['Dell', 'Venue'],
   },
 
   'Venue!!': {
@@ -3800,7 +3800,7 @@ exports.ANDROID_MODELS = {
     'Venue 8 7840 LTE': ['Dell', 'Venue 8', DeviceType.TABLET],
     'Venue 10 5050': ['Dell', 'Venue 10', DeviceType.TABLET],
     'Venue 10 7040': ['Dell', 'Venue 10', DeviceType.TABLET],
-    'Venue 11 Pro 7130 MS': ['Dell', 'Venue 11', DeviceType.TABLET]
+    'Venue 11 Pro 7130 MS': ['Dell', 'Venue 11', DeviceType.TABLET],
   },
 
   'XCD 28': ['Dell', 'XCD28'],
@@ -3854,7 +3854,7 @@ exports.ANDROID_MODELS = {
     'TAD-97052': ['Denver', 'TAD-97052', DeviceType.TABLET],
     'TAD-97052mk2': ['Denver', 'TAD-97052', DeviceType.TABLET],
     'TAD-97072G': ['Denver', 'TAD-97072', DeviceType.TABLET],
-    'TAD-97082!': ['Denver', 'TAD-97082', DeviceType.TABLET]
+    'TAD-97082!': ['Denver', 'TAD-97082', DeviceType.TABLET],
   },
 
   'deovo V5': ['deovo', 'V5'],
@@ -3865,7 +3865,7 @@ exports.ANDROID_MODELS = {
     'DESAY TS928': ['Desay', 'TS928'],
     'DESAY TS1008': ['Desay', 'TS1008'],
     'DESAY TS1018': ['Desay', 'TS1018'],
-    'DESAY TS1218': ['Desay', 'TS1218']
+    'DESAY TS1218': ['Desay', 'TS1218'],
   },
 
   iP977: ['Dex', 'iP977', DeviceType.TABLET],
@@ -3882,7 +3882,7 @@ exports.ANDROID_MODELS = {
     'Dialog K235': ['Dialog', 'K235'],
     'Dialog Q143L': ['Dialog', 'Q143L'],
     'Dialog Q178': ['Dialog', 'Q178'],
-    'Dialog Q243': ['Dialog', 'Q243']
+    'Dialog Q243': ['Dialog', 'Q243'],
   },
 
   'DIT[0-9]{4,6}!!': {
@@ -3898,7 +3898,7 @@ exports.ANDROID_MODELS = {
     DIT702101: ['Difrnce', 'DIT702101', DeviceType.TABLET],
     DIT902101: ['Difrnce', 'DIT902101', DeviceType.TABLET],
     DIT902102: ['Difrnce', 'DIT902102', DeviceType.TABLET],
-    DIT902103: ['Difrnce', 'DIT902103', DeviceType.TABLET]
+    DIT902103: ['Difrnce', 'DIT902103', DeviceType.TABLET],
   },
 
   'NID 7010': ['Difrnce', 'DIT702201', DeviceType.TABLET],
@@ -3931,7 +3931,7 @@ exports.ANDROID_MODELS = {
     'iDxD7 3G': ['Digma', 'iDxD7', DeviceType.TABLET],
     IDXD10: ['Digma', 'iDxD10', DeviceType.TABLET],
     'iDxD10 3G': ['Digma', 'iDxD10', DeviceType.TABLET],
-    iDxQ5: ['Digma', 'iDxQ5']
+    iDxQ5: ['Digma', 'iDxQ5'],
   },
 
   DISTAB9000R: ['Disgo', 'Distab 9000R', DeviceType.TABLET],
@@ -3945,7 +3945,7 @@ exports.ANDROID_MODELS = {
     DM013SH: ['Sharp', 'DM013SH', { carrier: 'Disney Mobile' }],
     DM014SH: ['Sharp', 'DM014SH', { carrier: 'Disney Mobile' }],
     DM015K: ['Kyocera', 'DM015K', { carrier: 'Disney Mobile' }],
-    DM016SH: ['Sharp', 'DM016SH', { carrier: 'Disney Mobile' }]
+    DM016SH: ['Sharp', 'DM016SH', { carrier: 'Disney Mobile' }],
   },
 
   'DM001c Frozen': ['Disney Mobile', 'DM001C Frozen', { carrier: 'Disney Mobile' }],
@@ -3987,7 +3987,7 @@ exports.ANDROID_MODELS = {
     'AirTab P970g': ['DNS', 'AirTab P970g', DeviceType.TABLET],
     'AirTab P970w': ['DNS', 'AirTab P970w', DeviceType.TABLET],
     'AirTab PC9701': ['DNS', 'AirTab PC9701', DeviceType.TABLET],
-    'DNS AirTab PF7001': ['DNS', 'AirTab PF7001', DeviceType.TABLET]
+    'DNS AirTab PF7001': ['DNS', 'AirTab PF7001', DeviceType.TABLET],
   },
 
   'DNS S!!': {
@@ -4004,7 +4004,7 @@ exports.ANDROID_MODELS = {
     'DNS S5005': ['DNS', 'S5005'],
     'DNS S5008': ['DNS', 'S5008'],
     'DNS s5301': ['DNS', 'S5301'],
-    'DNS S5701': ['DNS', 'S5701']
+    'DNS S5701': ['DNS', 'S5701'],
   },
 
   DNSS4003: ['DNS', 'S4003'],
@@ -4072,7 +4072,7 @@ exports.ANDROID_MODELS = {
     'DOOV T20L': ['DOOV', 'T20L'],
     'DOOV T35': ['DOOV', 'T35'],
     'DOOV T60': ['DOOV', 'T60'],
-    'DOOV T90': ['DOOV', 'T90']
+    'DOOV T90': ['DOOV', 'T90'],
   },
 
   'Doro Liberto!!': {
@@ -4080,7 +4080,7 @@ exports.ANDROID_MODELS = {
     'Doro Liberto 820': ['Doro', 'Liberto 820'],
     'Doro Liberto 820 Mini': ['Doro', 'Liberto 820 Mini'],
     'Doro Liberto 822': ['Doro', 'Liberto 822'],
-    'Doro Liberto 825': ['Doro', 'Liberto 825']
+    'Doro Liberto 825': ['Doro', 'Liberto 825'],
   },
 
   'Doro 8030': ['Doro', 'Liberto 822'],
@@ -4115,14 +4115,14 @@ exports.ANDROID_MODELS = {
     'Revo R80': ['E-Boda', 'Revo R80'],
     'E-Boda Storm V50': ['E-Boda', 'Storm V50'],
     'Storm V100': ['E-Boda', 'Storm V100'],
-    'Storm X450': ['E-Boda', 'Storm X450']
+    'Storm X450': ['E-Boda', 'Storm X450'],
   },
 
   'Etel!!': {
     'Etel i3': ['E-tel', 'Curiosity i3'],
     'Etel i4': ['E-tel', 'Curiosity i4'],
     'Etel i6': ['E-tel', 'Curiosity i6'],
-    'Etel i8': ['E-tel', 'Curiosity i8']
+    'Etel i8': ['E-tel', 'Curiosity i8'],
   },
 
   'EasyPhone EP5': ['Easypix', 'EasyPhone EP5'],
@@ -4133,7 +4133,7 @@ exports.ANDROID_MODELS = {
     'EBEN S1': ['EBEN', 'S1', DeviceType.TABLET],
     'EBEN T6': ['EBEN', 'T6', DeviceType.TABLET],
     'EBEN T7': ['EBEN', 'T7', DeviceType.TABLET],
-    'EBEN T8': ['EBEN', 'T8', DeviceType.TABLET]
+    'EBEN T8': ['EBEN', 'T8', DeviceType.TABLET],
   },
 
   'EBEST!!': {
@@ -4153,7 +4153,7 @@ exports.ANDROID_MODELS = {
     'EBEST W66A': ['EBEST', 'W66A'],
     'EBEST W70': ['EBEST', 'W70'],
     'EBEST Z5': ['EBEST', 'Z5'],
-    'EBEST Z7': ['EBEST', 'Z7']
+    'EBEST Z7': ['EBEST', 'Z7'],
   },
 
   TA10CA3: ['ECS', 'TA10CA3', DeviceType.TABLET],
@@ -4185,7 +4185,7 @@ exports.ANDROID_MODELS = {
     'Elephone P7000': ['Elephone', 'P7000'],
     'Elephone P8000!': ['Elephone', 'P8000'],
     'Elephone S2': ['Elephone', 'S2'],
-    'Elephone S2 Plus': ['Elephone', 'S2 Plus']
+    'Elephone S2 Plus': ['Elephone', 'S2 Plus'],
   },
 
   D709: ['Empire Electronix', 'Tablet D709', DeviceType.TABLET],
@@ -4209,7 +4209,7 @@ exports.ANDROID_MODELS = {
     'EPADE S3': ['epade', 'S3'],
     'epade S5': ['epade', 'S5'],
     'epade S7': ['epade', 'S7'],
-    'epade V05': ['epade', 'V05']
+    'epade V05': ['epade', 'V05'],
   },
 
   'equiso.smart.tv.pro': ['Equiso', 'SmartTV', DeviceType.TELEVISION],
@@ -4234,7 +4234,7 @@ exports.ANDROID_MODELS = {
     'eSTAR MINI 3G': ['eSTAR', 'Mini 3G', DeviceType.TABLET],
     'eSTAR Zoom Quad': ['eSTAR', 'Zoom', DeviceType.TABLET],
     'eSTAR ZOOM HD Duo': ['eSTAR', 'Zoom HD', DeviceType.TABLET],
-    'eSTAR Zoom HD Quad': ['eSTAR', 'Zoom HD', DeviceType.TABLET]
+    'eSTAR Zoom HD Quad': ['eSTAR', 'Zoom HD', DeviceType.TABLET],
   },
 
   MID1018: ['eSTAR', 'MID1018', DeviceType.TABLET],
@@ -4286,7 +4286,7 @@ exports.ANDROID_MODELS = {
     'EVERCOSS AT1A': ['EVERCOSS', 'AT1A', DeviceType.TABLET],
     'EVERCOSS AT1A*': ['EVERCOSS', 'AT1A', DeviceType.TABLET],
     'EVERCOSS AT1G': ['EVERCOSS', 'AT1G', DeviceType.TABLET],
-    'EVERCOSS AT8D': ['EVERCOSS', 'AT8D', DeviceType.TABLET]
+    'EVERCOSS AT8D': ['EVERCOSS', 'AT8D', DeviceType.TABLET],
   },
 
   'AT1A*': ['EVERCOSS', 'AT1A', DeviceType.TABLET],
@@ -4309,17 +4309,17 @@ exports.ANDROID_MODELS = {
     'EverMiracle mini': ['Evertek', 'EverMiracle Mini'],
     'EverMiracle Nano': ['Evertek', 'EverMiracle Nano'],
     EverShine: ['Evertek', 'EverShine'],
-    EverTrendy: ['Evertek', 'EverTrendy']
+    EverTrendy: ['Evertek', 'EverTrendy'],
   },
 
   'E70[0-9]{2,2}H[DG]!!': {
     E7020HD: ['Evertek', 'Everpad E7020HD', DeviceType.TABLET],
-    E7050HD: ['Evertek', 'Everpad E7050HD', DeviceType.TABLET]
+    E7050HD: ['Evertek', 'Everpad E7050HD', DeviceType.TABLET],
   },
 
   'E80[0-9]{2,2}H[DG]!!': {
     E8050HG: ['Evertek', 'Everpad E8050HG', DeviceType.TABLET],
-    E8051HD: ['Evertek', 'Everpad E8051HD', DeviceType.TABLET]
+    E8051HD: ['Evertek', 'Everpad E8051HD', DeviceType.TABLET],
   },
 
   'EVOLVEO StrongPhone G7': ['EVOLVEO', 'StrongPhone G7'],
@@ -4365,7 +4365,7 @@ exports.ANDROID_MODELS = {
     'Surfer 8 02': ['Explay', 'Surfer 8.02', DeviceType.TABLET],
     'Surfer 8.02': ['Explay', 'Surfer 8.02', DeviceType.TABLET],
     'Surfer 8.31 3G': ['Explay', 'Surfer 8.31 3G', DeviceType.TABLET],
-    'Surfer 10.11': ['Explay', 'Surfer 10.11', DeviceType.TABLET]
+    'Surfer 10.11': ['Explay', 'Surfer 10.11', DeviceType.TABLET],
   },
 
   'Smart!!': {
@@ -4375,7 +4375,7 @@ exports.ANDROID_MODELS = {
     'Smart 502': ['Fareastone', 'Smart 502'],
     Smart503: ['Fareastone', 'Smart 503'],
     'Smart 505': ['Fareastone', 'Smart 505'],
-    'Smart 701': ['Fareastone', 'Smart 701', DeviceType.TABLET]
+    'Smart 701': ['Fareastone', 'Smart 701', DeviceType.TABLET],
   },
 
   FP1: ['Fairphone', '1'],
@@ -4391,31 +4391,31 @@ exports.ANDROID_MODELS = {
     'FDT E829': ['FDT', 'E829'],
     'FDT E969': ['FDT', 'E969'],
     'FDT G18': ['FDT', 'G18'],
-    'FDT G505': ['FDT', 'G505']
+    'FDT G505': ['FDT', 'G505'],
   },
 
   'GT-[HN][0-9]{4,4}!!': {
     'GT-H9001': ['Feiteng', 'GT-H9001'],
     'GT-H9500': ['Feiteng', 'GT-H9500'],
-    'GT-N9300': ['Feiteng', 'GT-N9300']
+    'GT-N9300': ['Feiteng', 'GT-N9300'],
   },
 
   'GT-9000': ['Feiteng', 'H5W'],
-  '9300': ['Feiteng', 'GT-N9300'],
+  9300: ['Feiteng', 'GT-N9300'],
 
   'iOCEAN!!': {
     'iOCEAN X7': ['FHD', 'iOCEAN X7'],
     'iOCEAN X7 HD': ['FHD', 'iOCEAN X7 HD'],
     'iOCEAN X7S': ['FHD', 'iOCEAN X7S'],
     'iOCEAN X7T': ['FHD', 'iOCEAN X7T'],
-    'iOCEAN X8': ['FHD', 'iOCEAN X8']
+    'iOCEAN X8': ['FHD', 'iOCEAN X8'],
   },
 
   'FIH-!!': {
     'FIH-F0X': ['FIH', 'F0X'],
     'FIH-FBO': ['FIH', 'FBO'],
     'FIH-FD1': ['FIH', 'FD1'],
-    'FIH-VKY': ['FIH', 'VKY']
+    'FIH-VKY': ['FIH', 'VKY'],
   },
 
   'Vibo-A688': ['FIH', 'Vibo A688'],
@@ -4423,14 +4423,14 @@ exports.ANDROID_MODELS = {
   'XT[0-9]{3,3}!!': {
     XT712: ['Flipkart', 'Digiflip Pro XT712', DeviceType.TABLET],
     XT801: ['Flipkart', 'Digiflip Pro XT801', DeviceType.TABLET],
-    XT811: ['Flipkart', 'Digiflip Pro XT811', DeviceType.TABLET]
+    XT811: ['Flipkart', 'Digiflip Pro XT811', DeviceType.TABLET],
   },
 
   'Fly F[0-9]{2,3}!!': {
     'Fly F40': ['Fly', 'F40'],
     'FLY F45s': ['Fly', 'F45s'],
     'FLY F50s': ['Fly', 'F50s'],
-    'Fly F350': ['Fly', 'F350']
+    'Fly F350': ['Fly', 'F350'],
   },
 
   F50Q: ['Fly', 'F50Q'],
@@ -4494,7 +4494,7 @@ exports.ANDROID_MODELS = {
     '(Fly )?IQ459!': ['Fly', 'IQ459 Evo Chic 2'],
     IQ588: ['Fly', 'IQ588 Nimbuzz'],
     IQ4601: ['Fly', 'IQ4601 Era Style 2'],
-    'IQ4602 Quad': ['Fly', 'IQ4602 Thunder']
+    'IQ4602 Quad': ['Fly', 'IQ4602 Thunder'],
   },
 
   'Flylife!!': {
@@ -4504,7 +4504,7 @@ exports.ANDROID_MODELS = {
     'Flylife Connect 7.85 3G Slim': ['Fly', 'Flylife Connect 7.85 3G Slim', DeviceType.TABLET],
     'Flylife Connect 10.1 3G': ['Fly', 'Flylife Connect 10.1 3G', DeviceType.TABLET],
     'Flylife Web 7': ['Fly', 'Flylife Web 7', DeviceType.TABLET],
-    'Flylife Web 7.85 Slim': ['Fly', 'Flylife Web 7.85 Slim', DeviceType.TABLET]
+    'Flylife Web 7.85 Slim': ['Fly', 'Flylife Web 7.85 Slim', DeviceType.TABLET],
   },
 
   'Fly Flylife Web 7.85 Slim': ['Fly', 'Flylife Web 7.85 Slim', DeviceType.TABLET],
@@ -4525,7 +4525,7 @@ exports.ANDROID_MODELS = {
     'tablet Fnac 10 3G': ['Fnac', 'Tablet 10 3G', DeviceType.TABLET],
     'fnac 10 v2': ['Fnac', 'Tablet 10 v2', DeviceType.TABLET],
     'fnac 3.0 8': ['Fnac', 'Tablet 3.0 8', DeviceType.TABLET],
-    'fnac 3.0 10 Plus': ['Fnac', 'Tablet 3.0 10', DeviceType.TABLET]
+    'fnac 3.0 10 Plus': ['Fnac', 'Tablet 3.0 10', DeviceType.TABLET],
   },
 
   'ifive!!': {
@@ -4541,7 +4541,7 @@ exports.ANDROID_MODELS = {
     'ifive MINI 2': ['FNF', 'iFive Mini 2', DeviceType.TABLET],
     IfiveMini3: ['FNF', 'iFive Mini 3', DeviceType.TABLET],
     'ifive mini 3GS': ['FNF', 'iFive Mini 3GS', DeviceType.TABLET],
-    IfiveMini4: ['FNF', 'iFive Mini 4', DeviceType.TABLET]
+    IfiveMini4: ['FNF', 'iFive Mini 4', DeviceType.TABLET],
   },
 
   'Freelander I20': ['Freelander', 'i20'],
@@ -4551,7 +4551,7 @@ exports.ANDROID_MODELS = {
     'SXZ-PD10': ['Freelander', 'PD10', DeviceType.TABLET],
     'SXZ-PDX0-01': ['Freelander', 'PD20', DeviceType.TABLET],
     'SXZ-PDX0-03': ['Freelander', 'PD90', DeviceType.TABLET],
-    'SXZ-PDX-03': ['Freelander', 'PD90', DeviceType.TABLET]
+    'SXZ-PDX-03': ['Freelander', 'PD90', DeviceType.TABLET],
   },
 
   FTJ152A: ['Freetel', 'Priori 3'],
@@ -4570,20 +4570,20 @@ exports.ANDROID_MODELS = {
     'NABI2-NV7A-3D': ['Fuhu', 'nabi 2', DeviceType.TABLET],
     'NABIXD-NV10A': ['Fuhu', 'nabi XD', DeviceType.TABLET],
     'NABIXD-NV10B': ['Fuhu', 'nabi XD', DeviceType.TABLET],
-    'NABIXD-NV10C': ['Fuhu', 'nabi XD', DeviceType.TABLET]
+    'NABIXD-NV10C': ['Fuhu', 'nabi XD', DeviceType.TABLET],
   },
 
   '[0-9]0[0-9]F!!': {
     '101F': ['Fujitsu', 'ARROWS A 101F', { carrier: 'Softbank' }],
     '201F': ['Fujitsu', 'ARROWS A 201F', { carrier: 'Softbank' }],
     '202F': ['Fujitsu', 'ARROWS A 202F', { carrier: 'Softbank' }],
-    '301F': ['Fujitsu', 'ARROWS A 301F', { carrier: 'Softbank' }]
+    '301F': ['Fujitsu', 'ARROWS A 301F', { carrier: 'Softbank' }],
   },
 
   'ISW?[0-9]{2,2}F!!': {
     ISW11F: ['Fujitsu', 'ARROWS Z ISW11F', { carrier: 'au' }],
     ISW13F: ['Fujitsu', 'ARROWS Z ISW13F', { carrier: 'au' }],
-    IS12F: ['Fujitsu', 'ARROWS ES IS12F', { carrier: 'au' }]
+    IS12F: ['Fujitsu', 'ARROWS ES IS12F', { carrier: 'au' }],
   },
 
   'F-[0-9]{2,2}[A-Z]!!': {
@@ -4627,18 +4627,18 @@ exports.ANDROID_MODELS = {
     'F-10D': ['Fujitsu', 'ARROWS X F-10D', { carrier: 'DoCoMo' }],
     'F-11D': ['Fujitsu', 'ARROWS Me F-11D', { carrier: 'DoCoMo' }],
     'F-12C': ['Fujitsu', 'GLOBE-TROTTER F-12C', { carrier: 'DoCoMo' }],
-    'F-12D': ['Fujitsu', 'Easy Smartphone F-12D', { carrier: 'DoCoMo' }]
+    'F-12D': ['Fujitsu', 'Easy Smartphone F-12D', { carrier: 'DoCoMo' }],
   },
 
   'f12[a-z]{3,3}!!': {
     f12arc: ['Fujitsu', 'F12arc'],
-    f12bob: ['Fujitsu', 'F12bob']
+    f12bob: ['Fujitsu', 'F12bob'],
   },
 
   'FJ[LT][0-9]{2,2}!!': {
     FJL21: ['Fujitsu', 'ARROWS ef FJL21', { carrier: 'au' }],
     FJL22: ['Fujitsu', 'ARROWS Z FJL22', { carrier: 'au' }],
-    FJT21: ['Fujitsu', 'ARROWS Tab FJT21', DeviceType.TABLET, { carrier: 'au' }]
+    FJT21: ['Fujitsu', 'ARROWS Tab FJT21', DeviceType.TABLET, { carrier: 'au' }],
   },
 
   'SZJ-JS101': ['Fujitsu', 'SZJ-JS101'],
@@ -4675,7 +4675,7 @@ exports.ANDROID_MODELS = {
     'F&U ETB9543': ['F&U', 'ETB9543', DeviceType.TABLET],
     'F&U ETB9544': ['F&U', 'ETB9544', DeviceType.TABLET],
     'F&U ETB1063': ['F&U', 'ETB1063', DeviceType.TABLET],
-    'F&U ETB1065': ['F&U', 'ETB1065', DeviceType.TABLET]
+    'F&U ETB1065': ['F&U', 'ETB1065', DeviceType.TABLET],
   },
 
   'Asus A10': ['Garmin-Asus', 'Nuvifone A10'],
@@ -4684,14 +4684,14 @@ exports.ANDROID_MODELS = {
   'Garmin!!': {
     Garminfone: ['Garmin-Asus', 'Garminfone'],
     'Garmin-Asus A10': ['Garmin-Asus', 'Nuvifone A10'],
-    'Garmin-Asus A50': ['Garmin-Asus', 'Nuvifone A50']
+    'Garmin-Asus A50': ['Garmin-Asus', 'Nuvifone A50'],
   },
 
   'nuvi!!': {
     'nuvi 3590': ['Garmin', 'Nuvi 3590', DeviceType.GPS],
     'nuvi 3592': ['Garmin', 'Nuvi 3592', DeviceType.GPS],
     'nuvi 3595': ['Garmin', 'Nuvi 3595', DeviceType.GPS],
-    'nuvifone A50': ['Garmin-Asus', 'Nuvifone A50']
+    'nuvifone A50': ['Garmin-Asus', 'Nuvifone A50'],
   },
 
   'G1-715': ['Gateway', 'G1-715', DeviceType.TABLET],
@@ -4703,7 +4703,7 @@ exports.ANDROID_MODELS = {
     'GP-KEON': ['Geeksphone', 'Keon'],
     'GP-PEAK': ['Geeksphone', 'Peak'],
     'Geeksphone ZERO': ['Geeksphone', 'ZERO'],
-    'Geeksphone ONE': ['Geeksphone', 'ONE']
+    'Geeksphone ONE': ['Geeksphone', 'ONE'],
   },
 
   'Gemei!!': {
@@ -4711,7 +4711,7 @@ exports.ANDROID_MODELS = {
     'Gemei G3': ['Gemei', 'G3', DeviceType.TABLET],
     'gemei G6': ['Gemei', 'G6', DeviceType.TABLET],
     'Gemei G9': ['Gemei', 'G9', DeviceType.TABLET],
-    'gemei G9T': ['Gemei', 'G9T', DeviceType.TABLET]
+    'gemei G9T': ['Gemei', 'G9T', DeviceType.TABLET],
   },
 
   'GEM[0-9]{4,4}!!': {
@@ -4719,7 +4719,7 @@ exports.ANDROID_MODELS = {
     GEM7020: ['Gemini', 'JoyTab GEM7020', DeviceType.TABLET],
     'GEM7032G-rev2': ['Gemini', 'JoyTab GEM7032', DeviceType.TABLET],
     GEM10313BK: ['Gemini', 'JoyTab GEM10313', DeviceType.TABLET],
-    GEM10313S: ['Gemini', 'JoyTab GEM10313', DeviceType.TABLET]
+    GEM10313S: ['Gemini', 'JoyTab GEM10313', DeviceType.TABLET],
   },
 
   'GP-431': ['Genesis', 'GP-431'],
@@ -4731,7 +4731,7 @@ exports.ANDROID_MODELS = {
     'GT-7240': ['Genesis', 'Tab GT-7240', DeviceType.TABLET],
     'GT-7240R': ['Genesis', 'Tab GT-7240R', DeviceType.TABLET],
     'GT-7245': ['Genesis', 'Tab GT-7245', DeviceType.TABLET],
-    'GT-7326': ['Genesis', 'Tab GT-7326', DeviceType.TABLET]
+    'GT-7326': ['Genesis', 'Tab GT-7326', DeviceType.TABLET],
   },
 
   'GP-720': ['Genius', 'GP-720', DeviceType.TABLET],
@@ -4771,7 +4771,7 @@ exports.ANDROID_MODELS = {
     'GFIVE President Smart 6': ['GFive', 'President Smart 6'],
     'GFIVE President Shark 3': ['GFive', 'President Shark 3'],
     'GFIVE Spark(A1)': ['GFive', 'Spark'],
-    'GFIVE GPad701': ['GFive', 'GPad 701', DeviceType.TABLET]
+    'GFIVE GPad701': ['GFive', 'GPad 701', DeviceType.TABLET],
   },
 
   'GHIA!!': {
@@ -4782,7 +4782,7 @@ exports.ANDROID_MODELS = {
     'GHIA 27258B': ['Ghia', 'Any 27258B', DeviceType.TABLET],
     'GHIA 27258N': ['Ghia', 'Any 27258N', DeviceType.TABLET],
     'GHIA V2.0 27258N': ['Ghia', 'Any 27258N', DeviceType.TABLET],
-    'GHIA 29214P': ['Ghia', 'Any 29214P', DeviceType.TABLET]
+    'GHIA 29214P': ['Ghia', 'Any 29214P', DeviceType.TABLET],
   },
 
   '(Gsmart|Gigabyte|Rio)!!': {
@@ -4816,7 +4816,7 @@ exports.ANDROID_MODELS = {
     'GSmart Sierra S1': ['Gigabyte', 'GSmart Sierra S1'],
     'GSmart Tuku T2': ['Gigabyte', 'GSmart Tuku T2'],
     'GSmart T4': ['Gigabyte', 'GSmart T4'],
-    'Gigabyte TB100': ['Gigabyte', 'TB100', DeviceType.TABLET]
+    'Gigabyte TB100': ['Gigabyte', 'TB100', DeviceType.TABLET],
   },
 
   'Gigaset!!': {
@@ -4824,7 +4824,7 @@ exports.ANDROID_MODELS = {
     'Gigaset GS170': ['Gigaset', 'GS170'],
     'Gigaset QV830': ['Gigaset', 'QV830', DeviceType.TABLET],
     'Gigaset QV831': ['Gigaset', 'QV831', DeviceType.TABLET],
-    'Gigaset QV1030': ['Gigaset', 'QV1030', DeviceType.TABLET]
+    'Gigaset QV1030': ['Gigaset', 'QV1030', DeviceType.TABLET],
   },
 
   GS110: ['Gigaset', 'GS110'],
@@ -4958,7 +4958,7 @@ exports.ANDROID_MODELS = {
   'GLX!!': {
     'GLX Jet': ['GLX', 'Jet', DeviceType.TABLET],
     'GLX Luster a': ['GLX', 'Luster', DeviceType.TABLET],
-    'GLX SpiderI': ['GLX', 'Spider', DeviceType.TABLET]
+    'GLX SpiderI': ['GLX', 'Spider', DeviceType.TABLET],
   },
 
   'GOCL!!': {
@@ -4988,7 +4988,7 @@ exports.ANDROID_MODELS = {
     GOCLM7000KD: ['Goclever', 'Terra 70', DeviceType.TABLET],
     'GOCLEVER HYBRID': ['Goclever', 'Hybrid', DeviceType.TABLET],
     'GOCLEVER NETBOOK I102': ['Goclever', 'Netbook I102'],
-    'GOCLEVER NETBOOK R103': ['Goclever', 'Netbook R103']
+    'GOCLEVER NETBOOK R103': ['Goclever', 'Netbook R103'],
   },
 
   'ARIES 101': ['Goclever', 'ARIES 101', DeviceType.TABLET],
@@ -5001,7 +5001,7 @@ exports.ANDROID_MODELS = {
 
   'GO Live!!': {
     'GO Live S1': ['GoLive', 'S1'],
-    'GO Live Dual Core': ['GoLive', 'Dual Core']
+    'GO Live Dual Core': ['GoLive', 'Dual Core'],
   },
 
   'GOOPHONE!!': {
@@ -5011,14 +5011,14 @@ exports.ANDROID_MODELS = {
     'GOOPHONE M3+': ['Goophone', 'M3+'],
     'GooPhone S5 Pro': ['Goophone', 'S5 Pro'],
     'GOOPHONE X1': ['Goophone', 'X1'],
-    'GOOPHONE X7': ['Goophone', 'X7']
+    'GOOPHONE X7': ['Goophone', 'X7'],
   },
 
   'CHONG!!': {
     'GHONG T618': ['Guohong', 'T618'],
     GHONGV10: ['Guohong', 'V10'],
     GHONGV12: ['Guohong', 'V12'],
-    'GHONG W100': ['Guohong', 'W100']
+    'GHONG W100': ['Guohong', 'W100'],
   },
 
   M758A: ['Gpad', 'M758A', DeviceType.TABLET],
@@ -5037,12 +5037,12 @@ exports.ANDROID_MODELS = {
     'GO N2': ['GreenOrange', 'N2'],
     'GO N3S': ['GreenOrange', 'N3S'],
     'GO NX': ['GreenOrange', 'NX'],
-    'GO S2': ['GreenOrange', 'S2']
+    'GO S2': ['GreenOrange', 'S2'],
   },
 
   'GR-TB!!': {
     'GR-TB7': ['Grundig', 'Style Tab GR-TB7', DeviceType.TABLET],
-    'GR-TB10S': ['Grundig', 'Style Tab GR-TB10S', DeviceType.TABLET]
+    'GR-TB10S': ['Grundig', 'Style Tab GR-TB10S', DeviceType.TABLET],
   },
 
   'GVON 898': ['Gvon', 'Aero 898'],
@@ -5072,7 +5072,7 @@ exports.ANDROID_MODELS = {
     '(Haier[- ])?HW-W820!': ['Haier', 'W820'],
     '(Haier[- ])?HW-W850!': ['Haier', 'W850'],
     '(Haier[- ])?HW-W860!': ['Haier', 'W860'],
-    '(Haier[- ])?HW-W910!': ['Haier', 'W910']
+    '(Haier[- ])?HW-W910!': ['Haier', 'W910'],
   },
 
   'Haier-W700': ['Haier', 'W700'],
@@ -5087,7 +5087,7 @@ exports.ANDROID_MODELS = {
     PAD711: ['Haier', 'Pad 711', DeviceType.TABLET],
     PAD722: ['Haier', 'Pad 722', DeviceType.TABLET],
     PAD821: ['Haier', 'Pad 821', DeviceType.TABLET],
-    PAD822: ['Haier', 'Pad 822', DeviceType.TABLET]
+    PAD822: ['Haier', 'Pad 822', DeviceType.TABLET],
   },
 
   I9220: ['Haipai', 'I9220'],
@@ -5108,7 +5108,7 @@ exports.ANDROID_MODELS = {
     SN10T2: ['HANNspree', 'HANNSpad SN10T2', DeviceType.TABLET],
     SN14T71: ['HANNspree', 'HANNSpad SN14T71', DeviceType.TABLET],
     SN97T41W: ['HANNspree', 'HANNSpad SN97T41W', DeviceType.TABLET],
-    'SN1AT71W(B)': ['HANNspree', 'HANNSpad SN1AT71WB', DeviceType.TABLET]
+    'SN1AT71W(B)': ['HANNspree', 'HANNSpad SN1AT71WB', DeviceType.TABLET],
   },
 
   'Hasee E50 S1': ['Hasee', 'E50 S1'],
@@ -5130,7 +5130,7 @@ exports.ANDROID_MODELS = {
     'HEDY H770': ['Hedy', 'H770'],
     'HEDY S801': ['Hedy', 'S801'],
     'HEDY S803': ['Hedy', 'S803'],
-    'HEDY T700': ['Hedy', 'T700']
+    'HEDY T700': ['Hedy', 'T700'],
   },
 
   '9300+': ['Hero', '9300+'],
@@ -5173,7 +5173,7 @@ exports.ANDROID_MODELS = {
     'Zera S': ['Highscreen', 'Zera S'],
     'Zera S Rev.S': ['Highscreen', 'Zera S'],
     'Zera-S-Power': ['Highscreen', 'Zera S Power'],
-    'Zera U': ['Highscreen', 'Zera U']
+    'Zera U': ['Highscreen', 'Zera U'],
   },
 
   'HLV-T!!': {
@@ -5184,7 +5184,7 @@ exports.ANDROID_MODELS = {
     'HLV-T1001W': ['Hi-Level', 'HLV-T1001W', DeviceType.TABLET],
     'HLV-T1002W': ['Hi-Level', 'HLV-T1002W', DeviceType.TABLET],
     'HLV-T9701': ['Hi-Level', 'HLV-T9701', DeviceType.TABLET],
-    'HLV-TN75': ['Hi-Level', 'HLV-TN75', DeviceType.TABLET]
+    'HLV-TN75': ['Hi-Level', 'HLV-TN75', DeviceType.TABLET],
   },
 
   'Himax Pure': ['Himax', 'Pure'],
@@ -5196,7 +5196,7 @@ exports.ANDROID_MODELS = {
     'HIKe 828': ['HIKe', 'X1'],
     'HIKe 828A': ['HIKe', 'X1'],
     'HIKe 848': ['HIKe', 'X2'],
-    'HIKe 868': ['HIKe', 'Z1']
+    'HIKe 868': ['HIKe', 'Z1'],
   },
 
   'HILIVE H7': ['Hilive', 'H7'],
@@ -5220,7 +5220,7 @@ exports.ANDROID_MODELS = {
     'HS-10DTB4!': ['Hipstreet', 'Equinox 4 10"', DeviceType.TABLET],
     'HS-10DTB5!': ['Hipstreet', 'Spectrum 10"', DeviceType.TABLET],
     'HS-10DTB8!': ['Hipstreet', 'Equinox 3 10"', DeviceType.TABLET],
-    'HS-10DTB12!': ['Hipstreet', 'Phoenix 10"', DeviceType.TABLET]
+    'HS-10DTB12!': ['Hipstreet', 'Phoenix 10"', DeviceType.TABLET],
   },
 
   'HS-[EFHITUX][0-9]!!': {
@@ -5295,7 +5295,7 @@ exports.ANDROID_MODELS = {
     'HS-E936': ['Hisense', 'E936'],
     'HS-E956': ['Hisense', 'E956'],
     'HS-E956Q': ['Hisense', 'E956'],
-    'HS-E968': ['Hisense', 'E968']
+    'HS-E968': ['Hisense', 'E968'],
   },
 
   'HS-E[GT][0-9]{3,3}!!': {
@@ -5317,7 +5317,7 @@ exports.ANDROID_MODELS = {
     'HS-EG978': ['Hisense', 'EG978'],
     'HS-EG980': ['Hisense', 'EG980'],
     'HS-EG981': ['Hisense', 'EG981'],
-    'HS-ET919': ['Hisense', 'ET919']
+    'HS-ET919': ['Hisense', 'ET919'],
   },
 
   '(HS-)?Hisense!!': {
@@ -5342,7 +5342,7 @@ exports.ANDROID_MODELS = {
     'HS-Hisense E621T': ['Hisense', 'E621T'],
     'HS-Hisense E625T': ['Hisense', 'E625T'],
     'HS-Hisense F21T': ['Hisense', 'F21T'],
-    'Hisense M30T': ['Hisense', 'M30T']
+    'Hisense M30T': ['Hisense', 'M30T'],
   },
 
   T92: ['Hisense', 'T92'],
@@ -5394,7 +5394,7 @@ exports.ANDROID_MODELS = {
     'Amaze S500': ['Hi-Tech', 'Amaze S500'],
     'AMAZE TAB': ['Hi-Tech', 'Amaze Tab', DeviceType.TABLET],
     'AMAZE TAB 2': ['Hi-Tech', 'Amaze Tab 2', DeviceType.TABLET],
-    'AMAZE TAB 3': ['Hi-Tech', 'Amaze Tab 3', DeviceType.TABLET]
+    'AMAZE TAB 3': ['Hi-Tech', 'Amaze Tab 3', DeviceType.TABLET],
   },
 
   'HITO HT-3': ['Hito', 'HT-3'],
@@ -5418,7 +5418,7 @@ exports.ANDROID_MODELS = {
     'Hosin U7': ['Hosin', 'U7'],
     'HOSIN V60': ['Hosin', 'V60'],
     'HOSIN V70': ['Hosin', 'V70'],
-    'HOSIN V708T': ['Hosin', 'V708T']
+    'HOSIN V708T': ['Hosin', 'V708T'],
   },
 
   '(HP|Slate)!!': {
@@ -5459,7 +5459,7 @@ exports.ANDROID_MODELS = {
     'HP SlateBook 14 PC': ['HP', 'SlateBook 14 HD', DeviceType.TABLET],
     'HP Pro Slate 8': ['HP', 'Pro Slate 8', DeviceType.TABLET],
     'HP Pro Slate 10 EE G1': ['HP', 'Pro Slate 10', DeviceType.TABLET],
-    'HP Pro Slate 12': ['HP', 'Pro Slate 12', DeviceType.TABLET]
+    'HP Pro Slate 12': ['HP', 'Pro Slate 12', DeviceType.TABLET],
   },
 
   'HP!!': {
@@ -5480,7 +5480,7 @@ exports.ANDROID_MODELS = {
     'HP ProBook ([0-9]{4,4}[a-z])!': ['HP', 'ProBook $1', DeviceType.DESKTOP],
     'HP ProBook ([0-9]{3,3} G[0-9])!': ['HP', 'ProBook $1', DeviceType.DESKTOP],
     'HP Spectre ((?:[0-9]+ )?x2)!': ['HP', 'Spectre $1', DeviceType.DESKTOP],
-    'HP Split ((?:[0-9]+ )?x2)!': ['HP', 'Split $1', DeviceType.DESKTOP]
+    'HP Split ((?:[0-9]+ )?x2)!': ['HP', 'Split $1', DeviceType.DESKTOP],
   },
 
   'HP-TouchPad': ['HP', 'TouchPad', DeviceType.TABLET],
@@ -5747,7 +5747,7 @@ exports.ANDROID_MODELS = {
     'HTC Shooter': ['HTC', 'EVO 3D'],
     'htc shooteru': ['HTC', 'EVO 3D'],
     'HTC ?EVO ?V ?4G!': ['HTC', 'EVO 3D'],
-    'HTC EVO 4G+!': ['HTC', 'EVO 4G+'],
+    'HTC EVO 4G\+!': ['HTC', 'EVO 4G+'],
     'HTC X515e!': ['HTC', 'EVO 4G+'],
     'HTC ?EVO ?4G!': ['HTC', 'EVO 4G'],
     'HTC jewel': ['HTC', 'EVO 4G'],
@@ -6062,7 +6062,7 @@ exports.ANDROID_MODELS = {
     'HTC EVARE UL': ['HTC', 'One X+'],
     'HTC ENRC2B': ['HTC', 'One X+'],
     'HTC 9089': ['HTC', '9089'], // COS
-    'HTC ?909d!': ['HTC', '909d'] // COS
+    'HTC ?909d!': ['HTC', '909d'], // COS
   },
 
   DLX: ['HTC', 'Droid DNA'],
@@ -6150,7 +6150,7 @@ exports.ANDROID_MODELS = {
     'Sprint APA9292KT': ['HTC', 'EVO 4G'],
     'Sprint APA7373KT': ['HTC', 'EVO Shift 4G'],
     'Sprint APC715CKT': ['HTC', 'EVO Design 4G'],
-    'Sprint ATP515CKIT': ['HTC', 'EVO View 4G', DeviceType.TABLET]
+    'Sprint ATP515CKIT': ['HTC', 'EVO View 4G', DeviceType.TABLET],
   },
 
   '710C': ['HTC', 'Desire 816'],
@@ -6159,7 +6159,7 @@ exports.ANDROID_MODELS = {
   '802w': ['HTC', 'One'],
   '831C': ['HTC', 'One (M8)'],
   '909d': ['HTC', '909d'], // COS
-  '9088': ['HTC', '9088'], // COS
+  9088: ['HTC', '9088'], // COS
 
   A320a: ['HTC', 'Desire C'],
   A3380: ['HTC', 'Wildfire'],
@@ -6203,7 +6203,7 @@ exports.ANDROID_MODELS = {
     'USCCADR6275US!': ['HTC', 'Desire'],
     'USCCADR6285US!': ['HTC', 'Hero S'],
     'USCCADR6325US!': ['HTC', 'Merge'],
-    'USCCADR6230US!': ['HTC', 'Wildfire S']
+    'USCCADR6230US!': ['HTC', 'Wildfire S'],
   },
 
   'ERIS ADR6200': ['HTC', 'Droid Eris'],
@@ -6232,13 +6232,13 @@ exports.ANDROID_MODELS = {
     S31HT: ['HTC', 'Aria S31HT', { carrier: 'EMOBILE' }],
     X06HT: ['HTC', 'Desire X06HT', { carrier: 'Softbank' }],
     '001HT': ['HTC', 'Desire HD 001HT', { carrier: 'Softbank' }],
-    '601HT': ['HTC', 'U11 601HT', { carrier: 'Softbank' }]
+    '601HT': ['HTC', 'U11 601HT', { carrier: 'Softbank' }],
   },
 
   'ISW[0-9]{2,2}HT!!': {
     'ISW11HT!': ['HTC', 'EVO WiMAX ISW11HT', { carrier: 'au' }],
     'ISW12HT!': ['HTC', 'EVO 3D ISW12HT', { carrier: 'au' }],
-    'ISW13HT!': ['HTC', 'J ISW13HT', { carrier: 'au' }]
+    'ISW13HT!': ['HTC', 'J ISW13HT', { carrier: 'au' }],
   },
 
   '(HTC )?HT[LV][0-9]{2,2}!!': {
@@ -6247,7 +6247,7 @@ exports.ANDROID_MODELS = {
     'HTC HTL22': ['HTC', 'J One HTL22', { carrier: 'au' }],
     'HTL23!': ['HTC', 'J Butterfly HTL23', { carrier: 'au' }],
     'HTV31!': ['HTC', 'J Butterfly HTV31', { carrier: 'au' }],
-    'HTV32!': ['HTC', '10 HTV32', { carrier: 'au' }]
+    'HTV32!': ['HTC', '10 HTV32', { carrier: 'au' }],
   },
 
   'GT-T9500': ['HTM', 'GT-T9500'],
@@ -6287,10 +6287,10 @@ exports.ANDROID_MODELS = {
     'MediaPad X1 7.0': ['Huawei', 'MediaPad X1', DeviceType.TABLET],
     'MediaPad X1': ['Huawei', 'MediaPad X1', DeviceType.TABLET],
     'MediaPad 7D': ['Huawei', 'MediaPad X1', DeviceType.TABLET],
-    'MediaPad X1 S 7.0': ['Huawei', 'MediaPad X1 S', DeviceType.TABLET]
+    'MediaPad X1 S 7.0': ['Huawei', 'MediaPad X1 S', DeviceType.TABLET],
   },
 
-  '(Huawei )?[MSTX](1|2|7|8|10)-[A-Z0-9][0-9]{2,2}!!': {
+  '(Huawei )?[MSTX](1|2|7|8|10)\-[A-Z0-9][0-9]{2,2}!!': {
     'Huawei S7-312u': ['Huawei', 'MediaPad', DeviceType.TABLET],
     'S7-721u': ['Huawei', 'MediaPad 7 Youth 2', DeviceType.TABLET],
     'S10-232L': ['Huawei', 'MediaPad 10 Link', DeviceType.TABLET],
@@ -6315,7 +6315,7 @@ exports.ANDROID_MODELS = {
     'T1-821L': ['Huawei', 'MediaPad T1', DeviceType.TABLET],
     'T1-823L': ['Huawei', 'MediaPad T1', DeviceType.TABLET],
     'S8-701w': ['Huawei', 'MediaPad T1', DeviceType.TABLET],
-    'S8-821w': ['Huawei', 'MediaPad T1', DeviceType.TABLET]
+    'S8-821w': ['Huawei', 'MediaPad T1', DeviceType.TABLET],
   },
 
   'T1 7.0': ['Huawei', 'MediaPad T1', DeviceType.TABLET],
@@ -6366,7 +6366,7 @@ exports.ANDROID_MODELS = {
     '(HW-|HUAWEI )?TAS-(AL00)!': ['Huawei', 'Mate 30'],
     '(HW-|HUAWEI )?LIO-(AL00|AN00|L29)!': ['Huawei', 'Mate 30 Pro'],
     '(HW-|HUAWEI )?NOH-(NX9)!': ['Huawei', 'Mate 40'],
-    '(HW-|HUAWEI )?CRR-(L09|CL00|CL20|TL00|UL00|UL20)!': ['Huawei', 'Mate S']
+    '(HW-|HUAWEI )?CRR-(L09|CL00|CL20|TL00|UL00|UL20)!': ['Huawei', 'Mate S'],
   },
 
   '(HW-|HUAWEI )?(ATU|DRA|DVC|FLA|JKM|TIT|TAG||MRD|NCE|POT|TRT|SLA)!!': {
@@ -6381,108 +6381,110 @@ exports.ANDROID_MODELS = {
     '(HW-|HUAWEI )?POT-(AL00a|LX1|LX1AF|LX1T|LX2J|LX3)!': ['Huawei', 'Enjoy 9S'],
     '(HW-|HUAWEI )?MRD-(AL00|LX1|LX1F|LX1N|LX2|LX3)!': ['Huawei', 'Enjoy 9e'],
     '(HW-|HUAWEI )?JKM-(AL00|AL00a|AL00b|LX1|LX2|LX3|TL00)!': ['Huawei', 'Enjoy 9 Plus'],
-    '(HW-|HUAWEI )?DVC-(AN20)!': ['Huawei', 'Enjoy 20 Pro']
+    '(HW-|HUAWEI )?DVC-(AN20)!': ['Huawei', 'Enjoy 20 Pro'],
   },
 
-  '(HW-|HUAWEI |HONOR )?(ATH|AUM|BLN|BKL|BKK|BND|CHE|CHM|COL|COR|DUA|DUK|DLI|EDI|FRD|HLK|HN3|H30|H60|HOL|HRY|JAT|JMM|JSN|LRA|KIW|KSA|LLD|NEM|NMO|NTH|NTN|OXF|PE|PCT|PLK|RNE|SCL|TNY|KNT|CAM|STF|HDN|YAL)!!': {
-    'H30 U10': ['Huawei', 'Honor 3C'],
-    '(HW-|HUAWEI )?HN3-(U00|U01)!': ['Huawei', 'Honor 3'],
-    '(HW-|HUAWEI |HONOR )?H30[- ](C00|L01|L02|T00|T10|U10)!': ['Huawei', 'Honor 3C'],
-    '(HW-|HUAWEI )?HOL-(T00|U10|U19|U40)!': ['Huawei', 'Honor 3C'],
-    '(HW-|HUAWEI )?CHM-(CL00|TL00H|TL00|U01|UL00)!': ['Huawei', 'Honor Play 4C'],
-    '(HW-|HUAWEI )?SCL-(L01|L02|L03|L04|L21|L32|L001|L004|AL00|CL00|TL00|TL00H|TL10|U23|U31)!': [
-      'Huawei',
-      'Honor 4A'
-    ],
-    '(HW-|HUAWEI )?CHE-(TL00|TL00H)!': ['Huawei', 'Honor 4X'],
-    '(HW-|HUAWEI )?Che1-(L04|CL10|CL20)!': ['Huawei', 'Honor 4X'],
-    '(HW-|HUAWEI )?Che2-(L11|L12|L23|TL00|UL00)!': ['Huawei', 'Honor 4X'],
-    '(HW-|HUAWEI )?NEM-(AL10|CL00|L21|L22|L51|TL00|TL00H|UL10)!': ['Huawei', 'Honor 5C'],
-    '(HW-|HUAWEI )?NMO-(L22|L23|L31)!': ['Huawei', 'Honor 5C'],
-    '(HW-|HUAWEI )?KIW-(AL10|CL00|L21|L22|L24|UL00|TL00|TL00H)!': ['Huawei', 'Honor 5X'],
-    '(HW-|HUAWEI )?H60-(J1|L01|L02|L03|L04|L11|L12|L21)!': ['Huawei', 'Honor 6'],
-    '(HW-|HUAWEI )?DLI-(AL10|L22|L42|TL20)!': ['Huawei', 'Honor 6A'],
-    '(HW-|HUAWEI )?BLN-(AL10|AL20|AL30|AL40|L21|L22|L24|TL00|TL10)!': ['Huawei', 'Honor 6X'],
-    '(HW-|HUAWEI )?PE-(CL00|TL00|TL00M|TL10|TL20|UL00)!': ['Huawei', 'Honor 6 Plus'],
-    '(HW-|HUAWEI |HONOR )?PLK-(L01|AL10|CL00|UL00|TL00|TL01H)!': ['Huawei', 'Honor 7'],
-    '(HW-|HUAWEI )?ATH-(AL00|CL00|TL00|TL00H|UL00)!': ['Huawei', 'Honor 7i'],
-    '(HW-|HUAWEI )?AUM-(L29)!': ['Huawei', 'Honor 7A'],
-    '(HW-|HUAWEI )?DUA-(L22)!': ['Huawei', 'Honor 7S'],
-    '(HW-|HUAWEI )?BND-(AL00|AL10|L21|L24|L31|L34|TL10)!': ['Huawei', 'Honor 7X'],
-    '(HW-|HUAWEI )?DUA-(AL00|TL00)!': ['Huawei', 'Honor 7 Play'],
-    '(HW-|HUAWEI )?FRD-(AL00|AL10|DL00|L02|L04|L09|L14|L19)!': ['Huawei', 'Honor 8'],
-    '(HW-|HUAWEI )?JAT-(L29|L41|LX1|LX3)!': ['Huawei', 'Honor 8A Pro'],
-    '(HW-|HUAWEI )?BKK-(AL00|AL10|L21|LX2)!': ['Huawei', 'Honor 8C'],
-    '(HW-|HUAWEI )?KSA-(LX9)!': ['Huawei', 'Honor 8S'],
-    '(HW-|HUAWEI )?JSN-(AL00|AL00a|L21|L22|L23|L42|TL00)!': ['Huawei', 'Honor 8X'],
-    '(HW-|HUAWEI )?ATH-(UL01|UL06)!': ['Huawei', 'Honor ShotX'],
-    '(HW-|HUAWEI )?KNT-(AL10|AL20|TL10|UL10)!': ['Huawei', 'Honor V8'],
-    '(HW-|HUAWEI )?EDI-(AL10)!': ['Huawei', 'Honor Note 8'],
-    '(HW-|HUAWEI )?STF-(AL00|AL10|L09|TL10)!': ['Huawei', 'Honor 9'],
-    '(HW-|HUAWEI )?LLD-(AL00|AL10|AL20|L21|L31)!': ['Huawei', 'Honor 9 Lite'],
-    '(HW-|HUAWEI )?RNE-(AL00|L01|L02|L03|L21|L22|L23|L31)!': ['Huawei', 'Honor 9i'],
-    '(HW-|HUAWEI )?HLK-(AL00|AL10)!': ['Huawei', 'Honor 9X'],
-    '(HW-|HUAWEI )?COL-(AL00|AL10|L29|TL00|TL10)!': ['Huawei', 'Honor 10'],
-    '(HW-|HUAWEI )?HRY-(LX1)!': ['Huawei', 'Honor 10 Lite'],
-    '(HW-|HUAWEI )?YAL-(AL00|AL10|L21|L41)!': ['Huawei', 'Honor 20'],
-    '(HW-|HUAWEI )?LRA-(AL00)!': ['Huawei', 'Honor 20 Lite'],
-    '(HW-|HUAWEI )?NTH-(NX9)!': ['Huawei', 'Honor 50'],
-    '(HW-|HUAWEI )?NTN-(LX1)!': ['Huawei', 'Honor 50 Lite'],
-    '(HW-|HUAWEI )?DUK-(AL20|L09|TL30)!': ['Huawei', 'Honor V9'],
-    '(HW-|HUAWEI )?JMM-(AL00|AL10|L22|L22HN|TL00)!': ['Huawei', 'Honor V9 Play'],
-    '(HW-|HUAWEI )?BKL-(AL00|AL20|L04|L09)!': ['Huawei', 'Honor V10'],
-    '(HW-|HUAWEI )?PCT-(AL10|L29|TL10)!': ['Huawei', 'Honor V20'],
-    '(HW-|HUAWEI )?OXF-(AN10)!': ['Huawei', 'Honor V30 Pro'],
-    '(HW-|HUAWEI )?TNY-(AL00)!': ['Huawei', 'Honor Magic 2'],
-    '(HW-|HUAWEI )?COR-(AL10|L29)!': ['Huawei', 'Honor Play'],
-    '(HW-|HUAWEI )?HDN-(L09|W09)!': ['Huawei', 'Honor WaterPlay', DeviceType.TABLET]
-  },
+  '(HW-|HUAWEI |HONOR )?(ATH|AUM|BLN|BKL|BKK|BND|CHE|CHM|COL|COR|DUA|DUK|DLI|EDI|FRD|HLK|HN3|H30|H60|HOL|HRY|JAT|JMM|JSN|LRA|KIW|KSA|LLD|NEM|NMO|NTH|NTN|OXF|PE|PCT|PLK|RNE|SCL|TNY|KNT|CAM|STF|HDN|YAL)!!':
+    {
+      'H30 U10': ['Huawei', 'Honor 3C'],
+      '(HW-|HUAWEI )?HN3-(U00|U01)!': ['Huawei', 'Honor 3'],
+      '(HW-|HUAWEI |HONOR )?H30[- ](C00|L01|L02|T00|T10|U10)!': ['Huawei', 'Honor 3C'],
+      '(HW-|HUAWEI )?HOL-(T00|U10|U19|U40)!': ['Huawei', 'Honor 3C'],
+      '(HW-|HUAWEI )?CHM-(CL00|TL00H|TL00|U01|UL00)!': ['Huawei', 'Honor Play 4C'],
+      '(HW-|HUAWEI )?SCL-(L01|L02|L03|L04|L21|L32|L001|L004|AL00|CL00|TL00|TL00H|TL10|U23|U31)!': [
+        'Huawei',
+        'Honor 4A',
+      ],
+      '(HW-|HUAWEI )?CHE-(TL00|TL00H)!': ['Huawei', 'Honor 4X'],
+      '(HW-|HUAWEI )?Che1-(L04|CL10|CL20)!': ['Huawei', 'Honor 4X'],
+      '(HW-|HUAWEI )?Che2-(L11|L12|L23|TL00|UL00)!': ['Huawei', 'Honor 4X'],
+      '(HW-|HUAWEI )?NEM-(AL10|CL00|L21|L22|L51|TL00|TL00H|UL10)!': ['Huawei', 'Honor 5C'],
+      '(HW-|HUAWEI )?NMO-(L22|L23|L31)!': ['Huawei', 'Honor 5C'],
+      '(HW-|HUAWEI )?KIW-(AL10|CL00|L21|L22|L24|UL00|TL00|TL00H)!': ['Huawei', 'Honor 5X'],
+      '(HW-|HUAWEI )?H60-(J1|L01|L02|L03|L04|L11|L12|L21)!': ['Huawei', 'Honor 6'],
+      '(HW-|HUAWEI )?DLI-(AL10|L22|L42|TL20)!': ['Huawei', 'Honor 6A'],
+      '(HW-|HUAWEI )?BLN-(AL10|AL20|AL30|AL40|L21|L22|L24|TL00|TL10)!': ['Huawei', 'Honor 6X'],
+      '(HW-|HUAWEI )?PE-(CL00|TL00|TL00M|TL10|TL20|UL00)!': ['Huawei', 'Honor 6 Plus'],
+      '(HW-|HUAWEI |HONOR )?PLK-(L01|AL10|CL00|UL00|TL00|TL01H)!': ['Huawei', 'Honor 7'],
+      '(HW-|HUAWEI )?ATH-(AL00|CL00|TL00|TL00H|UL00)!': ['Huawei', 'Honor 7i'],
+      '(HW-|HUAWEI )?AUM-(L29)!': ['Huawei', 'Honor 7A'],
+      '(HW-|HUAWEI )?DUA-(L22)!': ['Huawei', 'Honor 7S'],
+      '(HW-|HUAWEI )?BND-(AL00|AL10|L21|L24|L31|L34|TL10)!': ['Huawei', 'Honor 7X'],
+      '(HW-|HUAWEI )?DUA-(AL00|TL00)!': ['Huawei', 'Honor 7 Play'],
+      '(HW-|HUAWEI )?FRD-(AL00|AL10|DL00|L02|L04|L09|L14|L19)!': ['Huawei', 'Honor 8'],
+      '(HW-|HUAWEI )?JAT-(L29|L41|LX1|LX3)!': ['Huawei', 'Honor 8A Pro'],
+      '(HW-|HUAWEI )?BKK-(AL00|AL10|L21|LX2)!': ['Huawei', 'Honor 8C'],
+      '(HW-|HUAWEI )?KSA-(LX9)!': ['Huawei', 'Honor 8S'],
+      '(HW-|HUAWEI )?JSN-(AL00|AL00a|L21|L22|L23|L42|TL00)!': ['Huawei', 'Honor 8X'],
+      '(HW-|HUAWEI )?ATH-(UL01|UL06)!': ['Huawei', 'Honor ShotX'],
+      '(HW-|HUAWEI )?KNT-(AL10|AL20|TL10|UL10)!': ['Huawei', 'Honor V8'],
+      '(HW-|HUAWEI )?EDI-(AL10)!': ['Huawei', 'Honor Note 8'],
+      '(HW-|HUAWEI )?STF-(AL00|AL10|L09|TL10)!': ['Huawei', 'Honor 9'],
+      '(HW-|HUAWEI )?LLD-(AL00|AL10|AL20|L21|L31)!': ['Huawei', 'Honor 9 Lite'],
+      '(HW-|HUAWEI )?RNE-(AL00|L01|L02|L03|L21|L22|L23|L31)!': ['Huawei', 'Honor 9i'],
+      '(HW-|HUAWEI )?HLK-(AL00|AL10)!': ['Huawei', 'Honor 9X'],
+      '(HW-|HUAWEI )?COL-(AL00|AL10|L29|TL00|TL10)!': ['Huawei', 'Honor 10'],
+      '(HW-|HUAWEI )?HRY-(LX1)!': ['Huawei', 'Honor 10 Lite'],
+      '(HW-|HUAWEI )?YAL-(AL00|AL10|L21|L41)!': ['Huawei', 'Honor 20'],
+      '(HW-|HUAWEI )?LRA-(AL00)!': ['Huawei', 'Honor 20 Lite'],
+      '(HW-|HUAWEI )?NTH-(NX9)!': ['Huawei', 'Honor 50'],
+      '(HW-|HUAWEI )?NTN-(LX1)!': ['Huawei', 'Honor 50 Lite'],
+      '(HW-|HUAWEI )?DUK-(AL20|L09|TL30)!': ['Huawei', 'Honor V9'],
+      '(HW-|HUAWEI )?JMM-(AL00|AL10|L22|L22HN|TL00)!': ['Huawei', 'Honor V9 Play'],
+      '(HW-|HUAWEI )?BKL-(AL00|AL20|L04|L09)!': ['Huawei', 'Honor V10'],
+      '(HW-|HUAWEI )?PCT-(AL10|L29|TL10)!': ['Huawei', 'Honor V20'],
+      '(HW-|HUAWEI )?OXF-(AN10)!': ['Huawei', 'Honor V30 Pro'],
+      '(HW-|HUAWEI )?TNY-(AL00)!': ['Huawei', 'Honor Magic 2'],
+      '(HW-|HUAWEI )?COR-(AL10|L29)!': ['Huawei', 'Honor Play'],
+      '(HW-|HUAWEI )?HDN-(L09|W09)!': ['Huawei', 'Honor WaterPlay', DeviceType.TABLET],
+    },
 
   '(HW-|HUAWEI )?(BLL|CHC|TAG|KII)!!': {
     '(HW-|HUAWEI )?CHC-(U01|U03|U23)!': ['Huawei', 'G Play Mini'],
     '(HW-|HUAWEI )?TAG-(L01|L03|L21|L22|L23|L32)!': ['Huawei', 'GR3'],
     '(HW-|HUAWEI )?KII-(L03|L05|L21|L22|L23|L33)!': ['Huawei', 'GR5'],
-    '(HW-|HUAWEI )?BLL-(L21|L22|L23)!': ['Huawei', 'GR5 (2017)']
+    '(HW-|HUAWEI )?BLL-(L21|L22|L23)!': ['Huawei', 'GR5 (2017)'],
   },
 
-  '(HW-|HUAWEI )?(ALE|ANA|ANE|CDY|CLT|D2|DAV|ELE|ELS|EML|EVA|FIG|G6|G7|GRA|JNY|MAR|M100|P2|P6|P7|PPA|PRA|RIO|SC|Sophia|STK|VIE|VKY|VNS|VOG|VTR|WAS)!!': {
-    'HUAWEI D2': ['Huawei', 'Ascend D2'],
-    '(HW-|HUAWEI )?D2-(0082|2010|5000|6070|6114)!': ['Huawei', 'Ascend D2'],
-    '(HW-|HUAWEI )?G6-(C00|L11|L22|L33|T00|U00|U10|U34|U251)!': ['Huawei', 'Ascend G6'],
-    '(HW-|HUAWEI )?G7-(L01|L02|L03|L11|TL00|UL20)!': ['Huawei', 'Ascend G7'],
-    'HUAWEI G7': ['Huawei', 'Ascend G7'],
-    '(HW-|HUAWEI )?RIO-(L01|L02|L03|AL00|UL00|CL00|TL00)!': ['Huawei', 'Ascend G8'],
-    '(HW-|HUAWEI )?SC-(CL00|UL10)!': ['Huawei', 'Ascend GX1'],
-    '(HW-|HUAWEI )?P2-(0000|6011|6070)!': ['Huawei', 'Ascend P2'],
-    '(HW-|HUAWEI )?P6-(C00|U00|U06|T00|T00V|VIP)!': ['Huawei', 'Ascend P6'],
-    '(HW-|HUAWEI )?P6 ?S-U06!': ['Huawei', 'Ascend P6'],
-    '(HW-|HUAWEI )?Sophia-(L07|L10)!': ['Huawei', 'Ascend P7'],
-    '(HW-|HUAWEI )?P7-(L00|L01|L05|L07|L09|L10|L11|L12)!': ['Huawei', 'Ascend P7'],
-    '(HW-|HUAWEI )?M100-(CL00|L09|TL00|UL00)!': ['Huawei', 'P8'],
-    '(HW-|HUAWEI )?GRA-(CL00|CL10|L09|TL00|UL00|UL10)!': ['Huawei', 'P8'],
-    '(HW-|HUAWEI )?ALE-?(L02|L04|L21|L23|CL00|TL00|UL00)!': ['Huawei', 'P8 Lite'],
-    '(HW-|HUAWEI )?PRA-?(AL00|LA1|LX1|LX2|LX3|TL10)!': ['Huawei', 'P8 Lite (2017)'],
-    '(HW-|HUAWEI )?DAV-?(703L)!': ['Huawei', 'P8 Max'],
-    '(HW-|HUAWEI )?EVA-?(AL00|AL10|CL00|DL00|L09|L19|L29|TL00)!': ['Huawei', 'P9'],
-    '(HW-|HUAWEI )?VNS-?(AL00|DL00|L21|L22|L23|L31|L52|L53|L62|TL00)!': ['Huawei', 'P9 Lite'],
-    '(HW-|HUAWEI )?VIE-?(AL00|AL10|L09|L29)!': ['Huawei', 'P9 Plus'],
-    '(HW-|HUAWEI )?VTR-?(AL00|L09|L29|TL00)!': ['Huawei', 'P10'],
-    '(HW-|HUAWEI )?WAS-?(AL00|L03T|LX1|LX1A|LX2|LX2J|LX3|TL10)!': ['Huawei', 'P10 Lite'],
-    '(HW-|HUAWEI )?VKY-?(AL00|L09|L29|TL00)!': ['Huawei', 'P10 Plus'],
-    '(HW-|HUAWEI )?FIG-?(AL00|AL10|LA1|LX1|LX3|TL00)!': ['Huawei', 'P Smart'],
-    '(HW-|HUAWEI )?STK-?(L21|L22|LX1|LX3)!': ['Huawei', 'P Smart Z'],
-    '(HW-|HUAWEI )?PPA-?(LX1|LX2)!': ['Huawei', 'P Smart (2021)'],
-    '(HW-|HUAWEI )?EML-?(AL00|L09|L29|TL00)!': ['Huawei', 'P20'],
-    '(HW-|HUAWEI )?ANE-?(AL00|L21|LX1|LX2|LX2J|LX3)!': ['Huawei', 'P20 Lite'],
-    '(HW-|HUAWEI )?CLT-?(AL00|AL01|L04|L09|L29|L39|TL00|TL01)!': ['Huawei', 'P20 Pro'],
-    '(HW-|HUAWEI )?ELE-?(AL00|L04|L09|L29|TL00)!': ['Huawei', 'P30'],
-    '(HW-|HUAWEI )?VOG-?(AL00|AL10|L04|L09|L29|TL00)!': ['Huawei', 'P30 Pro'],
-    '(HW-|HUAWEI )?MAR-?(LX1B)!': ['Huawei', 'P30 Lite'],
-    '(HW-|HUAWEI )?ANA-?(NX9)!': ['Huawei', 'P40'],
-    '(HW-|HUAWEI )?JNY-?(LX1)!': ['Huawei', 'P40 Lite'],
-    '(HW-|HUAWEI )?CDY-?(NX9A)!': ['Huawei', 'P40 Lite'],
-    '(HW-|HUAWEI )?ELS-?(N39|NX9)!': ['Huawei', 'P40 Pro']
-  },
+  '(HW-|HUAWEI )?(ALE|ANA|ANE|CDY|CLT|D2|DAV|ELE|ELS|EML|EVA|FIG|G6|G7|GRA|JNY|MAR|M100|P2|P6|P7|PPA|PRA|RIO|SC|Sophia|STK|VIE|VKY|VNS|VOG|VTR|WAS)!!':
+    {
+      'HUAWEI D2': ['Huawei', 'Ascend D2'],
+      '(HW-|HUAWEI )?D2-(0082|2010|5000|6070|6114)!': ['Huawei', 'Ascend D2'],
+      '(HW-|HUAWEI )?G6-(C00|L11|L22|L33|T00|U00|U10|U34|U251)!': ['Huawei', 'Ascend G6'],
+      '(HW-|HUAWEI )?G7-(L01|L02|L03|L11|TL00|UL20)!': ['Huawei', 'Ascend G7'],
+      'HUAWEI G7': ['Huawei', 'Ascend G7'],
+      '(HW-|HUAWEI )?RIO-(L01|L02|L03|AL00|UL00|CL00|TL00)!': ['Huawei', 'Ascend G8'],
+      '(HW-|HUAWEI )?SC-(CL00|UL10)!': ['Huawei', 'Ascend GX1'],
+      '(HW-|HUAWEI )?P2-(0000|6011|6070)!': ['Huawei', 'Ascend P2'],
+      '(HW-|HUAWEI )?P6-(C00|U00|U06|T00|T00V|VIP)!': ['Huawei', 'Ascend P6'],
+      '(HW-|HUAWEI )?P6 ?S-U06!': ['Huawei', 'Ascend P6'],
+      '(HW-|HUAWEI )?Sophia-(L07|L10)!': ['Huawei', 'Ascend P7'],
+      '(HW-|HUAWEI )?P7-(L00|L01|L05|L07|L09|L10|L11|L12)!': ['Huawei', 'Ascend P7'],
+      '(HW-|HUAWEI )?M100-(CL00|L09|TL00|UL00)!': ['Huawei', 'P8'],
+      '(HW-|HUAWEI )?GRA-(CL00|CL10|L09|TL00|UL00|UL10)!': ['Huawei', 'P8'],
+      '(HW-|HUAWEI )?ALE-?(L02|L04|L21|L23|CL00|TL00|UL00)!': ['Huawei', 'P8 Lite'],
+      '(HW-|HUAWEI )?PRA-?(AL00|LA1|LX1|LX2|LX3|TL10)!': ['Huawei', 'P8 Lite (2017)'],
+      '(HW-|HUAWEI )?DAV-?(703L)!': ['Huawei', 'P8 Max'],
+      '(HW-|HUAWEI )?EVA-?(AL00|AL10|CL00|DL00|L09|L19|L29|TL00)!': ['Huawei', 'P9'],
+      '(HW-|HUAWEI )?VNS-?(AL00|DL00|L21|L22|L23|L31|L52|L53|L62|TL00)!': ['Huawei', 'P9 Lite'],
+      '(HW-|HUAWEI )?VIE-?(AL00|AL10|L09|L29)!': ['Huawei', 'P9 Plus'],
+      '(HW-|HUAWEI )?VTR-?(AL00|L09|L29|TL00)!': ['Huawei', 'P10'],
+      '(HW-|HUAWEI )?WAS-?(AL00|L03T|LX1|LX1A|LX2|LX2J|LX3|TL10)!': ['Huawei', 'P10 Lite'],
+      '(HW-|HUAWEI )?VKY-?(AL00|L09|L29|TL00)!': ['Huawei', 'P10 Plus'],
+      '(HW-|HUAWEI )?FIG-?(AL00|AL10|LA1|LX1|LX3|TL00)!': ['Huawei', 'P Smart'],
+      '(HW-|HUAWEI )?STK-?(L21|L22|LX1|LX3)!': ['Huawei', 'P Smart Z'],
+      '(HW-|HUAWEI )?PPA-?(LX1|LX2)!': ['Huawei', 'P Smart (2021)'],
+      '(HW-|HUAWEI )?EML-?(AL00|L09|L29|TL00)!': ['Huawei', 'P20'],
+      '(HW-|HUAWEI )?ANE-?(AL00|L21|LX1|LX2|LX2J|LX3)!': ['Huawei', 'P20 Lite'],
+      '(HW-|HUAWEI )?CLT-?(AL00|AL01|L04|L09|L29|L39|TL00|TL01)!': ['Huawei', 'P20 Pro'],
+      '(HW-|HUAWEI )?ELE-?(AL00|L04|L09|L29|TL00)!': ['Huawei', 'P30'],
+      '(HW-|HUAWEI )?VOG-?(AL00|AL10|L04|L09|L29|TL00)!': ['Huawei', 'P30 Pro'],
+      '(HW-|HUAWEI )?MAR-?(LX1B)!': ['Huawei', 'P30 Lite'],
+      '(HW-|HUAWEI )?ANA-?(NX9)!': ['Huawei', 'P40'],
+      '(HW-|HUAWEI )?JNY-?(LX1)!': ['Huawei', 'P40 Lite'],
+      '(HW-|HUAWEI )?CDY-?(NX9A)!': ['Huawei', 'P40 Lite'],
+      '(HW-|HUAWEI )?ELS-?(N39|NX9)!': ['Huawei', 'P40 Pro'],
+    },
 
   'Rock-(AL00|CL00|L01|L03)!': ['Huawei', 'Ascend G7'],
   'HUAWEI A168-(AL10|DL09|L09|L29)!': ['Huawei', 'P9'],
@@ -6501,7 +6503,7 @@ exports.ANDROID_MODELS = {
     '(HW-|HUAWEI )?LDN-(AL00|L01|L21|LX2|LX3|TL00)!': ['Huawei', 'Y7 Prime (2018)'],
     '(HW-|HUAWEI )?DUB-(AL20|LX1|LX3)!': ['Huawei', 'Y7 Prime (2019)'],
     '(HW-|HUAWEI )?ART-(L29)!': ['Huawei', 'Y7p'],
-    '(HW-|HUAWEI )?AQM-(LX1)!': ['Huawei', 'Y8p']
+    '(HW-|HUAWEI )?AQM-(LX1)!': ['Huawei', 'Y8p'],
   },
 
   '(HW-|HUAWEI )?CAZ-(AL10|TL10|TL20)!': ['Huawei', 'Nova'],
@@ -6540,7 +6542,7 @@ exports.ANDROID_MODELS = {
     'G735-(L03|L12|L23)!': ['Huawei', 'Ascend G735'],
     'G740-L00': ['Huawei', 'Ascend G740'],
     'G750-(T00|T01|T20)!': ['Huawei', 'Ascend G750'],
-    'G760-(L01|TL00)!': ['Huawei', 'Ascend G760']
+    'G760-(L01|TL00)!': ['Huawei', 'Ascend G760'],
   },
 
   'Y[0-9]{3,3}!!': {
@@ -6561,7 +6563,7 @@ exports.ANDROID_MODELS = {
     'Y560-L01': ['Huawei', 'Ascend Y560'],
     'Y600-U00': ['Huawei', 'Ascend Y600'],
     'Y618-T00': ['Huawei', 'Ascend Y618'],
-    'Y635-(L01|L02|L03|L21|L22)!': ['Huawei', 'Ascend Y635']
+    'Y635-(L01|L02|L03|L21|L22)!': ['Huawei', 'Ascend Y635'],
   },
 
   '(Huawei|Ascend|HW-)!!': {
@@ -6754,7 +6756,7 @@ exports.ANDROID_MODELS = {
     'HUAWEI Y625-(U13|U21|U32|U43|U51)!': ['Huawei', 'Ascend Y625'],
     'HUAWEI Y635!': ['Huawei', 'Ascend Y635'],
     'Huawei Ascend': ['Huawei', 'Ascend'],
-    'Huawei Ascend X': ['Huawei', 'Ascend X']
+    'Huawei Ascend X': ['Huawei', 'Ascend X'],
   },
 
   C8817D: ['Huawei', 'Honor 4X'],
@@ -6776,7 +6778,7 @@ exports.ANDROID_MODELS = {
     'IDEOS X1': ['Huawei', 'IDEOS X1'],
     'IDEOS X5': ['Huawei', 'IDEOS X5'],
     'IDEOS X5 PRO': ['Huawei', 'IDEOS X5 Pro'],
-    'IDEOS S7!': ['Huawei', 'IDEOS S7', DeviceType.TABLET]
+    'IDEOS S7!': ['Huawei', 'IDEOS S7', DeviceType.TABLET],
   },
 
   'Huawei S7': ['Huawei', 'IDEOS S7', DeviceType.TABLET],
@@ -6800,7 +6802,7 @@ exports.ANDROID_MODELS = {
     '605HW': ['Huawei', 'MediaPad T2 Pro 605HW', DeviceType.TABLET, { carrier: 'Softbank' }],
     '606HW': ['Huawei', 'MediaPad T2 Pro 606HW', DeviceType.TABLET, { carrier: 'Y! Mobile' }],
     '608HW': ['Huawei', 'nova lite 608HW', { carrier: 'Y! Mobile' }],
-    '704HW': ['Huawei', 'nova lite 2 704HW', { carrier: 'Softbank' }]
+    '704HW': ['Huawei', 'nova lite 2 704HW', { carrier: 'Softbank' }],
   },
 
   CM980: ['Huawei', 'Evolution II'],
@@ -6821,18 +6823,18 @@ exports.ANDROID_MODELS = {
     C8810: ['Huawei', 'Ascend G300C'],
     'C8812!': ['Huawei', 'Ascend C8812'],
     'C8815!': ['Huawei', 'Ascend C8815'],
-    'C8860!': ['Huawei', 'Honor']
+    'C8860!': ['Huawei', 'Honor'],
   },
 
   'T8[0-9]{3,3}!!': {
     T8620: ['Huawei', 'Ascend Y200T'],
     'T8808!': ['Huawei', 'Ascend G306T'],
-    'T8830!': ['Huawei', 'Ascend G309T']
+    'T8830!': ['Huawei', 'Ascend G309T'],
   },
 
   'T9[0-9]{3,3}!!': {
     T9200: ['Huawei', 'Ascend P1'],
-    T9510E: ['Huawei', 'Ascend D1 Quad XL']
+    T9510E: ['Huawei', 'Ascend D1 Quad XL'],
   },
 
   'U8[0-9]{3,3}!!': {
@@ -6874,7 +6876,7 @@ exports.ANDROID_MODELS = {
     U8832D: ['Huawei', 'Ascend G500'],
     U8836D: ['Huawei', 'Ascend G500'],
     U8850: ['Huawei', 'Vision'],
-    'U8860!': ['Huawei', 'Honor']
+    'U8860!': ['Huawei', 'Honor'],
   },
 
   'U9[0-9]{3,3}!!': {
@@ -6885,7 +6887,7 @@ exports.ANDROID_MODELS = {
     U9500E: ['Huawei', 'Ascend D1 XL'],
     U9501L: ['Huawei', 'Ascend D LTE'],
     U9508: ['Huawei', 'Honor 2'],
-    'U9510!': ['Huawei', 'Ascend D quad']
+    'U9510!': ['Huawei', 'Ascend D quad'],
   },
 
   Comet: ['Huawei', 'Comet'],
@@ -6908,7 +6910,7 @@ exports.ANDROID_MODELS = {
 
   'USCCADR[0-9]{4,4}!!': {
     USCCADR3305: ['Huawei', 'Ascend II'],
-    USCCADR3310: ['Huawei', 'Ascend II']
+    USCCADR3310: ['Huawei', 'Ascend II'],
   },
 
   'HYUNDAI!!': {
@@ -6927,7 +6929,7 @@ exports.ANDROID_MODELS = {
     'HYUNDAI T10': ['Hyundai', 'T10', DeviceType.TABLET],
     'HYUNDAI T31': ['Hyundai', 'T31', DeviceType.TABLET],
     'HYUNDAI X7': ['Hyundai', 'X7'],
-    'HYUNDAI X900': ['Hyundai', 'X900', DeviceType.TABLET]
+    'HYUNDAI X900': ['Hyundai', 'X900', DeviceType.TABLET],
   },
 
   'Ultra Air': ['Hyundai', 'Ultra Air'],
@@ -6953,7 +6955,7 @@ exports.ANDROID_MODELS = {
   'Planet II v2': ['i-Joy', 'Planet II', DeviceType.TABLET],
   Sygnus: ['i-Joy', 'Sygnus', DeviceType.TABLET],
 
-  '(NMP|MBR|XDK|XDS|XMP)-!!': {
+  '(NMP|MBR|XDK|XDS|XMP)\-!!': {
     'NMP-302w': ['IAdea', 'MBR-1100', DeviceType.SIGNAGE],
     'MBR-1100': ['IAdea', 'MBR-1100', DeviceType.SIGNAGE],
     'XDK-1160': ['IAdea', 'XDK-1160', DeviceType.SIGNAGE],
@@ -6965,7 +6967,7 @@ exports.ANDROID_MODELS = {
     'XMP-6200': ['IAdea', 'XMP-6200', DeviceType.SIGNAGE],
     'XMP-6250': ['IAdea', 'XMP-6250', DeviceType.SIGNAGE],
     'XMP-6400': ['IAdea', 'XMP-6400', DeviceType.SIGNAGE],
-    'XMP-7300': ['IAdea', 'XMP-7300', DeviceType.SIGNAGE]
+    'XMP-7300': ['IAdea', 'XMP-7300', DeviceType.SIGNAGE],
   },
 
   '(iBall )?Andi!!': {
@@ -7064,7 +7066,7 @@ exports.ANDROID_MODELS = {
     'Andi Uddaan': ['iBall', 'Andi Uddaan'],
     'Andi Uddaan (1GB )': ['iBall', 'Andi Uddaan'],
     'Andi Uddaan Quad core': ['iBall', 'Andi Uddaan'],
-    'Andi Mini Uddaan': ['iBall', 'Andi Uddaan Mini']
+    'Andi Mini Uddaan': ['iBall', 'Andi Uddaan Mini'],
   },
 
   'iBall!!': {
@@ -7084,7 +7086,7 @@ exports.ANDROID_MODELS = {
     'iBall Slide 3G 7316': ['iBall', 'Slide 3G 7316', DeviceType.TABLET],
     'iBall Slide 3G 7334': ['iBall', 'Slide 3G 7334', DeviceType.TABLET],
     'iBall Slide 3G Q45i': ['iBall', 'Slide 3G Q45i', DeviceType.TABLET],
-    'iBall Slide 3G Q1035': ['iBall', 'Slide 3G Q1035', DeviceType.TABLET]
+    'iBall Slide 3G Q1035': ['iBall', 'Slide 3G Q1035', DeviceType.TABLET],
   },
 
   '3G7334i': ['iBall', 'Slide 3G 7334', DeviceType.TABLET],
@@ -7096,7 +7098,7 @@ exports.ANDROID_MODELS = {
     'AUXUS CoreX2 3G': ['iBerry', 'Auxus CoreX2', DeviceType.TABLET],
     'AUXUS CoreX4 3G': ['iBerry', 'Auxus CoreX4', DeviceType.TABLET],
     'AUXUS Nuclea N1': ['iBerry', 'Auxus Nuclea N1'],
-    'AUXUS Nuclea N2': ['iBerry', 'Auxus Nuclea N2']
+    'AUXUS Nuclea N2': ['iBerry', 'Auxus Nuclea N2'],
   },
 
   '(NetTab|NT-)!!': {
@@ -7154,7 +7156,7 @@ exports.ANDROID_MODELS = {
     'NT-3801P': ['IconBit', 'NetTab Parus 3G Duo', DeviceType.TABLET],
     'NT-3803C': ['IconBit', 'NetTab Skat 3G', DeviceType.TABLET],
     'NT-3805C': ['IconBit', 'NetTab Skat 3G Quad', DeviceType.TABLET],
-    'NT-3902S': ['IconBit', 'NetTab Space 3G Duo', DeviceType.TABLET]
+    'NT-3902S': ['IconBit', 'NetTab Space 3G Duo', DeviceType.TABLET],
   },
 
   'IconBit NetTab Thor Mini': ['IconBit', 'NetTab Thor Mini', DeviceType.TABLET],
@@ -7170,7 +7172,7 @@ exports.ANDROID_MODELS = {
   'INFOBAR!!': {
     'INFOBAR A01': ['iida', 'INFOBAR A01', { carrier: 'au' }], // by Sharp
     'INFOBAR A01-2': ['iida', 'INFOBAR A01', { carrier: 'au' }], // by Sharp
-    'INFOBAR C01': ['iida', 'INFOBAR C01', { carrier: 'au' }] // by Sharp
+    'INFOBAR C01': ['iida', 'INFOBAR C01', { carrier: 'au' }], // by Sharp
   },
 
   HTX21: ['iida', 'INFOBAR A02', { carrier: 'au' }], // by HTC
@@ -7210,7 +7212,7 @@ exports.ANDROID_MODELS = {
     'IMO Z7': ['IMO', 'Tab Z7 Orion', DeviceType.TABLET],
     'IMO Z8': ['IMO', 'Tab Z8 Spin', DeviceType.TABLET],
     'IMO Z9': ['IMO', 'Tab Z9 Ice', DeviceType.TABLET],
-    'IMO Z10': ['IMO', 'Tab Z10 Fortune', DeviceType.TABLET]
+    'IMO Z10': ['IMO', 'Tab Z10 Fortune', DeviceType.TABLET],
   },
 
   'S88 DISCOVERY': ['IMO', 'Discovery S88'],
@@ -7236,7 +7238,7 @@ exports.ANDROID_MODELS = {
     'ImPAD 8901': ['Impression', 'ImPAD 8901', DeviceType.TABLET],
     'ImPAD 9702': ['Impression', 'ImPAD 9702', DeviceType.TABLET],
     ImPAD9704: ['Impression', 'ImPAD 9704', DeviceType.TABLET],
-    'ImPAD 9707': ['Impression', 'ImPAD 9707', DeviceType.TABLET]
+    'ImPAD 9707': ['Impression', 'ImPAD 9707', DeviceType.TABLET],
   },
 
   TX85: ['iMuz', 'TX85', DeviceType.TABLET],
@@ -7300,7 +7302,7 @@ exports.ANDROID_MODELS = {
     'Infinix X603': ['Infinix', 'Zero 5 X603'],
     'Infinix X800': ['Infinix', 'Joypad 8 X800', DeviceType.TABLET],
     'Infinix X801': ['Infinix', 'Joypad 8S X801', DeviceType.TABLET],
-    'Infinix X1000': ['Infinix', 'Joypad 10 X1000', DeviceType.TABLET]
+    'Infinix X1000': ['Infinix', 'Joypad 10 X1000', DeviceType.TABLET],
   },
 
   'S5 Pro': ['Infinix', 'S5 Pro'],
@@ -7311,7 +7313,7 @@ exports.ANDROID_MODELS = {
     IN335: ['InFocus', 'IN335'],
     IN610: ['InFocus', 'IN610'],
     IN810: ['InFocus', 'IN810'],
-    IN815: ['InFocus', 'IN815']
+    IN815: ['InFocus', 'IN815'],
   },
 
   M210: ['InFocus', 'M210'],
@@ -7339,7 +7341,7 @@ exports.ANDROID_MODELS = {
     'InFocus M680': ['InFocus', 'M680'],
     'InFocus M808!': ['InFocus', 'M808'],
     'InFocus M810!': ['InFocus', 'M810'],
-    'InFocus M812!': ['InFocus', 'M812']
+    'InFocus M812!': ['InFocus', 'M812'],
   },
 
   M009F: ['Infotmic', 'M009F'],
@@ -7355,7 +7357,7 @@ exports.ANDROID_MODELS = {
     'innos i6': ['Innos', 'i6'],
     'INNOS I6 (DNS S4503)': ['Innos', 'i6'],
     'innos i6C': ['Innos', 'i6C'],
-    'Innos i6cp': ['Innos', 'i6CP']
+    'Innos i6cp': ['Innos', 'i6CP'],
   },
 
   'NS-14T002': ['Insignia', 'Flex 8', DeviceType.TABLET],
@@ -7366,7 +7368,7 @@ exports.ANDROID_MODELS = {
     AZ510: ['Intel', 'AZ510'],
     BT210: ['Intel', 'BT210'],
     BT230: ['Intel', 'BT230'],
-    BT510: ['Intel', 'BT510']
+    BT510: ['Intel', 'BT510'],
   },
 
   greenridge: ['Intel', 'Green Ridge', DeviceType.TABLET],
@@ -7572,7 +7574,7 @@ exports.ANDROID_MODELS = {
     'Aqua Y2 Remote': ['Intex', 'Aqua Y2 Remote'],
     'Aqua Y2 Ultra': ['Intex', 'Aqua Y2 Ultra'],
     'Aqua Y3': ['Intex', 'Aqua Y3'],
-    'Aqua Y4': ['Intex', 'Aqua Y3']
+    'Aqua Y4': ['Intex', 'Aqua Y3'],
   },
 
   '(Intex )?Cloud!!': {
@@ -7615,7 +7617,7 @@ exports.ANDROID_MODELS = {
     'Intex Cloud Style 4G': ['Intex', 'Cloud Style 4G'],
     'Cloud Swift': ['Intex', 'Cloud Swift'],
     'Intex Cloud Swing': ['Intex', 'Cloud Swing'],
-    'Cloud Zest': ['Intex', 'Cloud Zest']
+    'Cloud Zest': ['Intex', 'Cloud Zest'],
   },
 
   'INTEX IRIS-II': ['Intex', 'Iris 2', DeviceType.TABLET],
@@ -7660,14 +7662,14 @@ exports.ANDROID_MODELS = {
     'itel P51': ['iTel', 'P51'],
     'itel S11': ['iTel', 'S11'],
     'itel S11Plus': ['iTel', 'S11 Plus'],
-    'itel S31': ['iTel', 'S31']
+    'itel S31': ['iTel', 'S31'],
   },
 
   'IUNI U810': ['IUni', 'U810 U2'],
 
   'IVIO!!': {
     'IVIO-DG20': ['Ivio', 'DG20'],
-    'IVIO DE38': ['Ivio', 'DE38']
+    'IVIO DE38': ['Ivio', 'DE38'],
   },
 
   'MC401 GWL': ['iWaylink', 'MC401'],
@@ -7701,7 +7703,7 @@ exports.ANDROID_MODELS = {
     'JIAYU G3S': ['Jiayu', 'G3S'],
     'JIAYU.G3S': ['Jiayu', 'G3S'],
     'JY-G4': ['Jiayu', 'G4'],
-    'JY-G4G5': ['Jiayu', 'G4'],
+    'JY-G4\G5': ['Jiayu', 'G4'],
     'JY-G4 G5': ['Jiayu', 'G4'],
     'JY-G4C': ['Jiayu', 'G4C'],
     'JY G4C': ['Jiayu', 'G4C'],
@@ -7718,7 +7720,7 @@ exports.ANDROID_MODELS = {
     'JY-S2': ['Jiayu', 'S2'],
     'JY-S3': ['Jiayu', 'S3'],
     'JIAYU S3': ['Jiayu', 'S3'],
-    'JY-S3S': ['Jiayu', 'S3S']
+    'JY-S3S': ['Jiayu', 'S3S'],
   },
 
   G2S: ['Jiayu', 'G2 Plus'],
@@ -7727,7 +7729,7 @@ exports.ANDROID_MODELS = {
 
   'JC-A[0-9]{3,3}!!': {
     'JC-A107': ['JuiCell', 'JC-A107'],
-    'JC-A109': ['JuiCell', 'JC-A109']
+    'JC-A109': ['JuiCell', 'JC-A109'],
   },
 
   'JXD!!': {
@@ -7741,7 +7743,7 @@ exports.ANDROID_MODELS = {
     'JXD S7600': ['JXD', 'S7600', DeviceType.TABLET],
     'JXD-S8000': ['JXD', 'S8000', DeviceType.TABLET],
     'JXD-S9000': ['JXD', 'S9000', DeviceType.TABLET],
-    'JXD-S9100': ['JXD', 'S9100', DeviceType.TABLET]
+    'JXD-S9100': ['JXD', 'S9100', DeviceType.TABLET],
   },
 
   A2: ['KakaTech', 'A2'],
@@ -7808,7 +7810,7 @@ exports.ANDROID_MODELS = {
     'Karbonn A240': ['Karbonn', 'A240'],
     'Karbonn E8222': ['Karbonn', 'E8222'],
     'Karbonn ST52': ['Karbonn', 'ST52', DeviceType.TABLET],
-    'Karbonn ST72': ['Karbonn', 'ST72', DeviceType.TABLET]
+    'Karbonn ST72': ['Karbonn', 'ST72', DeviceType.TABLET],
   },
 
   'TA-FONE!!': {
@@ -7816,7 +7818,7 @@ exports.ANDROID_MODELS = {
     'TA-FONE A34 HD': ['Karbonn', 'Ta-Fone A34 HD'],
     'TA-FONE A37': ['Karbonn', 'Ta-Fone A37'],
     'TA-FONE A37 HD': ['Karbonn', 'Ta-Fone A37 HD'],
-    'TA-FONE A39 HD': ['Karbonn', 'Ta-Fone A39 HD']
+    'TA-FONE A39 HD': ['Karbonn', 'Ta-Fone A39 HD'],
   },
 
   '(Karbonn|Titanium)!!': {
@@ -7875,7 +7877,7 @@ exports.ANDROID_MODELS = {
     'Karbonn Titanium S320+': ['Karbonn', 'Titanium S320 Plus'],
     'Titanium S360': ['Karbonn', 'Titanium Mach Two S360'],
     'Karbonn Titanium S360': ['Karbonn', 'Titanium Mach Two S360'],
-    'Karbonn Titanium X': ['Karbonn', 'Titanium X']
+    'Karbonn Titanium X': ['Karbonn', 'Titanium X'],
   },
 
   'A7*': ['Karbonn', 'A7'],
@@ -7928,7 +7930,7 @@ exports.ANDROID_MODELS = {
     'KAZAM Trooper2 40': ['KAZAM', 'Trooper 2 4.0'],
     'Trooper2 45': ['KAZAM', 'Trooper 2 4.5'],
     'KAZAM Trooper2 50': ['KAZAM', 'Trooper 2 5.0'],
-    'Kazam Trooper2 60': ['KAZAM', 'Trooper 2 6.0']
+    'Kazam Trooper2 60': ['KAZAM', 'Trooper 2 6.0'],
   },
 
   MT791: ['Keen High', 'MT791'],
@@ -7938,7 +7940,7 @@ exports.ANDROID_MODELS = {
     'KENEKSI-Fire': ['KENEKSI', 'Fire'],
     'KENEKSI-Norma': ['KENEKSI', 'Norma'],
     'KENEKSI-SIGMA': ['KENEKSI', 'Sigma'],
-    'KENEKSI-ZETA': ['KENEKSI', 'Zeta']
+    'KENEKSI-ZETA': ['KENEKSI', 'Zeta'],
   },
 
   'Pro 10 dual core': ['Kiano', 'Pro 10 Dual', DeviceType.TABLET],
@@ -7957,13 +7959,13 @@ exports.ANDROID_MODELS = {
     'Agora 4G': ['Kogan', 'Agora 4G'],
     'Agora HD+': ['Kogan', 'Agora HD+'],
     'Agora Quad Core': ['Kogan', 'Agora Quad Core'],
-    'Kogan Agora 6Plus': ['Kogan', 'Agora 6 Plus']
+    'Kogan Agora 6Plus': ['Kogan', 'Agora 6 Plus'],
   },
 
   'KOMU!!': {
     'Komu Color': ['Komu', 'Color'],
     'KOMU ENERGY': ['Komu', 'Energy'],
-    'KOMU-MINI': ['Komu', 'Mini']
+    'KOMU-MINI': ['Komu', 'Mini'],
   },
 
   V1: ['Konka', 'KOMI V1'],
@@ -7978,7 +7980,7 @@ exports.ANDROID_MODELS = {
     'KONKA V980': ['Konka', 'V980'],
     'KONKA V983': ['Konka', 'V983'],
     'konka W970': ['Konka', 'W970'],
-    'konka W976': ['Konka', 'W976']
+    'konka W976': ['Konka', 'W976'],
   },
 
   K3: ['Konka', 'K3'],
@@ -7989,7 +7991,7 @@ exports.ANDROID_MODELS = {
 
   'Koobe!!': {
     'Koobe S7 Easy tablet': ['Koobe', 'S7 Easy tablet', DeviceType.TABLET],
-    'Koobe X8 Slim Quadrum tablet': ['Koobe', 'X8 Slim Quadrum tablet', DeviceType.TABLET]
+    'Koobe X8 Slim Quadrum tablet': ['Koobe', 'X8 Slim Quadrum tablet', DeviceType.TABLET],
   },
 
   'KORIDY H15': ['Koridy', 'H15'],
@@ -8003,7 +8005,7 @@ exports.ANDROID_MODELS = {
     'KPT A11PLUS': ['KPT', 'A11+'],
     'KPT A58T': ['KPT', 'A58T'],
     'KPT A81PLUS': ['KPT', 'A81+'],
-    'KPT A88': ['KPT', 'A88']
+    'KPT A88': ['KPT', 'A88'],
   },
 
   '(EV|KM)-[ES][0-9]{3,3}!!': {
@@ -8014,7 +8016,7 @@ exports.ANDROID_MODELS = {
     'KM-S220': ['Kttech', 'Take Tachy KM-S220'],
     'KM-S220H': ['Kttech', 'Take Tachy KM-S220'],
     'KM-S300': ['Kttech', 'Take HD KM-S300'],
-    'KM-S330': ['Kttech', 'Take Fit KM-S330']
+    'KM-S330': ['Kttech', 'Take Fit KM-S330'],
   },
 
   'Kurio!!': {
@@ -8024,7 +8026,7 @@ exports.ANDROID_MODELS = {
     Kurio7S: ['Kurio', '7S', DeviceType.TABLET],
     'Kurio-LTE': ['Kurio', '7X', DeviceType.TABLET],
     Kurio10S: ['Kurio', '10S', DeviceType.TABLET],
-    'Kurio-Lite': ['Kurio', 'Lite', DeviceType.TABLET]
+    'Kurio-Lite': ['Kurio', 'Lite', DeviceType.TABLET],
   },
 
   'Kyobo mirasol eReader': ['Kyobo', 'eReader', DeviceType.EREADER],
@@ -8032,7 +8034,7 @@ exports.ANDROID_MODELS = {
 
   'KYL[0-9]{2,2}!!': {
     KYL21: ['Kyocera', 'DIGNO S KYL21', { carrier: 'au' }],
-    KYL22: ['Kyocera', 'DIGNO M KYL22', { carrier: 'au' }]
+    KYL22: ['Kyocera', 'DIGNO M KYL22', { carrier: 'au' }],
   },
 
   'KC-01': ['Kyocera', 'KC-01'],
@@ -8064,7 +8066,7 @@ exports.ANDROID_MODELS = {
     'USCC-E6762': ['Kyocera', 'DuraForce'],
     'KYOCERA-E6762': ['Kyocera', 'DuraForce'],
     E6782L: ['Kyocera', 'DuraScout'],
-    'KYOCERA-E6790': ['Kyocera', 'DuraForce XD']
+    'KYOCERA-E6790': ['Kyocera', 'DuraForce XD'],
   },
 
   '(USCC-|KYOCERA-)?C[0-9]{4,4}!!': {
@@ -8087,7 +8089,7 @@ exports.ANDROID_MODELS = {
     C6743: ['Kyocera', 'Hydro REACH'],
     C6745: ['Kyocera', 'Hydro AIR'],
     'KYOCERA-C6745': ['Kyocera', 'Hydro AIR'],
-    C6750: ['Kyocera', 'Hydro Elite']
+    C6750: ['Kyocera', 'Hydro Elite'],
   },
 
   M9300: ['Kyocera', 'Echo'],
@@ -8118,7 +8120,7 @@ exports.ANDROID_MODELS = {
     'KYV44 u': ['Kyocera', 'DIGNO A KYV44', { carrier: 'UQ mobile' }],
     KYT31: ['Kyocera', 'Qua tab', DeviceType.TABLET, { carrier: 'au' }],
     KYT32: ['Kyocera', 'Qua tab QZ8', DeviceType.TABLET, { carrier: 'au' }],
-    KYT33: ['Kyocera', 'Qua tab QZ10', DeviceType.TABLET, { carrier: 'au' }]
+    KYT33: ['Kyocera', 'Qua tab QZ10', DeviceType.TABLET, { carrier: 'au' }],
   },
 
   'URBANO PROGRESSO': ['Kyocera', 'URBANO PROGRESSO', { carrier: 'au' }],
@@ -8131,10 +8133,10 @@ exports.ANDROID_MODELS = {
     '404KC': ['Kyocera', 'DIGNO C 404KC', { carrier: 'Y! Mobile' }],
     '503KC': ['Kyocera', 'DIGNO E 503KC', { carrier: 'Y! Mobile' }],
     '602KC': ['Kyocera', 'DIGNO G 602KC', { carrier: 'Softbank' }],
-    '704KC': ['Kyocera', 'DIGNO J 704KC', { carrier: 'Softbank' }]
+    '704KC': ['Kyocera', 'DIGNO J 704KC', { carrier: 'Softbank' }],
   },
 
-  'K-?Touch!!': {
+  'K\-?Touch!!': {
     'K-touch A9': ['K-Touch', 'A9'],
     'K-touch A10 Pro': ['K-Touch', 'A10 Pro'],
     'Ktouch A11': ['K-Touch', 'A11'],
@@ -8237,7 +8239,7 @@ exports.ANDROID_MODELS = {
     'K-Touch Tou ch3': ['K-Touch', 'Tou ch 3'],
     'K-Touch Tou ch3c': ['K-Touch', 'Tou ch 3 c'],
     'K-Touch Tou ch3es': ['K-Touch', 'Tou ch 3 es'],
-    'K-Touch Tou ch 5': ['K-Touch', 'Tou ch 5']
+    'K-Touch Tou ch 5': ['K-Touch', 'Tou ch 5'],
   },
 
   'Nibiru H1': ['K-Touch', 'Niburu H1'],
@@ -8302,14 +8304,14 @@ exports.ANDROID_MODELS = {
     'ilium Pad E8': ['Lanix', 'Ilium Pad E8', DeviceType.TABLET],
     'ilium Pad E10': ['Lanix', 'Ilium Pad E10', DeviceType.TABLET],
     'ILIUM PAD E10Si': ['Lanix', 'Ilium Pad E10 Si', DeviceType.TABLET],
-    'llium Pad L8': ['Lanix', 'Ilium Pad L8', DeviceType.TABLET]
+    'llium Pad L8': ['Lanix', 'Ilium Pad L8', DeviceType.TABLET],
   },
 
   'Lark!!': {
     'Lark Evolution X2 7': ['Lark', 'Evolution X2 7', DeviceType.TABLET],
     'Lark Evolution X2 7 3G-GPS': ['Lark', 'Evolution X2 7', DeviceType.TABLET],
     'Lark FreeMe X2 7': ['Lark', 'FreeMe X2 7', DeviceType.TABLET],
-    'Lark FreeMe X2 7 ver.2': ['Lark', 'FreeMe X2 7', DeviceType.TABLET]
+    'Lark FreeMe X2 7 ver.2': ['Lark', 'FreeMe X2 7', DeviceType.TABLET],
   },
 
   'Flair E1': ['Lava', 'Flair E1'],
@@ -8413,7 +8415,7 @@ exports.ANDROID_MODELS = {
     'iris X9': ['Lava', 'Iris X9'],
     irisalfa: ['Lava', 'Iris Alpha'],
     'iris Atom2': ['Lava', 'Iris Atom 2'],
-    'iris ATOM X': ['Lava', 'Iris Atom X']
+    'iris ATOM X': ['Lava', 'Iris Atom X'],
   },
 
   '504Q': ['Lava', 'Iris 504Q'],
@@ -8511,7 +8513,7 @@ exports.ANDROID_MODELS = {
     'leepoo i500': ['Leepoo', 'i500'],
     'leepoo i580': ['Leepoo', 'i580'],
     'leepoo i600': ['Leepoo', 'i600'],
-    'leepoo i800': ['Leepoo', 'i800']
+    'leepoo i800': ['Leepoo', 'i800'],
   },
 
   P5: ['Lemon', 'P5'],
@@ -8538,7 +8540,7 @@ exports.ANDROID_MODELS = {
     'Lenco TAB-1020': ['Lenco', 'TAB 1020', DeviceType.TABLET],
     'Lenco TAB-1022': ['Lenco', 'TAB 1022', DeviceType.TABLET],
     'Lenco TAB-1030': ['Lenco', 'TAB 1030', DeviceType.TABLET],
-    'Lenco TAB-9720': ['Lenco', 'TAB 9720', DeviceType.TABLET]
+    'Lenco TAB-9720': ['Lenco', 'TAB 9720', DeviceType.TABLET],
   },
 
   LENCM900HZ: ['Lenco', 'TAB 811', DeviceType.TABLET],
@@ -8582,7 +8584,7 @@ exports.ANDROID_MODELS = {
     'Lenovo A7600(-F|-HV|-H|H)!': ['Lenovo', 'IdeaTab A7600', DeviceType.TABLET],
     'Lenovo B6000(-F|-H)!': ['Lenovo', 'B6000 Yoga Tablet 8', DeviceType.TABLET],
     'Lenovo B8000(-F|-H)!': ['Lenovo', 'B8000 Yoga Tablet 10', DeviceType.TABLET],
-    'Lenovo B8080(-F|-H|-HV)!': ['Lenovo', 'B8080 Yoga Tablet 10', DeviceType.TABLET]
+    'Lenovo B8080(-F|-H|-HV)!': ['Lenovo', 'B8080 Yoga Tablet 10', DeviceType.TABLET],
   },
 
   'YOGA Tablet!!': {
@@ -8595,7 +8597,7 @@ exports.ANDROID_MODELS = {
     'YOGA Tablet 2 Pro-1380F': ['Lenovo', 'Yoga Tablet 2 Pro 1380F', DeviceType.TABLET],
     'YOGA Tablet 2 Pro-1380L': ['Lenovo', 'Yoga Tablet 2 Pro 1380L', DeviceType.TABLET],
     'YOGA Tablet 3 Pro-1381L': ['Lenovo', 'Yoga Tablet 3 Pro 1381L', DeviceType.TABLET],
-    'YOGA Tablet 8 Pro-1386L': ['Lenovo', 'Yoga Tablet 8 Pro 1386L', DeviceType.TABLET]
+    'YOGA Tablet 8 Pro-1386L': ['Lenovo', 'Yoga Tablet 8 Pro 1386L', DeviceType.TABLET],
   },
 
   'Lenovo YB1-X90L': ['Lenovo', 'Yoga Book', DeviceType.TABLET],
@@ -8621,7 +8623,7 @@ exports.ANDROID_MODELS = {
     'Lenovo TAB 2 A8-50(F|L|LC)!': ['Lenovo', 'Tab 2 A8', DeviceType.TABLET],
     'Lenovo TAB 2 A10-70(F|L)!': ['Lenovo', 'Tab 2 A10', DeviceType.TABLET],
     'Lenovo TAB S8-50(F|L|LC)!': ['Lenovo', 'Tab S8', DeviceType.TABLET],
-    'Lenovo S8-50LC': ['Lenovo', 'Tab S8', DeviceType.TABLET]
+    'Lenovo S8-50LC': ['Lenovo', 'Tab S8', DeviceType.TABLET],
   },
 
   'Lenovo TB-7304F': ['Lenovo', 'Tab 7 Essential', DeviceType.TABLET],
@@ -8686,7 +8688,7 @@ exports.ANDROID_MODELS = {
     'Lenovo S6000L-(F|H)!': ['Lenovo', 'IdeaTab S6000', DeviceType.TABLET],
     'LENOVO IdeaTab S6000-H': ['Lenovo', 'IdeaTab S6000', DeviceType.TABLET],
     'IdeaTab ?V2007(A|A-D-I)!': ['Lenovo', 'IdeaTab V2007', DeviceType.TABLET],
-    'IdeaTab ?V2010(A)!': ['Lenovo', 'IdeaTab V2010', DeviceType.TABLET]
+    'IdeaTab ?V2010(A)!': ['Lenovo', 'IdeaTab V2010', DeviceType.TABLET],
   },
 
   'Lenovo Pad A4': ['Lenovo', 'Pad A4', DeviceType.TABLET],
@@ -8931,7 +8933,7 @@ exports.ANDROID_MODELS = {
     'Lenovo PB1-750M': ['Lenovo', 'Phab'],
     'Lenovo PB1-770(M|N|P)!': ['Lenovo', 'Phab Plus'],
     'Lenovo PB2-670M': ['Lenovo', 'Phab 2 Plus'],
-    'Lenovo X910': ['Lenovo', 'X910']
+    'Lenovo X910': ['Lenovo', 'X910'],
   },
 
   A30t: ['Lenovo', 'A30'],
@@ -8970,7 +8972,7 @@ exports.ANDROID_MODELS = {
     'ideatv S31': ['Lenovo', 'IDEA TV', DeviceType.TELEVISION],
     'ideatv S51': ['Lenovo', 'IDEA TV', DeviceType.TELEVISION],
     'ideatv S52': ['Lenovo', 'IDEA TV', DeviceType.TELEVISION],
-    'ideatv S61': ['Lenovo', 'IDEA TV', DeviceType.TELEVISION]
+    'ideatv S61': ['Lenovo', 'IDEA TV', DeviceType.TELEVISION],
   },
 
   'LenovoTV 40S9': ['Lenovo', 'TV 40S9', DeviceType.TELEVISION],
@@ -8999,7 +9001,7 @@ exports.ANDROID_MODELS = {
     'lephone 2900': ['Lephone', '2900'],
     'lephone T708': ['Lephone', 'T708'],
     'Lephone TD506': ['Lephone', 'TD506'],
-    'Lephone TD8208': ['Lephone', 'TD8208']
+    'Lephone TD8208': ['Lephone', 'TD8208'],
   },
 
   TD506: ['Lephone', 'TD506'],
@@ -9035,7 +9037,7 @@ exports.ANDROID_MODELS = {
     MFC175FR: ['Lexibook', 'Tablet Ultra', DeviceType.TABLET],
     MFC375FR: ['Lexibook', 'Tablet Ultra 2', DeviceType.TABLET],
     mfc500fr: ['Lexibook', 'Tablet XL', DeviceType.TABLET],
-    MFC045FR: ['Lexibook', 'TabTab', DeviceType.TABLET]
+    MFC045FR: ['Lexibook', 'TabTab', DeviceType.TABLET],
   },
 
   'Le Pan Mini': ['Le Pan', 'Mini', DeviceType.TABLET],
@@ -9071,7 +9073,7 @@ exports.ANDROID_MODELS = {
     LGAS992: ['LG', 'G5'],
     'LG-AS993': ['LG', 'G6'],
     LGAS995: ['LG', 'G Flex 2'],
-    'LG-AS998': ['LG', 'V30']
+    'LG-AS998': ['LG', 'V30'],
   },
 
   'LG-?C[0-9]{3,3}!!': {
@@ -9081,7 +9083,7 @@ exports.ANDROID_MODELS = {
     'LG-C660!': ['LG', 'Optimus Pro'],
     'LG-C710!': ['LG', 'Aloha'],
     'LG-C729': ['LG', 'DoublePlay'],
-    'LG-C800G': ['LG', 'Eclypse']
+    'LG-C800G': ['LG', 'Eclypse'],
   },
 
   'LG-CX670': ['LG', 'Optimus One'],
@@ -9128,7 +9130,7 @@ exports.ANDROID_MODELS = {
     LGD850: ['LG', 'G3'],
     LGD855: ['LG', 'G3'],
     'LG-D8(57)!': ['LG', 'Titan'],
-    'LG-D9(50|51|55|56|58|59)!': ['LG', 'G Flex']
+    'LG-D9(50|51|55|56|58|59)!': ['LG', 'G Flex'],
   },
 
   'LG-DS1203': ['LG', 'G2'],
@@ -9159,7 +9161,7 @@ exports.ANDROID_MODELS = {
     'LG-E940!': ['LG', 'Optimus G Pro'],
     'LG-E960!': ['LG', 'Nexus 4'],
     'LG-E9(70|71|73|75|76|77|78|87)!': ['LG', 'Optimus G'],
-    'LG-E9(80|81|85|86|88|89)!': ['LG', 'Optimus G Pro']
+    'LG-E9(80|81|85|86|88|89)!': ['LG', 'Optimus G Pro'],
   },
 
   'LG-F[0-9]{3,3}!!': {
@@ -9207,7 +9209,7 @@ exports.ANDROID_MODELS = {
     'LG-F750!': ['LG', 'X Power'],
     'LG-F770!': ['LG', 'X5'],
     'LG-F800!': ['LG', 'V20'],
-    'LG-F820!': ['LG', 'U']
+    'LG-F820!': ['LG', 'U'],
   },
 
   'LG-FL40L!': ['LG', '070 Touch'],
@@ -9243,7 +9245,7 @@ exports.ANDROID_MODELS = {
     'LG-H9(50|55|59)!': ['LG', 'G Flex 2'],
     'LG-H9(00|01|60|61|62|68)!': ['LG', 'V10'],
     'LG-H9(30|31|32)!': ['LG', 'V30'],
-    'LG-H9(90)!': ['LG', 'V20']
+    'LG-H9(90)!': ['LG', 'V20'],
   },
 
   'LG-K[0-9]{3,3}!!': {
@@ -9261,7 +9263,7 @@ exports.ANDROID_MODELS = {
     'LG-K5(40)!': ['LG', 'Stylo 2'],
     'LG-K5(50|57)!': ['LG', 'Stylo 2 Plus'],
     'LG-K5(80)!': ['LG', 'X Cam'],
-    'LG-K6(00)!': ['LG', 'X Mach']
+    'LG-K6(00)!': ['LG', 'X Mach'],
   },
 
   'LG-KH5200': ['LG', 'Andro-1'],
@@ -9272,7 +9274,7 @@ exports.ANDROID_MODELS = {
     'LG-KU5400!': ['LG', 'PRADA 3.0'],
     'LG-KU5900': ['LG', 'Optimus Black'],
     'LG-KU6900': ['LG', 'Optimus Pad', DeviceType.TABLET],
-    'LG-KU8800': ['LG', 'Optimus EX']
+    'LG-KU8800': ['LG', 'Optimus EX'],
   },
 
   'LG-?L[0-9]{2,3}[A-Z]!!': {
@@ -9330,13 +9332,13 @@ exports.ANDROID_MODELS = {
     'LG-L160L': ['LG', 'Optimus LTE2'],
     LGL163BL: ['LG', 'Fiesta 2'],
     LGL164VL: ['LG', 'Fiesta'],
-    'LGL996L!': ['LG', 'G2']
+    'LGL996L!': ['LG', 'G2'],
   },
 
   'LG-LG[0-9]{3,3}!!': {
     'LG-LG730': ['LG', 'Venice'],
     'LG-LG855': ['LG', 'Marquee'],
-    'LG-LG870': ['LG', 'Optimus F7']
+    'LG-LG870': ['LG', 'Optimus F7'],
   },
 
   LGLK430: ['LG', 'G Pad F 7.0', DeviceType.TABLET],
@@ -9380,7 +9382,7 @@ exports.ANDROID_MODELS = {
     LGLS996: ['LG', 'G Flex 2'],
     'LG-LS996': ['LG', 'G Flex 2'],
     'LG-LS997': ['LG', 'V20'],
-    'LG-LS998': ['LG', 'V30+']
+    'LG-LS998': ['LG', 'V30+'],
   },
 
   'LG-LU[0-9]{4,4}!!': {
@@ -9392,7 +9394,7 @@ exports.ANDROID_MODELS = {
     'LG-LU6500': ['LG', 'Optimus Q2'],
     'LG-LU6800': ['LG', 'Optimus Big'],
     'LG-LU6900': ['LG', 'Optimus Pad', DeviceType.TABLET],
-    'LG-LU8300': ['LG', 'Optimus Pad LTE', DeviceType.TABLET]
+    'LG-LU8300': ['LG', 'Optimus Pad LTE', DeviceType.TABLET],
   },
 
   'LG-LW690': ['LG', 'Optimus C'],
@@ -9414,7 +9416,7 @@ exports.ANDROID_MODELS = {
     'LG-M4(30)!': ['LG', 'Stylo 3'],
     'LG-M4(70)!': ['LG', 'Stylo 3 Plus'],
     'LG-M7(00|03)!': ['LG', 'Q6'],
-    'LG-M7(10)!': ['LG', 'X Venture']
+    'LG-M7(10)!': ['LG', 'X Venture'],
   },
 
   'LG-?MS[0-9]{3,3}!!': {
@@ -9440,7 +9442,7 @@ exports.ANDROID_MODELS = {
     'LG-MS840': ['LG', 'Connect 4G'],
     'LG-MS870': ['LG', 'Spirit 4G'],
     'LG-MS910': ['LG', 'Esteem'],
-    'LG-MS695': ['LG', 'Optimus M+']
+    'LG-MS695': ['LG', 'Optimus M+'],
   },
 
   LGMP260: ['LG', 'K20 Plus'],
@@ -9480,7 +9482,7 @@ exports.ANDROID_MODELS = {
     'LG-P451!': ['LG', 'G Pad IV 8.0', DeviceType.TABLET],
     'LG-P530!': ['LG', 'G Pad IV 8.0', DeviceType.TABLET],
     'LG-P755!': ['LG', 'G Pad III 10.1', DeviceType.TABLET],
-    'LG-P815!': ['LG', 'G Pad II 8.3', DeviceType.TABLET]
+    'LG-P815!': ['LG', 'G Pad II 8.3', DeviceType.TABLET],
   },
 
   'LG-Q710!': ['LG', 'Stylo 4'],
@@ -9490,7 +9492,7 @@ exports.ANDROID_MODELS = {
 
   'LG-SP[0-9]{3,3}!!': {
     'LG-SP200': ['LG', 'Tribute Dynasty'],
-    'LG-SP320': ['LG', 'X Charge']
+    'LG-SP320': ['LG', 'X Charge'],
   },
 
   'LG-SU[0-9]{3,3}!!': {
@@ -9500,7 +9502,7 @@ exports.ANDROID_MODELS = {
     'LG-SU660': ['LG', 'Optimus 2X'],
     'LG-SU760': ['LG', 'Optimus 3D'],
     'LG-SU870': ['LG', 'Optimus 3D Cube'],
-    'LG-SU880': ['LG', 'Optimus EX']
+    'LG-SU880': ['LG', 'Optimus EX'],
   },
 
   'LG-T480!': ['LG', 'Wine Smart'],
@@ -9535,7 +9537,7 @@ exports.ANDROID_MODELS = {
     'LGUS995!': ['LG', 'G Flex 2'],
     'LG-US996!': ['LG', 'V20'],
     'LG-US997': ['LG', 'G6'],
-    'LG-US998': ['LG', 'V30']
+    'LG-US998': ['LG', 'V30'],
   },
 
   'LG-V[0-9]{3,3}!!': {
@@ -9555,27 +9557,27 @@ exports.ANDROID_MODELS = {
     'LG-V9(00|01)!': ['LG', 'Optimus Pad', DeviceType.TABLET],
     'LG-V9(05|09)!': ['LG', 'Optimus G-Slate', DeviceType.TABLET],
     'LG-V930': ['LG', 'G Pad X 10.1', DeviceType.TABLET],
-    'LG-V9(35|40)!': ['LG', 'G Pad II 10.1', DeviceType.TABLET]
+    'LG-V9(35|40)!': ['LG', 'G Pad II 10.1', DeviceType.TABLET],
   },
 
   'LG-VK[0-9]{3,3}!!': {
     'LG-VK410': ['LG', 'G Pad 7.0', DeviceType.TABLET],
     'LG-VK700': ['LG', 'G Pad 10.1', DeviceType.TABLET],
     'LG-VK810': ['LG', 'G Pad 8.3', DeviceType.TABLET],
-    'LG-VK815': ['LG', 'G Pad X 8.3', DeviceType.TABLET]
+    'LG-VK815': ['LG', 'G Pad X 8.3', DeviceType.TABLET],
   },
 
   'LG-VN[0-9]{3,3}!!': {
     'LG-VN170': ['LG', 'VN-170'], // Unknown
     'LG-VN280': ['LG', 'Extravert 2'],
-    'LG-VN360': ['LG', 'Exalt']
+    'LG-VN360': ['LG', 'Exalt'],
   },
 
   'LG-VM[0-9]{3,3}!!': {
     'LG-VM670': ['LG', 'Optimus V'],
     'LG-VM696': ['LG', 'Optimus Elite'],
     'LG-VM701': ['LG', 'Optimus Slider'],
-    'LG-VM720': ['LG', 'Optimus F5']
+    'LG-VM720': ['LG', 'Optimus F5'],
   },
 
   'LG-VS[0-9]{3,3}!!': {
@@ -9597,7 +9599,7 @@ exports.ANDROID_MODELS = {
     'LG-VS980!': ['LG', 'G2'],
     'LG-VS985': ['LG', 'G3'],
     'LG-VS995': ['LG', 'V20'],
-    'LG-VS999': ['LG', 'G4']
+    'LG-VS999': ['LG', 'G4'],
   },
 
   'LG-X[0-9]{3,3}!!': {
@@ -9614,7 +9616,7 @@ exports.ANDROID_MODELS = {
     'LG-X220!': ['LG', 'K5'],
     'LG-X230!': ['LG', 'K7 2017'],
     'LG-X240!': ['LG', 'K8 2017'],
-    'LG-X760!': ['LG', 'G Pad III 10.1', DeviceType.TABLET]
+    'LG-X760!': ['LG', 'G Pad III 10.1', DeviceType.TABLET],
   },
 
   'LGM-[GKVX][0-9]{3,3}!!': {
@@ -9626,7 +9628,7 @@ exports.ANDROID_MODELS = {
     'LGM-X320[KLS]!': ['LG', 'X500'],
     'LGM-X401[S]!': ['LG', 'X401'],
     'LGM-X600[KLS]!': ['LG', 'Q6'],
-    'LGM-X800[KLS]!': ['LG', 'Q8']
+    'LGM-X800[KLS]!': ['LG', 'Q8'],
   },
 
   'LM-F100!': ['LG', 'Wing'],
@@ -9704,7 +9706,7 @@ exports.ANDROID_MODELS = {
     LGT01: ['LG', 'G Pad 8.0 L LGT01', { carrier: 'J:COM' }, DeviceType.TABLET],
     LGT02: ['LG', 'G Pad 8.0 III LGT02', { carrier: 'J:COM' }, DeviceType.TABLET],
     LGT31: ['LG', 'Qua tab PX LGT31', { carrier: 'au' }, DeviceType.TABLET],
-    LGT32: ['LG', 'Qua tab PZ LGT32', { carrier: 'au' }, DeviceType.TABLET]
+    LGT32: ['LG', 'Qua tab PZ LGT32', { carrier: 'au' }, DeviceType.TABLET],
   },
 
   LU2300: ['LG', 'Optimus Q'],
@@ -9719,7 +9721,7 @@ exports.ANDROID_MODELS = {
     'USCC-US760': ['LG', 'Genesis'],
     'USCC-US780': ['LG', 'Optimus F7'],
     'USCC-US855': ['LG', 'Optimus Black'],
-    'USCC-LGUS990': ['LG', 'G3']
+    'USCC-LGUS990': ['LG', 'G3'],
   },
 
   VK410: ['LG', 'G Pad 7.0', DeviceType.TABLET],
@@ -9752,7 +9754,7 @@ exports.ANDROID_MODELS = {
     VS986: ['LG', 'G4'],
     VS987: ['LG', 'G5'],
     VS990: ['LG', 'V10'],
-    VS995: ['LG', 'V20']
+    VS995: ['LG', 'V20'],
   },
 
   'L-0[0-9][A-Z]!!': {
@@ -9773,12 +9775,12 @@ exports.ANDROID_MODELS = {
     'L-06C': ['LG', 'Optimus Pad L-06C', DeviceType.TABLET, { carrier: 'DoCoMo' }],
     'L-06D': ['LG', 'Optimus Vu L-06D', { carrier: 'DoCoMo' }],
     'L-06DJOJO': ['LG', 'JOJO L-06D', { carrier: 'DoCoMo' }],
-    'L-07C': ['LG', 'Optimus bright L-07C', { carrier: 'DoCoMo' }]
+    'L-07C': ['LG', 'Optimus bright L-07C', { carrier: 'DoCoMo' }],
   },
 
   '[0-9]0[0-9]LG!!': {
     '401LG': ['LG', '401LG', { carrier: 'Softbank' }], // Unknown
-    '402LG': ['LG', 'Spray 402LG', { carrier: 'Y! Mobile' }]
+    '402LG': ['LG', 'Spray 402LG', { carrier: 'Y! Mobile' }],
   },
 
   'DM-01G': ['LG', 'DM-01G', { carrier: 'Disney Mobile' }],
@@ -9812,7 +9814,7 @@ exports.ANDROID_MODELS = {
     'LG-OPTIMUS HD LTE': ['LG', 'Optimus HD'],
     'LG-OPTIMUS LTE HD': ['LG', 'Optimus HD'],
     'LG-Optimus Pad L-06C': ['LG', 'Optimus Pad', DeviceType.TABLET],
-    'LG-vortex': ['LG', 'Vortex']
+    'LG-vortex': ['LG', 'Vortex'],
   },
 
   Ally: ['LG', 'Ally'],
@@ -9832,7 +9834,7 @@ exports.ANDROID_MODELS = {
     'Optimus 4X HD': ['LG', 'Optimus 4X HD'],
     OptimusX4HD: ['LG', 'Optimus 4X HD'],
     Optimus4XHD: ['LG', 'Optimus 4X HD'],
-    Optimusx4: ['LG', 'Optimus X4']
+    Optimusx4: ['LG', 'Optimus X4'],
   },
 
   IS11LG: ['LG', 'Optimus X IS11LG', { carrier: 'au' }],
@@ -9846,7 +9848,7 @@ exports.ANDROID_MODELS = {
     'LG-Google TV G3': ['LG', 'Android TV', DeviceType.TELEVISION, Flag.GOOGLETV],
     'LG-Google TV G3 KR': ['LG', 'Android TV', DeviceType.TELEVISION, Flag.GOOGLETV],
     'LG-Google TV G3 TV': ['LG', 'Android TV', DeviceType.TELEVISION, Flag.GOOGLETV],
-    'LG-Google TV G3 KR TV': ['LG', 'Android TV', DeviceType.TELEVISION, Flag.GOOGLETV]
+    'LG-Google TV G3 KR TV': ['LG', 'Android TV', DeviceType.TELEVISION, Flag.GOOGLETV],
   },
 
   'LG-ANDROID MINI BOX': ['LG', 'Android Mini-Box', DeviceType.TELEVISION],
@@ -9917,7 +9919,7 @@ exports.ANDROID_MODELS = {
     'MALATA TD95': ['Malata', 'TD95'],
     'MALATA S501': ['Malata', 'S501'],
     'Malata SMBA1002': ['Malata', 'Tablet SMB-A1002', DeviceType.TABLET],
-    'Malata SMBA9701': ['Malata', 'Tablet SMB-A9701', DeviceType.TABLET]
+    'Malata SMBA9701': ['Malata', 'Tablet SMB-A9701', DeviceType.TABLET],
   },
 
   T6: ['Malata', 'Zpad T6', DeviceType.TABLET],
@@ -9933,7 +9935,7 @@ exports.ANDROID_MODELS = {
     MID802: ['Manta', 'Duo Power 8 HD', DeviceType.TABLET],
     MID9701: ['Manta', 'Duo Power 9.7', DeviceType.TABLET],
     MID9702: ['Manta', 'Duo Power 9.7 HD', DeviceType.TABLET],
-    MID1001: ['Manta', 'Power Tab 10.1 HD', DeviceType.TABLET]
+    MID1001: ['Manta', 'Power Tab 10.1 HD', DeviceType.TABLET],
   },
 
   'Masstel!!': {
@@ -9951,7 +9953,7 @@ exports.ANDROID_MODELS = {
     'Masstel Tab 740': ['Masstel', 'Tab 740', DeviceType.TABLET],
     'Masstel Tab 750': ['Masstel', 'Tab 750', DeviceType.TABLET],
     'Masstel Tab 840': ['Masstel', 'Tab 840', DeviceType.TABLET],
-    'Masstel Tab 850': ['Masstel', 'Tab 850', DeviceType.TABLET]
+    'Masstel Tab 850': ['Masstel', 'Tab 850', DeviceType.TABLET],
   },
 
   'MASTONE!!': {
@@ -9960,7 +9962,7 @@ exports.ANDROID_MODELS = {
     'MASTONE G9': ['Mastone', 'G9'],
     'MASTONE G13': ['Mastone', 'G13'],
     'MASTONE G15': ['Mastone', 'G15'],
-    'MASTONE W16': ['Mastone', 'W16']
+    'MASTONE W16': ['Mastone', 'W16'],
   },
 
   'M-270': ['Maylong', 'M-270', DeviceType.TABLET],
@@ -9971,14 +9973,14 @@ exports.ANDROID_MODELS = {
     'Maxtron AMOR Ⅱ': ['Maxtron', 'Amor 2'],
     'Maxtron Diamond': ['Maxtron', 'Diamond'],
     'Maxtron Venus': ['Maxtron', 'Venus'],
-    'Maxtron T1': ['Maxtron', 'T1', DeviceType.TABLET]
+    'Maxtron T1': ['Maxtron', 'T1', DeviceType.TABLET],
   },
 
   M785: ['Mecer', 'Xpress Smartlife M785', DeviceType.TABLET],
   '800P31C': ['Mecer', 'Xpress Smartlife 800P31C', DeviceType.TABLET],
   X1010: ['Mecer', 'X1010', DeviceType.TABLET],
 
-  'M-PP!!': {
+  'M\-PP!!': {
     'M-PPxG400': ['Mediacom', 'PhonePad Duo G400'],
     'M-PPAG500': ['Mediacom', 'PhonePad Duo G500'],
     'M-PPBG500': ['Mediacom', 'PhonePad Duo G500'],
@@ -10000,10 +10002,10 @@ exports.ANDROID_MODELS = {
     'M-PP2S650C': ['Mediacom', 'PhonePad Duo S650'],
     'M-PPAX470U': ['Mediacom', 'PhonePad Duo X470'],
     'M PPAX510U': ['Mediacom', 'PhonePad Duo X510'],
-    'M-PPxX520U': ['Mediacom', 'PhonePad Duo X520']
+    'M-PPxX520U': ['Mediacom', 'PhonePad Duo X520'],
   },
 
-  'M-MP!!': {
+  'M\-MP!!': {
     'M-MP5303G': ['Mediacom', 'SmartPad Mini Mobile', DeviceType.TABLET],
     'M-MP705I': ['Mediacom', 'SmartPad 705i', DeviceType.TABLET],
     'M-MP706I': ['Mediacom', 'SmartPad 706i', DeviceType.TABLET],
@@ -10063,27 +10065,27 @@ exports.ANDROID_MODELS = {
     'M-MP1S4B3G': ['Mediacom', 'SmartPad 10.1 S4', DeviceType.TABLET],
     'M-MP10PA': ['Mediacom', 'SmartPad 10.1 HD Pro', DeviceType.TABLET],
     'M-MP10PA3G': ['Mediacom', 'SmartPad 10.1 HD Pro', DeviceType.TABLET],
-    'M-MPI7A3G': ['Mediacom', 'SmartPad i7', DeviceType.TABLET]
+    'M-MPI7A3G': ['Mediacom', 'SmartPad i7', DeviceType.TABLET],
   },
 
-  'M-IPRO!!': {
+  'M\-IPRO!!': {
     'M-IPRO110B': ['Mediacom', 'SmartPad 8.0 HD iPro110', DeviceType.TABLET],
     'M-IPRO800B': ['Mediacom', 'SmartPad 8.0 HD iPro800', DeviceType.TABLET],
     'M-IPRO810B': ['Mediacom', 'SmartPad 8.0 HD iPro810', DeviceType.TABLET],
-    'M-IPRO810W': ['Mediacom', 'SmartPad 8.0 HD iPro810', DeviceType.TABLET]
+    'M-IPRO810W': ['Mediacom', 'SmartPad 8.0 HD iPro810', DeviceType.TABLET],
   },
 
   'MP[0-9]{3,3}C!!': {
     MP705C: ['Mediacom', 'SmartPad 705c', DeviceType.TABLET],
     MP810C: ['Mediacom', 'SmartPad 810c', DeviceType.TABLET],
-    MP907C: ['Mediacom', 'SmartPad 907c', DeviceType.TABLET]
+    MP907C: ['Mediacom', 'SmartPad 907c', DeviceType.TABLET],
   },
 
   'STM[0-9]{3,3}H!!': {
     STM712HCZ: ['Mediacom', 'SmartPad 712c', DeviceType.TABLET],
     STM722HC: ['Mediacom', 'SmartPad 722c', DeviceType.TABLET],
     STM722HCZ: ['Mediacom', 'SmartPad 722c', DeviceType.TABLET],
-    STM803HC: ['Mediacom', 'SmartPad 810c', DeviceType.TABLET]
+    STM803HC: ['Mediacom', 'SmartPad 810c', DeviceType.TABLET],
   },
 
   'SmartPad!!': {
@@ -10096,7 +10098,7 @@ exports.ANDROID_MODELS = {
     SmartPad970s2: ['Mediacom', 'SmartPad 970 S2', DeviceType.TABLET],
     SmartPad970s23G: ['Mediacom', 'SmartPad 970 S2', DeviceType.TABLET],
     SmartPad1010i: ['Mediacom', 'SmartPad 1010i', DeviceType.TABLET],
-    'SmartPad 85S23G': ['Mediacom', 'SmartPad 8.0 S2', DeviceType.TABLET]
+    'SmartPad 85S23G': ['Mediacom', 'SmartPad 8.0 S2', DeviceType.TABLET],
   },
 
   'Mediacom 810C': ['Mediacom', 'SmartPad 810c', DeviceType.TABLET],
@@ -10121,7 +10123,7 @@ exports.ANDROID_MODELS = {
     MT7013: ['Mediadroid', 'IMPERIUS EN3RGY'],
     MT7014: ['Mediadroid', 'IMPERIUS AERO SLIM'],
     MT7015: ['Mediadroid', 'IMPERIUS MINI'],
-    MT7017: ['Mediadroid', 'IMPERIUS ALPHA']
+    MT7017: ['Mediadroid', 'IMPERIUS ALPHA'],
   },
 
   MTK6516: ['Mediatek', 'MTK6516'],
@@ -10178,7 +10180,7 @@ exports.ANDROID_MODELS = {
     'MEDION X5004': ['Medion', 'X5004'],
     'MEDION X5020': ['Medion', 'X5020'],
     'LIFETAB P9514': ['Medion', 'Lifetab P9514', DeviceType.TABLET],
-    'MD LIFETAB P9516': ['Medion', 'Lifetab P9516', DeviceType.TABLET]
+    'MD LIFETAB P9516': ['Medion', 'Lifetab P9516', DeviceType.TABLET],
   },
 
   B5532: ['Medion', 'B5532'],
@@ -10200,7 +10202,7 @@ exports.ANDROID_MODELS = {
     'MEEG 105S': ['MEEG', '105S'],
     'MEEG 106': ['MEEG', '106'],
     'MEEG 201': ['MEEG', '201'],
-    'MEEG 210R': ['MEEG', '210R']
+    'MEEG 210R': ['MEEG', '210R'],
   },
 
   'MEIZU E3': ['Meizu', 'E3'],
@@ -10264,12 +10266,12 @@ exports.ANDROID_MODELS = {
     'meo smart a70': ['MEO', 'Smart A70'],
     'MEO Smart A75': ['MEO', 'Smart A75'],
     'MEO A75': ['MEO', 'Smart A75'],
-    'MEO Smart A80': ['MEO', 'Smart A80']
+    'MEO Smart A80': ['MEO', 'Smart A80'],
   },
 
   'MEU AN!!': {
     'MEU AN400': ['MEU', 'AN400'],
-    'MEU AN500': ['MEU', 'AN500']
+    'MEU AN500': ['MEU', 'AN500'],
   },
 
   'Slidepad!!': {
@@ -10281,7 +10283,7 @@ exports.ANDROID_MODELS = {
     'SlidePad Elite 9708': ['Memup', 'Slidepad Elite 9708', DeviceType.TABLET],
     'SlidePad Kids': ['Memup', 'Slidepad Kids', DeviceType.TABLET],
     'SlidePad NG 116DC': ['Memup', 'Slidepad NG 116DC', DeviceType.TABLET],
-    'SlidePad NG 704DC': ['Memup', 'Slidepad NG 704DC', DeviceType.TABLET]
+    'SlidePad NG 704DC': ['Memup', 'Slidepad NG 704DC', DeviceType.TABLET],
   },
 
   '704DC': ['Memup', 'Slidepad 704DC', DeviceType.TABLET],
@@ -10511,7 +10513,7 @@ exports.ANDROID_MODELS = {
     'Micromax Q4260': ['Micromax', 'Q4260 Canvas Evok Power'],
     'Micromax S300': ['Micromax', 'S300 Bolt'],
     'Micromax S301': ['Micromax', 'S301 Bolt'],
-    'Micromax S302': ['Micromax', 'S302 Bolt']
+    'Micromax S302': ['Micromax', 'S302 Bolt'],
   },
 
   A13: ['Micromax', 'A13'],
@@ -10536,13 +10538,13 @@ exports.ANDROID_MODELS = {
     'MLLED M7S': ['MLLED', 'M7S'],
     'MLLED M8': ['MLLED', 'M8'],
     'MLLED M8S': ['MLLED', 'M8S'],
-    'MLLED X3S': ['MLLED', 'X3S']
+    'MLLED X3S': ['MLLED', 'X3S'],
   },
 
   'Mio!!': {
     'MioCARE A105': ['Mitac', 'MioCARE A105'],
     'MioCare 6119': ['Mitac', 'MioCARE 6119'],
-    'MioPad 6': ['Mitac', 'MioPad 6', DeviceType.TABLET]
+    'MioPad 6': ['Mitac', 'MioPad 6', DeviceType.TABLET],
   },
 
   'MITO!!': {
@@ -10610,7 +10612,7 @@ exports.ANDROID_MODELS = {
     'MITO T660': ['MITO', 'T660', DeviceType.TABLET],
     'MITO T777': ['MITO', 'T777', DeviceType.TABLET],
     'MITO T888': ['MITO', 'T888', DeviceType.TABLET],
-    'MITO T979': ['MITO', 'T979', DeviceType.TABLET]
+    'MITO T979': ['MITO', 'T979', DeviceType.TABLET],
   },
 
   'MIZ Z2': ['Miz', 'Z2'],
@@ -10621,13 +10623,13 @@ exports.ANDROID_MODELS = {
     'iQTalk King': ['MLS', 'iQTalk King'],
     iQTab: ['MLS', 'iQTab', DeviceType.TABLET],
     'iQTab 3G': ['MLS', 'iQTab 3G', DeviceType.TABLET],
-    'iQTab Astro 3G': ['MLS', 'iQTab Astro 3G', DeviceType.TABLET]
+    'iQTab Astro 3G': ['MLS', 'iQTab Astro 3G', DeviceType.TABLET],
   },
 
   'Nova!!': {
     'Nova A': ['Mobell', 'Nova A'],
     'Nova E': ['Mobell', 'Nova E'],
-    'Nova F': ['Mobell', 'Nova F']
+    'Nova F': ['Mobell', 'Nova F'],
   },
 
   'Mobiistar!!': {
@@ -10663,7 +10665,7 @@ exports.ANDROID_MODELS = {
     'mobiistar touch LAI 504': ['Mobiistar', 'Touch Lai 504'],
     'mobiistar LAI 504m': ['Mobiistar', 'Touch Lai 504M'],
     'mobiistar touch LAI 504Q': ['Mobiistar', 'Touch Lai 504Q'],
-    'mobiistar touch LAI 512': ['Mobiistar', 'Touch Lai 512']
+    'mobiistar touch LAI 512': ['Mobiistar', 'Touch Lai 512'],
   },
 
   'BEAN 454': ['Mobiistar', 'Touch Bean 454'],
@@ -10682,7 +10684,7 @@ exports.ANDROID_MODELS = {
     'Cynus T5': ['Mobistel', 'Cynus T5'],
     'Cynus T6': ['Mobistel', 'Cynus T6'],
     'Cynus T7': ['Mobistel', 'Cynus T7'],
-    'Cynus T8': ['Mobistel', 'Cynus T8']
+    'Cynus T8': ['Mobistel', 'Cynus T8'],
   },
 
   'MOCHE SMART A16': ['Moche', 'Smart A16'],
@@ -10712,14 +10714,14 @@ exports.ANDROID_MODELS = {
     'FreeTAB 9702 HD X2': ['Modecom', 'FreeTAB 9702 HD X2', DeviceType.TABLET],
     'FreeTAB 9702 HD X4': ['Modecom', 'FreeTAB 9702 HD X4', DeviceType.TABLET],
     'MODECOM FreeTAB 9702 IPS X2': ['Modecom', 'FreeTAB 9702 IPS X2', DeviceType.TABLET],
-    'FreeTAB 9704 IPS2 X4': ['Modecom', 'FreeTAB 9704 IPS2 X4', DeviceType.TABLET]
+    'FreeTAB 9704 IPS2 X4': ['Modecom', 'FreeTAB 9704 IPS2 X4', DeviceType.TABLET],
   },
 
   'MOGU!!': {
     'MOGU-M0': ['Mogu', 'M0'],
     'MOGU M2': ['Mogu', 'M2'],
     'MOGU M2 ROM': ['Mogu', 'M2'],
-    'MOGU-M2': ['Mogu', 'M2']
+    'MOGU-M2': ['Mogu', 'M2'],
   },
 
   'moii!!': {
@@ -10729,7 +10731,7 @@ exports.ANDROID_MODELS = {
     'Moii E801': ['moii', 'E801'],
     'moii E893': ['moii', 'E893'],
     'Moii E990': ['moii', 'E990'],
-    'moii E996': ['moii', 'E996']
+    'moii E996': ['moii', 'E996'],
   },
 
   AT735: ['Moinstone', 'AT735', DeviceType.TABLET],
@@ -10762,7 +10764,7 @@ exports.ANDROID_MODELS = {
     'MB8(60|61)!': ['Motorola', 'ATRIX'],
     MB865: ['Motorola', 'ATRIX 2'],
     MB870: ['Motorola', 'Droid X2'],
-    MB886: ['Motorola', 'DINARA']
+    MB886: ['Motorola', 'DINARA'],
   },
 
   'ME[0-9]{3,3}!!': {
@@ -10778,7 +10780,7 @@ exports.ANDROID_MODELS = {
     ME811: ['Motorola', 'Droid X'],
     ME860: ['Motorola', 'ATRIX'],
     ME863: ['Motorola', 'Milestone 3'],
-    ME865: ['Motorola', 'ATRIX 2']
+    ME865: ['Motorola', 'ATRIX 2'],
   },
 
   'MT[0-9]{3,3}!!': {
@@ -10789,7 +10791,7 @@ exports.ANDROID_MODELS = {
     MT810: ['Motorola', 'MOTO MT810'],
     MT870: ['Motorola', 'MOTO MT870'],
     MT887: ['Motorola', 'RAZR V'],
-    MT917: ['Motorola', 'MT917']
+    MT917: ['Motorola', 'MT917'],
   },
 
   'MZ[0-9]{3,3}!!': {
@@ -10806,13 +10808,13 @@ exports.ANDROID_MODELS = {
     'MZ609!': ['Motorola', 'Droid XYBOARD 8.2', DeviceType.TABLET],
     MZ615: ['Motorola', 'XOOM 2 WiFi', DeviceType.TABLET],
     MZ616: ['Motorola', 'XOOM 2 3G', DeviceType.TABLET],
-    'MZ617!': ['Motorola', 'Droid XYBOARD 10.1', DeviceType.TABLET]
+    'MZ617!': ['Motorola', 'Droid XYBOARD 10.1', DeviceType.TABLET],
   },
 
   'WX[0-9]{3,3}!!': {
     WX435: ['Motorola', 'TRIUMPH WX435'],
     WX442: ['Motorola', 'CITRUS WX442'],
-    WX445: ['Motorola', 'CITRUS WX445']
+    WX445: ['Motorola', 'CITRUS WX445'],
   },
 
   'XT[0-9]{3,4}!!': {
@@ -10921,7 +10923,7 @@ exports.ANDROID_MODELS = {
     'XT17(90)!': ['Motorola', 'Moto G5S'],
     'XT18(02)!': ['Motorola', 'Moto G5S Plus TV'],
     'XT18(05|06)!': ['Motorola', 'Moto G5S Plus'],
-    'XT19(02)!': ['Lenovo', 'K8 Note']
+    'XT19(02)!': ['Lenovo', 'K8 Note'],
   },
 
   'motorola one': ['Motorola', 'One'],
@@ -10992,7 +10994,7 @@ exports.ANDROID_MODELS = {
   'Moto C': ['Motorola', 'Moto C'],
   'Moto C Plus': ['Motorola', 'Moto C Plus'],
   '(Moto)?E2$!': ['Motorola', 'Moto E (2015)'],
-  '(Moto)?E2(4G-LTE)$!': ['Motorola', 'Moto E (2015)'],
+  '(Moto)?E2\(4G-LTE\)$!': ['Motorola', 'Moto E (2015)'],
   surnia: ['Motorola', 'Moto E (2015)'],
   'Motorola MotoE2!': ['Motorola', 'Moto E2'],
   'Moto E4': ['Motorola', 'Moto E4'],
@@ -11166,7 +11168,7 @@ exports.ANDROID_MODELS = {
     'M4 SS4450': ['M4Tel', 'SS4450'],
     'M4 SS4451': ['M4Tel', 'SS4451'],
     'M4 SS4452': ['M4Tel', 'SS4452'],
-    'M4 SS4456': ['M4Tel', 'SS4456']
+    'M4 SS4456': ['M4Tel', 'SS4456'],
   },
 
   'MyPhone A818g Duo': ['MyPhone', 'A818g Duo'],
@@ -11230,14 +11232,14 @@ exports.ANDROID_MODELS = {
     'MySAGA C1': ['Mysaga', 'C1'],
     'MY SAGA C2': ['Mysaga', 'C2'],
     'MY SAGA C3': ['Mysaga', 'C3'],
-    'MYSAGA M1': ['Mysaga', 'M1']
+    'MYSAGA M1': ['Mysaga', 'M1'],
   },
 
-  'M.T.T.!!': {
+  'M\.T\.T\.!!': {
     'M.T.T. SmartFun': ['M.T.T.', 'Smart Fun'],
     'M.T.T.SmartMax': ['M.T.T.', 'Smart Max'],
     'M.T.T. Smart Multimedia': ['M.T.T.', 'Smart Multimedia'],
-    'M.T.T. Tablet': ['M.T.T.', 'Tablet', DeviceType.TABLET]
+    'M.T.T. Tablet': ['M.T.T.', 'Tablet', DeviceType.TABLET],
   },
 
   'iQ7 8GB': ['Navon', 'IQ7', DeviceType.TABLET],
@@ -11286,7 +11288,7 @@ exports.ANDROID_MODELS = {
     'N-06D': ['NEC', 'MEDIAS Tab N-06D', DeviceType.TABLET, { carrier: 'DoCoMo' }],
     'N-06E': ['NEC', 'MEDIAS X N-06E', { carrier: 'DoCoMo' }],
     'N-07D': ['NEC', 'MEDIAS X N-07D', { carrier: 'DoCoMo' }],
-    'N-08D': ['NEC', 'MEDIAS Tab UL N-08D', DeviceType.TABLET, { carrier: 'DoCoMo' }]
+    'N-08D': ['NEC', 'MEDIAS Tab UL N-08D', DeviceType.TABLET, { carrier: 'DoCoMo' }],
   },
 
   'NEC-0912': ['NEC', 'MEDIAS U N-02E', { carrier: 'DoCoMo' }],
@@ -11310,7 +11312,7 @@ exports.ANDROID_MODELS = {
     'LaVieTab PC-TE510N1B': ['NEC', 'LaVie Tab E TE510', DeviceType.TABLET],
     'LaVieTab PC-TE510S1': ['NEC', 'LaVie Tab E TE510', DeviceType.TABLET],
     'LaVieTab TE510S1': ['NEC', 'LaVie Tab E TE510', DeviceType.TABLET],
-    'LaVieTab PC-TS507N1S': ['NEC', 'LaVie Tab S TS507', DeviceType.TABLET]
+    'LaVieTab PC-TS507N1S': ['NEC', 'LaVie Tab S TS507', DeviceType.TABLET],
   },
 
   'PC-TE307N1W': ['NEC', 'LaVie Tab E TE307', DeviceType.TABLET],
@@ -11329,7 +11331,7 @@ exports.ANDROID_MODELS = {
   'neken!!': {
     'neken N5': ['Neken', 'N5'],
     'neken N6': ['Neken', 'N6'],
-    'neken NX': ['Neken', 'NX']
+    'neken NX': ['Neken', 'NX'],
   },
 
   GTV100: ['NETGEAR', 'NeoTV Prime', DeviceType.TELEVISION, Flag.GOOGLETV],
@@ -11337,7 +11339,7 @@ exports.ANDROID_MODELS = {
   'NEO!!': {
     'NEO N01': ['NEO', 'N01'],
     'NEO N002': ['NEO', 'N002'],
-    'NEO N002i': ['NEO', 'N002i']
+    'NEO N002i': ['NEO', 'N002i'],
   },
 
   'ARA YS608': ['NESO', 'ARA YS608'],
@@ -11348,7 +11350,7 @@ exports.ANDROID_MODELS = {
     'NX-A890': ['Nexian', 'Journey'],
     'NX-A891': ['Nexian', 'Ultra Journey'],
     'NX-A895': ['Nexian', 'Cosmo Journey'],
-    'NX-A899': ['Nexian', 'Xtreme']
+    'NX-A899': ['Nexian', 'Xtreme'],
   },
 
   NXA8QC116: ['Nextbook', 'Ares 8', DeviceType.TABLET],
@@ -11463,7 +11465,7 @@ exports.ANDROID_MODELS = {
     'NOAIN A900': ['Noain', 'A900'],
     'NOAIN A900S': ['Noain', 'A900S'],
     'NOAIN A903': ['Noain', 'A903'],
-    'NOAIN A918': ['Noain', 'A918']
+    'NOAIN A918': ['Noain', 'A918'],
   },
 
   'NBX-T7013N': ['Noblex', 'T7013N', DeviceType.TABLET],
@@ -11529,20 +11531,20 @@ exports.ANDROID_MODELS = {
     'Tegra Note 7': ['Nvidia', 'Tegra Note 7', DeviceType.TABLET],
     'Tegra Note 8': ['Nvidia', 'Tegra Note 8', DeviceType.TABLET],
     'TegraNote-Premium': ['Nvidia', 'Tegra Note Premium', DeviceType.TABLET],
-    'TegraNote-P1640': ['Nvidia', 'Tegra Note P1640', DeviceType.TABLET]
+    'TegraNote-P1640': ['Nvidia', 'Tegra Note P1640', DeviceType.TABLET],
   },
 
   'NYX!!': {
     'NYX FLY': ['NYX Mobile', 'Fly'],
     'NYX FLY II': ['NYX Mobile', 'Fly II'],
     'NYX NOBA II': ['NYX Mobile', 'Noba II'],
-    'NYX ZEUZ HD': ['NYX Mobile', 'Zeuz HD']
+    'NYX ZEUZ HD': ['NYX Mobile', 'Zeuz HD'],
   },
 
   JOIN: ['NYX Mobile', 'Join'],
   Orbis: ['NYX Mobile', 'Orbis'],
 
-  'O+!!': {
+  'O\+!!': {
     'O+8.1Android': ['O+', '8.1'],
     'O+ 8.12 Android': ['O+', '8.12'],
     'O+ 8.15 Android': ['O+', '8.15'],
@@ -11574,7 +11576,7 @@ exports.ANDROID_MODELS = {
     'O+ FAB ELITE': ['O+', 'Fab Elite'],
     'O+ Grande': ['O+', 'Grande'],
     'O+ Ultra': ['O+', 'Ultra'],
-    'O+ TABLET': ['O+', 'Tablet', DeviceType.TABLET]
+    'O+ TABLET': ['O+', 'Tablet', DeviceType.TABLET],
   },
 
   EFM710A: ['Oblio', 'Mint 7x', DeviceType.TABLET],
@@ -11890,7 +11892,7 @@ exports.ANDROID_MODELS = {
   'Oppo R831 Limited Edition': ['Oppo', 'Neo R831'],
   R831K: ['Oppo', 'Real 20 R831K'],
   R831L: ['Oppo', 'Neo 5 R831L'],
-  '1201': ['Oppo', 'Neo 5 R831L'],
+  1201: ['Oppo', 'Neo 5 R831L'],
   R831T: ['Oppo', 'Neo R831T'],
   R831S: ['Oppo', 'R831S'],
   R831: ['Oppo', 'Neo R831'],
@@ -12007,11 +12009,11 @@ exports.ANDROID_MODELS = {
   CPH1861: ['Oppo', 'Realme 1'],
   W8: ['Oppo', 'W8'],
   'OB-OPPO 1105': ['Oppo', '1105'],
-  '1105': ['Oppo', '1105'],
-  '1107': ['Oppo', '1107'],
+  1105: ['Oppo', '1105'],
+  1107: ['Oppo', '1107'],
   'OB-OPPO 3005': ['Oppo', '3005'],
-  '3007': ['Oppo', '3007'],
-  '6607': ['Oppo', 'U3'],
+  3007: ['Oppo', '3007'],
+  6607: ['Oppo', 'U3'],
   PAFM00: ['Oppo', 'Find X'],
   'OPPO PAFM00': ['Oppo', 'Find X'],
   PAHM00: ['Oppo', 'Find X'],
@@ -12039,7 +12041,7 @@ exports.ANDROID_MODELS = {
     'OPSSON IVO6655': ['Opsson', 'IVO 6655'],
     'OPSSON IVO6666': ['Opsson', 'IVO 6666'],
     'OPSSON IVO 6677': ['Opsson', 'IVO 6677'],
-    'OPSSON IVO 8800': ['Opsson', 'IVO 8800']
+    'OPSSON IVO 8800': ['Opsson', 'IVO 8800'],
   },
 
   'OP0118-12': ['Oregon Scientific', 'Meep!', DeviceType.TABLET],
@@ -12075,7 +12077,7 @@ exports.ANDROID_MODELS = {
     'OV-Vertis-01': ['Overmax', 'Vertis 01'],
     'OV-Vertis-02': ['Overmax', 'Vertis 02'],
     'Vertis Expi': ['Overmax', 'Vertis Expi'],
-    'Vertis Famy': ['Overmax', 'Vertis Famy']
+    'Vertis Famy': ['Overmax', 'Vertis Famy'],
   },
 
   OV10274G: ['Overmax', '1027'],
@@ -12102,7 +12104,7 @@ exports.ANDROID_MODELS = {
     'P-06D': ['Panasonic', 'ELUGA V P-06D', { carrier: 'DoCoMo' }],
     'P-07C': ['Panasonic', 'P-07C', { carrier: 'DoCoMo' }],
     'P-07D': ['Panasonic', 'ELUGA power P-07D', { carrier: 'DoCoMo' }],
-    'P-08D': ['Panasonic', 'ELUGA Live P-08D', DeviceType.TABLET, { carrier: 'DoCoMo' }]
+    'P-08D': ['Panasonic', 'ELUGA Live P-08D', DeviceType.TABLET, { carrier: 'DoCoMo' }],
   },
 
   '003P': ['Panasonic', 'Sweety 003P', { carrier: 'Softbank' }],
@@ -12167,7 +12169,7 @@ exports.ANDROID_MODELS = {
     'Panasonic SV-MV100': ['Panasonic', 'SV-MV100', DeviceType.MEDIA],
     'Panasonic UN-MT300': ['Panasonic', 'UN-MT300', DeviceType.MEDIA],
     'Panasonic UN-W700': ['Panasonic', 'Multimedia System UN-W700', DeviceType.MEDIA],
-    'Panasonic UT-PB1': ['Panasonic', 'Raboo UT-PB1', DeviceType.EREADER]
+    'Panasonic UT-PB1': ['Panasonic', 'Raboo UT-PB1', DeviceType.EREADER],
   },
 
   'Eluga A2': ['Panasonic', 'Eluga A2'],
@@ -12246,7 +12248,7 @@ exports.ANDROID_MODELS = {
     'IM-A910!': ['Pantech', 'Vega Iron 2'],
     'IM-A920!': ['Pantech', 'IM-A920'],
     'IM-A930!': ['Pantech', 'IM-A930'],
-    'IM-T100K': ['Pantech', 'Vega N˚ 5', DeviceType.TABLET]
+    'IM-T100K': ['Pantech', 'Vega N˚ 5', DeviceType.TABLET],
   },
 
   'IM-100K': ['Pantech', 'I`m back'],
@@ -12266,7 +12268,7 @@ exports.ANDROID_MODELS = {
     'PantechP8010!': ['Pantech', 'Flex'],
     'PantechP9060!': ['Pantech', 'Pocket'],
     'PantechP9070!': ['Pantech', 'Burst'],
-    'PantechP9090!': ['Pantech', 'Magnus']
+    'PantechP9090!': ['Pantech', 'Magnus'],
   },
 
   IS06: ['Pantech', 'SIRIUS α IS06', { carrier: 'au' }],
@@ -12300,7 +12302,7 @@ exports.ANDROID_MODELS = {
     'Penta WS707C': ['Penta', 'T-Pad WS707C', DeviceType.TABLET],
     'Penta WS802C': ['Penta', 'T-Pad WS802C', DeviceType.TABLET],
     'Penta WS907Q': ['Penta', 'T-Pad WS907Q', DeviceType.TABLET],
-    'Penta PS650': ['Penta', 'PS650', DeviceType.TABLET]
+    'Penta PS650': ['Penta', 'PS650', DeviceType.TABLET],
   },
 
   IS703C: ['Penta', 'T-Pad IS703C', DeviceType.TABLET],
@@ -12313,7 +12315,7 @@ exports.ANDROID_MODELS = {
     'PENTAGRAM TAB 7.3': ['Pentagram', 'Tab 7.3', DeviceType.TABLET],
     'PENTAGRAM TAB 7.5': ['Pentagram', 'Tab 7.5', DeviceType.TABLET],
     'PentagramTAB7.6': ['Pentagram', 'Tab 7.6', DeviceType.TABLET],
-    'PENTAGRAM TAB Quadra 9.7': ['Pentagram', 'Quadra 9.7', DeviceType.TABLET]
+    'PENTAGRAM TAB Quadra 9.7': ['Pentagram', 'Quadra 9.7', DeviceType.TABLET],
   },
 
   'PHICOMM!!': {
@@ -12340,7 +12342,7 @@ exports.ANDROID_MODELS = {
     'PHICOMM X100wEU': ['Phicomm', 'X100w'],
     'PHICOMM X130v': ['Phicomm', 'X130v'],
     'PHICOMM X130va': ['Phicomm', 'X130va'],
-    'PHICOMM X130wEU': ['Phicomm', 'X130W']
+    'PHICOMM X130wEU': ['Phicomm', 'X130W'],
   },
 
   'FWS[0-9]{3,3}!!': {
@@ -12349,7 +12351,7 @@ exports.ANDROID_MODELS = {
     FWS710: ['Phicomm', 'FWS710'],
     FWS710EU: ['Phicomm', 'FWS710'],
     FWS710a: ['Phicomm', 'FWS710'],
-    FWS810: ['Phicomm', 'FWS810']
+    FWS810: ['Phicomm', 'FWS810'],
   },
 
   i803w: ['Phicomm', 'i803w'],
@@ -12451,7 +12453,7 @@ exports.ANDROID_MODELS = {
     'PNR-Pioneer E81c': ['Pioneer', 'E81c'],
     'Pioneer E90w': ['Pioneer', 'E90w'],
     'Pioneer P81': ['Pioneer', 'P81'],
-    'Pioneer S90w': ['Pioneer', 'S90w']
+    'Pioneer S90w': ['Pioneer', 'S90w'],
   },
 
   E60w: ['Pioneer', 'E60w'],
@@ -12473,7 +12475,7 @@ exports.ANDROID_MODELS = {
     'PIRANHA Ultra Tab Zeus White 10.1': ['Piranha', 'Ultra Tab 10.1', DeviceType.TABLET],
     'PIRANHA ULTRA TAB 10.1"': ['Piranha', 'Ultra Tab 10.1', DeviceType.TABLET],
     'PIRANHA ULTRA II TAB 7': ['Piranha', 'Ultra II Tab 7.0', DeviceType.TABLET],
-    'PIRANHA Ultra II TAB 9.0': ['Piranha', 'Ultra II Tab 9.0', DeviceType.TABLET]
+    'PIRANHA Ultra II TAB 9.0': ['Piranha', 'Ultra II Tab 9.0', DeviceType.TABLET],
   },
 
   'PGM 398': ['Pixcom', 'PGM 398'],
@@ -12517,7 +12519,7 @@ exports.ANDROID_MODELS = {
     MOMO19HD: ['Ployer', 'MOMO19 HD', DeviceType.TABLET],
     MOMO20: ['Ployer', 'MOMO20', DeviceType.TABLET],
     'MOMO20-AU': ['Ployer', 'MOMO20', DeviceType.TABLET],
-    MOMO20S: ['Ployer', 'MOMO20', DeviceType.TABLET]
+    MOMO20S: ['Ployer', 'MOMO20', DeviceType.TABLET],
   },
 
   'PocketBook A7': ['PocketBook', 'A7', DeviceType.TABLET],
@@ -12603,7 +12605,7 @@ exports.ANDROID_MODELS = {
     MIDC901: ['Polaroid', 'MIDC901', DeviceType.TABLET],
     MIDC970: ['Polaroid', 'MIDC970', DeviceType.TABLET],
     MIDCD10: ['Polaroid', 'MIDCD10', DeviceType.TABLET],
-    MIDCD97: ['Polaroid', 'MIDCD97', DeviceType.TABLET]
+    MIDCD97: ['Polaroid', 'MIDCD97', DeviceType.TABLET],
   },
 
   'PMID!!': {
@@ -12634,7 +12636,7 @@ exports.ANDROID_MODELS = {
     'PMID-1000DC': ['Polaroid', 'PMID 1000dc', DeviceType.TABLET],
     'PMID1000!': ['Polaroid', 'PMID 1000', DeviceType.TABLET],
     PMID4311: ['Polaroid', 'PMID 4311', DeviceType.TABLET],
-    PMID4312: ['Polaroid', 'PMID 4312', DeviceType.TABLET]
+    PMID4312: ['Polaroid', 'PMID 4312', DeviceType.TABLET],
   },
 
   PSPT350: ['Polaroid', 'PSPT350'],
@@ -12650,7 +12652,7 @@ exports.ANDROID_MODELS = {
 
   'PROV!!': {
     PROV350: ['Polaroid', 'PROV350'],
-    PROV400: ['Polaroid', 'PROV400']
+    PROV400: ['Polaroid', 'PROV400'],
   },
 
   'PRO!!': {
@@ -12659,7 +12661,7 @@ exports.ANDROID_MODELS = {
     PRO4006: ['Polaroid', 'PRO4006'],
     PRO4611PR201: ['Polaroid', 'PRO4611'],
     PRO5701: ['Polaroid', 'PRO5701'],
-    PRO7111: ['Polaroid', 'PRO7111']
+    PRO7111: ['Polaroid', 'PRO7111'],
   },
 
   'POLY ?PAD!!': {
@@ -12667,7 +12669,7 @@ exports.ANDROID_MODELS = {
     'POLY PAD 8216HD': ['Polypad', '8216 HD', DeviceType.TABLET],
     'POLY PAD 9708HD': ['Polypad', '9708 HD', DeviceType.TABLET],
     'POLY PAD 9716HD': ['Polypad', '9716 HD', DeviceType.TABLET],
-    'Polypad C508': ['Polypad', 'C508', DeviceType.TABLET]
+    'Polypad C508': ['Polypad', 'C508', DeviceType.TABLET],
   },
 
   'POLYTRON!!': {
@@ -12703,7 +12705,7 @@ exports.ANDROID_MODELS = {
     'POLYTRON W8470': ['Polytron', 'W8470 Wizard Quadra HD'],
     'POLYTRON 4G450': ['Polytron', '4G450 Zap 5'],
     'POLYTRON 4G501': ['Polytron', '4G501 Zap 6 Posh'],
-    'POLYTRON 4G551': ['Polytron', '4G551 Zap 6 Posh Note']
+    'POLYTRON 4G551': ['Polytron', '4G551 Zap 6 Posh Note'],
   },
 
   'POMP!!': {
@@ -12715,7 +12717,7 @@ exports.ANDROID_MODELS = {
     'POMP W89': ['POMP', 'W89'],
     'POMP-W89': ['POMP', 'W89'],
     'POMP W99': ['POMP', 'W99'],
-    'POMP W99A': ['POMP', 'W99A']
+    'POMP W99A': ['POMP', 'W99A'],
   },
 
   ACT2000: ['Poptronix', 'ACT2000', DeviceType.TABLET],
@@ -12723,7 +12725,7 @@ exports.ANDROID_MODELS = {
   'Air!!': {
     'Air 7.85 3G': ['Roverpad', 'Air 7.85 3G', DeviceType.TABLET],
     'Air 10.1 3G': ['Roverpad', 'Air 10.1 3G', DeviceType.TABLET],
-    'Air S70': ['Roverpad', 'Air S70', DeviceType.TABLET]
+    'Air S70': ['Roverpad', 'Air S70', DeviceType.TABLET],
   },
 
   'PMP[0-9]{4,4}!!': {
@@ -12790,7 +12792,7 @@ exports.ANDROID_MODELS = {
     'PMP7280C3G DUO': ['Prestigio', 'Multipad 2 Ultra Duo 8.0 3G', DeviceType.TABLET],
     'PMP7280C3G QUAD': ['Prestigio', 'Multipad 4 Ultra Quad 8.0 3G', DeviceType.TABLET],
     PMP7380D3G: ['Prestigio', 'Multipad 2 Pro Duo 8.0 3G', DeviceType.TABLET],
-    'PMP7380D3G QUAD': ['Prestigio', 'Multipad 2 Pro Quad 8.0 3G', DeviceType.TABLET]
+    'PMP7380D3G QUAD': ['Prestigio', 'Multipad 2 Pro Quad 8.0 3G', DeviceType.TABLET],
   },
 
   'PMT[0-9]{4,4}!!': {
@@ -12832,7 +12834,7 @@ exports.ANDROID_MODELS = {
     'PMT7077 3G': ['Prestigio', 'Multipad 4 Diamond 7.85 3G', DeviceType.TABLET],
     'PMT7177 3G': ['Prestigio', 'Multipad 4 Diamond 10.1 3G', DeviceType.TABLET],
     'PMT7287 3G': ['Prestigio', 'Multipad 4 Ultra Quad 8.0 3G', DeviceType.TABLET],
-    'PMT7787 3G': ['Prestigio', 'Multipad Thunder 8.0i', DeviceType.TABLET]
+    'PMT7787 3G': ['Prestigio', 'Multipad Thunder 8.0i', DeviceType.TABLET],
   },
 
   'PAP[0-9]{4,4}!!': {
@@ -12865,7 +12867,7 @@ exports.ANDROID_MODELS = {
     PAP5503: ['Prestigio', 'Multiphone 5503'],
     PAP5503DUO: ['Prestigio', 'Multiphone 5503 Duo'],
     PAP7500: ['Prestigio', 'Multiphone 7500'],
-    PAP7600DUO: ['Prestigio', 'Multiphone 7600 Duo']
+    PAP7600DUO: ['Prestigio', 'Multiphone 7600 Duo'],
   },
 
   'PSP[0-9]{4,4}!!': {
@@ -12898,7 +12900,7 @@ exports.ANDROID_MODELS = {
     PSP5517DUO: ['Prestigio', 'Multiphone 5517 Duo'],
     PSP5550DUO: ['Prestigio', 'Multiphone 5550 Duo'],
     PSP7505DUO: ['Prestigio', 'Multiphone Grace X7'],
-    PSP7557: ['Prestigio', 'Multiphone 7557 Grace']
+    PSP7557: ['Prestigio', 'Multiphone 7557 Grace'],
   },
 
   'Prestigio PAP5000TDUO': ['Prestigio', 'Multiphone 5000 Duo'],
@@ -12909,7 +12911,7 @@ exports.ANDROID_MODELS = {
   'MD-[0-9]{4,4}!!': {
     'MD-0651': ['Prolink', 'MD-0651', DeviceType.TABLET],
     'MD-0696B': ['Prolink', 'MD-0696B', DeviceType.TABLET],
-    'MD-0697': ['Prolink', 'MD-0697', DeviceType.TABLET]
+    'MD-0697': ['Prolink', 'MD-0697', DeviceType.TABLET],
   },
 
   'PLT!!': {
@@ -12940,7 +12942,7 @@ exports.ANDROID_MODELS = {
     PLT9045K: ['Proscan', 'PLT9045K', DeviceType.TABLET],
     'PLT9045K-BLACK': ['Proscan', 'PLT9045K', DeviceType.TABLET],
     PLT9602G: ['Proscan', 'PLT9602G', DeviceType.TABLET],
-    PLT9606G: ['Proscan', 'PLT9606G', DeviceType.TABLET]
+    PLT9606G: ['Proscan', 'PLT9606G', DeviceType.TABLET],
   },
 
   'Positivo Mini': ['Positivo', 'Mini', DeviceType.TABLET],
@@ -13036,12 +13038,12 @@ exports.ANDROID_MODELS = {
     'Q-Wave71N': ['Quantum', 'Q-Wave 71N', DeviceType.TABLET],
     'Q-Wave781N': ['Quantum', 'Q-Wave 781N', DeviceType.TABLET],
     'Q-WaveA101': ['Quantum', 'Q-Wave A101', DeviceType.TABLET],
-    'Q-Wave L70N': ['Quantum', 'Q-Wave L70N', DeviceType.TABLET]
+    'Q-Wave L70N': ['Quantum', 'Q-Wave L70N', DeviceType.TABLET],
   },
 
   'Quechua Phone 5': ['Quechua', 'Phone 5'],
 
-  'QUBE[ -](B[0-9]S?+?)!': ['Qube', '$1'],
+  'QUBE[ -](B[0-9]S?\+?)!': ['Qube', '$1'],
   'QUBE[ -](T[0-9])!': ['Qube', '$1', DeviceType.TABLET],
   'QUMO[ -]QUEST[ -]?([0-9]+i?)!': ['QUMO', 'Quest $1'],
   'QUMO Altair ([0-9]+i?)!': ['QUMO', 'Altair $1', DeviceType.TABLET],
@@ -13058,7 +13060,7 @@ exports.ANDROID_MODELS = {
     'QW TB-1380QHD': ['Qware', 'Pro5 QHD 8.0', DeviceType.TABLET],
     'QW TB-9718QHD': ['Qware', 'Pro5 QHD 9.7', DeviceType.TABLET],
     'QW TB-1517': ['Qware', 'Tabby', DeviceType.TABLET],
-    'QW TB-1517D': ['Qware', 'Tabby2', DeviceType.TABLET]
+    'QW TB-1517D': ['Qware', 'Tabby2', DeviceType.TABLET],
   },
 
   'ramos i7s  ': ['Ramos', 'I7s', DeviceType.TABLET],
@@ -13112,14 +13114,14 @@ exports.ANDROID_MODELS = {
   'Rayhov!!': {
     'Rayhov X3': ['Rayhov', 'X3'],
     'Rayhov X6': ['Rayhov', 'X6'],
-    'Rayhov X9': ['Rayhov', 'X9']
+    'Rayhov X9': ['Rayhov', 'X9'],
   },
 
   'Readboy!!': {
     'Readboy G12': ['Readboy', 'G12', DeviceType.TABLET],
     'Readboy G18': ['Readboy', 'G18', DeviceType.TABLET],
     'Readboy G50': ['Readboy', 'G50', DeviceType.TABLET],
-    'Readboy G100': ['Readboy', 'G100', DeviceType.TABLET]
+    'Readboy G100': ['Readboy', 'G100', DeviceType.TABLET],
   },
 
   ReederA8R: ['Reeder', 'A8R', DeviceType.TABLET],
@@ -13175,7 +13177,7 @@ exports.ANDROID_MODELS = {
     RMP400: ['Ritmix', 'RMP-400', DeviceType.TABLET],
     'RMP-450': ['Ritmix', 'RMP-450', DeviceType.TABLET],
     'RMP-530': ['Ritmix', 'RMP-530', DeviceType.TABLET],
-    'RMP-600': ['Ritmix', 'RMP-600', DeviceType.TABLET]
+    'RMP-600': ['Ritmix', 'RMP-600', DeviceType.TABLET],
   },
 
   '(?:RIVO )?RHYTHM RX ?([0-9]+)!': ['Rivo', 'Rhythm RX$1'],
@@ -13183,7 +13185,7 @@ exports.ANDROID_MODELS = {
   'RMD-[0-9]{2,3}G!!': {
     'RMD-73G': ['Ross&Moor', 'RMD-73G', DeviceType.TABLET],
     'RMD-917G': ['Ross&Moor', 'RMD-917G', DeviceType.TABLET],
-    'RMD-973G': ['Ross&Moor', 'RMD-973G', DeviceType.TABLET]
+    'RMD-973G': ['Ross&Moor', 'RMD-973G', DeviceType.TABLET],
   },
 
   'RoverPad 3W T71D': ['RoverPad', '3W T71D', DeviceType.TABLET],
@@ -13194,7 +13196,7 @@ exports.ANDROID_MODELS = {
 
   'Snexian!!': {
     'Snexian Mi320': ['S Nexian', 'Chronos Mi320'],
-    'Snexian Mi430': ['S Nexian', 'Xtreme2 Mi430']
+    'Snexian Mi430': ['S Nexian', 'Xtreme2 Mi430'],
   },
 
   Mi438S: ['S Nexian', 'Journey One Mi438'],
@@ -13207,7 +13209,7 @@ exports.ANDROID_MODELS = {
   'SALORA-E7': ['Salora', 'Njoy Slim X E7'],
   'SALORA E8': ['Salora', 'Njoy Power X E8'],
 
-  'Sansui[ -]([A-Z]{1,2}[0-9]+[A-Z]?+?)!': ['Sansui', '$1'],
+  'Sansui[ -]([A-Z]{1,2}[0-9]+[A-Z]?\+?)!': ['Sansui', '$1'],
   'Sansui Cosmic SP ([0-9]+)!': ['Sansui', 'Cosmic SP$1'],
   'SANSUI ETAB ([0-9]+) ?VP!': ['Sansui', 'Etab $1VP', DeviceType.TABLET],
 
@@ -13221,7 +13223,7 @@ exports.ANDROID_MODELS = {
     'EK-GN100!': ['Samsung', 'Galaxy NX', DeviceType.CAMERA],
     'EK-GN120!': ['Samsung', 'Galaxy NX', DeviceType.CAMERA],
     'EK-KC100!': ['Samsung', 'Galaxy Camera', DeviceType.CAMERA],
-    'EK-KC120!': ['Samsung', 'Galaxy Camera LTE', DeviceType.CAMERA]
+    'EK-KC120!': ['Samsung', 'Galaxy Camera LTE', DeviceType.CAMERA],
   },
 
   'GT-B[0-9]{4,4}!!': {
@@ -13233,7 +13235,7 @@ exports.ANDROID_MODELS = {
     'GT-B9062!': ['Samsung', 'GT-B9062'],
     'GT-B9120!': ['Samsung', 'GT-B9120'],
     'GT-B9150!': ['Samsung', 'Galaxy HomeSync', DeviceType.TELEVISION],
-    'GT-B9388!': ['Samsung', 'GT-B9388']
+    'GT-B9388!': ['Samsung', 'GT-B9388'],
   },
 
   'GT-I[0-9]{3,4}!!': {
@@ -13296,7 +13298,7 @@ exports.ANDROID_MODELS = {
     'GT-I95(06)!': ['Samsung', 'Galaxy S4 Advance'],
     'GT-I9515!': ['Samsung', 'Galaxy S4 Neo'], // Maybe
     'GT-I9600!': ['Samsung', 'GT-I9600'], // Unknown
-    'GT-I9800!': ['Samsung', 'GT-I9800'] // Unknown
+    'GT-I9800!': ['Samsung', 'GT-I9800'], // Unknown
   },
 
   'GT-N[0-9]{4,4}!!': {
@@ -13305,7 +13307,7 @@ exports.ANDROID_MODELS = {
     'GT-N71(00|02|05|08)!': ['Samsung', 'Galaxy Note II'],
     'GT-N7200!': ['Samsung', 'Galaxy Note 3'], // Fake?
     'GT-N80(00|05|10|13|20)!': ['Samsung', 'Galaxy Note 10.1', DeviceType.TABLET],
-    'GT-N90(00|02||05|06|08)!': ['Samsung', 'Galaxy Note 3']
+    'GT-N90(00|02||05|06|08)!': ['Samsung', 'Galaxy Note 3'],
   },
 
   'GT-P[0-9]{4,4}!!': {
@@ -13323,7 +13325,7 @@ exports.ANDROID_MODELS = {
     'GT-P75(01|11)!': ['Samsung', 'Galaxy Tab 10.1N', DeviceType.TABLET],
     'GT-P7580!': ['Samsung', 'Galaxy Tab 10.1', DeviceType.TABLET],
     'GT-P8110!': ['Samsung', 'Nexus 10', DeviceType.TABLET],
-    'GT-P8200!': ['Samsung', 'Galaxy Tab 3 Plus (10.1)', DeviceType.TABLET]
+    'GT-P8200!': ['Samsung', 'Galaxy Tab 3 Plus (10.1)', DeviceType.TABLET],
   },
 
   'GT-S[0-9]{4,4}!!': {
@@ -13376,7 +13378,7 @@ exports.ANDROID_MODELS = {
     'GT-S7898!': ['Samsung', 'Galaxy Trend 2'],
     'GT-S8500': ['Samsung', 'Wave'],
     'GT-S8530': ['Samsung', 'Wave II'],
-    'GT-S9081': ['Samsung', 'GT-S9081'] // Unknown
+    'GT-S9081': ['Samsung', 'GT-S9081'], // Unknown
   },
 
   'GT-T959!': ['Samsung', 'Galaxy S Vibrant'],
@@ -13435,7 +13437,7 @@ exports.ANDROID_MODELS = {
     'SCH-I919!': ['Samsung', 'Galaxy S Duos'],
     'SCH-I925!': ['Samsung', 'Galaxy Note 10.1', DeviceType.TABLET],
     'SCH-I939!': ['Samsung', 'Galaxy S III'],
-    'SCH-I959': ['Samsung', 'Galaxy S4']
+    'SCH-I959': ['Samsung', 'Galaxy S4'],
   },
 
   'SCH-L710!': ['Samsung', 'Galaxy S III'],
@@ -13445,7 +13447,7 @@ exports.ANDROID_MODELS = {
   'SCH-P[0-9]{3,3}!!': {
     'SCH-P709!': ['Samsung', 'Galaxy Mega 5.8'],
     'SCH-P729': ['Samsung', 'Galaxy Mega 6.3'],
-    'SCH-P739': ['Samsung', 'Galaxy Tab 8.9', DeviceType.TABLET]
+    'SCH-P739': ['Samsung', 'Galaxy Tab 8.9', DeviceType.TABLET],
   },
 
   'SCH-R[0-9]{3,3}!!': {
@@ -13467,7 +13469,7 @@ exports.ANDROID_MODELS = {
     'SCH-R940!': ['Samsung', 'Galaxy S Lightray'],
     'SCH-R950!': ['Samsung', 'Galaxy Note II'],
     'SCH-R960!': ['Samsung', 'Galaxy Mega 6.3'],
-    'SCH-R970!': ['Samsung', 'Galaxy S4']
+    'SCH-R970!': ['Samsung', 'Galaxy S4'],
   },
 
   'SCH-S[0-9]{3,3}!!': {
@@ -13475,7 +13477,7 @@ exports.ANDROID_MODELS = {
     'SCH-S735!': ['Samsung', 'Galaxy Discover'],
     'SCH-S738!': ['Samsung', 'Galaxy Centura'],
     'SCH-S950!': ['Samsung', 'Galaxy S Showcase'],
-    'SCH-S9(60|68)!': ['Samsung', 'Galaxy S III']
+    'SCH-S9(60|68)!': ['Samsung', 'Galaxy S III'],
   },
 
   'SCH-V727': ['Samsung', 'Galaxy S4'],
@@ -13486,7 +13488,7 @@ exports.ANDROID_MODELS = {
     'SCH-W899': ['Samsung', 'SCH-W899'],
     'SCH-W999': ['Samsung', 'SCH-W999'],
     'SCH-W2013': ['Samsung', 'SCH-W2013'],
-    'SCH-W9913': ['Samsung', 'SCH-W9913']
+    'SCH-W9913': ['Samsung', 'SCH-W9913'],
   },
 
   'SGH-[EILNMS][0-9]{3,4}!!': {
@@ -13531,7 +13533,7 @@ exports.ANDROID_MODELS = {
     'SGH-M919!': ['Samsung', 'Galaxy S4'],
     'SGH-S730!': ['Samsung', 'Galaxy Discover'],
     'SGH-S959!': ['Samsung', 'Galaxy S II'],
-    'SGH-S970G': ['Samsung', 'Galaxy S4']
+    'SGH-S970G': ['Samsung', 'Galaxy S4'],
   },
 
   'SGH-T[0-9]{3,3}!!': {
@@ -13560,7 +13562,7 @@ exports.ANDROID_MODELS = {
     'SGH-T959W': ['Samsung', 'Galaxy S 4G'],
     'SGH-T989': ['Samsung', 'Galaxy S II'],
     'SGH-T989D': ['Samsung', 'Galaxy S II X'],
-    'SGH-T999!': ['Samsung', 'Galaxy S III']
+    'SGH-T999!': ['Samsung', 'Galaxy S III'],
   },
 
   'SGH-U468!': ['Samsung', 'Galaxy S4'],
@@ -13585,7 +13587,7 @@ exports.ANDROID_MODELS = {
     'SHV-E400!': ['Samsung', 'Galaxy Folder'],
     'SHV-E470!': ['Samsung', 'Galaxy S4 Active'],
     'SHV-E500!': ['Samsung', 'Galaxy Win'],
-    'SHV-E510!': ['Samsung', 'SHV-E510']
+    'SHV-E510!': ['Samsung', 'SHV-E510'],
   },
 
   'SHW-M[0-9]{3,3}!!': {
@@ -13614,7 +13616,7 @@ exports.ANDROID_MODELS = {
     'SHW-M500!': ['Samsung', 'Galaxy Note 8.0', DeviceType.TABLET],
     'SHW-M550!': ['Samsung', 'SHW-M550'], // Unknown
     'SHW-M570!': ['Samsung', 'Galaxy Core Advance'],
-    'SHW-M5(80|85)!': ['Samsung', 'Galaxy Core Safe']
+    'SHW-M5(80|85)!': ['Samsung', 'Galaxy Core Safe'],
   },
 
   'SMT-E5015': ['Samsung', 'Olleh SkyLife Smart Settopbox', DeviceType.TELEVISION],
@@ -13689,7 +13691,7 @@ exports.ANDROID_MODELS = {
     'SM-A900!': ['Samsung', 'Galaxy A9 (2016)'],
     'SM-A908!': ['Samsung', 'Galaxy A90 5G'],
     'SM-A910!': ['Samsung', 'Galaxy A9 Pro'],
-    'SM-A920!': ['Samsung', 'Galaxy A9 (2018)']
+    'SM-A920!': ['Samsung', 'Galaxy A9 (2018)'],
   },
 
   'SM-C[0-9]{3,3}!!': {
@@ -13700,12 +13702,12 @@ exports.ANDROID_MODELS = {
     'SM-C700!': ['Samsung', 'Galaxy C7'],
     'SM-C701!': ['Samsung', 'Galaxy C7 Pro'],
     'SM-C710!': ['Samsung', 'Galaxy C7 (2017)'],
-    'SM-C900!': ['Samsung', 'Galaxy C9']
+    'SM-C900!': ['Samsung', 'Galaxy C9'],
   },
 
   'SM-E[0-9]{3,3}!!': {
     'SM-E500!': ['Samsung', 'Galaxy E5'],
-    'SM-E700!': ['Samsung', 'Galaxy E7']
+    'SM-E700!': ['Samsung', 'Galaxy E7'],
   },
 
   'SM-F[0-9]{3,3}!!': {
@@ -13717,7 +13719,7 @@ exports.ANDROID_MODELS = {
     'SM-F907!': ['Samsung', 'Galaxy Fold 5G'],
     'SM-F910!': ['Samsung', 'Galaxy Z Fold2'],
     'SM-F916!': ['Samsung', 'Galaxy Z Fold2 5G'],
-    'SM-F926!': ['Samsung', 'Galaxy Z Fold3 5G']
+    'SM-F926!': ['Samsung', 'Galaxy Z Fold3 5G'],
   },
 
   'SM-G[0-9]{3,3}!!': {
@@ -13828,7 +13830,7 @@ exports.ANDROID_MODELS = {
     'SM-G990!': ['Samsung', 'Galaxy S21 FE'],
     'SM-G991!': ['Samsung', 'Galaxy S21'],
     'SM-G996!': ['Samsung', 'Galaxy S21+'],
-    'SM-G998!': ['Samsung', 'Galaxy S21 Ultra']
+    'SM-G998!': ['Samsung', 'Galaxy S21 Ultra'],
   },
 
   'SM-I9500': ['Samsung', 'Galaxy S4'],
@@ -13867,7 +13869,7 @@ exports.ANDROID_MODELS = {
     'SM-J737!': ['Samsung', 'Galaxy Wide 3'],
     'SM-J800!': ['Samsung', 'Galaxy J8'],
     'SM-J810!': ['Samsung', 'Galaxy J8 (2018)'],
-    'SM-J900!': ['Samsung', 'Galaxy J9']
+    'SM-J900!': ['Samsung', 'Galaxy J9'],
   },
 
   'SM-M[0-9]{3,4}!!': {
@@ -13883,7 +13885,7 @@ exports.ANDROID_MODELS = {
     'SM-M315!': ['Samsung', 'Galaxy M31'],
     'SM-M317!': ['Samsung', 'Galaxy M31s'],
     'SM-M515!': ['Samsung', 'Galaxy M51'],
-    'SM-M526!': ['Samsung', 'Galaxy M52']
+    'SM-M526!': ['Samsung', 'Galaxy M52'],
   },
 
   'SM-N[0-9]{3,4}!!': {
@@ -13906,7 +13908,7 @@ exports.ANDROID_MODELS = {
     'SM-N976!': ['Samsung', 'Galaxy Note 10+ 5G'],
     'SM-N980!': ['Samsung', 'Galaxy Note 20'],
     'SM-N981!': ['Samsung', 'Galaxy Note 20 5G'],
-    'SM-N986!': ['Samsung', 'Galaxy Note 20 Ultra 5G']
+    'SM-N986!': ['Samsung', 'Galaxy Note 20 Ultra 5G'],
   },
 
   'SM-P[0-9]{3,3}!!': {
@@ -13915,7 +13917,7 @@ exports.ANDROID_MODELS = {
     'SM-P58[058]!': ['Samsung', 'Galaxy Tab A 10.1 with S Pen (2016)', DeviceType.TABLET],
     'SM-P60[01257]!': ['Samsung', 'Galaxy Note 10.1 (2014)', DeviceType.TABLET],
     'SM-P61[05]!': ['Samsung', 'Galaxy Tab S6 Lite', DeviceType.TABLET],
-    'SM-P90[01257]!': ['Samsung', 'Galaxy Note Pro', DeviceType.TABLET]
+    'SM-P90[01257]!': ['Samsung', 'Galaxy Note Pro', DeviceType.TABLET],
   },
 
   'SM-S[0-9]{3,3}!!': {
@@ -13944,7 +13946,7 @@ exports.ANDROID_MODELS = {
     'SM-S908B': ['Samsung', 'Galaxy S22 Ultra'],
     'SM-S920L': ['Samsung', 'Galaxy Grand Prime'],
     'SM-S975L': ['Samsung', 'Galaxy S4'],
-    'SM-S978L': ['Samsung', 'Galaxy E5']
+    'SM-S978L': ['Samsung', 'Galaxy E5'],
   },
 
   'SM-T[0-9]{3,3}!!': {
@@ -14000,7 +14002,7 @@ exports.ANDROID_MODELS = {
     'SM-T87[05]!': ['Samsung', 'Galaxy Tab S7 11.0', DeviceType.TABLET],
     'SM-T90[05]!': ['Samsung', 'Galaxy Tab Pro 12.2', DeviceType.TABLET],
     'SM-T92[7]!': ['Samsung', 'Galaxy View2 (2019)', DeviceType.TABLET],
-    'SM-T97[06]!': ['Samsung', 'Galaxy Tab S7+ 12.4 (2020)', DeviceType.TABLET]
+    'SM-T97[06]!': ['Samsung', 'Galaxy Tab S7+ 12.4 (2020)', DeviceType.TABLET],
   },
 
   'SM-X200': ['Samsung', 'Galaxy Tab A8 10.5', DeviceType.TABLET],
@@ -14016,7 +14018,7 @@ exports.ANDROID_MODELS = {
     'SM-W2014': ['Samsung', 'Galaxy W2014'],
     'SM-W2015': ['Samsung', 'Galaxy Golden 2'],
     'SM-W2016': ['Samsung', 'Galaxy Golden 3'],
-    'SM-W2017': ['Samsung', 'Veyron']
+    'SM-W2017': ['Samsung', 'Veyron'],
   },
 
   'SPH-D[0-9]{3,3}!!': {
@@ -14024,7 +14026,7 @@ exports.ANDROID_MODELS = {
     'SPH-D700': ['Samsung', 'Epic 4G'],
     'SPH-D705': ['Samsung', 'Epic 4G 2'],
     'SPH-D710!': ['Samsung', 'Galaxy S II'],
-    'SPH-D720!': ['Samsung', 'Nexus S']
+    'SPH-D720!': ['Samsung', 'Nexus S'],
   },
 
   'SPH-L[0-9]{3,3}!!': {
@@ -14036,7 +14038,7 @@ exports.ANDROID_MODELS = {
     'SPH-L710!': ['Samsung', 'Galaxy S III'],
     'SPH-L72A!': ['Samsung', 'Galaxy S4'],
     'SPH-L720!': ['Samsung', 'Galaxy S4'],
-    'SPH-L900!': ['Samsung', 'Galaxy Note II']
+    'SPH-L900!': ['Samsung', 'Galaxy Note II'],
   },
 
   'SPH-M[0-9]{3,3}!!': {
@@ -14049,13 +14051,13 @@ exports.ANDROID_MODELS = {
     'SPH-M910': ['Samsung', 'Intercept'],
     'SPH-M920': ['Samsung', 'Transform'],
     'SPH-M930!': ['Samsung', 'Transform Ultra'],
-    'SPH-M950': ['Samsung', 'Galaxy Reverb']
+    'SPH-M950': ['Samsung', 'Galaxy Reverb'],
   },
 
   'SPH-P[0-9]{3,3}!!': {
     'SPH-P100!': ['Samsung', 'Galaxy Tab 7.0', DeviceType.TABLET],
     'SPH-P500': ['Samsung', 'Galaxy Tab 2 10.1', DeviceType.TABLET],
-    'SPH-P600': ['Samsung', 'Galaxy Note 10.1', DeviceType.TABLET]
+    'SPH-P600': ['Samsung', 'Galaxy Note 10.1', DeviceType.TABLET],
   },
 
   'YP-G!!': {
@@ -14069,7 +14071,7 @@ exports.ANDROID_MODELS = {
     'YP-GI1': ['Samsung', 'Galaxy S WiFi 4.2', 'media'],
     'YP-GI2': ['Samsung', 'Galaxy 070', 'media'],
     'YP-G50': ['Samsung', 'Galaxy Player', 'media'],
-    'YP-G70': ['Samsung', 'Galaxy S WiFi 5.0', 'media']
+    'YP-G70': ['Samsung', 'Galaxy S WiFi 5.0', 'media'],
   },
 
   GT9100: ['Samsung', 'Galaxy S II'],
@@ -14124,7 +14126,7 @@ exports.ANDROID_MODELS = {
     'Galaxy pop plus 4G': ['Samsung', 'Galaxy Pop Plus'],
     'Galaxy Precedent': ['Samsung', 'Galaxy Precedent'],
     'GALAXY Tab': ['Samsung', 'Galaxy Tab', DeviceType.TABLET],
-    'Galaxy Tab3': ['Samsung', 'Galaxy Tab 3', DeviceType.TABLET]
+    'Galaxy Tab3': ['Samsung', 'Galaxy Tab 3', DeviceType.TABLET],
   },
 
   S2: ['Samsung', 'Galaxy S II'],
@@ -14176,7 +14178,7 @@ exports.ANDROID_MODELS = {
     'SC-04L': ['Samsung', 'Galaxy S10+ SC-04L', { carrier: 'DoCoMo' }],
     'SC-05D': ['Samsung', 'GALAXY Note SC-05D', { carrier: 'DoCoMo' }],
     'SC-05G': ['Samsung', 'GALAXY S6 SC-05G', { carrier: 'DoCoMo' }],
-    'SC-06D': ['Samsung', 'GALAXY S III SC-06D', { carrier: 'DoCoMo' }]
+    'SC-06D': ['Samsung', 'GALAXY S III SC-06D', { carrier: 'DoCoMo' }],
   },
 
   'SC[LTV][23][0-9]!!': {
@@ -14195,14 +14197,14 @@ exports.ANDROID_MODELS = {
     SCV38: ['Samsung', 'Galaxy S9 SCV38', { carrier: 'au' }],
     SCV39: ['Samsung', 'Galaxy S9+ SCV39', { carrier: 'au' }],
     SCV40: ['Samsung', 'Galaxy Note9 SCV40', { carrier: 'au' }],
-    SCV41: ['Samsung', 'Galaxy S10 SCV41', { carrier: 'au' }]
+    SCV41: ['Samsung', 'Galaxy S10 SCV41', { carrier: 'au' }],
   },
 
   ISW11SC: ['Samsung', 'GALAXY S II WiMAX ISW11SC', { carrier: 'au' }],
 
   '40[0-9]SC!!': {
     '403SC': ['Samsung', 'GALAXY Tab 4 7.0 403SC', DeviceType.TABLET, { carrier: 'Softbank' }],
-    '404SC': ['Samsung', 'GALAXY S6 Edge 404SC', { carrier: 'Softbank' }]
+    '404SC': ['Samsung', 'GALAXY S6 Edge 404SC', { carrier: 'Softbank' }],
   },
 
   'printer-tablet': ['Samsung', 'ProXpress', DeviceType.PRINTER],
@@ -14216,13 +14218,13 @@ exports.ANDROID_MODELS = {
     'ELEMENT 8V3': ['Sencor', 'Element 8 V3', DeviceType.TABLET],
     'SENCOR ELEMENT 9.7V3': ['Sencor', 'Element 9.7 V3', DeviceType.TABLET],
     'ELEMENT10 1': ['Sencor', 'Element 10.1', DeviceType.TABLET],
-    'ELEMENT P501': ['Sencor', 'Element P501']
+    'ELEMENT P501': ['Sencor', 'Element P501'],
   },
 
   'SENSEIT R390': ['Senseit', 'R390'],
   'QuickFone Mini': ['Sensonic', 'QuickFone Mini'],
   'QuickFone-Mini': ['Sensonic', 'QuickFone Mini'],
-  'QuickFone ([NXZ][0-9]+?)!': ['Sensonic', 'QuickFone $1'],
+  'QuickFone ([NXZ][0-9]\+?)!': ['Sensonic', 'QuickFone $1'],
   'SENWA S970': ['Senwa', 'S970'],
   S1005KTAB: ['Serioux', 'GoTab S1005KTAB', DeviceType.TABLET],
   STARACTIVE: ['SFR', 'STARACTIVE'],
@@ -14278,13 +14280,13 @@ exports.ANDROID_MODELS = {
     '503SH': ['Sharp', 'AQUOS Xx2 mini 503SH', { carrier: 'Softbank' }],
     '603SH': ['Sharp', 'AQUOS Xx3 mini 603SH', { carrier: 'Softbank' }],
     '701SH': ['Sharp', 'AQUOS R compact 701SH', { carrier: 'Softbank' }],
-    A01SH: ['Sharp', 'GALAPAGOS A01SH', { carrier: 'Y! Mobile' }]
+    A01SH: ['Sharp', 'GALAPAGOS A01SH', { carrier: 'Y! Mobile' }],
   },
 
   'IS0[0-9]!!': {
     IS01: ['Sharp', 'IS01', { carrier: 'au' }],
     IS03: ['Sharp', 'IS03', { carrier: 'au' }],
-    IS05: ['Sharp', 'IS05', { carrier: 'au' }]
+    IS05: ['Sharp', 'IS05', { carrier: 'au' }],
   },
 
   'ISW?1[0-9]SH!!': {
@@ -14294,7 +14296,7 @@ exports.ANDROID_MODELS = {
     IS14SH: ['Sharp', 'AQUOS PHONE IS14SH', { carrier: 'au' }],
     IS15SH: ['Sharp', 'AQUOS PHONE SL IS15SH', { carrier: 'au' }],
     ISW16SH: ['Sharp', 'AQUOS PHONE SERIE ISW16SH', { carrier: 'au' }],
-    IS17SH: ['Sharp', 'AQUOS PHONE CL IS17SH', { carrier: 'au' }]
+    IS17SH: ['Sharp', 'AQUOS PHONE CL IS17SH', { carrier: 'au' }],
   },
 
   'EB-A71GJ': ['Sharp', 'EB-A71GJ', DeviceType.TABLET],
@@ -14330,7 +14332,7 @@ exports.ANDROID_MODELS = {
     SBM302SH: ['Sharp', 'AQUOS PHONE Xx 302SH', { carrier: 'Softbank' }],
     SBM303SH: ['Sharp', 'AQUOS PHONE Xx mini 303SH', { carrier: 'Softbank' }],
     SBM305SH: ['Sharp', 'AQUOS CRYSTAL 305SH', { carrier: 'Softbank' }],
-    SBM306SH: ['Sharp', 'AQUOS CRYSTAL 306SH'] // The U.S. Sprint version (now part of Softbank)
+    SBM306SH: ['Sharp', 'AQUOS CRYSTAL 306SH'], // The U.S. Sprint version (now part of Softbank)
   },
 
   '(3|5|6|7)0[0-9]SH!!': {
@@ -14342,7 +14344,7 @@ exports.ANDROID_MODELS = {
     '509SH': ['Sharp', 'シンプルスマホ3 509SH', { carrier: 'Softbank' }],
     '605SH': ['Sharp', 'AQUOS R 605SH', { carrier: 'Softbank' }],
     '606SH': ['Sharp', 'AQUOS ea 606SH', { carrier: 'Softbank' }],
-    '706SH': ['Sharp', 'AQUOS R2 706SH', { carrier: 'Softbank' }]
+    '706SH': ['Sharp', 'AQUOS R2 706SH', { carrier: 'Softbank' }],
   },
 
   SH01D: ['Sharp', 'AQUOS PHONE SH-01D', { carrier: 'DoCoMo' }],
@@ -14405,7 +14407,7 @@ exports.ANDROID_MODELS = {
     'SH-10B': ['Sharp', 'LYNX SH-10B', { carrier: 'DoCoMo' }],
     'SH-10D': ['Sharp', 'AQUOS PHONE sv SH-10D', { carrier: 'DoCoMo' }],
     'SH-12C': ['Sharp', 'AQUOS PHONE SH-12C', { carrier: 'DoCoMo' }],
-    'SH-13C': ['Sharp', 'AQUOS PHONE f SH-13C', { carrier: 'DoCoMo' }]
+    'SH-13C': ['Sharp', 'AQUOS PHONE f SH-13C', { carrier: 'DoCoMo' }],
   },
 
   '(SHP-)?(SHARP )?SH[0-9]{2,3}!!': {
@@ -14439,7 +14441,7 @@ exports.ANDROID_MODELS = {
     'SHARP SH8188U': ['Sharp', 'SH8188U'],
     SH8288U: ['Sharp', 'SH8288U'],
     SH8268U: ['Sharp', 'SH8268U'],
-    SH8298U: ['Sharp', 'SH8298U']
+    SH8298U: ['Sharp', 'SH8298U'],
   },
 
   'SH[FLTV][0-9]{2,2}!!': {
@@ -14466,7 +14468,7 @@ exports.ANDROID_MODELS = {
     SHV40: ['Sharp', 'AQUOS sense SHV40', { carrier: 'au' }],
     'SHV40 u': ['Sharp', 'AQUOS sense SHV40', { carrier: 'UQ mobile' }],
     SHV41: ['Sharp', 'AQUOS R compact SHV41', { carrier: 'au' }],
-    SHV42: ['Sharp', 'AQUOS R2 SHV42', { carrier: 'au' }]
+    SHV42: ['Sharp', 'AQUOS R2 SHV42', { carrier: 'au' }],
   },
   WX04SH: ['Sharp', 'AQUOS PHONE es WX04SH', { carrier: 'Willcom' }],
   WX05SH: ['Sharp', 'AQUOS PHONE ef WX05SH', { carrier: 'Willcom' }],
@@ -14483,7 +14485,7 @@ exports.ANDROID_MODELS = {
     'AQUOS 58U3A': ['Sharp', 'Aquos U3A', DeviceType.TELEVISION],
     'AQUOS 52UE20A': ['Sharp', 'Aquos UE20A', DeviceType.TELEVISION],
     'AQUOS 60UE20A': ['Sharp', 'Aquos UE20A', DeviceType.TELEVISION],
-    'AQUOS 70LX765A': ['Sharp', 'Aquos LX765A', DeviceType.TELEVISION]
+    'AQUOS 70LX765A': ['Sharp', 'Aquos LX765A', DeviceType.TELEVISION],
   },
 
   'LC-Ux30US': ['Sharp', 'Aquos UH30U', DeviceType.TELEVISION],
@@ -14522,7 +14524,7 @@ exports.ANDROID_MODELS = {
     'Skyworth 9R15 E710U': ['Skyworth', 'E710', DeviceType.TELEVISION],
     'Skyworth 8K93 E780U': ['Skyworth', 'E780', DeviceType.TELEVISION],
     'Skyworth 8R98 E790U': ['Skyworth', 'E790', DeviceType.TELEVISION],
-    'Skyworth A55 Coocaa': ['Skyworth', 'Coocaa Honor A55', DeviceType.TELEVISION]
+    'Skyworth A55 Coocaa': ['Skyworth', 'Coocaa Honor A55', DeviceType.TELEVISION],
   },
 
   WF7C: ['Smartbitt', 'WF7C', DeviceType.TABLET],
@@ -14574,7 +14576,7 @@ exports.ANDROID_MODELS = {
     'Andromax T AD628J': ['Smartfren', 'Andromax T'],
     'Andromax U!': ['Smartfren', 'Andromax U'],
     'Andromax-U': ['Smartfren', 'Andromax U'],
-    'Smartfren Andromax U3': ['Smartfren', 'Andromax U3']
+    'Smartfren Andromax U3': ['Smartfren', 'Andromax U3'],
   },
 
   AD686G: ['Smartfren', 'Andromax C'],
@@ -14606,7 +14608,7 @@ exports.ANDROID_MODELS = {
     SmartQT30: ['SmartQ', 'T30', DeviceType.TABLET],
     'SmartQ V5': ['SmartQ', 'V5', DeviceType.TABLET],
     SmartQV5II: ['SmartQ', 'V5 II', DeviceType.TABLET],
-    'SmartQ V7': ['SmartQ', 'V7', DeviceType.TABLET]
+    'SmartQ V7': ['SmartQ', 'V7', DeviceType.TABLET],
   },
 
   T20: ['SmartQ', 'T20', DeviceType.TABLET],
@@ -14614,7 +14616,7 @@ exports.ANDROID_MODELS = {
 
   'SZENIO!!': {
     'SZENIO 2000': ['Szenio', '2000', DeviceType.TABLET],
-    'SZENIO 2500': ['Szenio', '2500', DeviceType.TABLET]
+    'SZENIO 2500': ['Szenio', '2500', DeviceType.TABLET],
   },
 
   'Sonim!!': {
@@ -14629,7 +14631,7 @@ exports.ANDROID_MODELS = {
     'Sonim XP6711Z1': ['Sonim', 'XP6711'],
     'Sonim XP7700': ['Sonim', 'XP7700'],
     'Sonim-XP7700': ['Sonim', 'XP7700'],
-    'sonim/XP7700': ['Sonim', 'XP7700']
+    'sonim/XP7700': ['Sonim', 'XP7700'],
   },
 
   XP8800: ['Sonim', 'XP8800'],
@@ -14651,7 +14653,7 @@ exports.ANDROID_MODELS = {
     'C670[0-9]!': ['Sony', 'C670x'], // Itsuki
     'C68(02|06|33|43)!': ['Sony', 'Xperia Z Ultra'], // Togari
     'C69(02|03|06|43)!': ['Sony', 'Xperia Z1'], // Honami
-    C6916: ['Sony', 'Xperia Z1s'] // Honami
+    C6916: ['Sony', 'Xperia Z1s'], // Honami
   },
 
   'D[0-9]{4,4}!!': {
@@ -14673,7 +14675,7 @@ exports.ANDROID_MODELS = {
     'D65(63)!': ['Sony', 'Xperia Z2a'], // Canopus
     'D66(03|16|33|43|46|53)!': ['Sony', 'Xperia Z3'], // ...
     'D66(83)!': ['Sony', 'Xperia Z3 dual'], // ...
-    D6708: ['Sony', 'Xperia Z3v'] // ...
+    D6708: ['Sony', 'Xperia Z3v'], // ...
   },
 
   'E[0-9]{4,4}!!': {
@@ -14696,7 +14698,7 @@ exports.ANDROID_MODELS = {
     'E66(03|46|53)!': ['Sony', 'Xperia Z5'],
     'E66(33|83)!': ['Sony', 'Xperia Z5 dual'],
     'E68(53)!': ['Sony', 'Xperia Z5 Premium'],
-    'E68(33|83)!': ['Sony', 'Xperia Z5 Premium dual']
+    'E68(33|83)!': ['Sony', 'Xperia Z5 Premium dual'],
   },
 
   'F[0-9]{4,4}!!': {
@@ -14707,7 +14709,7 @@ exports.ANDROID_MODELS = {
     'F51(21|22)!': ['Sony', 'Xperia X'],
     'F53(21)!': ['Sony', 'Xperia X Compact'],
     'F81(31|32)!': ['Sony', 'Xperia X Performance'],
-    'F83(31|32|33)!': ['Sony', 'Xperia XZ']
+    'F83(31|32|33)!': ['Sony', 'Xperia XZ'],
   },
 
   'G[0-9]{4,4}!!': {
@@ -14718,7 +14720,7 @@ exports.ANDROID_MODELS = {
     'G81(41|42|88)!': ['Sony', 'Xperia XZ Premium'],
     'G82(31|32)!': ['Sony', 'Xperia XZs'],
     'G83(41|42|43)!': ['Sony', 'Xperia XZ1'],
-    'G84(41|42)!': ['Sony', 'Xperia XZ1 Compact']
+    'G84(41|42)!': ['Sony', 'Xperia XZ1 Compact'],
   },
 
   'H[0-9]{4,4}!!': {
@@ -14734,7 +14736,7 @@ exports.ANDROID_MODELS = {
     'H83(14|24)!': ['Sony', 'Xperia XZ2 Compact'],
     'H84(16)!': ['Sony', 'Xperia XZ3'],
     'H84(41)!': ['Sony', 'Xperia XZ1 Compact'],
-    'H94(36|93)!': ['Sony', 'Xperia XZ3']
+    'H94(36|93)!': ['Sony', 'Xperia XZ3'],
   },
 
   'I[0-9]{4,4}!!': {
@@ -14743,14 +14745,14 @@ exports.ANDROID_MODELS = {
     'I33(12)!': ['Sony', 'Xperia L3'],
     'I41(13|93)!': ['Sony', 'Xperia 10'],
     'I42(13|93)!': ['Sony', 'Xperia 10 Plus'],
-    'I43(12|32)!': ['Sony', 'Xperia L3']
+    'I43(12|32)!': ['Sony', 'Xperia L3'],
   },
 
   'J[0-9]{4,4}!!': {
     'J81(10|70)!': ['Sony', 'Xperia 1'],
     'J82(10|70)!': ['Sony', 'Xperia 5'],
     'J91(10)!': ['Sony', 'Xperia 1'],
-    'J92(10|60)!': ['Sony', 'Xperia 5']
+    'J92(10|60)!': ['Sony', 'Xperia 5'],
   },
 
   'XQ-AT51': ['Sony', 'Xperia 1 II'],
@@ -14768,7 +14770,7 @@ exports.ANDROID_MODELS = {
   'E[0-9]{2,2}[a-z]!!': {
     'E10(a|i|iv)!': ['Sony Ericsson', 'Xperia X10 Mini'], // Robyn
     'E15(a|av|i|iv|i-o)?$!': ['Sony Ericsson', 'Xperia X8'], // Shakira
-    'E16i!': ['Sony Ericsson', 'W8 Walkman'] // Shakira Walkman
+    'E16i!': ['Sony Ericsson', 'W8 Walkman'], // Shakira Walkman
   },
 
   'L[0-9]{2,2}[a-z]!!': {
@@ -14776,32 +14778,32 @@ exports.ANDROID_MODELS = {
     L36h: ['Sony', 'Xperia Z'], // Yuga
     'L39(h|t|u)!': ['Sony', 'Xperia Z1'], // Honami
     'L50(w|t|u)!': ['Sony', 'Xperia Z2'], // Sirius
-    'L55(t|u)!': ['Sony', 'Xperia Z3'] // ...
+    'L55(t|u)!': ['Sony', 'Xperia Z3'], // ...
   },
 
-  '(SNM-)?LT[0-9]{2,2}[a-z]?!!': {
+  '(SNM\-)?LT[0-9]{2,2}[a-z]?!!': {
     'LT11i!': ['Sony Ericsson', 'Xperia Neo V'], // Haida
     'LT15(a|at|av|i|iv|i-o)?$!': ['Sony Ericsson', 'Xperia Arc'], // Anzu
     'LT15i Speed Edition': ['Sony Ericsson', 'Xperia Arc'], // Anzu
     'LT18(a|i|iv|i-o)?$!': ['Sony Ericsson', 'Xperia Arc S'], // Ayame
     'LT22i!': ['Sony', 'Xperia P'], // Nypon
     'LT25i!': ['Sony', 'Xperia V'], // Tsubasa
-    '(SNM-)?LT25c!': ['Sony', 'Xperia VC'], // Tsubasa
+    '(SNM\-)?LT25c!': ['Sony', 'Xperia VC'], // Tsubasa
     'LT26ii!': ['Sony', 'Xperia SL'], // Nozomi2
     'LT26(i|i-o)!': ['Sony', 'Xperia S'], // Nozomi
     'LT26w!': ['Sony', 'Xperia Acro S'], // Hikari
     'LT28(at|h|i)!': ['Sony', 'Xperia Ion'], // Aoba
     'LT29i!': ['Sony', 'Xperia TX'], // Hayabusa
     'LT30(at)!': ['Sony', 'Xperia TL'], // Mint
-    'LT30(a|p)!': ['Sony', 'Xperia T'] // Mint
+    'LT30(a|p)!': ['Sony', 'Xperia T'], // Mint
   },
 
-  '(SNM-)?M[0-9]{2,2}[a-z]!!': {
-    '(SNM-)?M35(c|h|t|ts)!': ['Sony', 'Xperia SP'], // HuaShan
+  '(SNM\-)?M[0-9]{2,2}[a-z]!!': {
+    '(SNM\-)?M35(c|h|t|ts)!': ['Sony', 'Xperia SP'], // HuaShan
     'M36h!': ['Sony', 'Xperia ZR'], // Dogo
     'M50w!': ['Sony', 'Xperia T3'], // Seagull
     'M51w!': ['Sony', 'Xperia Z1 Compact'], // Amami
-    'M55w!': ['Sony', 'Xperia Z3 Compact'] // ...
+    'M55w!': ['Sony', 'Xperia Z3 Compact'], // ...
   },
 
   'MK16(a|i|$)!': ['Sony Ericsson', 'Xperia Pro'], // Iyokan
@@ -14810,7 +14812,7 @@ exports.ANDROID_MODELS = {
     'MT11(a|i|iv|i-o)!': ['Sony Ericsson', 'Xperia Neo V'], // Haida
     'MT15(a|i|iv|i-o|$)!': ['Sony Ericsson', 'Xperia Neo'], // Hallon
     'MT25i!': ['Sony', 'Xperia Neo L'], // Phoenix
-    'MT27i!': ['Sony', 'Xperia Sola'] // Pepper
+    'MT27i!': ['Sony', 'Xperia Sola'], // Pepper
   },
 
   'R800(a|at|i|iv|x)!': ['Sony Ericsson', 'Xperia Play'], // Zeus
@@ -14819,7 +14821,7 @@ exports.ANDROID_MODELS = {
     S36h: ['Sony', 'Xperia L'], // TaoShan
     S39h: ['Sony', 'Xperia C'], // CN3
     S50h: ['Sony', 'Xperia M2 dual'], // Eagle
-    'S55(t|u)!': ['Sony', 'Xperia C3 dual'] // ...
+    'S55(t|u)!': ['Sony', 'Xperia C3 dual'], // ...
   },
 
   'SK17(a|i|iv|i-o)!': ['Sony Ericsson', 'Xperia Mini Pro'], // Mango
@@ -14833,14 +14835,14 @@ exports.ANDROID_MODELS = {
     'ST23(a|i)?!': ['Sony', 'Xperia Miro'], // Mesona
     'ST25(a|i)!': ['Sony', 'Xperia U'], // Kumquat
     'ST26(a|i)?!': ['Sony', 'Xperia J'], // JLo
-    'ST27(a|i)!': ['Sony', 'Xperia Go'] // Lotus
+    'ST27(a|i)!': ['Sony', 'Xperia Go'], // Lotus
   },
 
   'U20(a|i|iv)!': ['Sony Ericsson', 'Xperia X10 Mini Pro'], // Mimmi
 
   'WT[0-9]{2,2}[a-z]!!': {
     'WT18i!': ['Sony Ericsson', 'Walkman'], // Mulberry
-    'WT19(a|i|iv)!': ['Sony Ericsson', 'Live with Walkman'] // Coconut
+    'WT19(a|i|iv)!': ['Sony Ericsson', 'Live with Walkman'], // Coconut
   },
 
   X8: ['Sony Ericsson', 'Xperia X8'], // Shakira
@@ -14856,7 +14858,7 @@ exports.ANDROID_MODELS = {
 
   'IS[0-9]{2,2}S!!': {
     IS11S: ['Sony Ericsson', 'Xperia acro IS11S', { carrier: 'au' }], // Akane
-    IS12S: ['Sony Ericsson', 'Xperia acro HD IS12S', { carrier: 'au' }] // Hayate
+    IS12S: ['Sony Ericsson', 'Xperia acro HD IS12S', { carrier: 'au' }], // Hayate
   },
 
   'SO-0[0-9][A-Z]!!': {
@@ -14899,7 +14901,7 @@ exports.ANDROID_MODELS = {
     'SO-05F': ['Sony', 'Xperia Tablet Z2 SO-05F', DeviceType.TABLET, { carrier: 'DoCoMo' }], // Castor
     'SO-05G': ['Sony', 'Xperia Tablet Z4 SO-05G', DeviceType.TABLET, { carrier: 'DoCoMo' }], // ...
     'SO-05K': ['Sony', 'Xperia XZ2 Compact SO-05K', { carrier: 'DoCoMo' }],
-    'SO-07D': ['Sony', 'SO-07D', DeviceType.TABLET, { carrier: 'DoCoMo' }] // ...
+    'SO-07D': ['Sony', 'SO-07D', DeviceType.TABLET, { carrier: 'DoCoMo' }], // ...
   },
 
   'SO[LTV][0-9]{2,2}!!': {
@@ -14920,27 +14922,27 @@ exports.ANDROID_MODELS = {
     SOV37: ['Sony', 'Xperia XZ2 SOV37', { carrier: 'au' }], // ...
     SOV38: ['Sony', 'Xperia XZ2 Premium SOV38', { carrier: 'au' }], // ...
     SOV39: ['Sony', 'Xperia XZ3 SOV39', { carrier: 'au' }], // ...
-    SOV40: ['Sony', 'Xperia 1 SOV40', { carrier: 'au' }] // ...
+    SOV40: ['Sony', 'Xperia 1 SOV40', { carrier: 'au' }], // ...
   },
 
   '40[0-9]SO!!': {
     '401SO': ['Sony', 'Xperia Z3 401SO', { carrier: 'Softbank' }], // ...
-    '402SO': ['Sony', 'Xperia Z4 402SO', { carrier: 'Softbank' }] // ...
+    '402SO': ['Sony', 'Xperia Z4 402SO', { carrier: 'Softbank' }], // ...
   },
 
   '50[0-9]SO!!': {
     '501SO': ['Sony', 'Xperia Z5 501SO', { carrier: 'Softbank' }], // ...
-    '502SO': ['Sony', 'Xperia X Performance 502SO', { carrier: 'Softbank' }] // ...
+    '502SO': ['Sony', 'Xperia X Performance 502SO', { carrier: 'Softbank' }], // ...
   },
 
   '60[0-9]SO!!': {
     '601SO': ['Sony', 'Xperia XZ 601SO', { carrier: 'Softbank' }], // ...
-    '602SO': ['Sony', 'Xperia XZs 602SO', { carrier: 'Softbank' }] // ...
+    '602SO': ['Sony', 'Xperia XZs 602SO', { carrier: 'Softbank' }], // ...
   },
 
   '70[0-9]SO!!': {
     '701SO': ['Sony', 'Xperia XZ1 701SO', { carrier: 'Softbank' }], // ...
-    '702SO': ['Sony', 'Xperia XZ2 702SO', { carrier: 'Softbank' }] // ...
+    '702SO': ['Sony', 'Xperia XZ2 702SO', { carrier: 'Softbank' }], // ...
   },
 
   'Xperia!!': {
@@ -15018,7 +15020,7 @@ exports.ANDROID_MODELS = {
     'Xperia Tablet Z LTE': ['Sony', 'Xperia Tablet Z', DeviceType.TABLET],
     'Xperia Tablet Z Wi-Fi': ['Sony', 'Xperia Tablet Z', DeviceType.TABLET],
     'Xperia Tablet Z WiFi': ['Sony', 'Xperia Tablet Z', DeviceType.TABLET],
-    'Xperia Z2 Tablet Wifi': ['Sony', 'Xperia Tablet Z2', DeviceType.TABLET]
+    'Xperia Z2 Tablet Wifi': ['Sony', 'Xperia Tablet Z2', DeviceType.TABLET],
   },
 
   'Sony Xperia Ray': ['Sony Ericsson', 'Xperia Ray'], // Urushi
@@ -15041,7 +15043,7 @@ exports.ANDROID_MODELS = {
     'SGP4(12)!': ['Sony', 'Xperia Tablet Z Ultra', DeviceType.TABLET],
     'SGP5(11|12|21|41|51|61)!': ['Sony', 'Xperia Tablet Z2', DeviceType.TABLET], // Castor
     'SGP6(11|12|21|41)!': ['Sony', 'Xperia Tablet Z3 Compact', DeviceType.TABLET],
-    'SGP7(12|71)!': ['Sony', 'Xperia Tablet Z4', DeviceType.TABLET]
+    'SGP7(12|71)!': ['Sony', 'Xperia Tablet Z4', DeviceType.TABLET],
   },
 
   'NWZ?-Z1000Series!': ['Sony', 'Walkman Z', DeviceType.MEDIA],
@@ -15051,7 +15053,7 @@ exports.ANDROID_MODELS = {
     'NSZ-GS7': ['Sony', 'NSZ-GS7', DeviceType.TELEVISION, Flag.GOOGLETV],
     'NSZ-GS8': ['Sony', 'NSZ-GS8', DeviceType.TELEVISION, Flag.GOOGLETV],
     'NSZ-GT1': ['Sony', 'NSZ-GT1', DeviceType.TELEVISION, Flag.GOOGLETV],
-    'NSZ-GU1': ['Sony', 'BRAVIA Smart Stick NSZ-GU1', DeviceType.TELEVISION, Flag.GOOGLETV]
+    'NSZ-GU1': ['Sony', 'BRAVIA Smart Stick NSZ-GU1', DeviceType.TELEVISION, Flag.GOOGLETV],
   },
 
   beetle: ['Sony', 'NSZ-GS7', DeviceType.TELEVISION, Flag.GOOGLETV],
@@ -15178,7 +15180,7 @@ exports.ANDROID_MODELS = {
     Mi730: ['Spice', 'Mi-730 Tab', DeviceType.TABLET],
     'Spice Mi-730': ['Spice', 'Mi-730 Tab', DeviceType.TABLET],
     'Spice Mi-740': ['Spice', 'Mi-740', DeviceType.TABLET],
-    SpiceMi1010: ['Spice', 'Mi-1010 Stellar Pad', DeviceType.TABLET]
+    SpiceMi1010: ['Spice', 'Mi-1010 Stellar Pad', DeviceType.TABLET],
   },
 
   'Spice N-300': ['Spice', 'Buddy N300'],
@@ -15262,7 +15264,7 @@ exports.ANDROID_MODELS = {
     'Starmobile QUEST': ['Starmobile', 'Quest'],
     'Starmobile UP': ['Starmobile', 'Up'],
     'Starmobile UP Max': ['Starmobile', 'Up Max'],
-    'Starmobile VIDA': ['Starmobile', 'Vida']
+    'Starmobile VIDA': ['Starmobile', 'Vida'],
   },
 
   'DIAMOND D1': ['Starmobile', 'Diamond D1'],
@@ -15278,7 +15280,7 @@ exports.ANDROID_MODELS = {
     'STARWAY Andromeda S900': ['Starway', 'Andromeda S900', DeviceType.TABLET],
     'Starway Andromeda S910': ['Starway', 'Andromeda S910', DeviceType.TABLET],
     'Andromeda S910': ['Starway', 'Andromeda S910', DeviceType.TABLET],
-    'Andromeda S940': ['Starway', 'Andromeda S940', DeviceType.TABLET]
+    'Andromeda S940': ['Starway', 'Andromeda S940', DeviceType.TABLET],
   },
 
   'STX!!': {
@@ -15286,7 +15288,7 @@ exports.ANDROID_MODELS = {
     'STX Mini': ['Stonex', 'STX Mini'],
     'STX MINI 2': ['Stonex', 'STX Mini 2'],
     'STX ULTRA': ['Stonex', 'STX Ultra'],
-    'STX ULTRA 2': ['Stonex', 'STX Ultra 2']
+    'STX ULTRA 2': ['Stonex', 'STX Ultra 2'],
   },
 
   'Scroll!!': {
@@ -15298,7 +15300,7 @@ exports.ANDROID_MODELS = {
     'Scroll Excel 2': ['Storage Options', 'Scroll Excel 2', DeviceType.TABLET],
     'Scroll Extreme': ['Storage Options', 'Scroll Extreme', DeviceType.TABLET],
     'Scroll Tablet': ['Storage Options', 'Scroll Tablet', DeviceType.TABLET],
-    'Scroll Tablet PC': ['Storage Options', 'Scroll Tablet PC', DeviceType.TABLET]
+    'Scroll Tablet PC': ['Storage Options', 'Scroll Tablet PC', DeviceType.TABLET],
   },
 
   'eZee!!': {
@@ -15340,14 +15342,14 @@ exports.ANDROID_MODELS = {
     "eZee'Tab97D11-S": ['Storex', "eZee'Tab 97d11s", DeviceType.TABLET],
     "eZee'Tab10D11-M": ['Storex', "eZee'Tab 10d11m", DeviceType.TABLET],
     "eZee'tab10D12-S": ['Storex', "eZee'Tab 10d12s", DeviceType.TABLET],
-    "eZee'Tab13Q10-M": ['Storex', "eZee'Tab 13q10m", DeviceType.TABLET]
+    "eZee'Tab13Q10-M": ['Storex', "eZee'Tab 13q10m", DeviceType.TABLET],
   },
 
   'STOREX LinkBox': ['Storex', 'LinkBox', DeviceType.TELEVISION],
 
   'SRT!!': {
     'SRT AN4': ['Strong', 'SRT AN4', DeviceType.TELEVISION],
-    'SRT AN4M': ['Strong', 'SRT AN4M', DeviceType.TELEVISION]
+    'SRT AN4M': ['Strong', 'SRT AN4M', DeviceType.TELEVISION],
   },
 
   'Cyclone!!': {
@@ -15355,7 +15357,7 @@ exports.ANDROID_MODELS = {
     'CYCLONE EXPLORER II': ['Sumvision', 'Cyclone Explorer 2', DeviceType.TABLET],
     'cyclone Titan': ['Sumvision', 'Cyclone Titan', DeviceType.TABLET],
     'Cyclone Voyager': ['Sumvision', 'Cyclone Voyager', DeviceType.TABLET],
-    'Cyclone Voyager 2': ['Sumvision', 'Cyclone Voyager 2', DeviceType.TABLET]
+    'Cyclone Voyager 2': ['Sumvision', 'Cyclone Voyager 2', DeviceType.TABLET],
   },
 
   M1001: ['Superpad', 'M1001', DeviceType.TABLET],
@@ -15371,7 +15373,7 @@ exports.ANDROID_MODELS = {
     'SC-90JB': ['Supersonic', 'Matrix SC-90JB', DeviceType.TABLET],
     'SC-90MID': ['Supersonic', 'Matrix SC-90MID', DeviceType.TABLET],
     'SC-91JB': ['Supersonic', 'Matrix SC-91JB', DeviceType.TABLET],
-    'SC-91MID': ['Supersonic', 'Matrix SC-91MID', DeviceType.TABLET]
+    'SC-91MID': ['Supersonic', 'Matrix SC-91MID', DeviceType.TABLET],
   },
 
   'SUGAR ([A-Z][0-9]?(?: Pro)?)!': ['SUGAR', '$1', DeviceType.TABLET],
@@ -15437,7 +15439,7 @@ exports.ANDROID_MODELS = {
     'Xplorer Z III': ['Symphony', 'Xplorer ZIII'],
     'Xplorer ZV': ['Symphony', 'Xplorer ZV'],
     'Symphony ZIV': ['Symphony', 'Xplorer ZIV'],
-    'Symphony Z9': ['Symphony', 'Xplorer Z9']
+    'Symphony Z9': ['Symphony', 'Xplorer Z9'],
   },
 
   W20: ['Symphony', 'Xplorer W20'],
@@ -15459,7 +15461,7 @@ exports.ANDROID_MODELS = {
     'T-smart G58': ['T-smart', 'G58'],
     'T-smart I08': ['T-smart', 'I08'],
     'T-smart I58 TD': ['T-smart', 'I58'],
-    'T-smart L818': ['T-smart', 'L818']
+    'T-smart L818': ['T-smart', 'L818'],
   },
 
   'Tabra QAV801': ['Tabra', 'QAV801', DeviceType.TABLET],
@@ -15632,7 +15634,7 @@ exports.ANDROID_MODELS = {
     'TCL Y910': ['TCL', 'Hero N3'],
     'TCL Y910T': ['TCL', 'Hero N3'],
     'TCL TAB 7': ['TCL', 'Tab 7', DeviceType.TABLET],
-    'TCL Google TV TV': ['TCL', 'MoVo UD TV', DeviceType.TELEVISION, Flag.GOOGLETV]
+    'TCL Google TV TV': ['TCL', 'MoVo UD TV', DeviceType.TELEVISION, Flag.GOOGLETV],
   },
 
   'TECNO!!': {
@@ -15736,7 +15738,7 @@ exports.ANDROID_MODELS = {
     'TECNO P701': ['Tecno', 'DroiPad 7D', DeviceType.TABLET],
     'TECNO 8H': ['Tecno', 'DroiPad 8', DeviceType.TABLET],
     'TECNO P904': ['Tecno', 'DroiPad 10D', DeviceType.TABLET],
-    'TECNO DP10A': ['Tecno', 'DroiPad 10 Pro II', DeviceType.TABLET]
+    'TECNO DP10A': ['Tecno', 'DroiPad 10 Pro II', DeviceType.TABLET],
   },
 
   L3: ['Tecno', 'L3'],
@@ -16030,11 +16032,11 @@ exports.ANDROID_MODELS = {
     TLINK410: ['Thomson', 'Tlink410'],
     TLINK455: ['Thomson', 'Tlink455'],
     TLINK475: ['Thomson', 'Tlink475'],
-    TLINK535: ['Thomson', 'Tlink535']
+    TLINK535: ['Thomson', 'Tlink535'],
   },
 
   MoFing: ['Thomson', 'MoFing', DeviceType.TABLET],
-  '8950': ['Thomson', '3G 8950', DeviceType.TABLET],
+  8950: ['Thomson', '3G 8950', DeviceType.TABLET],
   PRIMO7: ['Thomson', 'Primo 7', DeviceType.TABLET],
   PRIMO8: ['Thomson', 'Primo 8', DeviceType.TABLET],
   'QM734-8G': ['Thomson', 'QM734-8G', DeviceType.TABLET],
@@ -16097,7 +16099,7 @@ exports.ANDROID_MODELS = {
     'thl 4400': ['THL', '4400'],
     thl5000: ['THL', '5000'],
     'thl 5000': ['THL', '5000'],
-    'thl  5000T': ['THL', '5000T']
+    'thl  5000T': ['THL', '5000T'],
   },
 
   'W8 beyond': ['THL', 'W8 beyond'],
@@ -16106,7 +16108,7 @@ exports.ANDROID_MODELS = {
   'TizzBird!!': {
     'TizzBird N1G': ['TizzBird', 'N1', DeviceType.TELEVISION],
     'TizzBird S20A': ['TizzBird', 'S20A', DeviceType.TELEVISION],
-    'TizzBird S20T': ['TizzBird', 'S20T', DeviceType.TELEVISION]
+    'TizzBird S20T': ['TizzBird', 'S20T', DeviceType.TELEVISION],
   },
 
   MagicBox: ['Tmall', 'MagicBox', DeviceType.TELEVISION],
@@ -16114,7 +16116,7 @@ exports.ANDROID_MODELS = {
   'tolino tab!!': {
     'tolino tab 7': ['Tolino', 'Tab 7', DeviceType.TABLET],
     'tolino tab 8': ['Tolino', 'Tab 8', DeviceType.TABLET],
-    'tolino tab 8.9': ['Tolino', 'Tab 8.9', DeviceType.TABLET]
+    'tolino tab 8.9': ['Tolino', 'Tab 8.9', DeviceType.TABLET],
   },
 
   ATP7526: ['Tomtec', 'Ultimate10', DeviceType.TABLET],
@@ -16142,7 +16144,7 @@ exports.ANDROID_MODELS = {
     'TOOKY T1981PLUS': ['Tooky', 'T1981 Plus'],
     'TOOKY T1982': ['Tooky', 'T1982'],
     'TOOKY T1992': ['Tooky', 'T1992'],
-    'TOOKY W1': ['Tooky', 'W1']
+    'TOOKY W1': ['Tooky', 'W1'],
   },
 
   'DROIDZ Duo': ['Torque', 'DROIDZ Duo', DeviceType.TABLET],
@@ -16206,7 +16208,7 @@ exports.ANDROID_MODELS = {
     'Satellite ([A-Z][0-9]{3,3}[A-Z]?)!': ['Toshiba', 'Satellite $1', DeviceType.DESKTOP],
     'Satellite ([A-Z][0-9]{2,2}[A-Z]+-[A-Z])!': ['Toshiba', 'Satellite $1', DeviceType.DESKTOP],
     'Satellite ([A-Z][0-9]{2,2}-[A-Z]?)!': ['Toshiba', 'Satellite $1', DeviceType.DESKTOP],
-    'Satellite Pro ([A-Z][0-9]{3,3})!': ['Toshiba', 'Satellite Pro $1', DeviceType.DESKTOP]
+    'Satellite Pro ([A-Z][0-9]{3,3})!': ['Toshiba', 'Satellite Pro $1', DeviceType.DESKTOP],
   },
 
   'StarTab 715x': ['Touch+', 'Startab 715', DeviceType.TABLET],
@@ -16230,7 +16232,7 @@ exports.ANDROID_MODELS = {
     'ST10216-3!': ['Trekstor', 'Surftab Ventos 10.1', DeviceType.TABLET],
     'ST70404-1!': ['Trekstor', 'Surftab Xirion 7.0', DeviceType.TABLET],
     'ST70408-1!': ['Trekstor', 'Surftab Xirion 7.0', DeviceType.TABLET],
-    'ST10416-1!': ['Trekstor', 'Surftab Xirion 10.1', DeviceType.TABLET]
+    'ST10416-1!': ['Trekstor', 'Surftab Xirion 10.1', DeviceType.TABLET],
   },
 
   'Trevi PHABLET 4C': ['Trevi', 'Phablet 4C'],
@@ -16259,7 +16261,7 @@ exports.ANDROID_MODELS = {
     'TREQ Tune Z': ['Treq', 'Tune Z', DeviceType.TABLET],
     'TREQ Turbo': ['Treq', 'Turbo', DeviceType.TABLET],
     'TREQ-TURBO': ['Treq', 'Turbo', DeviceType.TABLET],
-    'TREQ 3G Turbo': ['Treq', 'Turbo', DeviceType.TABLET]
+    'TREQ 3G Turbo': ['Treq', 'Turbo', DeviceType.TABLET],
   },
 
   'Phablet 5,3 Q': ['Trevi', 'Phablet 5.3 Q'],
@@ -16296,7 +16298,7 @@ exports.ANDROID_MODELS = {
     'Amazing X5s': ['TWM', 'Amazing X5s'],
     'Amazing X6': ['TWM', 'Amazing X6'],
     'Amazing X7': ['TWM', 'Amazing X7'],
-    'Fantastic T3': ['TWM', 'Fantastic T3']
+    'Fantastic T3': ['TWM', 'Fantastic T3'],
   },
 
   A6S: ['TWM', 'Amazing A6S'],
@@ -16354,7 +16356,7 @@ exports.ANDROID_MODELS = {
     'UMI Super': ['UMI', 'Super'],
     'UMI TOUCH': ['UMI', 'Touch'],
     'UMI TOUCH X': ['UMI', 'Touch X'],
-    'UMI ZERO': ['UMI', 'Zero']
+    'UMI ZERO': ['UMI', 'Zero'],
   },
 
   'A9 Pro': ['UMI', 'A9 Pro'],
@@ -16379,7 +16381,7 @@ exports.ANDROID_MODELS = {
     'UNUSUAL 10X': ['Unusual', '10X', DeviceType.TABLET],
     'UNUSUAL 10XQUAD': ['Unusual', '10X', DeviceType.TABLET],
     'Unusual 10Z': ['Unusual', '10Z', DeviceType.TABLET],
-    'UNUSUAL 40Y': ['Unusual', '40Y', DeviceType.TABLET]
+    'UNUSUAL 40Y': ['Unusual', '40Y', DeviceType.TABLET],
   },
 
   'UOOGOU!!': {
@@ -16393,19 +16395,19 @@ exports.ANDROID_MODELS = {
     'UOOGOU-T8': ['Uoogou', 'T8'],
     'UOOGOU X3': ['Uoogou', 'X3'],
     'UOOGOU X5': ['Uoogou', 'X5'],
-    'UOOGOU X6': ['Uoogou', 'X6']
+    'UOOGOU X6': ['Uoogou', 'X6'],
   },
 
   'UTime!!': {
     'UTime i8': ['UTime', 'i8'],
     'UTime U100': ['UTime', 'U100'],
-    'UTime X1': ['UTime', 'X1']
+    'UTime X1': ['UTime', 'X1'],
   },
 
   'Usmart!!': {
     'USmart CL600': ['USmart', 'CL600'],
     'Usmart F450': ['USmart', 'F450'],
-    'Usmart-F450': ['USmart', 'F450']
+    'Usmart-F450': ['USmart', 'F450'],
   },
 
   KUNO4: ['uWriteTouch', 'KUNO 4', DeviceType.TABLET],
@@ -16423,7 +16425,7 @@ exports.ANDROID_MODELS = {
     'VS TOUCHTAB 7DC V': ['Versus', 'Touchtab 7 Dual Core', DeviceType.TABLET],
     'VS TOUCHTAB 8DC': ['Versus', 'Touchtab 8 Dual Core', DeviceType.TABLET],
     'VS TOUCHTAB 9': ['Versus', 'Touchtab 9', DeviceType.TABLET],
-    'VS TOUCHTAB 10.1DC': ['Versus', 'Touchtab 10.1 Dual Core', DeviceType.TABLET]
+    'VS TOUCHTAB 10.1DC': ['Versus', 'Touchtab 10.1 Dual Core', DeviceType.TABLET],
   },
 
   'verykool!!': {
@@ -16509,7 +16511,7 @@ exports.ANDROID_MODELS = {
     'verykool  T742': ['verykool', 'Kolorpad T742', DeviceType.TABLET],
     'verykool T7440': ['verykool', 'Kolorpad II T7440', DeviceType.TABLET],
     verykoolT7442: ['verykool', 'Kolorpad III T7442', DeviceType.TABLET],
-    VerykoolTL8010: ['verykool', 'Kolorpad TL8010', DeviceType.TABLET]
+    VerykoolTL8010: ['verykool', 'Kolorpad TL8010', DeviceType.TABLET],
   },
 
   s732: ['verykool', 's732'],
@@ -16565,7 +16567,7 @@ exports.ANDROID_MODELS = {
     'Videocon Z55Krypton': ['Videocon', 'Infinium Z55 Krypton'],
     'VIDEOCON ZEST FLAME': ['Videocon', 'Zest Flame'],
     'VIDEOCON ZEST FLASH': ['Videocon', 'Zest Flash'],
-    'Videocon V35DC': ['Videocon', 'Zest V35DC']
+    'Videocon V35DC': ['Videocon', 'Zest V35DC'],
   },
 
   Z30Aire: ['Videocon', 'Infinium Z30 Aire'],
@@ -16654,14 +16656,14 @@ exports.ANDROID_MODELS = {
     'VINUS V8': ['Vinus', 'V8'],
     'VINUS V9': ['Vinus', 'V9'],
     'VINUS V10': ['Vinus', 'V10'],
-    'VINUS X2': ['Vinus', 'X2']
+    'VINUS X2': ['Vinus', 'X2'],
   },
 
   'VL-[0-9]{3,3}!!': {
     'VL-107!': ['Visual Land', 'Prestige 7', DeviceType.TABLET],
     'VL-109': ['Visual Land', 'Connect 9', DeviceType.TABLET],
     'VL-110': ['Visual Land', 'Prestige 10', DeviceType.TABLET],
-    'VL-879': ['Visual Land', 'Connect 7', DeviceType.TABLET]
+    'VL-879': ['Visual Land', 'Connect 7', DeviceType.TABLET],
   },
 
   PRO7D: ['Visual Land', 'Prestige 7D', DeviceType.TABLET],
@@ -16881,7 +16883,7 @@ exports.ANDROID_MODELS = {
     'vivo Y928': ['Vivo', 'Y928'],
     'VIV-vivo Y928': ['Vivo', 'Y928'],
     'VIV-vivo Y937': ['Vivo', 'Y937'],
-    'vivo Y937': ['Vivo', 'Y937']
+    'vivo Y937': ['Vivo', 'Y937'],
   },
 
   V1916A: ['Vivo', 'iQOO Pro'],
@@ -17259,7 +17261,7 @@ exports.ANDROID_MODELS = {
     'miTab NEO': ['Wolder', 'miTab NEO', DeviceType.TABLET],
     'miTab THINK': ['Wolder', 'miTab THINK', DeviceType.TABLET],
     'miTab Seattle': ['Wolder', 'miTab SEATTLE', DeviceType.TABLET],
-    'miTab URBAN': ['Wolder', 'miTab URBAN', DeviceType.TABLET]
+    'miTab URBAN': ['Wolder', 'miTab URBAN', DeviceType.TABLET],
   },
 
   'AT-A[QS][0-9]{2,2}!!': {
@@ -17289,7 +17291,7 @@ exports.ANDROID_MODELS = {
     'AT-AS50Q': ['Wolfgang', 'AT-AS50Q'],
     'AT-AS53N': ['Wolfgang', 'AT-AS53N'],
     'AT-AS55HD': ['Wolfgang', 'AT-AS55HD'],
-    'AT-AS55HD1': ['Wolfgang', 'AT-AS55HD1']
+    'AT-AS55HD1': ['Wolfgang', 'AT-AS55HD1'],
   },
 
   M12: ['Wopad', 'M12', DeviceType.TABLET],
@@ -17367,7 +17369,7 @@ exports.ANDROID_MODELS = {
     'Woxter Nimbus 102Q': ['Woxter', 'Nimbus 102Q', DeviceType.TABLET],
     'Woxter Nimbus1000': ['Woxter', 'Nimbus 1000', DeviceType.TABLET],
     'Woxter Nimbus1100RX': ['Woxter', 'Nimbus 1100 RX', DeviceType.TABLET],
-    'Woxter Smart Tab 80': ['Woxter', 'Smart Tab 80', DeviceType.TABLET]
+    'Woxter Smart Tab 80': ['Woxter', 'Smart Tab 80', DeviceType.TABLET],
   },
 
   'Wxt Tab PC 65CXi': ['Woxter', 'Tablet PC 65 CXi', DeviceType.TABLET],
@@ -17377,28 +17379,28 @@ exports.ANDROID_MODELS = {
   Xiaomi: ['Xiaomi', 'Mi 1'],
 
   '(Xiaomi )?(Xiaomi|Xiaomi M|MI)!!': {
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(1|ONE)($| ?Plus| ?C)!': ['Xiaomi', 'Mi 1'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(1|ONE)S!': ['Xiaomi', 'Mi 1S'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(2|TWO)($|/|C|Plus)!': ['Xiaomi', 'Mi 2'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(2|TWO)A!': ['Xiaomi', 'Mi 2A'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(2|TWO)S!': ['Xiaomi', 'Mi 2S'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?(3|THREE)($|/|C|W|Plus)!': ['Xiaomi', 'Mi 3'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?4($|W| ?LTE)!': ['Xiaomi', 'Mi 4'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?4c!': ['Xiaomi', 'Mi 4c'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?4i!': ['Xiaomi', 'Mi 4i'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?4s!': ['Xiaomi', 'Mi 4s'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?5$!': ['Xiaomi', 'Mi 5'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?5c$!': ['Xiaomi', 'Mi 5c'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?5s$!': ['Xiaomi', 'Mi 5s'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?5s Plus$!': ['Xiaomi', 'Mi 5s Plus'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?5x$!': ['Xiaomi', 'Mi 5x'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?6$!': ['Xiaomi', 'Mi 6'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?6X$!': ['Xiaomi', 'Mi 6X'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?7S$!': ['Xiaomi', 'Mi 7S'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?A1$!': ['Xiaomi', 'Mi A1'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?A2$!': ['Xiaomi', 'Mi A2'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?A2 Lite!': ['Xiaomi', 'Mi A2 Lite'],
-    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ -]?A3$!': ['Xiaomi', 'Mi A3']
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(1|ONE)($| ?Plus| ?C)!': ['Xiaomi', 'Mi 1'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(1|ONE)S!': ['Xiaomi', 'Mi 1S'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(2|TWO)($|\/|C|Plus)!': ['Xiaomi', 'Mi 2'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(2|TWO)A!': ['Xiaomi', 'Mi 2A'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(2|TWO)S!': ['Xiaomi', 'Mi 2S'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?(3|THREE)($|\/|C|W|Plus)!': ['Xiaomi', 'Mi 3'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?4($|W| ?LTE)!': ['Xiaomi', 'Mi 4'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?4c!': ['Xiaomi', 'Mi 4c'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?4i!': ['Xiaomi', 'Mi 4i'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?4s!': ['Xiaomi', 'Mi 4s'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?5$!': ['Xiaomi', 'Mi 5'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?5c$!': ['Xiaomi', 'Mi 5c'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?5s$!': ['Xiaomi', 'Mi 5s'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?5s Plus$!': ['Xiaomi', 'Mi 5s Plus'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?5x$!': ['Xiaomi', 'Mi 5x'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?6$!': ['Xiaomi', 'Mi 6'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?6X$!': ['Xiaomi', 'Mi 6X'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?7S$!': ['Xiaomi', 'Mi 7S'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?A1$!': ['Xiaomi', 'Mi A1'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?A2$!': ['Xiaomi', 'Mi A2'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?A2 Lite!': ['Xiaomi', 'Mi A2 Lite'],
+    '(Xiaomi )?(Xiaomi|Xiaomi M|MI)[ \-]?A3$!': ['Xiaomi', 'Mi A3'],
   },
 
   'MI 8': ['Xiaomi', 'Mi 8'],
@@ -17427,7 +17429,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi|Xiaomi Mi|MI) Note ?2!': ['Xiaomi', 'Mi Note 2'],
     '(Xiaomi|Xiaomi Mi|MI) Note ?3!': ['Xiaomi', 'Mi Note 3'],
     '(Xiaomi|Xiaomi Mi|MI) Note ?Plus!': ['Xiaomi', 'Mi Note Plus'],
-    '(Xiaomi|Xiaomi Mi|MI) Note ?Pro!': ['Xiaomi', 'Mi Note Pro']
+    '(Xiaomi|Xiaomi Mi|MI) Note ?Pro!': ['Xiaomi', 'Mi Note Pro'],
   },
 
   '(Xiaomi )?(MI )?MAX$!': ['Xiaomi', 'Mi Max'],
@@ -17449,7 +17451,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi )?20131(22)!': ['Xiaomi', 'Mi Note'],
     '(Xiaomi )?20146(18)!': ['Xiaomi', 'Mi Note'],
     '(Xiaomi )?20155(01)!': ['Xiaomi', 'Mi Note Pro'],
-    '(Xiaomi )?20156(11)!': ['Xiaomi', 'Mi Note 3']
+    '(Xiaomi )?20156(11)!': ['Xiaomi', 'Mi Note 3'],
   },
 
   '(Xiaomi )?(Redmi|RedRice|HM)!!': {
@@ -17478,36 +17480,36 @@ exports.ANDROID_MODELS = {
     '(Xiaomi )?(Redmi|HM) ?8A!': ['Xiaomi', 'Redmi 8A'],
     '(Xiaomi )?(Redmi|HM) ?9C!': ['Xiaomi', 'Redmi 9C'],
     '(Xiaomi )?(Redmi|HM) ?9T!': ['Xiaomi', 'Redmi 9T'],
-    '(Xiaomi )?Redmi[ -]K20$!': ['Xiaomi', 'Redmi K20'],
-    '(Xiaomi )?Redmi[ -]K20 Pro!': ['Xiaomi', 'Redmi K20 Pro'],
-    '(Xiaomi )?Redmi[ -]K30 5G!': ['Xiaomi', 'Redmi K30'],
-    '(Xiaomi )?Redmi[ -]K30 Pro!': ['Xiaomi', 'Redmi K30 Pro'],
-    '(Xiaomi )?Redmi[ -]S2$!': ['Xiaomi', 'Redmi S2'],
-    '(Xiaomi )?Redmi[ -]Y1$!': ['Xiaomi', 'Redmi Y1'],
-    '(Xiaomi )?Redmi[ -]Y1 Lite!': ['Xiaomi', 'Redmi Y1 Lite'],
-    '(Xiaomi )?Redmi[ -]Y2$!': ['Xiaomi', 'Redmi Y2'],
-    '(Xiaomi )?Redmi[ -]Go$!': ['Xiaomi', 'Redmi Go']
+    '(Xiaomi )?Redmi[ \-]K20$!': ['Xiaomi', 'Redmi K20'],
+    '(Xiaomi )?Redmi[ \-]K20 Pro!': ['Xiaomi', 'Redmi K20 Pro'],
+    '(Xiaomi )?Redmi[ \-]K30 5G!': ['Xiaomi', 'Redmi K30'],
+    '(Xiaomi )?Redmi[ \-]K30 Pro!': ['Xiaomi', 'Redmi K30 Pro'],
+    '(Xiaomi )?Redmi[ \-]S2$!': ['Xiaomi', 'Redmi S2'],
+    '(Xiaomi )?Redmi[ \-]Y1$!': ['Xiaomi', 'Redmi Y1'],
+    '(Xiaomi )?Redmi[ \-]Y1 Lite!': ['Xiaomi', 'Redmi Y1 Lite'],
+    '(Xiaomi )?Redmi[ \-]Y2$!': ['Xiaomi', 'Redmi Y2'],
+    '(Xiaomi )?Redmi[ \-]Go$!': ['Xiaomi', 'Redmi Go'],
   },
 
-  '(Xiaomi )?(Redmi|HM)[ -]?Note!!': {
-    '(Xiaomi )?(Redmi|HM) ?Note([ -]?1| LTE| 4G|$)!': ['Xiaomi', 'Redmi Note'],
-    '(Xiaomi )?(Redmi|HM)[ -]Note 2$!': ['Xiaomi', 'Redmi Note 2'],
-    '(Xiaomi )?Redmi[ -]Note 3$!': ['Xiaomi', 'Redmi Note 3'],
-    '(Xiaomi )?Redmi[ -]Note 3 Pro!': ['Xiaomi', 'Redmi Note 3 Pro'],
-    '(Xiaomi )?Redmi[ -]Note ?4$!': ['Xiaomi', 'Redmi Note 4'],
-    '(Xiaomi )?Redmi[ -]Note ?4X!': ['Xiaomi', 'Redmi Note 4X'],
-    '(Xiaomi )?Redmi[ -]Note ?5$!': ['Xiaomi', 'Redmi Note 5'],
-    '(Xiaomi )?Redmi[ -]Note ?5A!': ['Xiaomi', 'Redmi Note 5A'],
-    '(Xiaomi )?Redmi[ -]Note 5 Pro!': ['Xiaomi', 'Redmi Note 5 Pro'],
-    '(Xiaomi )?Redmi[ -]Note 6 Pro!': ['Xiaomi', 'Redmi Note 6 Pro'],
-    '(Xiaomi )?Redmi[ -]Note 7$!': ['Xiaomi', 'Redmi Note 7'],
-    '(Xiaomi )?Redmi[ -]Note 7 Pro!': ['Xiaomi', 'Redmi Note 7 Pro'],
-    '(Xiaomi )?Redmi[ -]Note 8$!': ['Xiaomi', 'Redmi Note 8'],
-    '(Xiaomi )?Redmi[ -]Note 8 Pro!': ['Xiaomi', 'Redmi Note 8 Pro'],
-    '(Xiaomi )?Redmi[ -]Note 8T!': ['Xiaomi', 'Redmi Note 8T'],
-    '(Xiaomi )?Redmi[ -]Note 9$!': ['Xiaomi', 'Redmi Note 9'],
-    '(Xiaomi )?Redmi[ -]Note 9S!': ['Xiaomi', 'Redmi Note 9S'],
-    '(Xiaomi )?Redmi[ -]Note 9 Pro!': ['Xiaomi', 'Redmi Note 9 Pro']
+  '(Xiaomi )?(Redmi|HM)[ \-]?Note!!': {
+    '(Xiaomi )?(Redmi|HM) ?Note([ \-]?1| LTE| 4G|$)!': ['Xiaomi', 'Redmi Note'],
+    '(Xiaomi )?(Redmi|HM)[ \-]Note 2$!': ['Xiaomi', 'Redmi Note 2'],
+    '(Xiaomi )?Redmi[ \-]Note 3$!': ['Xiaomi', 'Redmi Note 3'],
+    '(Xiaomi )?Redmi[ \-]Note 3 Pro!': ['Xiaomi', 'Redmi Note 3 Pro'],
+    '(Xiaomi )?Redmi[ \-]Note ?4$!': ['Xiaomi', 'Redmi Note 4'],
+    '(Xiaomi )?Redmi[ \-]Note ?4X!': ['Xiaomi', 'Redmi Note 4X'],
+    '(Xiaomi )?Redmi[ \-]Note ?5$!': ['Xiaomi', 'Redmi Note 5'],
+    '(Xiaomi )?Redmi[ \-]Note ?5A!': ['Xiaomi', 'Redmi Note 5A'],
+    '(Xiaomi )?Redmi[ \-]Note 5 Pro!': ['Xiaomi', 'Redmi Note 5 Pro'],
+    '(Xiaomi )?Redmi[ \-]Note 6 Pro!': ['Xiaomi', 'Redmi Note 6 Pro'],
+    '(Xiaomi )?Redmi[ \-]Note 7$!': ['Xiaomi', 'Redmi Note 7'],
+    '(Xiaomi )?Redmi[ \-]Note 7 Pro!': ['Xiaomi', 'Redmi Note 7 Pro'],
+    '(Xiaomi )?Redmi[ \-]Note 8$!': ['Xiaomi', 'Redmi Note 8'],
+    '(Xiaomi )?Redmi[ \-]Note 8 Pro!': ['Xiaomi', 'Redmi Note 8 Pro'],
+    '(Xiaomi )?Redmi[ \-]Note 8T!': ['Xiaomi', 'Redmi Note 8T'],
+    '(Xiaomi )?Redmi[ \-]Note 9$!': ['Xiaomi', 'Redmi Note 9'],
+    '(Xiaomi )?Redmi[ \-]Note 9S!': ['Xiaomi', 'Redmi Note 9S'],
+    '(Xiaomi )?Redmi[ \-]Note 9 Pro!': ['Xiaomi', 'Redmi Note 9 Pro'],
   },
 
   '(Xiaomi |HM)?20!!': {
@@ -17527,7 +17529,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi |HM)?20147(15)!': ['Xiaomi', 'Redmi Note'],
     '(Xiaomi |HM)?20149(11)!': ['Xiaomi', 'Redmi Note'],
     '(Xiaomi |HM)?20150(52)!': ['Xiaomi', 'Redmi Note 2'],
-    '(Xiaomi |HM)?20160(51)!': ['Xiaomi', 'Redmi Note 4']
+    '(Xiaomi |HM)?20160(51)!': ['Xiaomi', 'Redmi Note 4'],
   },
 
   '21061119DG': ['Xiaomi', 'Redmi 10'],
@@ -17583,7 +17585,7 @@ exports.ANDROID_MODELS = {
   M2103K19PG: ['Xiaomi', 'Poco M3 Pro'],
 
   '(Xiaomi |HM)?21!!': {
-    '(Xiaomi |HM)?21091(19)!': ['Xiaomi', 'Mi 11 Lite']
+    '(Xiaomi |HM)?21091(19)!': ['Xiaomi', 'Mi 11 Lite'],
   },
 
   'POCOPHONE F1': ['Xiaomi', 'Pocophone F1'],
@@ -17635,7 +17637,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi|Xiaomi Mi|MI) Pad 2!': ['Xiaomi', 'Mi Pad 2', DeviceType.TABLET],
     '(Xiaomi|Xiaomi Mi|MI) Pad 3!': ['Xiaomi', 'Mi Pad 3', DeviceType.TABLET],
     '(Xiaomi|Xiaomi Mi|MI) Pad 4$!': ['Xiaomi', 'Mi Pad 4', DeviceType.TABLET],
-    '(Xiaomi|Xiaomi Mi|MI) Pad 4 Plus!': ['Xiaomi', 'Mi Pad 4 Plus', DeviceType.TABLET]
+    '(Xiaomi|Xiaomi Mi|MI) Pad 4 Plus!': ['Xiaomi', 'Mi Pad 4 Plus', DeviceType.TABLET],
   },
 
   '21051182G': ['Xiaomi', 'Mi Pad 5', DeviceType.TABLET],
@@ -17646,7 +17648,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi|Xiaomi Mi|MI)Box2$!': ['Xiaomi', 'Mi Box 2', DeviceType.TELEVISION],
     '(Xiaomi|Xiaomi Mi|MI)Box3$!': ['Xiaomi', 'Mi Box 3', DeviceType.TELEVISION],
     '(Xiaomi|Xiaomi Mi|MI)Box3S!': ['Xiaomi', 'Mi Box 3S', DeviceType.TELEVISION],
-    '(Xiaomi|Xiaomi Mi|MI)Box3 Pro!': ['Xiaomi', 'Mi Box 3 Pro', DeviceType.TELEVISION]
+    '(Xiaomi|Xiaomi Mi|MI)Box3 Pro!': ['Xiaomi', 'Mi Box 3 Pro', DeviceType.TELEVISION],
   },
 
   '(Xiaomi|Xiaomi Mi|MI)TV!!': {
@@ -17655,7 +17657,7 @@ exports.ANDROID_MODELS = {
     '(Xiaomi|Xiaomi Mi|MI)TV2S!': ['Xiaomi', 'Mi TV 2S', DeviceType.TELEVISION],
     '(Xiaomi|Xiaomi Mi|MI)TV3($|-)!': ['Xiaomi', 'Mi TV 3', DeviceType.TELEVISION],
     '(Xiaomi|Xiaomi Mi|MI)TV4($|-)!': ['Xiaomi', 'Mi TV 4', DeviceType.TELEVISION],
-    '(Xiaomi|Xiaomi Mi|MI)TV4A!': ['Xiaomi', 'Mi TV 4A', DeviceType.TELEVISION]
+    '(Xiaomi|Xiaomi Mi|MI)TV4A!': ['Xiaomi', 'Mi TV 4A', DeviceType.TELEVISION],
   },
 
   'XO Learning tablet': ['XO', 'Tablet', DeviceType.TABLET],
@@ -17719,7 +17721,7 @@ exports.ANDROID_MODELS = {
     X900: ['XOLO', 'X900'],
     'Xolo X900': ['XOLO', 'X900'],
     'XOLO X910': ['XOLO', 'X910'],
-    'XOLO X1000': ['XOLO', 'X1000']
+    'XOLO X1000': ['XOLO', 'X1000'],
   },
 
   BLACK: ['XOLO', 'Black'],
@@ -17885,7 +17887,7 @@ exports.ANDROID_MODELS = {
     'ANDY 6EL LTE': ['Yezz', 'Andy 6EL'],
     'YEZZ-6Q': ['Yezz', 'Andy 6Q'],
     'Andy 6Q': ['Yezz', 'Andy 6Q'],
-    'Yezz-T7FD': ['Yezz', 'Epic T7FD', DeviceType.TABLET]
+    'Yezz-T7FD': ['Yezz', 'Epic T7FD', DeviceType.TABLET],
   },
 
   C868: ['Yicheer', 'C868'],
@@ -18011,7 +18013,7 @@ exports.ANDROID_MODELS = {
     'ultrafone 504': ['Zen', 'Ultrafone 504'],
     'ultrafone 506': ['Zen', 'Ultrafone 506'],
     'ultrafone 701HD': ['Zen', 'Ultrafone 701HD'],
-    'ultrafone 701FHD': ['Zen', 'Ultrafone 701FHD']
+    'ultrafone 701FHD': ['Zen', 'Ultrafone 701FHD'],
   },
 
   'ZIGO EON5I': ['Zigo', 'Eon 5i'],
@@ -18031,7 +18033,7 @@ exports.ANDROID_MODELS = {
 
   'ZTE A[0-9]{3,3}!!': {
     'ZTE A880': ['ZTE', 'Xiao Xian'],
-    'ZTE A905L': ['ZTE', 'A905L']
+    'ZTE A905L': ['ZTE', 'A905L'],
   },
 
   'ZTE B[0-9]{3,3}!!': {
@@ -18039,7 +18041,7 @@ exports.ANDROID_MODELS = {
     'ZTE B792': ['ZTE', 'Boost Kuta'],
     'ZTE B795': ['ZTE', 'Boost Icon Nero'],
     'ZTE B816': ['ZTE', 'Boost INDY'],
-    'ZTE B880': ['ZTE', 'Xiao Xian 2']
+    'ZTE B880': ['ZTE', 'Xiao Xian 2'],
   },
 
   'ZTE BA[0-9]{3,3}!!': {
@@ -18054,7 +18056,7 @@ exports.ANDROID_MODELS = {
     'ZTE BA611T': ['ZTE', 'BA611T'],
     'ZTE BA620': ['ZTE', 'Blade X3'],
     'ZTE BA910': ['ZTE', 'Blade A910'],
-    'ZTE BA910T': ['ZTE', 'Blade A910']
+    'ZTE BA910T': ['ZTE', 'Blade A910'],
   },
 
   'ZTE BV0[0-9]{3,3}!!': {
@@ -18065,7 +18067,7 @@ exports.ANDROID_MODELS = {
     'ZTE BV0720T': ['ZTE', 'Blade A2'],
     'ZTE BV0730': ['ZTE', 'Blade A2 Plus'],
     'ZTE BV0800': ['ZTE', 'Blade V8'],
-    'ZTE BV0870': ['ZTE', 'BV0870']
+    'ZTE BV0870': ['ZTE', 'BV0870'],
   },
 
   'ZTE C[0-9]{3,3}!!': {
@@ -18074,7 +18076,7 @@ exports.ANDROID_MODELS = {
     'ZTE C880A': ['ZTE', 'Blade A1'],
     'ZTE C880D': ['ZTE', 'C880D'],
     'ZTE C880S': ['ZTE', 'Xiao Xian 3'],
-    'ZTE C880U': ['ZTE', 'Blade A1']
+    'ZTE C880U': ['ZTE', 'Blade A1'],
   },
 
   'ZTE C N[0-9]{3,3}!!': {
@@ -18083,17 +18085,17 @@ exports.ANDROID_MODELS = {
     'ZTE C N700': ['ZTE', 'C N700'],
     'ZTE C N760': ['ZTE', 'C N760'],
     'ZTE C N780': ['ZTE', 'C N780'],
-    'ZTE C N880!': ['ZTE', 'Blade']
+    'ZTE C N880!': ['ZTE', 'Blade'],
   },
 
   'ZTE C R[0-9]{3,3}!!': {
     'ZTE C R750': ['ZTE', 'C R750'],
-    'ZTE C R750+': ['ZTE', 'C R750']
+    'ZTE C R750+': ['ZTE', 'C R750'],
   },
 
   'ZTE C X[0-9]{3,3}!!': {
     'ZTE C X500': ['ZTE', 'Score'],
-    'ZTE C X920': ['ZTE', 'C X920']
+    'ZTE C X920': ['ZTE', 'C X920'],
   },
 
   'ZTE ?G[0-9]{3,3}!!': {
@@ -18103,7 +18105,7 @@ exports.ANDROID_MODELS = {
     'ZTE G719C': ['ZTE', 'G719C'],
     'ZTE G720C': ['ZTE', 'G720C'],
     'ZTE ?G720T!': ['ZTE', 'G720T'],
-    'ZTE G721C': ['ZTE', 'G721C']
+    'ZTE G721C': ['ZTE', 'G721C'],
   },
 
   '(ZTE ?)?N[0-9]{3,3}!!': {
@@ -18151,7 +18153,7 @@ exports.ANDROID_MODELS = {
     'ZTE N980': ['ZTE', 'N980'],
     'ZTE N983': ['ZTE', 'N983'],
     N986: ['ZTE', 'N986'],
-    'ZTE N986': ['ZTE', 'N986']
+    'ZTE N986': ['ZTE', 'N986'],
   },
 
   '(ZXY-)?(ZTE )?N[0-9]{4,4}!!': {
@@ -18175,7 +18177,7 @@ exports.ANDROID_MODELS = {
     N9520: ['ZTE', 'Stormer'],
     N9521: ['ZTE', 'Boost Max+'],
     N9810: ['ZTE', 'Vital'],
-    N9835: ['ZTE', 'Grand S Pro']
+    N9835: ['ZTE', 'Grand S Pro'],
   },
 
   '(ZXY-)?NX[0-9]{2,3}!!': {
@@ -18211,17 +18213,17 @@ exports.ANDROID_MODELS = {
     NX601J: ['ZTE', 'Nubia X6'],
     NX659J: ['ZTE', 'Nubia Red Magic'],
     NX629J: ['ZTE', 'Nubia Red Magic 3'],
-    NX669J: ['ZTE', 'Nubia Red Magic 6']
+    NX669J: ['ZTE', 'Nubia Red Magic 6'],
   },
 
   'ZTE K813': ['ZTE', 'K813'],
 
   'ZTE M[0-9]{3,3}!!': {
-    'ZTE M901C': ['ZTE', 'Grand Memo 2']
+    'ZTE M901C': ['ZTE', 'Grand Memo 2'],
   },
 
   'ZTE P[0-9]{3,3}!!': {
-    'ZTE P727A': ['ZTE', 'P722A']
+    'ZTE P727A': ['ZTE', 'P722A'],
   },
 
   'ZTE ?Q[0-9]{3,3}!!': {
@@ -18248,7 +18250,7 @@ exports.ANDROID_MODELS = {
     'ZTE Q802D': ['ZTE', 'Q802D'],
     'ZTE ?Q802T!': ['ZTE', 'Q802T'],
     'ZTE Q805T': ['ZTE', 'Q805T'],
-    'ZTE Q806T': ['ZTE', 'Q806T']
+    'ZTE Q806T': ['ZTE', 'Q806T'],
   },
 
   'ZTE Q[0-9]!!': {
@@ -18256,18 +18258,18 @@ exports.ANDROID_MODELS = {
     'ZTE Q2S-T': ['ZTE', 'Q2S-T'],
     'ZTE Q5-T': ['ZTE', 'Q5-T'],
     'ZTE Q7': ['ZTE', 'Q7'],
-    'ZTE Q7-C': ['ZTE', 'Q7-C']
+    'ZTE Q7-C': ['ZTE', 'Q7-C'],
   },
 
   'ZTE R[0-9]{3,3}!!': {
-    'ZTE R880H': ['ZTE', 'Spark']
+    'ZTE R880H': ['ZTE', 'Spark'],
   },
 
   'ZTE S[0-9]{3,3}!!': {
     'ZTE S118': ['ZTE', 'Grand S Lite'],
     'ZTE S158': ['ZTE', 'S158'],
     'ZTE S251': ['ZTE', 'Grand S II'],
-    'ZTE S291': ['ZTE', 'Grand S II']
+    'ZTE S291': ['ZTE', 'Grand S II'],
   },
 
   'ZTE T[0-9]!!': {
@@ -18301,7 +18303,7 @@ exports.ANDROID_MODELS = {
     'ZTE T815': ['ZTE', 'Tempo'], // Telstra
     'ZTE T816': ['ZTE', 'Smart Plus'], // Telstra
     'ZTE T912': ['ZTE', 'Blade S6 Lite'],
-    'ZTE T920': ['ZTE', 'Blade S7']
+    'ZTE T920': ['ZTE', 'Blade S7'],
   },
 
   'ZTE T ?U[0-9]{3,3}!!': {
@@ -18315,7 +18317,7 @@ exports.ANDROID_MODELS = {
     'ZTE T U830': ['ZTE', 'T U830'],
     'ZTE T ?U880!': ['ZTE', 'Blade'],
     'ZTE T ?U900!': ['ZTE', 'T U900'],
-    'ZTE T ?U960!': ['ZTE', 'T U960']
+    'ZTE T ?U960!': ['ZTE', 'T U960'],
   },
 
   '(ZTE ?)?U[0-9]{3,3}!!': {
@@ -18354,15 +18356,15 @@ exports.ANDROID_MODELS = {
     'ZTE U969': ['ZTE', 'U969'],
     'ZTE U970!': ['ZTE', 'Grand X'],
     'ZTE U985': ['ZTE', 'Grand Era'],
-    'ZTE U988S': ['ZTE', 'Geek']
+    'ZTE U988S': ['ZTE', 'Geek'],
   },
 
   'ZTE U N[0-9]{3,3}!!': {
     'ZTE U N720': ['ZTE', 'U N720'],
-    'ZTE U N721': ['ZTE', 'U N721']
+    'ZTE U N721': ['ZTE', 'U N721'],
   },
 
-  'ZTE U[ (-]V[)-]?[0-9]{3,3}!!': {
+  'ZTE U[ \(\-]V[\)\-]?[0-9]{3,3}!!': {
     'ZTE U V760': ['ZTE', 'U V760'],
     'ZTE U V852': ['ZTE', 'Dreamer'],
     'ZTE U V856': ['ZTE', 'Mimosa Mini'],
@@ -18374,12 +18376,12 @@ exports.ANDROID_MODELS = {
     'ZTE U(V)880+': ['ZTE', 'Blade'],
     'ZTE U V881': ['ZTE', 'Blade II'],
     'ZTE U V889D': ['ZTE', 'U V889D'],
-    'ZTE U V960': ['ZTE', 'Skate']
+    'ZTE U V960': ['ZTE', 'Skate'],
   },
 
   'ZTE U X[0-9]{3,3}!!': {
     'ZTE U X850': ['ZTE', 'Racer'],
-    'ZTE U X876': ['ZTE', 'U X876']
+    'ZTE U X876': ['ZTE', 'U X876'],
   },
 
   '(ZTE ?)?V[0-9]{3,3}[A-Z]!!': {
@@ -18409,7 +18411,7 @@ exports.ANDROID_MODELS = {
     ZTEv967s: ['ZTE', 'V967S'],
     'ZTE V970M!': ['ZTE', 'Grand X'],
     'ZTE V970T': ['ZTE', 'Grand X'],
-    'ZTE V993W': ['ZTE', 'Nubia V5']
+    'ZTE V993W': ['ZTE', 'Nubia V5'],
   },
 
   '(ZTE ?)?V ?[0-9]{3,3}!!': {
@@ -18448,7 +18450,7 @@ exports.ANDROID_MODELS = {
     'ZTE V985 Grand Era': ['ZTE', 'Grand Era'],
     'ZTE V ?987!': ['ZTE', 'Grand X Quad'],
     'ZTE V988': ['ZTE', 'Grand S'],
-    'ZTE V998': ['ZTE', 'Grand S']
+    'ZTE V998': ['ZTE', 'Grand S'],
   },
 
   '(ZTE ?)?X[0-9]{3,3}!!': {
@@ -18458,7 +18460,7 @@ exports.ANDROID_MODELS = {
     'X501 USA Cricket': ['ZTE', 'Groove'],
     'X501 USA RS': ['ZTE', 'Groove'],
     'ZTE X850': ['ZTE', 'Racer'],
-    'ZTE X876': ['ZTE', 'Raise']
+    'ZTE X876': ['ZTE', 'Raise'],
   },
 
   '(ZTE )?Z[0-9]!!': {
@@ -18562,7 +18564,7 @@ exports.ANDROID_MODELS = {
     Z992: ['ZTE', 'Avail 2'],
     'ZTE Z993': ['ZTE', 'Prelude'],
     'ZTE Z995': ['ZTE', 'Overture'],
-    'ZTE Z998': ['ZTE', 'Unico']
+    'ZTE Z998': ['ZTE', 'Unico'],
   },
 
   '(ZTE )?Blade!!': {
@@ -18712,7 +18714,7 @@ exports.ANDROID_MODELS = {
     'ZTE Blade Vec Pro': ['ZTE', 'Blade Vec Pro'],
     'ZTE Blade X3': ['ZTE', 'Blade X3'],
     'ZTE Blade X7': ['ZTE', 'Blade X7'],
-    'ZTE Blade X9': ['ZTE', 'Blade X9']
+    'ZTE Blade X9': ['ZTE', 'Blade X9'],
   },
 
   'ZTE Geek!!': {
@@ -18722,7 +18724,7 @@ exports.ANDROID_MODELS = {
     'ZTE GEEK II 4G': ['ZTE', 'Geek II'],
     'ZTE Geek 2 pro': ['ZTE', 'Geek II Pro'],
     'ZTE GEEK II Pro': ['ZTE', 'Geek II Pro'],
-    'ZTE GEEK II Pro 4G': ['ZTE', 'Geek II Pro']
+    'ZTE GEEK II Pro 4G': ['ZTE', 'Geek II Pro'],
   },
 
   '(ZTE )?(Grand|Mimosa)!!': {
@@ -18750,7 +18752,7 @@ exports.ANDROID_MODELS = {
     'Grand X2': ['ZTE', 'Grand X2'],
     'ZTE Grand X2': ['ZTE', 'Grand X2'],
     'ZTE Grand X 2': ['ZTE', 'Grand X2'],
-    'ZTE Grand X2 In': ['ZTE', 'Grand X2']
+    'ZTE Grand X2 In': ['ZTE', 'Grand X2'],
   },
 
   '(ZTE )?Kis!!': {
@@ -18769,20 +18771,20 @@ exports.ANDROID_MODELS = {
     'ZTE Kis 3': ['ZTE', 'Kis 3'],
     'ZTE Kis3 max': ['ZTE', 'Kis 3 Max'],
     'KIS C341': ['ZTE', 'Kis C341'],
-    'Kis T3': ['ZTE', 'Kis T3']
+    'Kis T3': ['ZTE', 'Kis T3'],
   },
 
   '(ZTE )?Racer!!': {
     'ZTE Racer': ['ZTE', 'Racer'],
     Racer: ['ZTE', 'Racer'],
-    RacerII: ['ZTE', 'Racer II']
+    RacerII: ['ZTE', 'Racer II'],
   },
 
   '(ZTE )?Skate!!': {
     Skate: ['ZTE', 'Skate'],
     'ZTE Skate': ['ZTE', 'Skate'],
     'Skate Pro': ['ZTE', 'Skate Pro'],
-    'ZTE Skate 2': ['ZTE', 'Skate 2']
+    'ZTE Skate 2': ['ZTE', 'Skate 2'],
   },
 
   'ZTE Libra': ['ZTE', 'Libra'],
@@ -18988,7 +18990,7 @@ exports.ANDROID_MODELS = {
     'ZP990+': ['Zopo', 'ZP990+'],
     ZP998: ['Zopo', 'ZP998 C2 II'],
     'ZOPO ZP998': ['Zopo', 'ZP998 C2 II'],
-    ZP999: ['Zopo', 'ZP999 Lion Heart']
+    ZP999: ['Zopo', 'ZP999 Lion Heart'],
   },
 
   C2: ['Zopo', 'ZP960 C2'],
@@ -19007,7 +19009,7 @@ exports.ANDROID_MODELS = {
     'BASE Lutea 3': ['BASE', 'Lutea 3'],
     'BASE Varia': ['BASE', 'Varia'],
     'BASE Tab': ['BASE', 'TAB', DeviceType.TABLET],
-    'BASE Tab 7.1': ['BASE', 'TAB 7-1', DeviceType.TABLET]
+    'BASE Tab 7.1': ['BASE', 'TAB 7-1', DeviceType.TABLET],
   },
 
   'Beeline!!': {
@@ -19033,7 +19035,7 @@ exports.ANDROID_MODELS = {
     'Beeline Tab IS': ['Beeline', 'Tab IS', DeviceType.TABLET],
     'Beeline Tab Fast': ['Beeline', 'Tab Fast', DeviceType.TABLET],
     'Beeline Tab Fast 2': ['Beeline', 'Tab Fast 2', DeviceType.TABLET],
-    'Beeline Tab Pro': ['Beeline', 'Tab Pro', DeviceType.TABLET]
+    'Beeline Tab Pro': ['Beeline', 'Tab Pro', DeviceType.TABLET],
   },
 
   'Bouygues Telecom Bs 351': ['Bouygues', 'Bs 351'],
@@ -19254,13 +19256,13 @@ exports.ANDROID_MODELS = {
     'i-mobile i-note 3': ['i-Mobile', 'i-Note 3', DeviceType.TABLET],
     'i-mobile i-note WIFI3': ['i-Mobile', 'i-Note 3', DeviceType.TABLET],
     'i-mobile i-note WiFi 7': ['i-Mobile', 'i-Note 7', DeviceType.TABLET],
-    'i-mobile i-note WiFi 9': ['i-Mobile', 'i-Note 9', DeviceType.TABLET]
+    'i-mobile i-note WiFi 9': ['i-Mobile', 'i-Note 9', DeviceType.TABLET],
   },
 
   'KPN!!': {
     'KPN Smart 200': ['KPN', 'Smart 200'],
     'KPN Smart 300': ['KPN', 'Smart 300'],
-    'KPN Smart 400': ['KPN', 'Smart 400']
+    'KPN Smart 400': ['KPN', 'Smart 400'],
   },
 
   'Kyivstar!!': {
@@ -19268,7 +19270,7 @@ exports.ANDROID_MODELS = {
     'Kyivstar Shine': ['Kyivstar', 'Shine'],
     'Kyivstar Spark': ['Kyivstar', 'Spark'],
     'Kyivstar Aqua': ['Kyivstar', 'Aqua'],
-    'Kyivstar Terra': ['Kyivstar', 'Terra']
+    'Kyivstar Terra': ['Kyivstar', 'Terra'],
   },
 
   'MegaFon SP-AI': ['Мегафон', 'SP-A1'],
@@ -19327,7 +19329,7 @@ exports.ANDROID_MODELS = {
     'MTC SMART Run': ['MTC', 'Smart Run'],
     'MTC SMART Run 4G': ['MTC', 'Smart Run'],
     'MTC SMART Sprint 4G': ['MTC', 'Smart Sprint'],
-    'MTC Viva': ['MTC', 'Viva']
+    'MTC Viva': ['MTC', 'Viva'],
   },
 
   'SMART Sprint': ['MTC', 'Smart Sprint'],
@@ -19519,7 +19521,7 @@ exports.ANDROID_MODELS = {
     'QMobile Z8': ['Q-Mobile', 'Noir Z8'],
     'QMobile Z8 Plus': ['Q-Mobile', 'Noir Z8 Plus'],
     'QMobile Z9': ['Q-Mobile', 'Noir Z9'],
-    'QMobile Z10': ['Q-Mobile', 'Noir Z10']
+    'QMobile Z10': ['Q-Mobile', 'Noir Z10'],
   },
 
   'Z4 mini': ['Q-Mobile', 'Noir Quatro Z4 mini'],
@@ -19614,7 +19616,7 @@ exports.ANDROID_MODELS = {
     'Telenor Smart Pro 2': ['Telenor', 'Smart Pro 2'],
     'TELENOR SMART TOUCH MINI': ['Telenor', 'Smart Touch Mini'],
     'Telenor Touch Mini': ['Telenor', 'Smart Touch Mini'],
-    'Telenor Touch Pad': ['Telenor', 'Touch Pad', DeviceType.TABLET]
+    'Telenor Touch Pad': ['Telenor', 'Touch Pad', DeviceType.TABLET],
   },
 
   'T-Hub2': ['Telstra', 'T-Hub 2', DeviceType.TABLET],
@@ -19626,7 +19628,7 @@ exports.ANDROID_MODELS = {
     'tmn smart a15': ['TMN', 'Smart A15'],
     'tmn smart a18': ['TMN', 'Smart A18'],
     'tmn smart a20': ['TMN', 'Smart A20'],
-    'tmn smart a60': ['TMN', 'Smart A60']
+    'tmn smart a60': ['TMN', 'Smart A60'],
   },
 
   'soft stone': ['TMN', 'Soft Stone'],
@@ -19646,7 +19648,7 @@ exports.ANDROID_MODELS = {
     'TURKCELL TURBO T50': ['Turkcell', 'Turbo T50'],
     'TURKCELL T60': ['Turkcell', 'T60'],
     'TURKCELL T70': ['Turkcell', 'T70'],
-    'TURKCELL T80': ['Turkcell', 'T80']
+    'TURKCELL T80': ['Turkcell', 'T80'],
   },
 
   'Turk Telekom TT175': ['Türk Telekom', 'TT175'],
@@ -19713,7 +19715,7 @@ exports.ANDROID_MODELS = {
     'Vodafone Smart Tab 4': ['Vodafone', 'Smart Tab 4', DeviceType.TABLET],
     'Vodafone Smart Tab 3G!': ['Vodafone', 'Smart Tab 3G', DeviceType.TABLET],
     'Vodafone Smart Tab 4G!': ['Vodafone', 'Smart Tab 4G', DeviceType.TABLET],
-    'Vodafone Tab grand 6': ['Vodafone', 'Tab Grand 6', DeviceType.TABLET]
+    'Vodafone Tab grand 6': ['Vodafone', 'Tab Grand 6', DeviceType.TABLET],
   },
 
   'SmartTab!!': {
@@ -19721,7 +19723,7 @@ exports.ANDROID_MODELS = {
     SmartTab7: ['Vodafone', 'Smart Tab 7', DeviceType.TABLET],
     SmartTabII7: ['Vodafone', 'Smart Tab II 7', DeviceType.TABLET] /* Lenovo */,
     SmartTabII10: ['Vodafone', 'Smart Tab II 10', DeviceType.TABLET],
-    SmartTab10: ['Vodafone', 'Smart Tab 10', DeviceType.TABLET] /* ZTE Web Tab 10 */
+    SmartTab10: ['Vodafone', 'Smart Tab 10', DeviceType.TABLET] /* ZTE Web Tab 10 */,
   },
 
   VF685: ['Vodafone', 'Smart 4 Fun'],
@@ -19755,7 +19757,7 @@ exports.ANDROID_MODELS = {
   'VFD 1400': ['Vodafone', 'Tab Prime 7', DeviceType.TABLET],
   VFD1400: ['Vodafone', 'Tab Prime 7', DeviceType.TABLET],
 
-  TC26: ['Zebra', 'TC26', DeviceType.POS]
+  TC26: ['Zebra', 'TC26', DeviceType.POS],
 };
 
 /* This file is automatically generated, do not edit manually! */
