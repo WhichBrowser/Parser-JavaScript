@@ -42,3 +42,11 @@
     headers: 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 12_3_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Electron/12.0.9 Safari/537.36'
     readable: 'Electron 12.0.9 on macOS Monterey 12.3'
     result: { browser: { using: { name: Electron, version: 12.0.9 }, family: { name: Chrome, version: 89 }, type: browser }, engine: { name: Blink }, os: { name: 'OS X', alias: macOS, version: { value: '12.3', nickname: Monterey } }, device: { type: desktop, manufacturer: Apple, model: Macintosh } }
+-
+    headers: 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.70 Electron/33.0.2 Safari/537.36'
+    readable: 'Electron 33.0.2 on macOS Sequoia 15.1'
+    result: { browser: { using: { name: Electron, version: 33.0.2 }, family: { name: Chrome, version: 130 }, type: browser }, engine: { name: Blink }, os: { name: 'OS X', alias: macOS, version: { value: '15.1', nickname: Sequoia } }, device: { type: desktop, manufacturer: Apple, model: Macintosh } }
+-
+    headers: 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 26_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.7259.0 Electron/38.0.0 Safari/537.36'
+    readable: 'Electron 38.0.0 on macOS Tahoe 26.0'
+    result: { browser: { using: { name: Electron, version: 38.0.0 }, family: { name: Chrome, version: 140 }, type: browser }, engine: { name: Blink }, os: { name: 'OS X', alias: macOS, version: { value: '26.0', nickname: Tahoe } }, device: { type: desktop, manufacturer: Apple, model: Macintosh } }

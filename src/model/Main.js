@@ -1,4 +1,3 @@
-/* eslint-disable valid-jsdoc */
 const Browser = require('./Browser');
 const Engine = require('./Engine');
 const Os = require('./Os');
@@ -279,7 +278,5 @@ class Main {
     return result;
   }
 }
-
-/* eslint-enable valid-jsdoc */
 
 module.exports = Main;

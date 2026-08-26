@@ -1,4 +1,3 @@
-/* eslint-disable require-jsdoc */
 /* eslint-disable no-useless-escape */
 
 const Family = require('../../../model/Family');
@@ -79,6 +78,14 @@ class Os {
         });
       }
 
+      /* Since iOS 26, Safari freezes the reported OS version at 18 or 19, the real version can be
+       * recovered from the Safari version number, which stayed tied to the iOS major version */
+      if (this.data.os.version && /^1[89]\./u.test(this.data.os.version.value)) {
+        if ((match = /Version\/([0-9]+(?:\.[0-9]+)*)/u.exec(ua)) && parseInt(match[1], 10) >= 26) {
+          this.data.os.version = new Version({ value: match[1] });
+        }
+      }
+
       if (/iPhone Simulator;/u.test(ua)) {
         this.data.device.type = Constants.deviceType.EMULATOR;
       } else {
@@ -103,14 +110,14 @@ class Os {
 
       this.data.os.name = 'OS X';
 
-      if ((match = /Mac OS X (1[0-9][0-9\._]*)/u.exec(ua))) {
+      if ((match = /Mac OS X ([12][0-9][0-9\._]*)/u.exec(ua))) {
         this.data.os.version = new Version({
           value: match[1].replace(/_/g, '.'),
           details: 2,
         });
       }
 
-      if ((match = /;os=Mac (1[0-9][0-9[\.,]*)/u.exec(ua))) {
+      if ((match = /;os=Mac ([12][0-9][0-9[\.,]*)/u.exec(ua))) {
         this.data.os.version = new Version({
           value: match[1].replace(/,/g, '.'),
           details: 2,

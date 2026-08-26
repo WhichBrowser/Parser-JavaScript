@@ -1,3 +1,28 @@
+#### 0.8.0 (2026-08-27)
+
+- Sync WhichBrowser/Parser-JavaScript to [WhichBrowser/Parser-PHP@581d614](https://github.com/WhichBrowser/Parser-PHP/commit/581d614d686bfbec3529ad60562a5213ac5d8d72) [[diff](https://github.com/WhichBrowser/Parser-PHP/compare/1044880bc792dbce5948fbff22ae731c43c280d9...581d614d686bfbec3529ad60562a5213ac5d8d72)]
+
+- **Fixes:**
+  * Hide the macOS version when it is reported as the fingerprinting-mitigation frozen value (`10.15.7` for Chrome/Safari, `10.15` for Firefox)
+  * Recognize macOS versions starting with `2x` (e.g. macOS 26 Tahoe) — the OS X version regex previously only matched `1x` (10 to 19)
+  * Recover the real iOS version from Safari's `Version/` token when iOS 26+ freezes the reported OS version at `18.x`/`19.x`
+  * `update-chrome` pulled its data from `omahaproxy.appspot.com`, which has been shut down for years and returned 404, so it silently updated nothing. Chrome versions released after 118 (Nov 2023) had no matching entry in the stable-channel database and were consequently misidentified as `Chrome Dev`. Switched to the Chromium Dash release API
+
+- **Database:**
+  * Adds macOS nicknames `Ventura` (13), `Sonoma` (14), `Sequoia` (15) and `Tahoe` (26)
+  * Adds Darwin-to-macOS/iOS version mapping up to Darwin 25 (macOS 26 Tahoe / iOS 26)
+  * Added Chrome stable versions 119 to 153 (desktop) and 119 to 152 (mobile). Firefox and Edge were checked too — both parse the browser version directly from the UA string with no version lookup table, so current releases (Firefox 141, Edge 140) were already detected correctly
+  * Routine refresh of the applications, models, indices, profiles and regexes databases
+
+- **Operations:**
+  * Removed the deprecated `request` package (unmaintained, several vulnerabilities with no fix available) from the `bin/update-*` scripts in favor of the native `fetch`. This also resolved every other outstanding Dependabot alert (`js-yaml`, `handlebars`, `minimatch`, `picomatch`, `path-to-regexp`, `uuid`) by bumping `nyc`, and picking up newer transitive dependencies for `eslint`, `lint-staged` and `sinon` — none of this affects the published package, which has zero runtime dependencies
+  * The `bin/update-*` scripts used to swallow fetch failures silently (this is exactly how the dead `omahaproxy` endpoint above went unnoticed for years); they now log the error and exit with a non-zero status code
+  * Every devDependency bumped to latest: `eslint` 8→10, `husky` 8→9, `lint-staged` 15→17, `sinon` 17→22, `@hapi/lab` 25→26, `prettier`, `eslint-plugin-prettier`, `eslint-config-prettier`
+  * Migrated `.eslintrc.json` to flat config (`eslint.config.js`), required by ESLint 9+. Replaced `eslint-config-google` — archived by Google in 2025, last released in 2019, and no longer loadable at all under ESLint 10 since it still references core rules (`valid-jsdoc`, `require-jsdoc`) that were removed — with the ~20 rules it contributed that weren't already superseded by Prettier, declared directly so the project no longer depends on an abandoned package
+  * `husky` 9 dropped the `.husky/_/husky.sh` boilerplate hooks used to source; updated `.husky/pre-commit` accordingly
+  * `nyc` 18 and `lint-staged` 17 require Node 20+/22+ to run; updated the CI matrix from Node 16-20 (all EOL except the tail of 20.x) to the currently maintained LTS lines (20.x, 22.x, 24.x), and bumped `actions/checkout`/`actions/setup-node` to v4
+  * `update-all` now runs `prettier`/`eslint --fix` on `data/` right after regenerating it (new `format-data` script), so the generated files are committed in their final formatted form instead of relying on the pre-commit hook to reformat them after the fact
+
 #### 0.7.1 (2023-11-01)
 
 - **Database:** Added Chrome 101 to 118.

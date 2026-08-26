@@ -80,8 +80,8 @@
     readable: 'Chrome 30 on a Samsung Galaxy Tab 3 Lite running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; SM-T310 Build/JDQ39) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.58 Safari/537.31'
-    result: { browser: { name: Chrome, version: 26.0.1410.58, type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: tablet, manufacturer: Samsung, model: 'Galaxy Tab 3 8.0' } }
-    readable: 'Chrome Dev 26.0.1410.58 on a Samsung Galaxy Tab 3 8.0 running Android 4.2.2'
+    result: { browser: { name: Chrome, version: '26', type: browser }, engine: { name: Webkit, version: '537.31' }, os: { name: Android, version: 4.2.2 }, device: { type: tablet, manufacturer: Samsung, model: 'Galaxy Tab 3 8.0' } }
+    readable: 'Chrome 26 on a Samsung Galaxy Tab 3 8.0 running Android 4.2.2'
 -
     headers: 'User-Agent: Mozilla/5.0 (Linux; Android 4.2.2; xx; SAMSUNG  SM-P905 Build/JDQ39) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Safari/537.36'
     result: { browser: { name: 'Samsung Internet', version: '1.5', type: browser }, engine: { name: Blink }, os: { name: Android, version: 4.2.2 }, device: { type: tablet, manufacturer: Samsung, model: 'Galaxy Note Pro' } }

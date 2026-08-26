@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../constants');
 const { Baidu, BrowserId, OperaMini, Puffin, UCBrowserNew, UCBrowserOld, Useragent, Wap } = require('./Header/');
 

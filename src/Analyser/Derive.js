@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../constants');
 const Using = require('../model/Using');
 const Version = require('../model/Version');
@@ -425,6 +423,18 @@ class Derive {
         }
         if (this.data.os.version.is('12')) {
           this.data.os.version.nickname = 'Monterey';
+        }
+        if (this.data.os.version.is('13')) {
+          this.data.os.version.nickname = 'Ventura';
+        }
+        if (this.data.os.version.is('14')) {
+          this.data.os.version.nickname = 'Sonoma';
+        }
+        if (this.data.os.version.is('15')) {
+          this.data.os.version.nickname = 'Sequoia';
+        }
+        if (this.data.os.version.is('26')) {
+          this.data.os.version.nickname = 'Tahoe';
         }
       }
     }

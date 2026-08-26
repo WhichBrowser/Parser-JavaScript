@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const DeviceModels = require('../../data/DeviceModels');
 
 class Puffin {

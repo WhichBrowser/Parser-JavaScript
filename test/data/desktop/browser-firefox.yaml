@@ -258,3 +258,7 @@
     headers: "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:100.0) Gecko/20100101 Firefox/100.0"
     readable: "Firefox 100.0 on Windows 10"
     result: { browser: { name: Firefox, version: "100.0", type: browser }, engine: { name: Gecko, version: "100.0" }, os: { name: Windows, version: { alias: "10", value: "10.0" } }, device: { type: desktop } }
+-
+    headers: 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:123.0) Gecko/20100101 Firefox/123.0'
+    readable: 'Firefox 123.0 on macOS'
+    result: { browser: { name: Firefox, version: '123.0', type: browser }, engine: { name: Gecko, version: '123.0' }, os: { name: 'OS X', alias: macOS }, device: { type: desktop, manufacturer: Apple, model: Macintosh } }

@@ -1,5 +1,3 @@
-/* eslint-disable require-jsdoc */
-
 const Constants = require('../constants');
 
 class Corrections {
@@ -28,12 +26,31 @@ class Corrections {
     if (this.data.browser.name && this.data.browser.family) {
       Corrections.hideFamilyIfEqualToBrowser.call(this);
     }
+    if (this.data.browser.name && this.data.os.name && this.data.os.version) {
+      Corrections.hideOsVersionIfFixed.call(this);
+    }
     return this;
   }
 
   static hideFamilyIfEqualToBrowser() {
     if (this.data.browser.name === this.data.browser.family.name) {
       this.data.browser.family = null;
+    }
+  }
+
+  static hideOsVersionIfFixed() {
+    if (this.data.os.name === 'OS X') {
+      const name = this.data.browser.family ? this.data.browser.family.name : this.data.browser.name;
+
+      if (name === 'Chrome' && this.data.os.version.value === '10.15.7') {
+        this.data.os.version = null;
+      }
+      if (name === 'Safari' && this.data.os.version.value === '10.15.7') {
+        this.data.os.version = null;
+      }
+      if (name === 'Firefox' && this.data.os.version.value === '10.15') {
+        this.data.os.version = null;
+      }
     }
   }
 
